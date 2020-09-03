@@ -152,7 +152,6 @@ const Chart = ({ data = totaldata }) => {
                 </Bar>
                 <Line type="monotone" dataKey="Projection_from__from_Sept_1" dot={false} stroke="#666666" strokeDasharray="3 3" />
                 <Tooltip />
-                <Legend />
                 {/* <Line dataKey="active" /> */}
             </ComposedChart>
         </div>
