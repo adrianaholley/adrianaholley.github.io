@@ -14,10 +14,6 @@
   }
 }
 
-.grow {
-  flex-grow: unset;
-}
-
 .wrapper {
   padding: 20px;
 }

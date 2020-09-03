@@ -155,7 +155,6 @@ const Chart = ({ data = totaldata }) => {
                 <Tooltip />
                 {/* <Line dataKey="active" /> */}
             </ComposedChart>
-            <h1>newline</h1>
         </div>
     );
 };
