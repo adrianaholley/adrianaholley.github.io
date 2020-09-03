@@ -31,7 +31,7 @@ function App() {
         {/* Appbar */}
         <Router>
           <div>
-            <AppBar style={{ minHeight: 84 }} color="#ffffff" >
+            <AppBar style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
               <Toolbar>
                 <Typography>
                   Coronavirus (COVID-19) Dashboard

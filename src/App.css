@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   background-color: #e9e9e9;
+  height: 100vmin;
+  scroll-padding-top: 70px
 }
 
 .App-logo {
@@ -12,6 +14,16 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.responsivecontainer {
+  height: 100%;
+  width: 100%;
+}
+
+.adjustabletext {
+  height: 60%;
+  width: 60%;
 }
 
 .wrapper {
@@ -46,7 +58,7 @@
 }
 
 .MuiAppBar {
-  background-color: #cc0000;
+  background-color: #ffffff !important;
 }
 
 @keyframes App-logo-spin {

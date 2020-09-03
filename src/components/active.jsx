@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { CartesianGrid, Line, LabelList, Legend, Bar, LineChart, ComposedChart, XAxis, YAxis } from "recharts";
+import { CartesianGrid, Line, LabelList, Legend, Bar, LineChart, ComposedChart, XAxis, YAxis, ResponsiveContainer } from "recharts";
 
 export const activedata = [
     {
@@ -93,7 +93,7 @@ export const activedata = [
         name: 'Sept 1', active: 418, Sept2: 285.03,
     },
     {
-        name: 'Sept 2', nodata: 453, Sept2: 318.54,
+        name: 'Sept 2', active: 453, Sept2: 318.54,
     },
     {
         name: 'Sept 3', nodata: 0, Sept2: 355.98,
@@ -138,20 +138,34 @@ export const activedata = [
 
 const Chart = ({ data = activedata }) => {
     return (
-        <div>
+        <div className='responsivecontainer'>
             <h2>H2</h2>
             <h1></h1>
             <h3>Active Reported Cases</h3>
-            <ComposedChart width={1000} height={450} data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
-                <CartesianGrid />
-                <XAxis dataKey="name" angle={-45} textAnchor="end" fontSize="16" height="60" />
-                <YAxis fontSize="16" />
-                <Bar dataKey="active" fill="#cc0000">
-                    <LabelList dataKey="active" position="top" fontSize="16" />
-                </Bar>
-                <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                {/* <Line dataKey="active" /> */}
-            </ComposedChart>
+            <center>
+                <ResponsiveContainer width='75%' height='75%' aspect='3'>
+                    <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+                        <CartesianGrid />
+                        <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                        <YAxis fontSize="12" />
+                        <Bar dataKey="active" fill="#cc0000">
+                            <LabelList dataKey="active" position="top" fontSize="12" />
+                        </Bar>
+                        <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        {/* <Line dataKey="active" /> */}
+                    </ComposedChart>
+                </ResponsiveContainer>
+                <br />
+                <div className="adjustabletext">
+                    <a>
+                        What is this curve?
+                </a>
+                    <p>
+                        It's an exponential regression curve. It is made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection does not consider changes in circumstances, such as an increase in hand-washing or an increase of off-campus events.
+                </p>
+                </div>
+            </center>
+            
         </div>
     );
 };

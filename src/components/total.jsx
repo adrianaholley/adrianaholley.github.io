@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { CartesianGrid, Line, LabelList, Legend, Bar, LineChart, ComposedChart, Tooltip, XAxis, YAxis, Label } from "recharts";
+import { CartesianGrid, Line, LabelList, Legend, Bar, LineChart, ComposedChart, Tooltip, XAxis, YAxis, Label, ResponsiveContainer } from "recharts";
 
 export const totaldata = [
     {
@@ -93,7 +93,7 @@ export const totaldata = [
         name: 'Sept 1', total: 551, Sept1: 398.17, Sept2: 431.46
     },
     {
-        name: 'Sept 2', nodata: 624, Sept1: 444.43, Sept2: 483.65
+        name: 'Sept 2', total: 624, Sept1: 444.43, Sept2: 483.65
     },
     {
         name: 'Sept 3', nodata: 75, Sept1: 496.06, Sept2: 542.16
@@ -120,13 +120,13 @@ export const totaldata = [
         name: 'Sept 10', nodata: 75, Sept1: 1070.73, Sept2: 1205.76,
     },
     {
-        name: 'Sept 11', nodata: 75, Sept1: 1195.13,  Sept2: 1351.61,
+        name: 'Sept 11', nodata: 75, Sept1: 1195.13, Sept2: 1351.61,
     },
     {
-        name: 'Sept 12', nodata: 75, Sept1: 1333.98,  Sept2: 1515.11,
+        name: 'Sept 12', nodata: 75, Sept1: 1333.98, Sept2: 1515.11,
     },
     {
-        name: 'Sept 13', nodata: 75, Sept1: 1488.97,  Sept2: 1698.38,
+        name: 'Sept 13', nodata: 75, Sept1: 1488.97, Sept2: 1698.38,
     },
     {
         name: 'Sept 14', nodata: 75, Sept1: 1661.96, Sept2: 1903.82,
@@ -139,22 +139,34 @@ export const totaldata = [
 const Chart = ({ data = totaldata }) => {
     return (
 
-        <div>
+        <div className='responsivecontainer'>
             <h2>H2</h2>
             <h1></h1>
-            <h3>Total Reported Cases</h3>
-            <ComposedChart width={1000} height={450} data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
-                <CartesianGrid />
-                <XAxis dataKey="name" angle={-45} textAnchor="end" fontSize="16" height="60" />
-                <YAxis fontSize="16" />
-                <Bar dataKey="total" fill="#333333" >
-                    <LabelList dataKey="total" position="top" fontSize="16" />
-                </Bar>
-                <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                <Tooltip />
-                {/* <Line dataKey="active" /> */}
-            </ComposedChart>
+            <h3 >Total Reported Cases</h3>
+            <center>
+                <ResponsiveContainer width={'75%'} height={"75%"} aspect='3'>
+                    <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+                        <CartesianGrid />
+                        <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                        <YAxis fontSize="12" />
+                        <Bar dataKey="total" fill="#333333" >
+                            <LabelList dataKey="total" position="top" fontSize="12" />
+                        </Bar>
+                        <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Tooltip />
+                        {/* <Line dataKey="active" /> */}
+                    </ComposedChart>
+                </ResponsiveContainer>
+                <br />
+                <div className="adjustabletext">
+                    <a>
+                        What is this curve?
+                </a>
+                    <p>
+                        It's an exponential regression curve. It is made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection does not consider changes in circumstances, such as an increase in hand-washing or an increase of off-campus events.
+                </p>
+                </div>
+            </center>
         </div>
     );
 };
