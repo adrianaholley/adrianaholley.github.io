@@ -11,7 +11,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Sizing from '@material-ui/system';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, HashRouter } from 'react-router-dom';
 import Total, { totaldata } from './components/total';
 import Active, { activedata } from './components/active';
 import { ResponsiveContainer } from "recharts";
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Appbar */}
-        <Router>
+        <HashRouter>
           <div>
             <AppBar style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
               <Toolbar>
@@ -48,7 +48,7 @@ function App() {
             <Route path="/contact"><Contact /></Route>
           </Switch>
 
-        </Router>
+        </HashRouter>
 
         {/* Graph and selections */}
 

@@ -178,7 +178,9 @@ const Chart = ({ data = totaldata }) => {
                             <Bar dataKey="total" fill="#333333" >
                                 <LabelList dataKey="total" position="top" fontSize="11" />
                             </Bar>
+                            <Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                            <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Tooltip />
                             {/* <Line dataKey="active" /> */}
                         </ComposedChart>
@@ -190,9 +192,9 @@ const Chart = ({ data = totaldata }) => {
                     <a>
                         What is this curve?
                     </a>
-                    {/* <p>
+                    <p>
                         It's an <b>exponential regression curve</b>. It is made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing, more off-campus interactions, or .
-                    </p> */}
+                    </p>
                 </div>
             </center>
         </div>
