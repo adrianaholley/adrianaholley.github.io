@@ -28,7 +28,6 @@ function App() {
       <header className="App-header">
         {/* Appbar */}
         <HashRouter>
-
           <BrowserView>
             <div>
               <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
@@ -37,11 +36,13 @@ function App() {
                     <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
                     <Grid item xs={5}>
                       <div style={{ paddingInlineEnd: 200 }}>
-                        <p style={{ fontFamily: "Georgia" }}>
-                          <font size="5" color="#333333">
-                            &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
-                      </font>
-                        </p>
+                        <Link style={{ textDecoration: 'none' }} to="/total">
+                          <p style={{ fontFamily: "Georgia" }}>
+                            <font size="5" color="#333333">
+                              &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
+                            </font>
+                          </p>
+                        </Link>
                       </div>
                     </Grid>
                     <Grid item xs>
@@ -182,15 +183,15 @@ function Contact() {
           <div>
             <br />
             <p><bold>Have a question or comment about the site?</bold><br />
-            <font size="4"><a href="https://forms.gle/h1HJACQDkNfqbuPd8" target='_blank'>Reach out to me.</a></font></p>
+              <font size="4"><a href="https://bit.ly/3jKvDL7" target='_blank'>Reach out to me.</a></font></p>
             <br />
             <p><bold>Have a question or comment about Texas Tech's COVID Response plan?</bold><br />
-            <font size="4">Email the Interim Director of Emergency Management at <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a></font></p>
+              <font size="4">Email the Interim Director of Emergency Management at <a href="https://bit.ly/32SyRFI" target='_blank'>covid19@ttu.edu</a></font></p>
             <br />
             <p><bold>Like my work?</bold><br />
-            <font size="4"><a href='https://ko-fi.com/adrianaholley' target='_blank'>Buy me a coffee.</a></font></p>
+              <font size="4"><a href='https://bit.ly/320hDal' target='_blank'>Buy me a coffee.</a></font></p>
             <br />
-            <font size="3"><a href='https://github.com/adrianaholley/TTU-COVID-19' target="_blank">Website source code</a></font>
+            <font size="3"><a href='https://bit.ly/331nECI' target="_blank">Website source code</a></font>
           </div>
         </header>
       </div>
