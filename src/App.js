@@ -179,8 +179,7 @@ function Contact() {
       <div className="App">
         <header className="App-header">
           <h3>Contact</h3>
-
-          <div className="adjustabletext">
+          <div>
             <br />
             <p><bold>Have a question or comment about the site?</bold><br />
             <font size="4"><a href="https://forms.gle/h1HJACQDkNfqbuPd8" target='_blank'>Reach out to me.</a></font></p>
@@ -191,7 +190,7 @@ function Contact() {
             <p><bold>Like my work?</bold><br />
             <font size="4"><a href='https://ko-fi.com/adrianaholley' target='_blank'>Buy me a coffee.</a></font></p>
             <br />
-            <font size="3"><a href='https://github.com/adrianaholley/TTU-COVID-19'>Website source code</a></font>
+            <font size="3"><a href='https://github.com/adrianaholley/TTU-COVID-19' target="_blank">Website source code</a></font>
           </div>
         </header>
       </div>
