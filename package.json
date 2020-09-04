@@ -1,5 +1,5 @@
 {
-  "homepage": "http://adrianaholley.github.io/",
+  "homepage": "http://adrianaholley.github.io/TTU-COVID-19",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,9 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
+    "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
+    "react-responsive": "^8.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "recharts": "^1.8.5"

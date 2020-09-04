@@ -15,15 +15,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Total, { totaldata } from './components/total';
 import Active, { activedata } from './components/active';
 import { ResponsiveContainer } from "recharts";
-import { Checkbox, Appbar} from '@material-ui/core';
+import { Checkbox, Appbar } from '@material-ui/core';
 import shadows from '@material-ui/core/styles/shadows';
 import './faq.js'
 
 function App() {
-
-  function myFunction(val) {
-    alert("hi")
-  }
 
   return (
     <div className="App">
@@ -80,7 +76,14 @@ function App() {
 
 function Contact() {
   return (
-    <h1>contact</h1>
+    <div>
+      <br />
+      <h1>Like my work? </h1>
+      <p><a href='https://ko-fi.com/adrianaholley' target='_blank'>Buy me a coffee!</a></p>
+      <p><a href='https://ko-fi.com/adrianaholley'>Buy me a coffee!</a></p>
+      <p><a href='https://ko-fi.com/adrianaholley'>Buy me a coffee!</a></p>
+      <p><a href='https://ko-fi.com/adrianaholley'>Buy me a coffee!</a></p>
+    </div>
   )
 }
 
