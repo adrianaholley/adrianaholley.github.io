@@ -17,8 +17,6 @@
     "recharts": "^1.8.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts build && rm -rf docs && mv build docs",
     "build": "react-scripts build",
     "test": "react-scripts test",
