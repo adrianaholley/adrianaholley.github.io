@@ -47,9 +47,7 @@ function App() {
             <Route path="/faq"><Faq /></Route>
             <Route path="/contact"><Contact /></Route>
           </Switch>
-
         </HashRouter>
-
         {/* Graph and selections */}
 
         {/* <div class="selections">
@@ -87,31 +85,56 @@ function Contact() {
   )
 }
 
+function Dothing() {
+    
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+}
+
 function Faq() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Faq
+    <div>
+      <div>
+        <svg width="100%" height="139">
+          <g>
+            <rect width="100%" height="100%" fill="#B32317" />
+            <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
+          </g>
+        </svg>
+      </div>
+      <div className="App">
+        <header className="App-header">
+          <p>
+            Faq
         </p>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="tab-content">
-                <div id="tab1" class="tab-pane fade show active">
-                  <div class="accordion">
-                    <div class="card">
-                      <div class="card-header" id="infraOne">
-                        sample text
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <button class="accordion">Section 1</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
           </div>
-        </div>
-      </header>
+
+          <button class="accordion">Section 2</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <button class="accordion">Section 3</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+        </header>
+      </div >
     </div>
   );
 }
