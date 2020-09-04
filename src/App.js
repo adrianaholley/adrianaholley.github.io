@@ -36,7 +36,6 @@ function App() {
                   <Grid container justify={"center"} alignItems={"center"}>
                     <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
                     <Grid item xs={5}>
-                      {/* <div style={{ paddingInlineEnd:200 }}> */}
                       <div style={{ paddingInlineEnd: 200 }}>
                         <p style={{ fontFamily: "Georgia" }}>
                           <font size="5" color="#333333">
@@ -168,12 +167,34 @@ function App() {
 function Contact() {
   return (
     <div>
-      <br />
-      <h1>Like my work? </h1>
-      <p><a href='https://ko-fi.com/adrianaholley' target='_blank'>Buy me a coffee!</a></p>
-      <p><a href='https://ko-fi.com/adrianaholley'>Buy me a coffee!</a></p>
-      <p><a href='https://ko-fi.com/adrianaholley'>Buy me a coffee!</a></p>
-      <p><a href='https://ko-fi.com/adrianaholley'>Buy me a coffee!</a></p>
+      <div className='responsivecontainer'>
+        <svg width="100vw" height="139">
+          <g>
+            <rect width="100%" height="100%" fill="#B32317" />
+            <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
+          </g>
+        </svg>
+      </div>
+
+      <div className="App">
+        <header className="App-header">
+          <h3>Contact</h3>
+
+          <div className="adjustabletext">
+            <br />
+            <p><bold>Have a question or comment about the site?</bold><br />
+            <font size="4"><a href="https://forms.gle/h1HJACQDkNfqbuPd8" target='_blank'>Reach out to me.</a></font></p>
+            <br />
+            <p><bold>Have a question or comment about Texas Tech's COVID Response plan?</bold><br />
+            <font size="4">Email the Interim Director of Emergency Management at <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a></font></p>
+            <br />
+            <p><bold>Like my work?</bold><br />
+            <font size="4"><a href='https://ko-fi.com/adrianaholley' target='_blank'>Buy me a coffee.</a></font></p>
+            <br />
+            <font size="3"><a href='https://github.com/adrianaholley/TTU-COVID-19'>Website source code</a></font>
+          </div>
+        </header>
+      </div>
     </div>
   )
 }
@@ -199,39 +220,182 @@ function Dothing() {
 function Faq() {
   return (
     <div>
-      <div>
-        <svg width="100%" height="139">
+      <div className='responsivecontainer'>
+        <svg width="100vw" height="139">
           <g>
             <rect width="100%" height="100%" fill="#B32317" />
             <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
           </g>
         </svg>
       </div>
+
       <div className="App">
         <header className="App-header">
-          <p>
-            Faq
-        </p>
-          <button class="accordion">Section 1</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
+          <h3 >Frequently Asked Questions</h3>
+
+          <BrowserView>
+            <div>
+              <Grid container spacing={3} justify={"center"}>
+                <Grid item xs={4}>
+                  <h5>Site Content</h5>
+                  <button class="accordion"><center>What is Texas Tech's test positivity rate?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>Why aren't there updates during the weekend?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>How are the quarantine capacity levels?</center></button>
+                  <div class="panel">
+                    <p>Although the University of Texas provides this data for its community, Texas Tech does not. Data for the capacity of the quarantine dorms and isolation dorms, as well as their current occupancy levels, was requested on Tuesday, September 4, 2020. If you think this missing data is important, please reach out to covid19@ttu.edu to ask.</p>
+                  </div>
+
+                  <button class="accordion"><center>How accurate is this data?</center></button>
+                  <div class="panel">
+                    <p>The total and active case counts come from Texas Tech. Please keep in mind that if a student or employee tests outside of the university, their result will not be counted here unless they self-report. In addition, there are currently presymptomatic and asymptomatic cases unaccounted for.</p>
+                  </div>
+
+                  <button class="accordion"><center>Have any of these cases been hostpitalized?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>Where are the recovery numbers?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>I don't like exponential regressions.</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </Grid>
+                <Grid item xs={4}>
+                  <h5>TTU COVID Response</h5>
+                  <button class="accordion"><center>How often must Texas Tech students get tested?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>How soon will I be notified that a classmate tested positive?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>Are there any disciplinary procedures for improper mask wear?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>What percent of courses are online?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>How many cases must there be for Texas Tech to return to 100% online classes?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </Grid>
+              </Grid>
+            </div>
+          </BrowserView>
+
+          <MobileView>
+            <div>
+              <Grid container spacing={1} justify={"center"}>
+                <Grid item xs>
+                  <h5>Site Content</h5>
+                  <button class="accordion"><center>What is Texas Tech's test positivity rate?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>Why aren't there updates during the weekend?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>How are the quarantine capacity levels?</center></button>
+                  <div class="panel">
+                    <p>Although the University of Texas provides this data for its community, Texas Tech does not. Data for the capacity of the quarantine dorms and isolation dorms, as well as their current occupancy levels, was requested on Tuesday, September 4, 2020. If you think this missing data is important, please reach out to covid19@ttu.edu to ask.</p>
+                  </div>
+
+                  <button class="accordion"><center>How accurate is this data?</center></button>
+                  <div class="panel">
+                    <p>The total and active case counts come from Texas Tech. Please keep in mind that if a student or employee tests outside of the university, their result will not be counted here unless they self-report. In addition, there are currently presymptomatic and asymptomatic cases unaccounted for.</p>
+                  </div>
+
+                  <button class="accordion"><center>Have any of these cases been hostpitalized?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>Where are the recovery numbers?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>I don't like exponential regressions.</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </Grid>
+                <Grid item xs>
+                  <h5>TTU COVID Response</h5>
+                  <button class="accordion"><center>How often must Texas Tech students get tested?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>How soon will I be notified that a classmate tested positive?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>Are there any disciplinary procedures for improper mask wear?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>What percent of courses are online?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"><center>How many cases must there be for Texas Tech to return to 100% online classes?</center></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+
+                  <button class="accordion"></button>
+                  <div class="panel">
+                    <p>Lorem ipsum...</p>
+                  </div>
+                </Grid>
+              </Grid>
+            </div>
+          </MobileView>
+
+          <div className="adjustabletext">
+            <br />
+            <p><bold>Got a question?</bold><br />
+              <font size="4"><Link to="/contact" color="#cc0000" >Reach out to me.</Link></font></p>
           </div>
 
-          <button class="accordion">Section 2</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div>
 
-          <button class="accordion">Section 3</button>
-          <div class="panel">
-            <p>Lorem ipsum...</p>
-          </div>
         </header>
       </div >
     </div>
   );
 }
-
-
 
 export default App;

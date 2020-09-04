@@ -24,6 +24,11 @@
   width: 60%;
 }
 
+.adjustabletextmobile {
+  height: 95%;
+  width: 95%;
+}
+
 .wrapper {
   padding: 20px;
 }
@@ -61,7 +66,7 @@
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
+  background-color: #f2f2f2;
   color: #444;
   cursor: pointer;
   padding: 18px;

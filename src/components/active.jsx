@@ -1,6 +1,8 @@
 import React, { PureComponent } from "react";
 import { Tooltip, CartesianGrid, Line, LabelList, Legend, Bar, LineChart, ComposedChart, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { BrowserView, MobileView } from "react-device-detect";
+import { Checkbox, Appbar, Grid } from '@material-ui/core';
+
 
 export const activedata = [
     {
@@ -147,8 +149,8 @@ const Chart = ({ data = activedata }) => {
                 </g>
             </svg>
             <h1></h1>
-            <h3>Active Reported Cases</h3>
-            <p><i>Last updated Wednesday, September 3 at 4:35pm.</i></p>
+            <h3 >Active Reported Cases</h3>
+            <p><i><font size="3">Last updated Wednesday, September 3 at 4:35pm.</font></i></p>
 
             <center>
                 <BrowserView>
@@ -192,20 +194,59 @@ const Chart = ({ data = activedata }) => {
 
 
                 <br />
+
+                <BrowserView>
                 <div className="adjustabletext">
-                    <a>
-                        What is this curve?
-                    </a>    
-                    <p>
-                        It's an <b>exponential regression curve</b>. It is made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.
-                    </p>
-                    <a>
-                        Why are there so many?
-                    </a>
-                    <p>
-                    The curve is recalculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are from previous calculations. 
-                    </p>
+                    <Grid container spacing={5}>
+                        <Grid item xs alignItems={"left"}>
+                            <h4>Notable Dates</h4>
+                            <font size="4"><p style={{textAlign:"left"}}>
+                                <li>August 3: Campus doors opened<br /></li>
+                                <li>August 8: Dorms open for move-in<br /></li>
+                                <li>August 24: First day of MWF classes<br /></li>
+                                <li>August 25: First day of TR classes<br /></li>
+                                <li>Week of August 31: Some classes shift online for two weeks<br /></li>
+                                <li>September 4: Opening of on-campus tesing center<br /></li>
+                                <li>September 5-7: Labor Day weekend<br /></li>
+                                <li>September 9: Census Date for Texas Tech<br /></li>
+                                <li>September 9: Last day to drop a course and have charges removed<br /></li>
+                                <li>September 14: One week after Labor Day<br /></li>
+                                <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                            </p></font>
+                        </Grid>
+                        <Grid item xs>
+                            <h4>What are these curves?</h4>
+                            <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
+                            <h4>Why are there so many?</h4>
+                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are from previous calculations.</font>    </p>
+                        </Grid>
+                    </Grid>
                 </div>
+                </BrowserView>
+
+
+                <MobileView>
+                <div className="adjustabletextmobile">
+                            <h4>Notable Dates</h4>
+                            <font size="4"><p style={{textAlign:"left"}}>
+                                <li>August 3: Campus doors opened<br /></li>
+                                <li>August 8: Dorms open for move-in<br /></li>
+                                <li>August 24: First day of MWF classes<br /></li>
+                                <li>August 25: First day of TR classes<br /></li>
+                                <li>Week of August 31: Some classes shift online for two weeks<br /></li>
+                                <li>September 4: Opening of on-campus tesing center<br /></li>
+                                <li>September 5-7: Labor Day weekend<br /></li>
+                                <li>September 9: Census Date for Texas Tech<br /></li>
+                                <li>September 9: Last day to drop a course and have charges removed<br /></li>
+                                <li>September 14: One week after Labor Day<br /></li>
+                                <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                            </p></font>
+                            <h4>What are these curves?</h4>
+                            <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
+                            <h4>Why are there so many?</h4>
+                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are from previous calculations.</font>    </p>
+                </div>
+                </MobileView>
             </center>
 
         </div>
