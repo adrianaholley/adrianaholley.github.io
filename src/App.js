@@ -10,14 +10,16 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import Sizing from '@material-ui/system';
+import { BrowserView, MobileView, } from 'react-device-detect';
+import Shadows from '@material-ui/system';
 import { BrowserRouter as Router, Switch, Route, Link, HashRouter } from 'react-router-dom';
 import Total, { totaldata } from './components/total';
 import Active, { activedata } from './components/active';
 import { ResponsiveContainer } from "recharts";
-import { Checkbox, Appbar } from '@material-ui/core';
+import { Checkbox, Appbar, Grid } from '@material-ui/core';
 import shadows from '@material-ui/core/styles/shadows';
 import './faq.js'
+import { ReactComponent as hat } from './maskhat.png'
 
 function App() {
 
@@ -26,21 +28,130 @@ function App() {
       <header className="App-header">
         {/* Appbar */}
         <HashRouter>
-          <div>
-            <AppBar style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
-              <Toolbar>
-                <Typography>
-                  Coronavirus (COVID-19) Dashboard
-              </Typography>
-                <div className="toolbarButtons">
-                  <Link style={{ textDecoration: 'none' }} to="/total">Total</Link>
-                  <Link style={{ textDecoration: 'none' }} to="/active">Active</Link>
-                  <Link style={{ textDecoration: 'none' }} to="/faq">FAQ</Link>
-                  <Link style={{ textDecoration: 'none' }} to="/contact">Contact</Link>
-                </div>
-              </Toolbar>
-            </AppBar>
-          </div>
+
+          <BrowserView>
+            <div>
+              <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
+                <Toolbar>
+                  <Grid container justify={"center"} alignItems={"center"}>
+                    <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
+                    <Grid item xs={5}>
+                      {/* <div style={{ paddingInlineEnd:200 }}> */}
+                      <div style={{ paddingInlineEnd: 200 }}>
+                        <p style={{ fontFamily: "Georgia" }}>
+                          <font size="5" color="#333333">
+                            &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
+                      </font>
+                        </p>
+                      </div>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/total">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="3" color="#555555">
+                            <b>
+                              Total
+                          </b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/active">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="3" color="#555555">
+                            <b>Active</b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/faq">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="3" color="#555555">
+                            <b>FAQ</b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      {/* <div style={{ paddingInlineEnd:200 }}> */}
+                      <Link style={{ textDecoration: 'none' }} to="/contact">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="3" color="#555555">
+                            <b>Contact</b>
+                          </font>
+                        </p>
+                      </Link>
+                      {/* </div> */}
+                    </Grid>
+                  </Grid>
+                </Toolbar>
+              </AppBar>
+            </div>
+          </BrowserView>
+
+          <MobileView>
+            <div>
+              <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
+                <Toolbar>
+                  <Grid container justify={"center"} alignItems={"center"}>
+                    <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
+                    <Grid item xs={5}>
+                      <div style={{ paddingInlineEnd: 0 }}>
+                        <p style={{ fontFamily: "Georgia" }}>
+                          <font size="2" color="#333333">
+                            &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
+                      </font>
+                        </p>
+                      </div>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/total">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="2" color="#555555">
+                            <b>
+                              Total
+                          </b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/active">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="2" color="#555555">
+                            <b>Active</b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/faq">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="2" color="#555555">
+                            <b>FAQ</b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      {/* <div style={{ paddingInlineEnd:200 }}> */}
+                      <Link style={{ textDecoration: 'none' }} to="/contact">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="2" color="#555555">
+                            <b>Contact</b>
+                          </font>
+                        </p>
+                      </Link>
+                      {/* </div> */}
+                    </Grid>
+                  </Grid>
+                </Toolbar>
+              </AppBar>
+            </div>
+          </MobileView>
+
           <Switch>
             <Route path="/total"><Total /></Route>
             <Route path="/active"><Active /></Route>
@@ -48,24 +159,6 @@ function App() {
             <Route path="/contact"><Contact /></Route>
           </Switch>
         </HashRouter>
-        {/* Graph and selections */}
-
-        {/* <div class="selections">
-              <FormControl>
-                <FormLabel>Case Type</FormLabel>
-                <RadioGroup>
-                  <FormControlLabel value="Total Reported Cases" disabled control={<Radio />} label="Total Reported Cases" />
-                  <FormControlLabel value="Active Reported Cases" control={<Radio />} label="Active Reported Cases" />
-                </RadioGroup>
-              </FormControl>
-            </div> */}
-        {/* <div class="selections">
-              <FormControl>
-                <FormLabel>Coming Soon - Show Past Projections</FormLabel>
-                <FormControlLabel disabled value="September 2" control={<Checkbox />} label="September 2" />
-                <FormControlLabel disabled value="September 1" control={<Checkbox />} label="September 1" />
-              </FormControl>
-            </div> */}
       </header>
     </div>
 
@@ -86,7 +179,7 @@ function Contact() {
 }
 
 function Dothing() {
-    
+
   var acc = document.getElementsByClassName("accordion");
   var i;
 
