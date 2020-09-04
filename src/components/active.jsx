@@ -160,7 +160,7 @@ const Chart = ({ data = activedata }) => {
                             <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                             <YAxis fontSize="12" />
                             <Bar dataKey="Active" fill="#cc0000">
-                                <LabelList dataKey="active" position="top" fontSize="12" />
+                                <LabelList dataKey="Active" position="top" fontSize="12" />
                             </Bar>
                             <Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" />
                             <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
@@ -179,7 +179,7 @@ const Chart = ({ data = activedata }) => {
                             <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                             <YAxis fontSize="12" />
                             <Bar dataKey="Active" fill="#cc0000">
-                                <LabelList dataKey="active" position="top" fontSize="10" />
+                                <LabelList dataKey="Active" position="top" fontSize="10" />
                             </Bar>
                             <Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" />
                             <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
@@ -206,7 +206,7 @@ const Chart = ({ data = activedata }) => {
                                 <li>August 24: First day of MWF classes<br /></li>
                                 <li>August 25: First day of TR classes<br /></li>
                                 <li>Week of August 31: Some classes shift online for two weeks<br /></li>
-                                <li>September 4: Opening of on-campus tesing center<br /></li>
+                                <li>September 4: Opening of on-campus testing center<br /></li>
                                 <li>September 5-7: Labor Day weekend<br /></li>
                                 <li>September 9: Census Date for Texas Tech<br /></li>
                                 <li>September 9: Last day to drop a course and have charges removed<br /></li>
@@ -234,7 +234,7 @@ const Chart = ({ data = activedata }) => {
                                 <li>August 24: First day of MWF classes<br /></li>
                                 <li>August 25: First day of TR classes<br /></li>
                                 <li>Week of August 31: Some classes shift online for two weeks<br /></li>
-                                <li>September 4: Opening of on-campus tesing center<br /></li>
+                                <li>September 4: Opening of on-campus testing center<br /></li>
                                 <li>September 5-7: Labor Day weekend<br /></li>
                                 <li>September 9: Census Date for Texas Tech<br /></li>
                                 <li>September 9: Last day to drop a course and have charges removed<br /></li>

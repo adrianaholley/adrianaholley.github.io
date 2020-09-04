@@ -1,5 +1,5 @@
 {
-  "homepage": "http://adrianaholley.github.io/",
+  "homepage": "http://adrianaholley.github.io/TTU-COVID-19",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,9 @@
     "recharts": "^1.8.5"
   },
   "scripts": {
-    "start": "react-scripts build && rm -rf docs && mv build docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start && rm -rf docs && mv build docs",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
