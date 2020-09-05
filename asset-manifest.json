@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/css/main.26daf1d1.chunk.css",
-    "main.js": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/js/main.647de81c.chunk.js",
-    "main.js.map": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/js/main.647de81c.chunk.js.map",
-    "runtime-main.js": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/js/runtime-main.a2012052.js",
-    "runtime-main.js.map": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/js/runtime-main.a2012052.js.map",
-    "static/js/2.2214470b.chunk.js": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/js/2.2214470b.chunk.js",
-    "static/js/2.2214470b.chunk.js.map": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/js/2.2214470b.chunk.js.map",
-    "index.html": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./index.html",
-    "precache-manifest.d8a965c7139eae59a5cda024738877d9.js": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./precache-manifest.d8a965c7139eae59a5cda024738877d9.js",
-    "service-worker.js": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./service-worker.js",
-    "static/css/main.26daf1d1.chunk.css.map": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/css/main.26daf1d1.chunk.css.map",
-    "static/js/2.2214470b.chunk.js.LICENSE.txt": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/js/2.2214470b.chunk.js.LICENSE.txt",
-    "static/media/maskhat.png": "/adrianaholley.github.io/ttu-covid-19.ttucovid19.com./static/media/maskhat.9afbe198.png"
+    "main.css": "/adrianaholley.github.io/static/css/main.26daf1d1.chunk.css",
+    "main.js": "/adrianaholley.github.io/static/js/main.e8a96d72.chunk.js",
+    "main.js.map": "/adrianaholley.github.io/static/js/main.e8a96d72.chunk.js.map",
+    "runtime-main.js": "/adrianaholley.github.io/static/js/runtime-main.11018f5d.js",
+    "runtime-main.js.map": "/adrianaholley.github.io/static/js/runtime-main.11018f5d.js.map",
+    "static/js/2.2214470b.chunk.js": "/adrianaholley.github.io/static/js/2.2214470b.chunk.js",
+    "static/js/2.2214470b.chunk.js.map": "/adrianaholley.github.io/static/js/2.2214470b.chunk.js.map",
+    "index.html": "/adrianaholley.github.io/index.html",
+    "precache-manifest.054f019e18dded903577465419fc41cd.js": "/adrianaholley.github.io/precache-manifest.054f019e18dded903577465419fc41cd.js",
+    "service-worker.js": "/adrianaholley.github.io/service-worker.js",
+    "static/css/main.26daf1d1.chunk.css.map": "/adrianaholley.github.io/static/css/main.26daf1d1.chunk.css.map",
+    "static/js/2.2214470b.chunk.js.LICENSE.txt": "/adrianaholley.github.io/static/js/2.2214470b.chunk.js.LICENSE.txt",
+    "static/media/maskhat.png": "/adrianaholley.github.io/static/media/maskhat.9afbe198.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2012052.js",
+    "static/js/runtime-main.11018f5d.js",
     "static/js/2.2214470b.chunk.js",
     "static/css/main.26daf1d1.chunk.css",
-    "static/js/main.647de81c.chunk.js"
+    "static/js/main.e8a96d72.chunk.js"
   ]
 }
