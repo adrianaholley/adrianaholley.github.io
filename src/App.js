@@ -268,7 +268,7 @@ function Faq() {
 
                   <button onClick={() => setIsSC7Open(!isSC7Open)} class="accordion"><center>I don't like exponential regressions.</center></button>
                   <div class={isSC7Open ? "" : "panel"}>
-                    <p><font size={2}>Exponential regressions are not perfect. As we can see, the prediction changes each time we get new data. It doesn't use any machine learning, compare spread at similarly-sized schools, or predict effects of increased sanitation. It's only based on our past data. However, COVID spread at Texas Tech<i>is</i> exponential. It fits the community's COVID projection needs, as neither the University or the city have published any other projections. If you'd like to ask them to share any projectoins, reach to them at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>Exponential regressions are not perfect. As we can see, the prediction changes each time we get new data. It doesn't use any machine learning, compare spread at similarly-sized schools, or predict effects of increased sanitation. It's only based on our past data. However, COVID spread at Texas Tech <i>is</i> exponential. It fits the community's COVID projection needs, as neither the University or the city have published any other projections. If you'd like to ask them to share any projectoins, reach to them at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>.</font></p>
                   </div>
                 </Grid>
                 <Grid item xs={4}>
@@ -344,7 +344,7 @@ function Faq() {
 
                   <button onClick={() => setIsSC7Open(!isSC7Open)} class="accordion"><center>I don't like exponential regressions.</center></button>
                   <div class={isSC7Open ? "" : "panel"}>
-                    <p><font size={2}>Exponential regressions are not perfect. As we can see, the prediction changes each time we get new data. It doesn't use any machine learning, compare spread at similarly-sized schools, or predict effects of increased sanitation. It's only based on our past data. However, COVID spread at Texas Tech<i>is</i> exponential. It fits the community's COVID projection needs, as neither the University or the city have published any other projections. If you'd like to ask them to share any projectoins, reach to them at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>Exponential regressions are not perfect. As we can see, the prediction changes each time we get new data. It doesn't use any machine learning, compare spread at similarly-sized schools, or predict effects of increased sanitation. It's only based on our past data. However, COVID spread at Texas Tech <i>is</i> exponential. It fits the community's COVID projection needs, as neither the University or the city have published any other projections. If you'd like to ask them to share any projectoins, reach to them at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>.</font></p>
                   </div>
                 </Grid>
                 <Grid item xs>
