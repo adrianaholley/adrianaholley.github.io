@@ -192,7 +192,7 @@ function Contact() {
             <p><bold>Like my work?</bold><br />
               <font size="4"><a href='https://bit.ly/320hDal' target='_blank'>Buy me a coffee.</a></font></p>
             <br />
-            <font size="3"><a href='https://bit.ly/3gZrGk3' target="_blank">Website source code</a></font>
+            <font size="3"><a href='https://bit.ly/3gZrGk3' target="_blank">Site purpose and source code</a></font>
           </div>
         </header>
       </div>
