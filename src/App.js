@@ -28,7 +28,7 @@ function App() {
       <header className="App-header">
         {/* Appbar */}
         <HashRouter>
-          <BrowserView>
+          <BrowserView basename={window.location.pathname || ''}>
             <div>
               <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
                 <Toolbar>
