@@ -221,7 +221,7 @@ const Chart = ({ data = totaldata }) => {
                             <h4>What are these curves?</h4>
                             <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
                             <h4>Why are there so many?</h4>
-                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are from previous calculations.</font>    </p>
+                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
                         </Grid>
                     </Grid>
                 </div>
@@ -247,7 +247,7 @@ const Chart = ({ data = totaldata }) => {
                             <h4>What are these curves?</h4>
                             <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
                             <h4>Why are there so many?</h4>
-                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are from previous calculations.</font>    </p>
+                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
                 </div>
                 </MobileView>
 

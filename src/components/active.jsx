@@ -162,7 +162,7 @@ const Chart = ({ data = activedata }) => {
                             <Bar dataKey="Active" fill="#cc0000">
                                 <LabelList dataKey="Active" position="top" fontSize="12" />
                             </Bar>
-                            <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />
+                            {/* <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" /> */}
                             {/* <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
@@ -181,7 +181,7 @@ const Chart = ({ data = activedata }) => {
                             <Bar dataKey="Active" fill="#cc0000">
                                 <LabelList dataKey="Active" position="top" fontSize="7" />
                             </Bar>
-                            <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />
+                            {/* <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" /> */}
                             {/* <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
@@ -196,7 +196,7 @@ const Chart = ({ data = activedata }) => {
                 <br />
 
                 <BrowserView>
-                <div className="adjustabletext">
+                <div className="adjustabletextdecriptions">
                     <Grid container spacing={5}>
                         <Grid item xs alignItems={"left"}>
                             <h4>Notable Dates</h4>
@@ -213,12 +213,6 @@ const Chart = ({ data = activedata }) => {
                                 <li>September 14: One week after Labor Day<br /></li>
                                 <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
                             </p></font>
-                        </Grid>
-                        <Grid item xs>
-                            <h4>What are these curves?</h4>
-                            <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                            {/* <h4>Why are there so many?</h4>
-                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are from previous calculations.</font>    </p> */}
                         </Grid>
                     </Grid>
                 </div>
@@ -241,10 +235,6 @@ const Chart = ({ data = activedata }) => {
                                 <li>September 14: One week after Labor Day<br /></li>
                                 <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
                             </p></font>
-                            <h4>What are these curves?</h4>
-                            <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                            {/* <h4>Why are there so many?</h4>
-                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are from previous calculations.</font>    </p> */}
                 </div>
                 </MobileView>
             </center>
