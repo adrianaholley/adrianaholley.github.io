@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ttu-covid-19.ttucovid19.com./static/css/main.26daf1d1.chunk.css",
-    "main.js": "/ttu-covid-19.ttucovid19.com./static/js/main.f81cafe3.chunk.js",
-    "main.js.map": "/ttu-covid-19.ttucovid19.com./static/js/main.f81cafe3.chunk.js.map",
-    "runtime-main.js": "/ttu-covid-19.ttucovid19.com./static/js/runtime-main.e79e2c9a.js",
-    "runtime-main.js.map": "/ttu-covid-19.ttucovid19.com./static/js/runtime-main.e79e2c9a.js.map",
-    "static/js/2.2214470b.chunk.js": "/ttu-covid-19.ttucovid19.com./static/js/2.2214470b.chunk.js",
-    "static/js/2.2214470b.chunk.js.map": "/ttu-covid-19.ttucovid19.com./static/js/2.2214470b.chunk.js.map",
-    "index.html": "/ttu-covid-19.ttucovid19.com./index.html",
-    "precache-manifest.851b6247a524071716a1631ee96e2cc2.js": "/ttu-covid-19.ttucovid19.com./precache-manifest.851b6247a524071716a1631ee96e2cc2.js",
-    "service-worker.js": "/ttu-covid-19.ttucovid19.com./service-worker.js",
-    "static/css/main.26daf1d1.chunk.css.map": "/ttu-covid-19.ttucovid19.com./static/css/main.26daf1d1.chunk.css.map",
-    "static/js/2.2214470b.chunk.js.LICENSE.txt": "/ttu-covid-19.ttucovid19.com./static/js/2.2214470b.chunk.js.LICENSE.txt",
-    "static/media/maskhat.png": "/ttu-covid-19.ttucovid19.com./static/media/maskhat.9afbe198.png"
+    "main.css": "/static/css/main.26daf1d1.chunk.css",
+    "main.js": "/static/js/main.fa2e525c.chunk.js",
+    "main.js.map": "/static/js/main.fa2e525c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
+    "static/js/2.2214470b.chunk.js": "/static/js/2.2214470b.chunk.js",
+    "static/js/2.2214470b.chunk.js.map": "/static/js/2.2214470b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9bda4eddc0752ed2fcf6552bb351ce00.js": "/precache-manifest.9bda4eddc0752ed2fcf6552bb351ce00.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.26daf1d1.chunk.css.map": "/static/css/main.26daf1d1.chunk.css.map",
+    "static/js/2.2214470b.chunk.js.LICENSE.txt": "/static/js/2.2214470b.chunk.js.LICENSE.txt",
+    "static/media/maskhat.png": "/static/media/maskhat.9afbe198.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e79e2c9a.js",
+    "static/js/runtime-main.83c3e0c4.js",
     "static/js/2.2214470b.chunk.js",
     "static/css/main.26daf1d1.chunk.css",
-    "static/js/main.f81cafe3.chunk.js"
+    "static/js/main.fa2e525c.chunk.js"
   ]
 }
