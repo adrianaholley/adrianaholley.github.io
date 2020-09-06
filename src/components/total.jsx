@@ -142,27 +142,13 @@ export const totaldata = [
 // 	alert("e.name");
 // }
 
-// constructor(props) {
-//     super(props);
-//     this.state = {
-//       Total: true,
-//       Sept2: false,
-//       Sept3: false,
-//       totaldata: {}
-//     };
-//   }
+
 
 const Chart = ({ data = totaldata }) => {
     return (
         <div>
         <BrowserView>
-                {/* <div>
-                    <FormGroup row>
-                        <FormControlLabel>
-                            control={<Switch checked={checked} onChange={handleChange} name="checked" />}
-                        </FormControlLabel>
-                    </FormGroup>
-                </div> */}
+                
                 <ResponsiveContainer width={'65%'} height={"65%"} aspect='2.2'>
                     <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
                         <CartesianGrid />

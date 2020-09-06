@@ -11,7 +11,7 @@ import { Appbar, Grid } from '@material-ui/core';
 import { ReactComponent as hat } from './maskhat.png'
 import Faq from './Faq.js';
 import Contact from './Contact.js';
-import Totalpage from './Totalpage.js';
+import Totalclass from './Totalclass.js';
 import Activepage from './Activepage.js';
 
 function App() {
@@ -146,7 +146,7 @@ function App() {
 
           <Switch>
             <Route exact path="/"><Redirect to="/total" /></Route>
-            <Route path="/total"><Totalpage /></Route>
+            <Route path="/total"><Totalclass /></Route>
               <Route path="/active"><Activepage /></Route>
               <Route path="/faq"><Faq /></Route>
               <Route path="/contact"><Contact /></Route>
