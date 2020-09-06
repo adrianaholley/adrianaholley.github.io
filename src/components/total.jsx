@@ -153,145 +153,117 @@ export const totaldata = [
 //   }
 
 const Chart = ({ data = totaldata }) => {
-
-    // const [checked, setChecked] = React.useState();
-    
-    // const handleChange = event => {
-    //     setChecked(event.target.checked);
-    // };
-
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //       Total: true,
-    //       Sept2: false,
-    //       Sept3: false,
-    //       totaldata: {}
-    //     };
-    //   }
-    
-
     return (
-        <div className='responsivecontainer'>
-            <svg width="100%" height="139">
-                <g>
-                    <rect width="100%" height="100%" fill="#B32317" />
-                    <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
-                </g>
-            </svg>
-            <h1></h1>
-            <h3 >Total Reported Cases</h3>
-            <p><i><font size="3">Last updated Friday, September 4 at 5:26pm.</font></i></p>
-            <center>
-                <BrowserView>
-                    {/* <div>
-                        <FormGroup row>
-                            <FormControlLabel>
-                                control={<Switch checked={checked} onChange={handleChange} name="checked" />}
-                            </FormControlLabel>
-                        </FormGroup>
-                    </div> */}
-                    <ResponsiveContainer width={'65%'} height={"65%"} aspect='2.2'>
-                        <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
-                            <CartesianGrid />
-                            <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            <YAxis fontSize="12" />
-                            <Bar dataKey="Total" fill="#333333" >
-                                <LabelList dataKey="Total" position="top" fontSize="12" />
-                            </Bar>
-                            <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />
-                            <Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug26" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug25" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                        </ComposedChart>
-                    </ResponsiveContainer>
-                </BrowserView>
+        <div>
+        <BrowserView>
+                {/* <div>
+                    <FormGroup row>
+                        <FormControlLabel>
+                            control={<Switch checked={checked} onChange={handleChange} name="checked" />}
+                        </FormControlLabel>
+                    </FormGroup>
+                </div> */}
+                <ResponsiveContainer width={'65%'} height={"65%"} aspect='2.2'>
+                    <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+                        <CartesianGrid />
+                        <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                        <YAxis fontSize="12" />
+                        <Bar dataKey="Total" fill="#333333" >
+                            <LabelList dataKey="Total" position="top" fontSize="12" />
+                        </Bar>
+                        <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />
+                        <Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug26" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug25" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+                    </ComposedChart>
+                </ResponsiveContainer>
+            </BrowserView>
 
-                <MobileView>
-                    <ResponsiveContainer width={'99%'} height={"99%"} aspect='1'>
-                        <ComposedChart data={data} margin={{ top: 0, right: 20, bottom: 0, left: -10 }}>
-                            <CartesianGrid />
-                            <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            <YAxis fontSize="12" />
-                            <Bar dataKey="Total" fill="#333333" >
-                                <LabelList dataKey="Total" position="top" fontSize="7" />
-                            </Bar>
-                            <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />
-                            <Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug26" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Line type="monotone" dataKey="Aug25" dot={false} stroke="#666666" strokeDasharray="3 3" />
-                            <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                        </ComposedChart>
-                    </ResponsiveContainer>
-                </MobileView>
+            <MobileView>
+                <ResponsiveContainer width={'99%'} height={"99%"} aspect='1'>
+                    <ComposedChart data={data} margin={{ top: 0, right: 20, bottom: 0, left: -10 }}>
+                        <CartesianGrid />
+                        <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                        <YAxis fontSize="12" />
+                        <Bar dataKey="Total" fill="#333333" >
+                            <LabelList dataKey="Total" position="top" fontSize="7" />
+                        </Bar>
+                        <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />
+                        <Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug26" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Line type="monotone" dataKey="Aug25" dot={false} stroke="#666666" strokeDasharray="3 3" />
+                        <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+                    </ComposedChart>
+                </ResponsiveContainer>
+            </MobileView>
 
-                <br />
+            <br />
 
-                <BrowserView>
-                    <div className="adjustabletext">
-                        <Grid container spacing={5}>
-                            <Grid item xs alignItems={"left"}>
-                                <h4>Notable Dates</h4>
-                                <font size="4"><p style={{ textAlign: "left" }}>
-                                    <li>August 3: Campus doors opened<br /></li>
-                                    <li>August 8: Dorms open for move-in<br /></li>
-                                    <li>August 24: First day of MWF classes<br /></li>
-                                    <li>August 25: First day of TR classes<br /></li>
-                                    <li>Week of August 31: Some classes shift online for two weeks<br /></li>
-                                    <li>September 4: Opening of on-campus testing center<br /></li>
-                                    <li>September 5-7: Labor Day weekend<br /></li>
-                                    <li>September 9: Census Date for Texas Tech<br /></li>
-                                    <li>September 9: Last day to drop a course and have charges removed<br /></li>
-                                    <li>September 14: One week after Labor Day<br /></li>
-                                    <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
-                                </p></font>
-                            </Grid>
-                            <Grid item xs>
-                                <h4>What are these curves?</h4>
-                                <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                                <h4>Why are there so many?</h4>
-                                <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
-                            </Grid>
+            <BrowserView>
+                <div className="adjustabletext">
+                    <Grid container spacing={5}>
+                        <Grid item xs alignItems={"left"}>
+                            <h4>Notable Dates</h4>
+                            <font size="4"><p style={{ textAlign: "left" }}>
+                                <li>August 3: Campus doors opened<br /></li>
+                                <li>August 8: Dorms open for move-in<br /></li>
+                                <li>August 24: First day of MWF classes<br /></li>
+                                <li>August 25: First day of TR classes<br /></li>
+                                <li>Week of August 31: Some classes shift online for two weeks<br /></li>
+                                <li>September 4: Opening of on-campus testing center<br /></li>
+                                <li>September 5-7: Labor Day weekend<br /></li>
+                                <li>September 9: Census Date for Texas Tech<br /></li>
+                                <li>September 9: Last day to drop a course and have charges removed<br /></li>
+                                <li>September 12: First football game, played at home</li>
+                                <li>September 14: One week after Labor Day<br /></li>
+                                <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                            </p></font>
                         </Grid>
-                    </div>
-                </BrowserView>
+                        <Grid item xs>
+                            <h4>What are these curves?</h4>
+                            <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
+                            <h4>Why are there so many?</h4>
+                            <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
+                        </Grid>
+                    </Grid>
+                </div>
+            </BrowserView>
 
 
-                <MobileView>
-                    <div className="adjustabletextmobile">
-                        <h4>Notable Dates</h4>
-                        <font size="4"><p style={{ textAlign: "left" }}>
-                            <li>August 3: Campus doors opened<br /></li>
-                            <li>August 8: Dorms open for move-in<br /></li>
-                            <li>August 24: First day of MWF classes<br /></li>
-                            <li>August 25: First day of TR classes<br /></li>
-                            <li>Week of August 31: Some classes shift online for two weeks<br /></li>
-                            <li>September 4: Opening of on-campus testing center<br /></li>
-                            <li>September 5-7: Labor Day weekend<br /></li>
-                            <li>September 9: Census Date for Texas Tech<br /></li>
-                            <li>September 9: Last day to drop a course and have charges removed<br /></li>
-                            <li>September 14: One week after Labor Day<br /></li>
-                            <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
-                        </p></font>
-                        <h4>What are these curves?</h4>
-                        <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                        <h4>Why are there so many?</h4>
-                        <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
-                    </div>
-                </MobileView>
-
-            </center>
-        </div>
-    );
+            <MobileView>
+                <div className="adjustabletextmobile">
+                    <h4>Notable Dates</h4>
+                    <font size="4"><p style={{ textAlign: "left" }}>
+                        <li>August 3: Campus doors opened<br /></li>
+                        <li>August 8: Dorms open for move-in<br /></li>
+                        <li>August 24: First day of MWF classes<br /></li>
+                        <li>August 25: First day of TR classes<br /></li>
+                        <li>Week of August 31: Some classes shift online for two weeks<br /></li>
+                        <li>September 4: Opening of on-campus testing center<br /></li>
+                        <li>September 5-7: Labor Day weekend<br /></li>
+                        <li>September 9: Census Date for Texas Tech<br /></li>
+                        <li>September 9: Last day to drop a course and have charges removed<br /></li>
+                        <li>September 12: First football game, played at home</li>
+                        <li>September 14: One week after Labor Day<br /></li>
+                        <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                    </p></font>
+                    <h4>What are these curves?</h4>
+                    <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
+                    <h4>Why are there so many?</h4>
+                    <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
+                </div>
+            </MobileView>
+            </div>
+         );
 };
 
 export default Chart;

@@ -99,7 +99,7 @@ export const activedata = [
         name: 'Sept 2', Active: 453, Sept2: 318, Sept3: 336, Sept1: 288, Aug31: 230, Aug28: 210, Sept4: 345
     },
     {
-        name: 'Sept 3', Active: 477, Sept2: 355, Sept3: 377, Sept1: 320, Aug31: 253, Aug28:229 , Sept4: 387
+        name: 'Sept 3', Active: 477, Sept2: 355, Sept3: 377, Sept1: 320, Aug31: 253, Aug28: 229, Sept4: 387
     },
     {
         name: 'Sept 4', Active: 490, Sept2: 397, Sept3: 422, Sept1: 356, Aug31: 279, Aug28: 251, Sept4: 434
@@ -141,66 +141,55 @@ export const activedata = [
 
 const Chart = ({ data = activedata }) => {
     return (
-        <div className='responsivecontainer'>
-            <svg width="100%" height="139">
-                <g>
-                    <rect width="100%" height="100%" fill="#B32317" />
-                    <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
-                </g>
-            </svg>
-            <h1></h1>
-            <h3 >Active Reported Cases</h3>
-            <p><i><font size="3">Last updated Friday, September 4 at 5:26pm.</font></i></p>
-
-            <center>
-                <BrowserView>
-                    <ResponsiveContainer width='65%' height='65%' aspect='2.2'>
-                        <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
-                            <CartesianGrid />
-                            <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            <YAxis fontSize="12" />
-                            <Bar dataKey="Active" fill="#cc0000">
-                                <LabelList dataKey="Active" position="top" fontSize="12" />
-                            </Bar>
-                            {/* <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" /> */}
-                            {/* <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
+        <div>
+            <BrowserView>
+                <ResponsiveContainer width='65%' height='65%' aspect='2.2'>
+                    <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
+                        <CartesianGrid />
+                        <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                        <YAxis fontSize="12" />
+                        <Bar dataKey="Active" fill="#cc0000">
+                            <LabelList dataKey="Active" position="top" fontSize="12" />
+                        </Bar>
+                        {/* <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" /> */}
+                        {/* <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" /> */}
-                            <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                        </ComposedChart>
-                    </ResponsiveContainer>
-                </BrowserView>
+                        <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+                    </ComposedChart>
+                </ResponsiveContainer>
+            </BrowserView>
 
-                <MobileView>
-                    <ResponsiveContainer width={'99%'} height={'65%'} aspect='1'>
-                        <ComposedChart data={data} margin={{ top: 0, right: 20, bottom: 0, left: -10 }}>
-                            <CartesianGrid />
-                            <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            <YAxis fontSize="12" />
-                            <Bar dataKey="Active" fill="#cc0000">
-                                <LabelList dataKey="Active" position="top" fontSize="7" />
-                            </Bar>
-                            {/* <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" /> */}
-                            {/* <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
+            <MobileView>
+                <ResponsiveContainer width={'99%'} height={'65%'} aspect='1'>
+                    <ComposedChart data={data} margin={{ top: 0, right: 20, bottom: 0, left: -10 }}>
+                        <CartesianGrid />
+                        <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                        <YAxis fontSize="12" />
+                        <Bar dataKey="Active" fill="#cc0000">
+                            <LabelList dataKey="Active" position="top" fontSize="7" />
+                        </Bar>
+                        {/* <Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" /> */}
+                        {/* <Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />
                             <Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" /> */}
-                            <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                        </ComposedChart>
-                    </ResponsiveContainer>
-                </MobileView>
+                        <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+                    </ComposedChart>
+                </ResponsiveContainer>
+            </MobileView>
 
 
 
-                <br />
+            <br />
 
-                <BrowserView>
+            <BrowserView>
                 <div className="adjustabletextdecriptions">
                     <Grid container spacing={5}>
                         <Grid item xs alignItems={"left"}>
                             <h4>Notable Dates</h4>
-                            <font size="4"><p style={{textAlign:"left"}}>
+                            <font size="4"><p style={{ textAlign: "left" }}>
                                 <li>August 3: Campus doors opened<br /></li>
                                 <li>August 8: Dorms open for move-in<br /></li>
                                 <li>August 24: First day of MWF classes<br /></li>
@@ -210,35 +199,35 @@ const Chart = ({ data = activedata }) => {
                                 <li>September 5-7: Labor Day weekend<br /></li>
                                 <li>September 9: Census Date for Texas Tech<br /></li>
                                 <li>September 9: Last day to drop a course and have charges removed<br /></li>
+                                <li>September 12: First football game, played at home</li>
                                 <li>September 14: One week after Labor Day<br /></li>
                                 <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
                             </p></font>
                         </Grid>
                     </Grid>
                 </div>
-                </BrowserView>
+            </BrowserView>
 
 
-                <MobileView>
+            <MobileView>
                 <div className="adjustabletextmobile">
-                            <h4>Notable Dates</h4>
-                            <font size="4"><p style={{textAlign:"left"}}>
-                                <li>August 3: Campus doors opened<br /></li>
-                                <li>August 8: Dorms open for move-in<br /></li>
-                                <li>August 24: First day of MWF classes<br /></li>
-                                <li>August 25: First day of TR classes<br /></li>
-                                <li>Week of August 31: Some classes shift online for two weeks<br /></li>
-                                <li>September 4: Opening of on-campus testing center<br /></li>
-                                <li>September 5-7: Labor Day weekend<br /></li>
-                                <li>September 9: Census Date for Texas Tech<br /></li>
-                                <li>September 9: Last day to drop a course and have charges removed<br /></li>
-                                <li>September 14: One week after Labor Day<br /></li>
-                                <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
-                            </p></font>
+                    <h4>Notable Dates</h4>
+                    <font size="4"><p style={{ textAlign: "left" }}>
+                        <li>August 3: Campus doors opened<br /></li>
+                        <li>August 8: Dorms open for move-in<br /></li>
+                        <li>August 24: First day of MWF classes<br /></li>
+                        <li>August 25: First day of TR classes<br /></li>
+                        <li>Week of August 31: Some classes shift online for two weeks<br /></li>
+                        <li>September 4: Opening of on-campus testing center<br /></li>
+                        <li>September 5-7: Labor Day weekend<br /></li>
+                        <li>September 9: Census Date for Texas Tech<br /></li>
+                        <li>September 9: Last day to drop a course and have charges removed<br /></li>
+                        <li>September 12: First football game, played at home</li>
+                        <li>September 14: One week after Labor Day<br /></li>
+                        <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                    </p></font>
                 </div>
-                </MobileView>
-            </center>
-
+            </MobileView>
         </div>
     );
 };

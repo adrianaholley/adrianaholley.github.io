@@ -5,12 +5,14 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { BrowserView, MobileView, } from 'react-device-detect';
 import { BrowserRouter as Router, Switch, Redirect, Route, Link, HashRouter } from 'react-router-dom';
-import Total, { totaldata } from './components/total';
-import Active, { activedata } from './components/active';
+import Total, { totaldata } from './components/Total';
+import Active, { activedata } from './components/Active';
 import { Appbar, Grid } from '@material-ui/core';
 import { ReactComponent as hat } from './maskhat.png'
 import Faq from './Faq.js';
 import Contact from './Contact.js';
+import Totalpage from './Totalpage.js';
+import Activepage from './Activepage.js';
 
 function App() {
   return (
@@ -144,8 +146,8 @@ function App() {
 
           <Switch>
             <Route exact path="/"><Redirect to="/total" /></Route>
-            <Route path="/total"><Total /></Route>
-              <Route path="/active"><Active /></Route>
+            <Route path="/total"><Totalpage /></Route>
+              <Route path="/active"><Activepage /></Route>
               <Route path="/faq"><Faq /></Route>
               <Route path="/contact"><Contact /></Route>
           </Switch>
