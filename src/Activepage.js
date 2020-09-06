@@ -11,7 +11,7 @@ function Activepage() {
             </g>
         </svg>
         <h1></h1>
-        <h3 >Active Reported Cases</h3>
+        <h3 style={{marginBottom:5}}>Active Reported Cases</h3>
         <p><i><font size="3">Last updated Friday, September 4 at 5:26pm.</font></i></p>
 
         <center>

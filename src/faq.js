@@ -32,7 +32,7 @@ function Faq() {
 
       <div className="App">
         <header className="App-header">
-          <h3 >Frequently Asked Questions</h3>
+        <h3 style={{marginBottom:5}}>Frequently Asked Questions</h3>
 
           <BrowserView>
             <div>
