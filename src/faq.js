@@ -32,7 +32,7 @@ function Faq() {
 
       <div className="App">
         <header className="App-header">
-        <h3 style={{marginBottom:5}}>Frequently Asked Questions</h3>
+          <h3 style={{ marginBottom: 5 }}>Frequently Asked Questions</h3>
 
           <BrowserView>
             <div>
@@ -44,14 +44,19 @@ function Faq() {
                     <p><font size={2}>Although <a href="https://bit.ly/3brUpwK" target='_blank'>Baylor University</a> and other schools provide this data for their communities, Texas Tech has not publicized the number of tests performed so there is no official positivity rate. If this is something you'd like to see, reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
+                  <button onClick={() => setIsSC2Open(!isSC2Open)} class="accordion"><center>Are the quarantine dorms full?</center></button>
+                  <div class={isSC2Open ? "" : "panel"}>
+                    {/* <p><font size={2}><a href="https://bit.ly/2FbJBXp" target='_blank'>The University of Alabama</a> provides this data for its school system, but Texas Tech does not provide any data for the capacity of the quarantine dorms and isolation dorms, nor their current occupancy levels. If you think this missing data is important, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p> */}
+                    <p><font size={2}>
+                      The quarantine and isolation dorms are currently full, according to an internal email from the Managing Director of University Student Housing.
+                      Students were once able to be moved into a quarantine or isolation dorm within 1-3 hours, but as Thursday, September 4, a student and their roommate must stay in their dorm while waiting 36-48 hours for hotel accomodations.
+                      The university is working to provide more hotel room availability so non-positive residents won't have to share restrooms or common areas with COVID-positive students.
+                      If you think the university should provide exact counts of COVID dorm and COVID hotel room occupancies, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
+                  </div>
+
                   <button onClick={() => setIsSC2Open(!isSC2Open)} class="accordion"><center>Why aren't there updates during the weekend?</center></button>
                   <div class={isSC2Open ? "" : "panel"}>
                     <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" target='_blank'>Texas State University</a> and other schools do, email <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
-                  </div>
-
-                  <button onClick={() => setIsSC3Open(!isSC3Open)} class="accordion"><center>How are the quarantine capacity levels?</center></button>
-                  <div class={isSC3Open ? "" : "panel"}>
-                    <p><font size={2}><a href="https://bit.ly/2FbJBXp" target='_blank'>The University of Alabama</a> provides this data for its school system, but Texas Tech does not provide any data for the capacity of the quarantine dorms and isolation dorms, nor their current occupancy levels. If you think this missing data is important, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC4Open(!isSC4Open)} class="accordion"><center>How accurate is this data?</center></button>
@@ -120,14 +125,19 @@ function Faq() {
                     <p><font size={2}>Although <a href="https://bit.ly/3brUpwK" target='_blank'>Baylor University</a> and other schools provide this data for their communities, Texas Tech has not publicized the number of tests performed so there is no official positivity rate. If this is something you'd like to see, reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
-                  <button onClick={() => setIsSC2Open(!isSC2Open)} class="accordion"><center>Why aren't there updates during the weekend?</center></button>
+                  <button onClick={() => setIsSC2Open(!isSC2Open)} class="accordion"><center>How are the quarantine dorm capacity levels?</center></button>
                   <div class={isSC2Open ? "" : "panel"}>
-                    <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" target='_blank'>Texas State University</a> and other schools do, email <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
+                    {/* <p><font size={2}><a href="https://bit.ly/2FbJBXp" target='_blank'>The University of Alabama</a> provides this data for its school system, but Texas Tech does not provide any data for the capacity of the quarantine dorms and isolation dorms, nor their current occupancy levels. If you think this missing data is important, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p> */}
+                    <p><font size={2}>
+                      The quarantine and isolation dorms are currently full, according to an internal email from the Managing Director of University Student Housing.
+                      Students were once able to be moved into a quarantine or isolation dorm within 1-3 hours, but as Thursday, September 4, a student and their roommate must stay in their dorm while waiting 36-48 hours for hotel accomodations.
+                      The university is working to provide more hotel room availability so non-positive residents won't have to share restrooms or common areas with COVID-positive students.
+                      If you think the university should provide exact counts of COVID dorm and COVID hotel room occupancies, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
                   </div>
 
-                  <button onClick={() => setIsSC3Open(!isSC3Open)} class="accordion"><center>How are the quarantine dorm capacity levels?</center></button>
+                  <button onClick={() => setIsSC3Open(!isSC3Open)} class="accordion"><center>Why aren't there updates during the weekend?</center></button>
                   <div class={isSC3Open ? "" : "panel"}>
-                    <p><font size={2}><a href="https://bit.ly/2FbJBXp" target='_blank'>The University of Alabama</a> provides this data for its school system, but Texas Tech does not provide any data for the capacity of the quarantine dorms and isolation dorms, nor their current occupancy levels. If you think this missing data is important, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
+                    <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" target='_blank'>Texas State University</a> and other schools do, email <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC4Open(!isSC4Open)} class="accordion" target='_blank'><center>How accurate is this data?</center></button>

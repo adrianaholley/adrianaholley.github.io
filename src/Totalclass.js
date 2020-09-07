@@ -1,12 +1,9 @@
-import React, { Component, useState } from 'react';
-import { Checkbox, Appbar, Grid } from '@material-ui/core';
-import { Tooltip, CartesianGrid, Line, LabelList, Legend, Bar, LineChart, ComposedChart, XAxis, YAxis, ResponsiveContainer } from "recharts";
-import { BrowserView, MobileView } from "react-device-detect";
-import { FormControlLabel, Switch } from '@material-ui/core';
-import { Container, Row, Col, Input } from "reactstrap";
-import { red } from '@material-ui/core/colors';
+import { FormControlLabel, Grid, Switch } from '@material-ui/core';
+import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
-
+import { BrowserView, MobileView } from "react-device-detect";
+import React, { Component } from 'react';
+import { Bar, CartesianGrid, ComposedChart, LabelList, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const totaldata = [
     {
@@ -143,10 +140,9 @@ const totaldata = [
     },
 ];
 
-
 const RedSwitch = withStyles({
     switchBase: {
-        color: red[400],
+        color: grey[300],
         '&$checked': {
             color: red[700],
         },
@@ -163,14 +159,10 @@ class Totalclass extends Component {
         super(props);
         this.state = {
             Sept4: true,
-            Sept3: true,
-            Sept2: true,
-            totaldata: {}
+            totaldata: {},
+            LogView: true
         };
     }
-
-
-
 
     render() {
         return (
@@ -187,44 +179,32 @@ class Totalclass extends Component {
                 <center>
                     <div>
                         <BrowserView>
-                            <FormControlLabel control={<RedSwitch checked={this.state.Sept4} onChange={() => this.setState({ Sept4: !this.state.Sept4 })} name="Sept4" />} label="Show projections from Friday, Sept. 4 and Friday, Aug. 28" />
+                            <FormControlLabel control={<RedSwitch checked={this.state.Sept4} onChange={() => this.setState({ Sept4: !this.state.Sept4 })} name="Sept4" />} label="Add projections" />
+                            <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
                             <ResponsiveContainer width={'65%'} height={"65%"} aspect='2.2'>
                                 <ComposedChart data={totaldata} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
                                     <CartesianGrid />
                                     <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                                    <YAxis fontSize="12" />
+                                    {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 150']} fontSize="12" />)}
                                     <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize="12" /></Bar>
                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />) : ("")}
-                                    {/* {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")} */}
                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
-                                    {/* {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug26" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug25" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                     <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                 </ComposedChart>
                             </ResponsiveContainer>
                         </BrowserView>
 
                         <MobileView>
-                            <FormControlLabel control={<RedSwitch checked={this.state.Sept4} onChange={() => this.setState({ Sept4: !this.state.Sept4 })} name="Sept4" />} />
-                            <a><font size="2">Show projections from Friday, Sept. 4 and Friday, Aug. 28 </font></a>
-
+                            <FormControlLabel control={<RedSwitch checked={this.state.Sept4} onChange={() => this.setState({ Sept4: !this.state.Sept4 })} name="Sept4" />} label="Add projections" />
+                            <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
                             <ResponsiveContainer width={'99%'} height={"99%"} aspect='1'>
                                 <ComposedChart data={totaldata} margin={{ top: 0, right: 20, bottom: 0, left: -10 }}>
                                     <CartesianGrid />
                                     <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                                    <YAxis fontSize="12" />
+                                    {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 150']} fontSize="12" />)}
                                     <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize="7" /></Bar>
                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" />) : ("")}
-                                    {/* {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept2" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Sept1" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug31" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")} */}
                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug28" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
-                                    {/* {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug26" dot={false} stroke="#666666" strokeDasharray="3 3" />): ("")}
-                                     {this.state.Sept4 ? (<Line type="monotone" dataKey="Aug25" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                     <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                 </ComposedChart>
                             </ResponsiveContainer>
@@ -248,15 +228,17 @@ class Totalclass extends Component {
                                             <li>September 9: Census Date for Texas Tech<br /></li>
                                             <li>September 9: Last day to drop a course and have charges removed<br /></li>
                                             <li>September 12: First football game, played at home</li>
-                                            <li>September 14: One week after Labor Day<br /></li>
                                             <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
                                         </p></font>
                                     </Grid>
                                     <Grid item xs>
-                                        <h4>What are these curves?</h4>
+                                        <h4>How are projections made?</h4>
                                         <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                                        <h4>Why are there so many?</h4>
-                                        <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
+                                        <h4>Why are there two?</h4>
+                                        <p><font size="4">A new projection is generated when a count update is released for the day. The <b>solid</b> line is the most recent projection, and the <b>dashed</b> line the projection from one week before. </font></p>
+                                        <h4>What is a logarithmic sclae?</h4>
+                                        <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
+
                                     </Grid>
                                 </Grid>
                             </div>
@@ -277,13 +259,14 @@ class Totalclass extends Component {
                                     <li>September 9: Census Date for Texas Tech<br /></li>
                                     <li>September 9: Last day to drop a course and have charges removed<br /></li>
                                     <li>September 12: First football game, played at home</li>
-                                    <li>September 14: One week after Labor Day<br /></li>
                                     <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
                                 </p></font>
                                 <h4>What are these curves?</h4>
                                 <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
                                 <h4>Why are there so many?</h4>
                                 <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
+                                <h4>What is a logarithmic sclae?</h4>
+                                <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
                             </div>
                         </MobileView>
                     </div>
