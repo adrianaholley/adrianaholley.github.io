@@ -532,7 +532,7 @@ class Activepage extends Component {
                                         <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
                                         <h4>Why are there two?</h4>
                                         <p><font size="4">A new projection is generated when a count update is released for the day. The <b>solid</b> line is the most recent projection, and the <b>dashed</b> line the projection from one week before. </font></p>
-                                        <h4>What is a logarithmic sclae?</h4>
+                                        <h4>What is logarithmic sclae?</h4>
                                         <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
 
                                     </Grid>
@@ -561,7 +561,7 @@ class Activepage extends Component {
                                 <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
                                 <h4>Why are there so many?</h4>
                                 <p><font size="4">A new curve is calculated each day there is a case count update. The <b>solid</b> curve is the most recent projection, and the <b>dashed</b> curves are projections made on previous dates</font>    </p>
-                                <h4>What is a logarithmic sclae?</h4>
+                                <h4>What is logarithmic sclae?</h4>
                                 <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
                             </div>
                         </MobileView>
