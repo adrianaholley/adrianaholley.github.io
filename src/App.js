@@ -28,7 +28,7 @@ function App() {
                     <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
                     <Grid item xs={5}>
                       <div style={{ paddingInlineEnd: 200 }}>
-                        <Link style={{ textDecoration: 'none' }} to="/total">
+                        <Link style={{ textDecoration: 'none' }} to="/">
                           <p style={{ fontFamily: "Georgia" }}>
                             <font size="5" color="#333333">
                               &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
