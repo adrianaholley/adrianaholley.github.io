@@ -25,10 +25,12 @@ function App() {
               <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
                 <Toolbar>
                   <Grid container justify={"center"} alignItems={"center"}>
-                    <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
+                    <Link style={{ textDecoration: 'none' }} to="/total">
+                      <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
+                    </Link>
                     <Grid item xs={5}>
                       <div style={{ paddingInlineEnd: 200 }}>
-                        <Link style={{ textDecoration: 'none' }} to="/">
+                        <Link style={{ textDecoration: 'none' }} to="/total">
                           <p style={{ fontFamily: "Georgia" }}>
                             <font size="5" color="#333333">
                               &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
@@ -88,14 +90,18 @@ function App() {
               <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
                 <Toolbar>
                   <Grid container justify={"center"} alignItems={"center"}>
-                    <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
+                    <Link style={{ textDecoration: 'none' }} to="/total">
+                      <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
+                    </Link>
                     <Grid item xs={5}>
                       <div style={{ paddingInlineEnd: 0 }}>
-                        <p style={{ fontFamily: "Georgia" }}>
-                          <font size="2" color="#333333">
-                            &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
-                      </font>
-                        </p>
+                        <Link style={{ textDecoration: 'none' }} to="/total">
+                          <p style={{ fontFamily: "Georgia" }}>
+                            <font size="2" color="#333333">
+                              &nbsp;Coronavirus (COVID-19) Dashboard
+                            </font>
+                          </p>
+                        </Link>
                       </div>
                     </Grid>
                     <Grid item xs>
@@ -103,7 +109,7 @@ function App() {
                         <p style={{ fontStretch: "condensed" }}>
                           <font size="2" color="#555555">
                             <b>
-                              Total
+                              Total&nbsp;&nbsp;&nbsp;
                           </b>
                           </font>
                         </p>
@@ -113,7 +119,7 @@ function App() {
                       <Link style={{ textDecoration: 'none' }} to="/active">
                         <p style={{ fontStretch: "condensed" }}>
                           <font size="2" color="#555555">
-                            <b>Active</b>
+                            <b>Active&nbsp;&nbsp;&nbsp;</b>
                           </font>
                         </p>
                       </Link>
@@ -122,7 +128,7 @@ function App() {
                       <Link style={{ textDecoration: 'none' }} to="/faq">
                         <p style={{ fontStretch: "condensed" }}>
                           <font size="2" color="#555555">
-                            <b>FAQ</b>
+                            <b>FAQ&nbsp;&nbsp;</b>
                           </font>
                         </p>
                       </Link>
@@ -147,9 +153,9 @@ function App() {
           <Switch>
             <Route exact path="/"><Redirect to="/total" /></Route>
             <Route path="/total"><Totalclass /></Route>
-              <Route path="/active"><Activepage /></Route>
-              <Route path="/faq"><Faq /></Route>
-              <Route path="/contact"><Contact /></Route>
+            <Route path="/active"><Activepage /></Route>
+            <Route path="/faq"><Faq /></Route>
+            <Route path="/contact"><Contact /></Route>
           </Switch>
         </HashRouter>
       </header>

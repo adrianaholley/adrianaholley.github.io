@@ -1,4 +1,4 @@
-import { FormControlLabel, Grid, Switch } from '@material-ui/core';
+import { FormControlLabel, Grid, Radio, Switch } from '@material-ui/core';
 import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 import { BrowserView, MobileView } from "react-device-detect";
@@ -418,16 +418,43 @@ const RedSwitch = withStyles({
     track: {},
 })(Switch);
 
+const RedRadio = withStyles({
+    root: {
+        color: grey[700],
+        '&$checked': {
+            color: red[700],
+        },
+        '&$checked + $track': {
+            backgroundColor: red[700],
+        },
+    },
+    checked: {},
+    track: {},
+})(Radio);
+
 class Totalclass extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
+            name: "React",
             OneWeek: true,
             TwoWeeks: true,
             data: {},
             LogView: true
         };
     }
+
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //       name: "React"
+    //     };
+    //     this.onChangeValue = this.onChangeValue.bind(this);
+    //   }
+    
+      onChangeValue(event) {
+        console.log(event.target.value);
+      }
 
     render() {
         return (
@@ -444,6 +471,8 @@ class Totalclass extends Component {
                 <center>
                     <div>
                         <BrowserView>
+
+
                             <FormControlLabel control={<RedSwitch checked={this.state.OneWeek} onChange={() => this.setState({ OneWeek: !this.state.OneWeek })} name="OneWeek" />} label="Add projections" />
                             {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ TwoWeeks: this.state.TwoWeeks })} name="TwoWeeks" />} label="Add projection - 2 Weeks" /> */}
                             <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
