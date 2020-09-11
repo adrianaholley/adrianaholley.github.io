@@ -13,6 +13,7 @@ import Faq from './Faq.js';
 import Contact from './Contact.js';
 import Totalclass from './Totalclass.js';
 import Activepage from './Activepage.js';
+import TotalA11yclass from './TotalA11yclass.js'
 
 function App() {
   return (
@@ -109,7 +110,7 @@ function App() {
                         <p style={{ fontStretch: "condensed" }}>
                           <font size="2" color="#555555">
                             <b>
-                              Total&nbsp;&nbsp;&nbsp;
+                              Total&nbsp;&nbsp;
                           </b>
                           </font>
                         </p>
@@ -119,7 +120,7 @@ function App() {
                       <Link style={{ textDecoration: 'none' }} to="/active">
                         <p style={{ fontStretch: "condensed" }}>
                           <font size="2" color="#555555">
-                            <b>Active&nbsp;&nbsp;&nbsp;</b>
+                            <b>Active&nbsp;&nbsp;</b>
                           </font>
                         </p>
                       </Link>
@@ -153,6 +154,7 @@ function App() {
           <Switch>
             <Route exact path="/"><Redirect to="/total" /></Route>
             <Route path="/total"><Totalclass /></Route>
+            <Route path="/a11y"><TotalA11yclass /></Route>
             <Route path="/active"><Activepage /></Route>
             <Route path="/faq"><Faq /></Route>
             <Route path="/contact"><Contact /></Route>
