@@ -9,392 +9,405 @@ const zeroweeks = [
 	{
 		"name": "Aug 3",
 		"Active": 18,
+		"Sept11": 13,
 		"Sept10": 12,
 		"Sept9": 11,
 		"Sept8": 11,
 		"Sept7": 11,
-		"Sept4": 11,
-		"Sept3": 11
+		"Sept4": 11
 	},
 	{
 		"name": "Aug 4",
 		"nodata" : 0,
+		"Sept11": 14,
 		"Sept10": 13,
 		"Sept9": 12,
 		"Sept8": 12,
 		"Sept7": 12,
-		"Sept4": 12,
-		"Sept3": 12
+		"Sept4": 12
 	},
 	{
 		"name": "Aug 5",
 		"nodata" : 0,
+		"Sept11": 16,
 		"Sept10": 15,
 		"Sept9": 14,
 		"Sept8": 14,
 		"Sept7": 14,
-		"Sept4": 14,
-		"Sept3": 14
+		"Sept4": 14
 	},
 	{
 		"name": "Aug 6",
 		"nodata" : 0,
+		"Sept11": 17,
 		"Sept10": 16,
 		"Sept9": 16,
 		"Sept8": 15,
 		"Sept7": 15,
-		"Sept4": 15,
-		"Sept3": 15
+		"Sept4": 15
 	},
 	{
 		"name": "Aug 7",
 		"nodata" : 0,
+		"Sept11": 19,
 		"Sept10": 18,
 		"Sept9": 18,
 		"Sept8": 17,
 		"Sept7": 17,
-		"Sept4": 17,
-		"Sept3": 17
+		"Sept4": 17
 	},
 	{
 		"name": "Aug 8",
 		"nodata" : 0,
+		"Sept11": 21,
 		"Sept10": 20,
 		"Sept9": 20,
 		"Sept8": 19,
 		"Sept7": 19,
-		"Sept4": 19,
-		"Sept3": 19
+		"Sept4": 19
 	},
 	{
 		"name": "Aug 9",
 		"nodata" : 0,
+		"Sept11": 24,
 		"Sept10": 23,
 		"Sept9": 22,
 		"Sept8": 22,
 		"Sept7": 22,
-		"Sept4": 22,
-		"Sept3": 22
+		"Sept4": 22
 	},
 	{
 		"name": "Aug 10",
 		"Active": 25,
+		"Sept11": 27,
 		"Sept10": 25,
 		"Sept9": 25,
 		"Sept8": 24,
 		"Sept7": 24,
-		"Sept4": 24,
-		"Sept3": 24
+		"Sept4": 24
 	},
 	{
 		"name": "Aug 11",
 		"nodata" : 0,
+		"Sept11": 30,
 		"Sept10": 28,
 		"Sept9": 28,
 		"Sept8": 27,
 		"Sept7": 27,
-		"Sept4": 27,
-		"Sept3": 27
+		"Sept4": 27
 	},
 	{
 		"name": "Aug 12",
 		"nodata" : 0,
+		"Sept11": 33,
 		"Sept10": 32,
 		"Sept9": 31,
 		"Sept8": 31,
 		"Sept7": 30,
-		"Sept4": 30,
-		"Sept3": 31
+		"Sept4": 30
 	},
 	{
 		"name": "Aug 13",
 		"nodata" : 0,
+		"Sept11": 36,
 		"Sept10": 35,
 		"Sept9": 35,
 		"Sept8": 34,
 		"Sept7": 34,
-		"Sept4": 34,
-		"Sept3": 34
+		"Sept4": 34
 	},
 	{
 		"name": "Aug 14",
 		"nodata" : 0,
+		"Sept11": 41,
 		"Sept10": 39,
 		"Sept9": 39,
 		"Sept8": 38,
 		"Sept7": 38,
-		"Sept4": 38,
-		"Sept3": 38
+		"Sept4": 38
 	},
 	{
 		"name": "Aug 15",
 		"nodata" : 0,
+		"Sept11": 45,
 		"Sept10": 44,
 		"Sept9": 43,
 		"Sept8": 43,
 		"Sept7": 43,
-		"Sept4": 43,
-		"Sept3": 43
+		"Sept4": 43
 	},
 	{
 		"name": "Aug 16",
 		"nodata" : 0,
+		"Sept11": 50,
 		"Sept10": 49,
 		"Sept9": 49,
 		"Sept8": 48,
 		"Sept7": 48,
-		"Sept4": 48,
-		"Sept3": 48
+		"Sept4": 48
 	},
 	{
 		"name": "Aug 17",
 		"Active": 38,
+		"Sept11": 56,
 		"Sept10": 55,
 		"Sept9": 54,
 		"Sept8": 54,
 		"Sept7": 54,
-		"Sept4": 54,
-		"Sept3": 54
+		"Sept4": 54
 	},
 	{
 		"name": "Aug 18",
 		"nodata" : 0,
+		"Sept11": 62,
 		"Sept10": 61,
 		"Sept9": 61,
 		"Sept8": 61,
 		"Sept7": 61,
-		"Sept4": 61,
-		"Sept3": 61
+		"Sept4": 61
 	},
 	{
 		"name": "Aug 19",
 		"nodata" : 0,
+		"Sept11": 69,
 		"Sept10": 68,
 		"Sept9": 68,
 		"Sept8": 68,
 		"Sept7": 68,
-		"Sept4": 68,
-		"Sept3": 68
+		"Sept4": 68
 	},
 	{
 		"name": "Aug 20",
 		"nodata" : 0,
+		"Sept11": 76,
 		"Sept10": 76,
 		"Sept9": 77,
 		"Sept8": 77,
 		"Sept7": 77,
-		"Sept4": 77,
-		"Sept3": 76
+		"Sept4": 77
 	},
 	{
 		"name": "Aug 21",
 		"Active": 53,
+		"Sept11": 85,
 		"Sept10": 85,
 		"Sept9": 86,
 		"Sept8": 86,
 		"Sept7": 86,
-		"Sept4": 86,
-		"Sept3": 86
+		"Sept4": 86
 	},
 	{
 		"name": "Aug 22",
 		"nodata" : 0,
+		"Sept11": 94,
 		"Sept10": 95,
 		"Sept9": 96,
 		"Sept8": 97,
 		"Sept7": 97,
-		"Sept4": 97,
-		"Sept3": 96
+		"Sept4": 97
 	},
 	{
 		"name": "Aug 23",
 		"nodata" : 0,
+		"Sept11": 105,
 		"Sept10": 106,
 		"Sept9": 108,
 		"Sept8": 108,
 		"Sept7": 109,
-		"Sept4": 109,
-		"Sept3": 107
+		"Sept4": 109
 	},
 	{
 		"name": "Aug 24",
 		"nodata" : 0,
+		"Sept11": 117,
 		"Sept10": 119,
 		"Sept9": 121,
 		"Sept8": 122,
 		"Sept7": 122,
-		"Sept4": 122,
-		"Sept3": 120
+		"Sept4": 122
 	},
 	{
 		"name": "Aug 25",
 		"Active": 87,
+		"Sept11": 130,
 		"Sept10": 133,
 		"Sept9": 135,
 		"Sept8": 136,
 		"Sept7": 137,
-		"Sept4": 137,
-		"Sept3": 135
+		"Sept4": 137
 	},
 	{
 		"name": "Aug 26",
 		"Active": 146,
+		"Sept11": 144,
 		"Sept10": 148,
 		"Sept9": 151,
 		"Sept8": 153,
 		"Sept7": 154,
-		"Sept4": 154,
-		"Sept3": 151
+		"Sept4": 154
 	},
 	{
 		"name": "Aug 27",
 		"nodata" : 0,
+		"Sept11": 160,
 		"Sept10": 166,
 		"Sept9": 169,
 		"Sept8": 172,
 		"Sept7": 173,
-		"Sept4": 172,
-		"Sept3": 170
+		"Sept4": 172
 	},
 	{
 		"name": "Aug 28",
 		"Active": 176,
+		"Sept11": 178,
 		"Sept10": 185,
 		"Sept9": 190,
 		"Sept8": 193,
 		"Sept7": 194,
-		"Sept4": 193,
-		"Sept3": 190
+		"Sept4": 193
 	},
 	{
 		"name": "Aug 29",
 		"nodata" : 0,
+		"Sept11": 198,
 		"Sept10": 207,
 		"Sept9": 212,
 		"Sept8": 216,
 		"Sept7": 218,
-		"Sept4": 217,
-		"Sept3": 213
+		"Sept4": 217
 	},
 	{
 		"name": "Aug 30",
 		"nodata" : 0,
+		"Sept11": 220,
 		"Sept10": 231,
 		"Sept9": 238,
 		"Sept8": 243,
 		"Sept7": 244,
-		"Sept4": 244,
-		"Sept3": 239
+		"Sept4": 244
 	},
 	{
 		"name": "Aug 31",
 		"Active": 268,
+		"Sept11": 245,
 		"Sept10": 258,
 		"Sept9": 267,
 		"Sept8": 272,
 		"Sept7": 274,
-		"Sept4": 273,
-		"Sept3": 268
+		"Sept4": 273
 	},
 	{
 		"name": "Sept 1",
 		"Active": 418,
+		"Sept11": 272,
 		"Sept10": 288,
 		"Sept9": 299,
 		"Sept8": 306,
 		"Sept7": 308,
-		"Sept4": 307,
-		"Sept3": 300
+		"Sept4": 307
 	},
 	{
 		"name": "Sept 2",
 		"Active": 453,
+		"Sept11": 303,
 		"Sept10": 321,
 		"Sept9": 334,
 		"Sept8": 343,
 		"Sept7": 346,
-		"Sept4": 345,
-		"Sept3": 336
+		"Sept4": 345
 	},
 	{
 		"name": "Sept 3",
 		"Active": 477,
+		"Sept11": 336,
 		"Sept10": 359,
 		"Sept9": 375,
 		"Sept8": 385,
 		"Sept7": 388,
-		"Sept4": 387,
-		"Sept3": 377
+		"Sept4": 387
 	},
 	{
 		"name": "Sept 4",
 		"Active": 490,
+		"Sept11": 374,
 		"Sept10": 401,
 		"Sept9": 420,
 		"Sept8": 432,
 		"Sept7": 436,
-		"Sept4": 434,
-		"Sept3": 423
+		"Sept4": 434
 	},
 	{
 		"name": "Sept 5",
 		"nodata" : 0,
+		"Sept11": 416,
 		"Sept10": 447,
 		"Sept9": 470,
 		"Sept8": 484,
 		"Sept7": 489,
-		"Sept4": 487,
-		"Sept3": 474
+		"Sept4": 487
 	},
 	{
 		"name": "Sept 6",
 		"nodata" : 0,
+		"Sept11": 462,
 		"Sept10": 500,
 		"Sept9": 526,
 		"Sept8": 543,
 		"Sept7": 549,
-		"Sept4": 547,
-		"Sept3": 531
+		"Sept4": 547
 	},
 	{
 		"name": "Sept 7",
 		"Active": 626,
+		"Sept11": 513,
 		"Sept10": 558,
 		"Sept9": 590,
 		"Sept8": 610,
 		"Sept7": 616,
-		"Sept4": 614,
-		"Sept3": 595
+		"Sept4": 614
 	},
 	{
 		"name": "Sept 8",
 		"Active": 650,
+		"Sept11": 571,
 		"Sept10": 623,
 		"Sept9": 661,
 		"Sept8": 684,
 		"Sept7": 692,
-		"Sept4": 689,
-		"Sept3": 667
+		"Sept4": 689
 	},
 	{
 		"name": "Sept 9",
 		"Active": 612,
+		"Sept11": 634,
 		"Sept10": 696,
 		"Sept9": 740,
 		"Sept8": 768,
 		"Sept7": 777,
-		"Sept4": 773,
-		"Sept3": 748
+		"Sept4": 773
 	},
 	{
 		"name": "Sept 10",
 		"Active": 543,
+		"Sept11": 705,
 		"Sept10": 777,
 		"Sept9": 829,
 		"Sept8": 861,
 		"Sept7": 872,
-		"Sept4": 868,
-		"Sept3": 839
+		"Sept4": 868
+	},
+	{
+		"name": "Sept 11",
+		"Active": 426,
+		"Sept11": 784,
+		"Sept10": 868,
+		"Sept9": 928,
+		"Sept8": 967,
+		"Sept7": 979,
+		"Sept4": 974
+	},
+	{
+		"name": null
 	}
 ];
 
@@ -402,462 +415,472 @@ const oneweek = [
 	{
 		"name": "Aug 3",
 		"Active": 18,
+		"Sept11": 13,
 		"Sept10": 12,
 		"Sept9": 11,
 		"Sept8": 11,
 		"Sept7": 11,
-		"Sept4": 11,
-		"Sept3": 11
+		"Sept4": 11
 	},
 	{
 		"name": "Aug 4",
 		"nodata" : 0,
+		"Sept11": 14,
 		"Sept10": 13,
 		"Sept9": 12,
 		"Sept8": 12,
 		"Sept7": 12,
-		"Sept4": 12,
-		"Sept3": 12
+		"Sept4": 12
 	},
 	{
 		"name": "Aug 5",
 		"nodata" : 0,
+		"Sept11": 16,
 		"Sept10": 15,
 		"Sept9": 14,
 		"Sept8": 14,
 		"Sept7": 14,
-		"Sept4": 14,
-		"Sept3": 14
+		"Sept4": 14
 	},
 	{
 		"name": "Aug 6",
 		"nodata" : 0,
+		"Sept11": 17,
 		"Sept10": 16,
 		"Sept9": 16,
 		"Sept8": 15,
 		"Sept7": 15,
-		"Sept4": 15,
-		"Sept3": 15
+		"Sept4": 15
 	},
 	{
 		"name": "Aug 7",
 		"nodata" : 0,
+		"Sept11": 19,
 		"Sept10": 18,
 		"Sept9": 18,
 		"Sept8": 17,
 		"Sept7": 17,
-		"Sept4": 17,
-		"Sept3": 17
+		"Sept4": 17
 	},
 	{
 		"name": "Aug 8",
 		"nodata" : 0,
+		"Sept11": 21,
 		"Sept10": 20,
 		"Sept9": 20,
 		"Sept8": 19,
 		"Sept7": 19,
-		"Sept4": 19,
-		"Sept3": 19
+		"Sept4": 19
 	},
 	{
 		"name": "Aug 9",
 		"nodata" : 0,
+		"Sept11": 24,
 		"Sept10": 23,
 		"Sept9": 22,
 		"Sept8": 22,
 		"Sept7": 22,
-		"Sept4": 22,
-		"Sept3": 22
+		"Sept4": 22
 	},
 	{
 		"name": "Aug 10",
 		"Active": 25,
+		"Sept11": 27,
 		"Sept10": 25,
 		"Sept9": 25,
 		"Sept8": 24,
 		"Sept7": 24,
-		"Sept4": 24,
-		"Sept3": 24
+		"Sept4": 24
 	},
 	{
 		"name": "Aug 11",
 		"nodata" : 0,
+		"Sept11": 30,
 		"Sept10": 28,
 		"Sept9": 28,
 		"Sept8": 27,
 		"Sept7": 27,
-		"Sept4": 27,
-		"Sept3": 27
+		"Sept4": 27
 	},
 	{
 		"name": "Aug 12",
 		"nodata" : 0,
+		"Sept11": 33,
 		"Sept10": 32,
 		"Sept9": 31,
 		"Sept8": 31,
 		"Sept7": 30,
-		"Sept4": 30,
-		"Sept3": 31
+		"Sept4": 30
 	},
 	{
 		"name": "Aug 13",
 		"nodata" : 0,
+		"Sept11": 36,
 		"Sept10": 35,
 		"Sept9": 35,
 		"Sept8": 34,
 		"Sept7": 34,
-		"Sept4": 34,
-		"Sept3": 34
+		"Sept4": 34
 	},
 	{
 		"name": "Aug 14",
 		"nodata" : 0,
+		"Sept11": 41,
 		"Sept10": 39,
 		"Sept9": 39,
 		"Sept8": 38,
 		"Sept7": 38,
-		"Sept4": 38,
-		"Sept3": 38
+		"Sept4": 38
 	},
 	{
 		"name": "Aug 15",
 		"nodata" : 0,
+		"Sept11": 45,
 		"Sept10": 44,
 		"Sept9": 43,
 		"Sept8": 43,
 		"Sept7": 43,
-		"Sept4": 43,
-		"Sept3": 43
+		"Sept4": 43
 	},
 	{
 		"name": "Aug 16",
 		"nodata" : 0,
+		"Sept11": 50,
 		"Sept10": 49,
 		"Sept9": 49,
 		"Sept8": 48,
 		"Sept7": 48,
-		"Sept4": 48,
-		"Sept3": 48
+		"Sept4": 48
 	},
 	{
 		"name": "Aug 17",
 		"Active": 38,
+		"Sept11": 56,
 		"Sept10": 55,
 		"Sept9": 54,
 		"Sept8": 54,
 		"Sept7": 54,
-		"Sept4": 54,
-		"Sept3": 54
+		"Sept4": 54
 	},
 	{
 		"name": "Aug 18",
 		"nodata" : 0,
+		"Sept11": 62,
 		"Sept10": 61,
 		"Sept9": 61,
 		"Sept8": 61,
 		"Sept7": 61,
-		"Sept4": 61,
-		"Sept3": 61
+		"Sept4": 61
 	},
 	{
 		"name": "Aug 19",
 		"nodata" : 0,
+		"Sept11": 69,
 		"Sept10": 68,
 		"Sept9": 68,
 		"Sept8": 68,
 		"Sept7": 68,
-		"Sept4": 68,
-		"Sept3": 68
+		"Sept4": 68
 	},
 	{
 		"name": "Aug 20",
 		"nodata" : 0,
+		"Sept11": 76,
 		"Sept10": 76,
 		"Sept9": 77,
 		"Sept8": 77,
 		"Sept7": 77,
-		"Sept4": 77,
-		"Sept3": 76
+		"Sept4": 77
 	},
 	{
 		"name": "Aug 21",
 		"Active": 53,
+		"Sept11": 85,
 		"Sept10": 85,
 		"Sept9": 86,
 		"Sept8": 86,
 		"Sept7": 86,
-		"Sept4": 86,
-		"Sept3": 86
+		"Sept4": 86
 	},
 	{
 		"name": "Aug 22",
 		"nodata" : 0,
+		"Sept11": 94,
 		"Sept10": 95,
 		"Sept9": 96,
 		"Sept8": 97,
 		"Sept7": 97,
-		"Sept4": 97,
-		"Sept3": 96
+		"Sept4": 97
 	},
 	{
 		"name": "Aug 23",
 		"nodata" : 0,
+		"Sept11": 105,
 		"Sept10": 106,
 		"Sept9": 108,
 		"Sept8": 108,
 		"Sept7": 109,
-		"Sept4": 109,
-		"Sept3": 107
+		"Sept4": 109
 	},
 	{
 		"name": "Aug 24",
 		"nodata" : 0,
+		"Sept11": 117,
 		"Sept10": 119,
 		"Sept9": 121,
 		"Sept8": 122,
 		"Sept7": 122,
-		"Sept4": 122,
-		"Sept3": 120
+		"Sept4": 122
 	},
 	{
 		"name": "Aug 25",
 		"Active": 87,
+		"Sept11": 130,
 		"Sept10": 133,
 		"Sept9": 135,
 		"Sept8": 136,
 		"Sept7": 137,
-		"Sept4": 137,
-		"Sept3": 135
+		"Sept4": 137
 	},
 	{
 		"name": "Aug 26",
 		"Active": 146,
+		"Sept11": 144,
 		"Sept10": 148,
 		"Sept9": 151,
 		"Sept8": 153,
 		"Sept7": 154,
-		"Sept4": 154,
-		"Sept3": 151
+		"Sept4": 154
 	},
 	{
 		"name": "Aug 27",
 		"nodata" : 0,
+		"Sept11": 160,
 		"Sept10": 166,
 		"Sept9": 169,
 		"Sept8": 172,
 		"Sept7": 173,
-		"Sept4": 172,
-		"Sept3": 170
+		"Sept4": 172
 	},
 	{
 		"name": "Aug 28",
 		"Active": 176,
+		"Sept11": 178,
 		"Sept10": 185,
 		"Sept9": 190,
 		"Sept8": 193,
 		"Sept7": 194,
-		"Sept4": 193,
-		"Sept3": 190
+		"Sept4": 193
 	},
 	{
 		"name": "Aug 29",
 		"nodata" : 0,
+		"Sept11": 198,
 		"Sept10": 207,
 		"Sept9": 212,
 		"Sept8": 216,
 		"Sept7": 218,
-		"Sept4": 217,
-		"Sept3": 213
+		"Sept4": 217
 	},
 	{
 		"name": "Aug 30",
 		"nodata" : 0,
+		"Sept11": 220,
 		"Sept10": 231,
 		"Sept9": 238,
 		"Sept8": 243,
 		"Sept7": 244,
-		"Sept4": 244,
-		"Sept3": 239
+		"Sept4": 244
 	},
 	{
 		"name": "Aug 31",
 		"Active": 268,
+		"Sept11": 245,
 		"Sept10": 258,
 		"Sept9": 267,
 		"Sept8": 272,
 		"Sept7": 274,
-		"Sept4": 273,
-		"Sept3": 268
+		"Sept4": 273
 	},
 	{
 		"name": "Sept 1",
 		"Active": 418,
+		"Sept11": 272,
 		"Sept10": 288,
 		"Sept9": 299,
 		"Sept8": 306,
 		"Sept7": 308,
-		"Sept4": 307,
-		"Sept3": 300
+		"Sept4": 307
 	},
 	{
 		"name": "Sept 2",
 		"Active": 453,
+		"Sept11": 303,
 		"Sept10": 321,
 		"Sept9": 334,
 		"Sept8": 343,
 		"Sept7": 346,
-		"Sept4": 345,
-		"Sept3": 336
+		"Sept4": 345
 	},
 	{
 		"name": "Sept 3",
 		"Active": 477,
+		"Sept11": 336,
 		"Sept10": 359,
 		"Sept9": 375,
 		"Sept8": 385,
 		"Sept7": 388,
-		"Sept4": 387,
-		"Sept3": 377
+		"Sept4": 387
 	},
 	{
 		"name": "Sept 4",
 		"Active": 490,
+		"Sept11": 374,
 		"Sept10": 401,
 		"Sept9": 420,
 		"Sept8": 432,
 		"Sept7": 436,
-		"Sept4": 434,
-		"Sept3": 423
+		"Sept4": 434
 	},
 	{
 		"name": "Sept 5",
 		"nodata" : 0,
+		"Sept11": 416,
 		"Sept10": 447,
 		"Sept9": 470,
 		"Sept8": 484,
 		"Sept7": 489,
-		"Sept4": 487,
-		"Sept3": 474
+		"Sept4": 487
 	},
 	{
 		"name": "Sept 6",
 		"nodata" : 0,
+		"Sept11": 462,
 		"Sept10": 500,
 		"Sept9": 526,
 		"Sept8": 543,
 		"Sept7": 549,
-		"Sept4": 547,
-		"Sept3": 531
+		"Sept4": 547
 	},
 	{
 		"name": "Sept 7",
 		"Active": 626,
+		"Sept11": 513,
 		"Sept10": 558,
 		"Sept9": 590,
 		"Sept8": 610,
 		"Sept7": 616,
-		"Sept4": 614,
-		"Sept3": 595
+		"Sept4": 614
 	},
 	{
 		"name": "Sept 8",
 		"Active": 650,
+		"Sept11": 571,
 		"Sept10": 623,
 		"Sept9": 661,
 		"Sept8": 684,
 		"Sept7": 692,
-		"Sept4": 689,
-		"Sept3": 667
+		"Sept4": 689
 	},
 	{
 		"name": "Sept 9",
 		"Active": 612,
+		"Sept11": 634,
 		"Sept10": 696,
 		"Sept9": 740,
 		"Sept8": 768,
 		"Sept7": 777,
-		"Sept4": 773,
-		"Sept3": 748
+		"Sept4": 773
 	},
 	{
 		"name": "Sept 10",
 		"Active": 543,
+		"Sept11": 705,
 		"Sept10": 777,
 		"Sept9": 829,
 		"Sept8": 861,
 		"Sept7": 872,
-		"Sept4": 868,
-		"Sept3": 839
+		"Sept4": 868
 	},
 	{
 		"name": "Sept 11",
-		"nodata" : 0,
+		"Active": 426,
+		"Sept11": 784,
 		"Sept10": 868,
 		"Sept9": 928,
 		"Sept8": 967,
 		"Sept7": 979,
-		"Sept4": 974,
-		"Sept3": 940
+		"Sept4": 974
 	},
 	{
 		"name": "Sept 12",
 		"nodata" : 0,
+		"Sept11": 872,
 		"Sept10": 969,
 		"Sept9": 1040,
 		"Sept8": 1085,
 		"Sept7": 1099,
-		"Sept4": 1094,
-		"Sept3": 1054
+		"Sept4": 1094
 	},
 	{
 		"name": "Sept 13",
 		"nodata" : 0,
+		"Sept11": 969,
 		"Sept10": 1082,
 		"Sept9": 1165,
 		"Sept8": 1217,
 		"Sept7": 1234,
-		"Sept4": 1228,
-		"Sept3": 1181
+		"Sept4": 1228
 	},
 	{
 		"name": "Sept 14",
 		"nodata" : 0,
+		"Sept11": 1077,
 		"Sept10": 1209,
 		"Sept9": 1304,
 		"Sept8": 1365,
 		"Sept7": 1385,
-		"Sept4": 1378,
-		"Sept3": 1324
+		"Sept4": 1378
 	},
 	{
 		"name": "Sept 15",
 		"nodata" : 0,
+		"Sept11": 1197,
 		"Sept10": 1350,
 		"Sept9": 1461,
 		"Sept8": 1532,
 		"Sept7": 1555,
-		"Sept4": 1547,
-		"Sept3": 1484
+		"Sept4": 1547
 	},
 	{
 		"name": "Sept 16",
 		"nodata" : 0,
+		"Sept11": 1331,
 		"Sept10": 1508,
 		"Sept9": 1637,
 		"Sept8": 1719,
 		"Sept7": 1746,
-		"Sept4": 1736,
-		"Sept3": 1663
+		"Sept4": 1736
 	},
 	{
 		"name": "Sept 17",
 		"nodata" : 0,
+		"Sept11": 1479,
 		"Sept10": 1684,
 		"Sept9": 1833,
 		"Sept8": 1929,
 		"Sept7": 1960,
-		"Sept4": 1949,
-		"Sept3": 1864
+		"Sept4": 1949
+	},
+	{
+		"name": "Sept 18",
+		"nodata" : 0,
+		"Sept11": 1644,
+		"Sept10": 1880,
+		"Sept9": 2053,
+		"Sept8": 2164,
+		"Sept7": 2200,
+		"Sept4": 2187
 	}
 ]
 
@@ -897,7 +920,7 @@ class Activepage extends Component {
                 </svg>
                 <h1></h1>
                 <h3 style={{ marginBottom: 5 }}>Active Reported Cases</h3>
-                <a><i><font size="2">Last updated Thursday, September 10 at 6:15pm.</font></i></a>
+                <a><i><font size="2">Last updated Friday, September 11 at 6:05pm.</font></i></a>
 
                 <center>
                     <div>
@@ -915,8 +938,8 @@ class Activepage extends Component {
                                         <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                         {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 575']} fontSize="12" />)}
                                         <Bar dataKey="Active" fill="#cc0000"><LabelList dataKey="Active" position="top" fontSize="12" /></Bar>
-                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept10" dot={false} stroke="#666666" />) : ("")}
-                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" />) : ("")}
+                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
                                         <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                     </ComposedChart>
                                 ) : (
@@ -926,8 +949,8 @@ class Activepage extends Component {
                                             <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                             {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 575']} fontSize="12" />)}
                                             <Bar dataKey="Active" fill="#cc0000"><LabelList dataKey="Active" position="top" fontSize="12" /></Bar>
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept10" dot={false} stroke="#666666" />) : ("")}
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" />) : ("")}
+                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
                                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                         </ComposedChart>
 
@@ -952,8 +975,8 @@ class Activepage extends Component {
                                         <Bar dataKey="Active" fill="#cc0000">
                                             <LabelList dataKey="Active" position="top" fontSize="7" />
                                         </Bar>
-                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept10" dot={false} stroke="#666666" />) : ("")}
-                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" />) : ("")}
+                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
                                         <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                     </ComposedChart>
                                 ) : (
@@ -964,8 +987,8 @@ class Activepage extends Component {
                                             <Bar dataKey="Active" fill="#cc0000">
                                                 <LabelList dataKey="Active" position="top" fontSize="7" />
                                             </Bar>
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept10" dot={false} stroke="#666666" />) : ("")}
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept3" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" />) : ("")}
+                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
                                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                         </ComposedChart>
                                     )}
