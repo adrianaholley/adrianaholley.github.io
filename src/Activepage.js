@@ -9,6 +9,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 3",
 		"Active": 18,
+		"Sept14": 14,
 		"Sept11": 13,
 		"Sept10": 12,
 		"Sept9": 11,
@@ -18,7 +19,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 4",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 16,
 		"Sept11": 14,
 		"Sept10": 13,
 		"Sept9": 12,
@@ -28,7 +30,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 5",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 17,
 		"Sept11": 16,
 		"Sept10": 15,
 		"Sept9": 14,
@@ -38,7 +41,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 6",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 19,
 		"Sept11": 17,
 		"Sept10": 16,
 		"Sept9": 16,
@@ -48,7 +52,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 7",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 21,
 		"Sept11": 19,
 		"Sept10": 18,
 		"Sept9": 18,
@@ -58,7 +63,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 8",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 23,
 		"Sept11": 21,
 		"Sept10": 20,
 		"Sept9": 20,
@@ -68,7 +74,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 9",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 26,
 		"Sept11": 24,
 		"Sept10": 23,
 		"Sept9": 22,
@@ -79,6 +86,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 10",
 		"Active": 25,
+		"Sept14": 28,
 		"Sept11": 27,
 		"Sept10": 25,
 		"Sept9": 25,
@@ -88,7 +96,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 11",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 31,
 		"Sept11": 30,
 		"Sept10": 28,
 		"Sept9": 28,
@@ -98,7 +107,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 12",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 35,
 		"Sept11": 33,
 		"Sept10": 32,
 		"Sept9": 31,
@@ -108,7 +118,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 13",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 38,
 		"Sept11": 36,
 		"Sept10": 35,
 		"Sept9": 35,
@@ -118,7 +129,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 14",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 42,
 		"Sept11": 41,
 		"Sept10": 39,
 		"Sept9": 39,
@@ -128,7 +140,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 15",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 47,
 		"Sept11": 45,
 		"Sept10": 44,
 		"Sept9": 43,
@@ -138,7 +151,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 16",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 52,
 		"Sept11": 50,
 		"Sept10": 49,
 		"Sept9": 49,
@@ -149,6 +163,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 17",
 		"Active": 38,
+		"Sept14": 57,
 		"Sept11": 56,
 		"Sept10": 55,
 		"Sept9": 54,
@@ -158,7 +173,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 18",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 63,
 		"Sept11": 62,
 		"Sept10": 61,
 		"Sept9": 61,
@@ -168,7 +184,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 19",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 70,
 		"Sept11": 69,
 		"Sept10": 68,
 		"Sept9": 68,
@@ -178,7 +195,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 20",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 77,
 		"Sept11": 76,
 		"Sept10": 76,
 		"Sept9": 77,
@@ -189,6 +207,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 21",
 		"Active": 53,
+		"Sept14": 85,
 		"Sept11": 85,
 		"Sept10": 85,
 		"Sept9": 86,
@@ -198,7 +217,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 22",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 94,
 		"Sept11": 94,
 		"Sept10": 95,
 		"Sept9": 96,
@@ -208,7 +228,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 23",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 104,
 		"Sept11": 105,
 		"Sept10": 106,
 		"Sept9": 108,
@@ -218,7 +239,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 24",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 115,
 		"Sept11": 117,
 		"Sept10": 119,
 		"Sept9": 121,
@@ -229,6 +251,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 25",
 		"Active": 87,
+		"Sept14": 127,
 		"Sept11": 130,
 		"Sept10": 133,
 		"Sept9": 135,
@@ -239,6 +262,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 26",
 		"Active": 146,
+		"Sept14": 141,
 		"Sept11": 144,
 		"Sept10": 148,
 		"Sept9": 151,
@@ -248,7 +272,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 27",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 156,
 		"Sept11": 160,
 		"Sept10": 166,
 		"Sept9": 169,
@@ -259,6 +284,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 28",
 		"Active": 176,
+		"Sept14": 172,
 		"Sept11": 178,
 		"Sept10": 185,
 		"Sept9": 190,
@@ -268,7 +294,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 29",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 190,
 		"Sept11": 198,
 		"Sept10": 207,
 		"Sept9": 212,
@@ -278,7 +305,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Aug 30",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 210,
 		"Sept11": 220,
 		"Sept10": 231,
 		"Sept9": 238,
@@ -289,6 +317,7 @@ const zeroweeks = [
 	{
 		"name": "Aug 31",
 		"Active": 268,
+		"Sept14": 232,
 		"Sept11": 245,
 		"Sept10": 258,
 		"Sept9": 267,
@@ -299,6 +328,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 1",
 		"Active": 418,
+		"Sept14": 257,
 		"Sept11": 272,
 		"Sept10": 288,
 		"Sept9": 299,
@@ -309,6 +339,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 2",
 		"Active": 453,
+		"Sept14": 284,
 		"Sept11": 303,
 		"Sept10": 321,
 		"Sept9": 334,
@@ -319,6 +350,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 3",
 		"Active": 477,
+		"Sept14": 314,
 		"Sept11": 336,
 		"Sept10": 359,
 		"Sept9": 375,
@@ -329,6 +361,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 4",
 		"Active": 490,
+		"Sept14": 347,
 		"Sept11": 374,
 		"Sept10": 401,
 		"Sept9": 420,
@@ -338,7 +371,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Sept 5",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 383,
 		"Sept11": 416,
 		"Sept10": 447,
 		"Sept9": 470,
@@ -348,7 +382,8 @@ const zeroweeks = [
 	},
 	{
 		"name": "Sept 6",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 423,
 		"Sept11": 462,
 		"Sept10": 500,
 		"Sept9": 526,
@@ -359,6 +394,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 7",
 		"Active": 626,
+		"Sept14": 468,
 		"Sept11": 513,
 		"Sept10": 558,
 		"Sept9": 590,
@@ -369,6 +405,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 8",
 		"Active": 650,
+		"Sept14": 517,
 		"Sept11": 571,
 		"Sept10": 623,
 		"Sept9": 661,
@@ -379,6 +416,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 9",
 		"Active": 612,
+		"Sept14": 571,
 		"Sept11": 634,
 		"Sept10": 696,
 		"Sept9": 740,
@@ -389,6 +427,7 @@ const zeroweeks = [
 	{
 		"name": "Sept 10",
 		"Active": 543,
+		"Sept14": 632,
 		"Sept11": 705,
 		"Sept10": 777,
 		"Sept9": 829,
@@ -399,12 +438,46 @@ const zeroweeks = [
 	{
 		"name": "Sept 11",
 		"Active": 426,
+		"Sept14": 698,
 		"Sept11": 784,
 		"Sept10": 868,
 		"Sept9": 928,
 		"Sept8": 967,
 		"Sept7": 979,
 		"Sept4": 974
+	},
+	{
+		"name": "Sept 12",
+		"nodata": 0,
+		"Sept14": 772,
+		"Sept11": 872,
+		"Sept10": 969,
+		"Sept9": 1040,
+		"Sept8": 1085,
+		"Sept7": 1099,
+		"Sept4": 1094
+	},
+	{
+		"name": "Sept 13",
+		"nodata": 0,
+		"Sept14": 853,
+		"Sept11": 969,
+		"Sept10": 1082,
+		"Sept9": 1165,
+		"Sept8": 1217,
+		"Sept7": 1234,
+		"Sept4": 1228
+	},
+	{
+		"name": "Sept 14",
+		"Active": 461,
+		"Sept14": 942,
+		"Sept11": 1077,
+		"Sept10": 1209,
+		"Sept9": 1304,
+		"Sept8": 1365,
+		"Sept7": 1385,
+		"Sept4": 1378
 	},
 	{
 		"name": null
@@ -415,6 +488,7 @@ const oneweek = [
 	{
 		"name": "Aug 3",
 		"Active": 18,
+		"Sept14": 14,
 		"Sept11": 13,
 		"Sept10": 12,
 		"Sept9": 11,
@@ -424,7 +498,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 4",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 16,
 		"Sept11": 14,
 		"Sept10": 13,
 		"Sept9": 12,
@@ -434,7 +509,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 5",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 17,
 		"Sept11": 16,
 		"Sept10": 15,
 		"Sept9": 14,
@@ -444,7 +520,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 6",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 19,
 		"Sept11": 17,
 		"Sept10": 16,
 		"Sept9": 16,
@@ -454,7 +531,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 7",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 21,
 		"Sept11": 19,
 		"Sept10": 18,
 		"Sept9": 18,
@@ -464,7 +542,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 8",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 23,
 		"Sept11": 21,
 		"Sept10": 20,
 		"Sept9": 20,
@@ -474,7 +553,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 9",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 26,
 		"Sept11": 24,
 		"Sept10": 23,
 		"Sept9": 22,
@@ -485,6 +565,7 @@ const oneweek = [
 	{
 		"name": "Aug 10",
 		"Active": 25,
+		"Sept14": 28,
 		"Sept11": 27,
 		"Sept10": 25,
 		"Sept9": 25,
@@ -494,7 +575,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 11",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 31,
 		"Sept11": 30,
 		"Sept10": 28,
 		"Sept9": 28,
@@ -504,7 +586,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 12",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 35,
 		"Sept11": 33,
 		"Sept10": 32,
 		"Sept9": 31,
@@ -514,7 +597,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 13",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 38,
 		"Sept11": 36,
 		"Sept10": 35,
 		"Sept9": 35,
@@ -524,7 +608,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 14",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 42,
 		"Sept11": 41,
 		"Sept10": 39,
 		"Sept9": 39,
@@ -534,7 +619,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 15",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 47,
 		"Sept11": 45,
 		"Sept10": 44,
 		"Sept9": 43,
@@ -544,7 +630,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 16",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 52,
 		"Sept11": 50,
 		"Sept10": 49,
 		"Sept9": 49,
@@ -555,6 +642,7 @@ const oneweek = [
 	{
 		"name": "Aug 17",
 		"Active": 38,
+		"Sept14": 57,
 		"Sept11": 56,
 		"Sept10": 55,
 		"Sept9": 54,
@@ -564,7 +652,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 18",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 63,
 		"Sept11": 62,
 		"Sept10": 61,
 		"Sept9": 61,
@@ -574,7 +663,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 19",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 70,
 		"Sept11": 69,
 		"Sept10": 68,
 		"Sept9": 68,
@@ -584,7 +674,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 20",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 77,
 		"Sept11": 76,
 		"Sept10": 76,
 		"Sept9": 77,
@@ -595,6 +686,7 @@ const oneweek = [
 	{
 		"name": "Aug 21",
 		"Active": 53,
+		"Sept14": 85,
 		"Sept11": 85,
 		"Sept10": 85,
 		"Sept9": 86,
@@ -604,7 +696,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 22",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 94,
 		"Sept11": 94,
 		"Sept10": 95,
 		"Sept9": 96,
@@ -614,7 +707,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 23",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 104,
 		"Sept11": 105,
 		"Sept10": 106,
 		"Sept9": 108,
@@ -624,7 +718,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 24",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 115,
 		"Sept11": 117,
 		"Sept10": 119,
 		"Sept9": 121,
@@ -635,6 +730,7 @@ const oneweek = [
 	{
 		"name": "Aug 25",
 		"Active": 87,
+		"Sept14": 127,
 		"Sept11": 130,
 		"Sept10": 133,
 		"Sept9": 135,
@@ -645,6 +741,7 @@ const oneweek = [
 	{
 		"name": "Aug 26",
 		"Active": 146,
+		"Sept14": 141,
 		"Sept11": 144,
 		"Sept10": 148,
 		"Sept9": 151,
@@ -654,7 +751,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 27",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 156,
 		"Sept11": 160,
 		"Sept10": 166,
 		"Sept9": 169,
@@ -665,6 +763,7 @@ const oneweek = [
 	{
 		"name": "Aug 28",
 		"Active": 176,
+		"Sept14": 172,
 		"Sept11": 178,
 		"Sept10": 185,
 		"Sept9": 190,
@@ -674,7 +773,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 29",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 190,
 		"Sept11": 198,
 		"Sept10": 207,
 		"Sept9": 212,
@@ -684,7 +784,8 @@ const oneweek = [
 	},
 	{
 		"name": "Aug 30",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 210,
 		"Sept11": 220,
 		"Sept10": 231,
 		"Sept9": 238,
@@ -695,6 +796,7 @@ const oneweek = [
 	{
 		"name": "Aug 31",
 		"Active": 268,
+		"Sept14": 232,
 		"Sept11": 245,
 		"Sept10": 258,
 		"Sept9": 267,
@@ -705,6 +807,7 @@ const oneweek = [
 	{
 		"name": "Sept 1",
 		"Active": 418,
+		"Sept14": 257,
 		"Sept11": 272,
 		"Sept10": 288,
 		"Sept9": 299,
@@ -715,6 +818,7 @@ const oneweek = [
 	{
 		"name": "Sept 2",
 		"Active": 453,
+		"Sept14": 284,
 		"Sept11": 303,
 		"Sept10": 321,
 		"Sept9": 334,
@@ -725,6 +829,7 @@ const oneweek = [
 	{
 		"name": "Sept 3",
 		"Active": 477,
+		"Sept14": 314,
 		"Sept11": 336,
 		"Sept10": 359,
 		"Sept9": 375,
@@ -735,6 +840,7 @@ const oneweek = [
 	{
 		"name": "Sept 4",
 		"Active": 490,
+		"Sept14": 347,
 		"Sept11": 374,
 		"Sept10": 401,
 		"Sept9": 420,
@@ -744,7 +850,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 5",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 383,
 		"Sept11": 416,
 		"Sept10": 447,
 		"Sept9": 470,
@@ -754,7 +861,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 6",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 423,
 		"Sept11": 462,
 		"Sept10": 500,
 		"Sept9": 526,
@@ -765,6 +873,7 @@ const oneweek = [
 	{
 		"name": "Sept 7",
 		"Active": 626,
+		"Sept14": 468,
 		"Sept11": 513,
 		"Sept10": 558,
 		"Sept9": 590,
@@ -775,6 +884,7 @@ const oneweek = [
 	{
 		"name": "Sept 8",
 		"Active": 650,
+		"Sept14": 517,
 		"Sept11": 571,
 		"Sept10": 623,
 		"Sept9": 661,
@@ -785,6 +895,7 @@ const oneweek = [
 	{
 		"name": "Sept 9",
 		"Active": 612,
+		"Sept14": 571,
 		"Sept11": 634,
 		"Sept10": 696,
 		"Sept9": 740,
@@ -795,6 +906,7 @@ const oneweek = [
 	{
 		"name": "Sept 10",
 		"Active": 543,
+		"Sept14": 632,
 		"Sept11": 705,
 		"Sept10": 777,
 		"Sept9": 829,
@@ -805,6 +917,7 @@ const oneweek = [
 	{
 		"name": "Sept 11",
 		"Active": 426,
+		"Sept14": 698,
 		"Sept11": 784,
 		"Sept10": 868,
 		"Sept9": 928,
@@ -814,7 +927,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 12",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 772,
 		"Sept11": 872,
 		"Sept10": 969,
 		"Sept9": 1040,
@@ -824,7 +938,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 13",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 853,
 		"Sept11": 969,
 		"Sept10": 1082,
 		"Sept9": 1165,
@@ -834,7 +949,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 14",
-		"nodata" : 0,
+		"Active": 461,
+		"Sept14": 942,
 		"Sept11": 1077,
 		"Sept10": 1209,
 		"Sept9": 1304,
@@ -844,7 +960,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 15",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 1042,
 		"Sept11": 1197,
 		"Sept10": 1350,
 		"Sept9": 1461,
@@ -854,7 +971,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 16",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 1151,
 		"Sept11": 1331,
 		"Sept10": 1508,
 		"Sept9": 1637,
@@ -864,7 +982,8 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 17",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 1272,
 		"Sept11": 1479,
 		"Sept10": 1684,
 		"Sept9": 1833,
@@ -874,13 +993,47 @@ const oneweek = [
 	},
 	{
 		"name": "Sept 18",
-		"nodata" : 0,
+		"nodata": 0,
+		"Sept14": 1406,
 		"Sept11": 1644,
 		"Sept10": 1880,
 		"Sept9": 2053,
 		"Sept8": 2164,
 		"Sept7": 2200,
 		"Sept4": 2187
+	},
+	{
+		"name": "Sept 19",
+		"nodata": 0,
+		"Sept14": 1554,
+		"Sept11": 1828,
+		"Sept10": 2100,
+		"Sept9": 2300,
+		"Sept8": 2429,
+		"Sept7": 2470,
+		"Sept4": 2455
+	},
+	{
+		"name": "Sept 20",
+		"nodata": 0,
+		"Sept14": 1718,
+		"Sept11": 2032,
+		"Sept10": 2345,
+		"Sept9": 2576,
+		"Sept8": 2725,
+		"Sept7": 2773,
+		"Sept4": 2756
+	},
+	{
+		"name": "Sept 21",
+		"nodata": 0,
+		"Sept14": 1898,
+		"Sept11": 2258,
+		"Sept10": 2619,
+		"Sept9": 2885,
+		"Sept8": 3058,
+		"Sept7": 3113,
+		"Sept4": 3093
 	}
 ]
 
@@ -920,7 +1073,7 @@ class Activepage extends Component {
                 </svg>
                 <h1></h1>
                 <h3 style={{ marginBottom: 5 }}>Active Reported Cases</h3>
-                <a><i><font size="2">Last updated Friday, September 11 at 6:05pm.</font></i></a>
+                <a><i><font size="2">Last updated Monday, September 14 at 5:10pm.</font></i></a>
 
                 <center>
                     <div>
@@ -938,8 +1091,8 @@ class Activepage extends Component {
                                         <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                         {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 575']} fontSize="12" />)}
                                         <Bar dataKey="Active" fill="#cc0000"><LabelList dataKey="Active" position="top" fontSize="12" /></Bar>
-                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" />) : ("")}
-                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept14" dot={false} stroke="#666666" />) : ("")}
+                                        {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept7" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
                                         <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                     </ComposedChart>
                                 ) : (
@@ -949,8 +1102,8 @@ class Activepage extends Component {
                                             <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                             {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 575']} fontSize="12" />)}
                                             <Bar dataKey="Active" fill="#cc0000"><LabelList dataKey="Active" position="top" fontSize="12" /></Bar>
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" />) : ("")}
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept4" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept14" dot={false} stroke="#666666" />) : ("")}
+                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept7" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
                                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                         </ComposedChart>
 
