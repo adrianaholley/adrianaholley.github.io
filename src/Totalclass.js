@@ -1066,7 +1066,7 @@ class Totalclass extends Component {
 
                                         </Grid>
                                         <Grid>
-                                        <p className="popinfo"><i><font size="2">*The total population includes those who are 100% remote and is an estimate, as Dr. Schovanec stated Stept 16 that there are "over 46,000" students and employees.</font></i></p>
+                                        <p className="popinfo"><i><font size="2">*The total population includes those who are 100% remote and is an estimate, as Dr. Schovanec stated Sept 16 that there are "over 46,000" students and employees.</font></i></p>
 
                                         </Grid>
 
@@ -1116,7 +1116,7 @@ class Totalclass extends Component {
                             <a><font size="3">One week before Sept 16:<b> 2.29%</b></font></a>
                             <br />
                             <a><font size="3">Two weeks before Sept 16:<b> 1.36%</b></font></a>
-                            <p className="popinfo"><i><font size="2">*The total population includes those who are 100% remote and is an estimate, as Dr. Schovanec stated Stept 16 that there are "over 46,000" students and employees.</font></i></p>
+                            <p className="popinfo"><i><font size="2">*The total population includes those who are 100% remote and is an estimate, as Dr. Schovanec stated Sept 16 that there are "over 46,000" students and employees.</font></i></p>
 
                             <br />
                             <h5 style={{ marginBottom: 5, marginTop: 5 }}>Cases by Day Since August 1</h5>
