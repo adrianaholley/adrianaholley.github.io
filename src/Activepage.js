@@ -1017,8 +1017,8 @@ class Activepage extends Component {
                     </g>
                 </svg>
                 <h1></h1>
-                <h3 style={{ marginBottom: 5 }}>Active Reported Cases</h3>
-                <a><i><font size="2">Last updated Wednesday, September 16 at 5:15pm.</font></i></a>
+                <h3 style={{ marginBottom: 0 }}>Active Reported Cases</h3>
+                <a><i><font size="2">Last updated Wednesday, September 16 at 11:45pm.</font></i></a>
 
                 <center>
                     <div>
@@ -1053,9 +1053,6 @@ class Activepage extends Component {
                                         </ComposedChart>
 
                                     )}
-
-
-
                             </ResponsiveContainer>
                         </BrowserView>
 
@@ -1135,6 +1132,13 @@ class Activepage extends Component {
 
                         <MobileView>
                             <div className="adjustabletextmobile">
+                                
+                                <h4>What are these curves?</h4>
+                                <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
+                                <h4>Why are there two?</h4>
+                                <p><font size="4">A new projection is generated when a count update is released for the day. The <b>solid</b> line is the most recent projection, and the <b>dashed</b> line the projection from one week before. </font></p>
+                                <h4>What is logarithmic sclae?</h4>
+                                <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
                                 <h4>Notable Dates</h4>
                                 <font size="4"><p style={{ textAlign: "left" }}>
                                     <li>August 3: Campus doors opened<br /></li>
@@ -1149,12 +1153,6 @@ class Activepage extends Component {
                                     <li>September 12: First football game, played at home</li>
                                     <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
                                 </p></font>
-                                <h4>What are these curves?</h4>
-                                <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                                <h4>Why are there two?</h4>
-                                <p><font size="4">A new projection is generated when a count update is released for the day. The <b>solid</b> line is the most recent projection, and the <b>dashed</b> line the projection from one week before. </font></p>
-                                <h4>What is logarithmic sclae?</h4>
-                                <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
                             </div>
                         </MobileView>
                     </div>

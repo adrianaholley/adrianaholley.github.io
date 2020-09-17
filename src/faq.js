@@ -55,8 +55,8 @@ function Faq() {
                       If you think the university should provide exact counts of COVID dorm and COVID hotel room occupancies, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
                   </div>
 
-                  <button onClick={() => setIsSC2Open(!isSC2Open)} class="accordion"><center>Why aren't there updates during the weekend?</center></button>
-                  <div class={isSC2Open ? "" : "panel"}>
+                  <button onClick={() => setIsSC3Open(!isSC3Open)} class="accordion"><center>Why aren't there updates during the weekend?</center></button>
+                  <div class={isSC3Open ? "" : "panel"}>
                     <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" target='_blank'>Texas State University</a> and other schools do, email <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
@@ -126,7 +126,7 @@ function Faq() {
                       Because Texas Tech is following CDC guidelines, no test is necessary.
                       According to an email from the University's Directory of Emergency Management dated September 11, typical cases are considered recovered 10 days from first symptoms or 10 days from a positive test.
                       As long as one's symptoms have been improving and they have been fever-free for 24 hours, they will be considered recovered.
-                      There is no recommendation for a test to be taken, even if one still has a cough or other symptoms.
+                      There is no requirement for a test to be taken, even if one still has a cough or other symptoms.
                     </font></p>
                   </div>
                 </Grid>
@@ -225,7 +225,7 @@ function Faq() {
                       Because Texas Tech is following CDC guidelines, no test is necessary.
                       According to an email from the University's Directory of Emergency Management dated September 11, typical cases are considered recovered 10 days from first symptoms or 10 days from a positive test.
                       As long as one's symptoms have been improving and they have been fever-free for 24 hours, they will be considered recovered.
-                      There is no recommendation for a test to be taken, even if one still has a cough or other symptoms.
+                      There is no requirement for a test to be taken, even if one still has a cough or other symptoms.
                       </font></p>
                   </div>
                 </Grid>
