@@ -5,7 +5,7 @@ import { BrowserView } from 'react-device-detect';
 
 const COLORS = ['#cc0000', '#cccccc'];
 
-const data01 = [{ name: 'Group A', value: 1343 }, { name: 'Group B', value: 44657 }]
+const data01 = [{ name: 'Group A', value: 1407 }, { name: 'Group B', value: 44592 }]
 
 
 class Totalpie extends Component {
@@ -23,13 +23,16 @@ class Totalpie extends Component {
                             paddingAngle={5}
                         >
                             <Label
-                                value="2.92%" position="centerBottom" className='label' fontSize='38px'
+                                value="3.06%" position="centerBottom" className='label' fontSize='38px'
                             />
                             <Label
-                                value="reported positive results" position="center" className='label-top' fontSize='12px'
+                                value="of Red Raiders have" position="center" className='label-top' fontSize='12px'
                             />
                             <Label
-                                value="Aug 1 - Sept 16" position="centerTop" className='label-bottom' fontSize='12px'
+                                value="reported positive results" position="center" className='label-middle' fontSize='12px'
+                            />
+                            <Label
+                                value="Aug 1 - Sept 18" position="centerTop" className='label-bottom' fontSize='12px'
                             />
                             {
                                 data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)

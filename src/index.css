@@ -9,8 +9,11 @@ body {
 .label-top {
   transform: translateY(12px);
 }
+.label-middle {
+  transform: translateY(25px);
+}
 .label-bottom {
-  transform: translateY(22px);
+  transform: translateY(35px);
 }
 
 /* this doesn't work */
