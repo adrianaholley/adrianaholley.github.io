@@ -1058,7 +1058,7 @@ class Activepage extends Component {
                 </svg>
                 <h1></h1>
                 <h3 style={{ marginBottom: 0 }}>Active Reported Cases</h3>
-                <a><font size="2">Last updated Friday, September 18 at 5:35pm.</font></a>
+                <a><font size="2">Last updated Saturday, September 19 at 3:20am.</font></a>
 
                 <center>
                     <div>
@@ -1069,7 +1069,7 @@ class Activepage extends Component {
                                     They do not include those still needing to self-report, nor those waiting 0-3 days for results.
                                 </font></i></a>
                             </Grid>
-                            <FormControlLabel control={<RedSwitch onChange={() => this.setState({ ZeroWeeks: !this.state.ZeroWeeks })} name="OneWeek" />} label="Add projections" />
+                            {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ ZeroWeeks: !this.state.ZeroWeeks })} name="OneWeek" />} label="Add projections" /> */}
                             {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ TwoWeeks: !this.state.TwoWeeks })} name="TwoWeeks" />} label="Add projections - 2 Weeks" /> */}
                             <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
                             <ResponsiveContainer width='65%' height='65%' aspect='2.2'>
@@ -1093,8 +1093,8 @@ class Activepage extends Component {
                                             <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                             {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 575']} fontSize="12" />)}
                                             <Bar dataKey="Active" fill="#cc0000"><LabelList dataKey="Active" position="top" fontSize="12" /></Bar>
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept18" dot={false} stroke="#666666" />) : ("")}
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                            {/* {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept18" dot={false} stroke="#666666" />) : ("")} */}
+                                            {/* {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                         </ComposedChart>
 
@@ -1104,12 +1104,14 @@ class Activepage extends Component {
 
                         <MobileView>
                             <Grid>
-                        <a><i><font size="2">
-                                    Case counts reflect the date reported on TTU's website, not first date of symptoms.
-                                    They do not include those still needing to self-report, nor those waiting 0-3 days for results.
+                                <a><i><font size="2">
+                                    <div className="adjustabletextmobile">
+                                        Case counts reflect the date reported on TTU's website, not first date of symptoms.
+                                        They do not include those still needing to self-report, nor those waiting 0-3 days for results.
+                                    </div>
                                 </font></i></a>
-                                </Grid>
-                            <FormControlLabel control={<RedSwitch onChange={() => this.setState({ ZeroWeeks: !this.state.ZeroWeeks })} name="OneWeek" />} label="Add projections" />
+                            </Grid>
+                            {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ ZeroWeeks: !this.state.ZeroWeeks })} name="OneWeek" />} label="Add projections" /> */}
                             {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ Sept4: !this.state.TwoWeeks })} name="TwoWeeks" />} label="Add projections - 2 Weeks" /> */}
                             <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
                             <ResponsiveContainer width={'99%'} height={'65%'} aspect='1'>
@@ -1134,8 +1136,8 @@ class Activepage extends Component {
                                             <Bar dataKey="Active" fill="#cc0000">
                                                 <LabelList dataKey="Active" position="top" fontSize="7" />
                                             </Bar>
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept18" dot={false} stroke="#666666" />) : ("")}
-                                            {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")}
+                                            {/* {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept18" dot={false} stroke="#666666" />) : ("")} */}
+                                            {/* {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                         </ComposedChart>
                                     )}
@@ -1169,10 +1171,6 @@ class Activepage extends Component {
                                         </p></font>
                                     </Grid>
                                     <Grid item xs>
-                                        <h4>How are projections made?</h4>
-                                        <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                                        <h4>Why are there two?</h4>
-                                        <p><font size="4">A new projection is generated when a count update is released for the day. The <b>solid</b> line is the most recent projection, and the <b>dashed</b> line the projection from one week before. </font></p>
                                         <h4>What is logarithmic sclae?</h4>
                                         <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
 
@@ -1185,10 +1183,6 @@ class Activepage extends Component {
                         <MobileView>
                             <div className="adjustabletextmobile">
 
-                                <h4>What are these curves?</h4>
-                                <p><font size="4">They are <b>exponential regression curves</b>. They are made by analyzing how fast cases have increased. It is only based on Texas Tech's past data. The projection <b>does not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.</font></p>
-                                <h4>Why are there two?</h4>
-                                <p><font size="4">A new projection is generated when a count update is released for the day. The <b>solid</b> line is the most recent projection, and the <b>dashed</b> line the projection from one week before. </font></p>
                                 <h4>What is logarithmic sclae?</h4>
                                 <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
                                 <h4>Notable Dates</h4>
