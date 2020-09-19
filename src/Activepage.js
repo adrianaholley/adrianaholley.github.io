@@ -1171,7 +1171,7 @@ class Activepage extends Component {
                                         </p></font>
                                     </Grid>
                                     <Grid item xs>
-                                        <h4>What is logarithmic sclae?</h4>
+                                        <h4>What is logarithmic scale?</h4>
                                         <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
 
                                     </Grid>
@@ -1183,7 +1183,7 @@ class Activepage extends Component {
                         <MobileView>
                             <div className="adjustabletextmobile">
 
-                                <h4>What is logarithmic sclae?</h4>
+                                <h4>What is logarithmic scale?</h4>
                                 <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
                                 <h4>Notable Dates</h4>
                                 <font size="4"><p style={{ textAlign: "left" }}>

@@ -479,7 +479,7 @@ const oneweek = [
     {
         "name": "Sept 18",
         "Total": 1407,
-        "nodata": 0
+        "Sept18": 1407
     },
     {
         "name": "Sept 19",
@@ -632,7 +632,7 @@ class Totalclass extends Component {
                                                     <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                                     {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 500']} fontSize="12" />)}
                                                     <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize="12" /></Bar>
-                                                    {this.state.OneWeek ? (<Line dataKey="Sept18" connectNulls={true} stroke="#333333" fill="#333333" strokeDasharray="1 2" />) : ("")}
+                                                    {this.state.OneWeek ? (<Line dataKey="Sept18" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />) : ("")}
                                                     {/* {this.state.OneWeek ? (<Line dataKey="Sept21" connectNulls={true}stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                                     <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                                 </ComposedChart>
@@ -644,7 +644,7 @@ class Totalclass extends Component {
                                                         <XAxis interval={1} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                                         {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 850']} fontSize="12" />)}
                                                         <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize="12" /></Bar>
-                                                        {this.state.OneWeek ? (<Line dataKey="Sept18" connecttNulls={true} stroke="#333333" fill="#333333" strokeDasharray="3 3" />) : ("")}
+                                                        {this.state.OneWeek ? (<Line dataKey="Sept18" connecttNulls={true} stroke="#333333" fill="#333333" strokeDasharray="3 4" />) : ("")}
                                                         {/* {this.state.OneWeek ? (<Line dataKey="Sept21" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                                         <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                                     </ComposedChart>
@@ -693,7 +693,7 @@ class Totalclass extends Component {
                                         <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                         {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 500']} fontSize="12" />)}
                                         <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize="7" /></Bar>
-                                        {this.state.OneWeek ? (<Line dataKey="Sept18" connectNulls={true} stroke="#333333" fill="#333333" strokeDasharray="1 2" />) : ("")}
+                                        {this.state.OneWeek ? (<Line dataKey="Sept18" connectNulls={true}  dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />) : ("")}
                                         {/* {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                         <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                     </ComposedChart>
@@ -703,7 +703,7 @@ class Totalclass extends Component {
                                             <XAxis interval={2} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                                             {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 850']} fontSize="12" />)}
                                             <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize="7" /></Bar>
-                                            {this.state.OneWeek ? (<Line dataKey="Sept18" connectNulls={true} stroke="#333333" fill="#333333" strokeDasharray="1 2" />) : ("")}
+                                            {this.state.OneWeek ? (<Line dataKey="Sept18" connectNulls={true} stroke="#333333" fill="#333333" strokeDasharray="3 4" />) : ("")}
                                             {/* {this.state.OneWeek ? (<Line type="monotone" dataKey="Sept11" dot={false} stroke="#666666" strokeDasharray="3 3" />) : ("")} */}
                                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                                         </ComposedChart>
@@ -745,7 +745,7 @@ class Totalclass extends Component {
                                                 Projections <b>do not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.
                                             </font>
                                         </p>
-                                        <h4>What is logarithmic sclae?</h4>
+                                        <h4>What is logarithmic scale?</h4>
                                         <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
 
                                     </Grid>
@@ -766,7 +766,7 @@ class Totalclass extends Component {
                                         Projections <b>do not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.
                                     </font>
                                 </p>
-                                <h4>What is logarithmic sclae?</h4>
+                                <h4>What is logarithmic scale?</h4>
                                 <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
                                 <h4>Notable Dates</h4>
                                 <font size="4"><p style={{ textAlign: "left" }}>
