@@ -5,15 +5,14 @@ import { BrowserRouter as Router, Switch, Redirect, Route, Link, HashRouter } fr
 
 function Faq() {
   const [isSC1Open, setIsSC1Open] = useState(false)
-  const [isSC2Open, setIsSC2Open] = useState(false);
+  const [isSC2Open, setIsSC2Open] = useState(false)
   const [isSC3Open, setIsSC3Open] = useState(false)
   const [isSC4Open, setIsSC4Open] = useState(false)
   const [isSC5Open, setIsSC5Open] = useState(false)
   const [isSC6Open, setIsSC6Open] = useState(false)
-  const [isSC7Open, setIsSC7Open] = useState(false)
 
   const [isCR1Open, setIsCR1Open] = useState(false)
-  const [isCR2Open, setIsCR2Open] = useState(false);
+  const [isCR2Open, setIsCR2Open] = useState(false)
   const [isCR3Open, setIsCR3Open] = useState(false)
   const [isCR4Open, setIsCR4Open] = useState(false)
   const [isCR5Open, setIsCR5Open] = useState(false)
@@ -72,12 +71,7 @@ function Faq() {
 
                   <button onClick={() => setIsSC6Open(!isSC6Open)} class="accordion"><center>Where are the recovery numbers?</center></button>
                   <div class={isSC6Open ? "" : "panel"}>
-                    <p><font size={2}>This dasboard currently focuses on predicting the total spread of the virus. Active cases contribute to the spread so they are also noted here. The number of recoveries does not help us analyze the current spread so there is no graph for them.</font></p>
-                  </div>
-
-                  <button onClick={() => setIsSC7Open(!isSC7Open)} class="accordion"><center>I don't like exponential regressions.</center></button>
-                  <div class={isSC7Open ? "" : "panel"}>
-                    <p><font size={2}>Exponential regressions are not perfect. As we can see, the prediction changes each time we get new data. It doesn't use any machine learning, compare spread at similarly-sized schools, or predict effects of increased sanitation. It's only based on our past data. However, COVID spread at Texas Tech <i>is</i> exponential. It fits the community's COVID projection needs, as neither the University or the city have published any other projections. If you'd like to ask them to share any projectoins, reach to them at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>This dashboard currently focuses on predicting the total spread of the virus. Active cases contribute to the spread so they are also noted here. The number of recoveries does not help us analyze the current spread so there is no graph for them.</font></p>
                   </div>
                 </Grid>
                 <Grid item xs={4}>
@@ -171,12 +165,7 @@ function Faq() {
 
                   <button onClick={() => setIsSC6Open(!isSC6Open)} class="accordion"><center>Where are the recovery numbers?</center></button>
                   <div class={isSC6Open ? "" : "panel"}>
-                    <p><font size={2}>This dasboard currently focuses on predicting the total spread of the virus. Active cases contribute to the spread so they are also noted here. The number of recoveries does not help us analyze the current spread so there is no graph for them.</font></p>
-                  </div>
-
-                  <button onClick={() => setIsSC7Open(!isSC7Open)} class="accordion"><center>I don't like exponential regressions.</center></button>
-                  <div class={isSC7Open ? "" : "panel"}>
-                    <p><font size={2}>Exponential regressions are not perfect. As we can see, the prediction changes each time we get new data. It doesn't use any machine learning, compare spread at similarly-sized schools, or predict effects of increased sanitation. It's only based on our past data. However, COVID spread at Texas Tech <i>is</i> exponential. It fits the community's COVID projection needs, as neither the University or the city have published any other projections. If you'd like to ask them to share any projectoins, reach to them at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>This dashboard currently focuses on predicting the total spread of the virus. Active cases contribute to the spread so they are also noted here. The number of recoveries does not help us analyze the current spread so there is no graph for them.</font></p>
                   </div>
                 </Grid>
                 <Grid item xs>
@@ -238,7 +227,6 @@ function Faq() {
             <p><bold>Got a question?</bold><br />
               <font size="4"><Link to="/contact" color="#cc0000" >Reach out to me.</Link></font></p>
           </div>
-
 
         </header>
       </div >
