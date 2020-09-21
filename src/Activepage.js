@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { Bar, CartesianGrid, ComposedChart, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import Activegraph from './Activegraph';
 
 const noprojections = [
     {
@@ -239,33 +240,64 @@ class Activepage extends Component {
 
                 {/* title, subtitle */}
                 <h1></h1>
-                <h3 style={{ marginBottom: 0 }}>Active Reported Cases</h3>
+                <h3 style={{ marginBottom: 0 }}>Active Reported Cases*</h3>
                 <a><font size="2">Last updated Sunday, September 20 at 5:50pm.</font></a>
 
                 <center>
 
-                    {/* show graphs */}
-                    <Grid>
-                        <a><i><font size="2">
-                            <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
-                                <br />
-                                Case counts reflect the date reported on TTU's website, not first date of symptoms.
-                                They do not include those still needing to self-report, nor those waiting 0-3 days for results.
-                            </div>
-                        </font></i></a>
+                    <Grid container>
+
+                        <Grid item xs>
+                            <br />
+                            <h5 style={{ marginBottom: -10, marginTop: 5 }}>
+                                <div className="adjustabletext">
+                                    *This data is <u><i>not</i></u> an accurate reflection of active cases on a given date.
+                                </div>
+                            </h5>
+                            <p><font size={isMobile ? (3) : (4)}>
+                                <div className="adjustabletext">
+                                    Past dates' counts are not updated to show the true number of active COVID cases once discovered.
+                                </div>
+                            </font></p>
+
+                            <h5 style={{ marginBottom: -10, marginTop: 5 }}>
+                                <div className="adjustabletext">
+                                    What does this mean?
+                                </div>
+                            </h5>
+                            <p><font size={isMobile ? (3) : (4)}>
+                                <div className="adjustabletext">
+                                    Let's say that 50 positive people took a test today, and 50 positive people took one yesterday.
+                                    Since it takes a while to get results back, let's assume we don't see these cases reflected on the site until 2 days after tests are taken.
+                                    That means today's active case count should really be updated 2 days from now to add 100 more cases.
+                                </div>
+                            </font></p>
+
+                            <h5 style={{ marginBottom: -10, marginTop: 5 }}>
+                                <div className="adjustabletext">
+                                    Why aren't these numbers accurate?
+                                </div>
+                            </h5>
+                            <p><font size={isMobile ? (3) : (4)}>
+                                <div className="adjustabletext">
+                                    Texas Tech doesn't release that information.
+                                    If you think Texas Tech should show cases by test date like&nbsp;
+                                    <a href="https://bit.ly/3jTn8hb">
+                                        Texas State
+                                    </a>
+                                    &nbsp;does, email&nbsp;
+                                    <a href="mailto:covid19@ttu.edu">
+                                        covid19@ttu.edu
+                                    </a>
+                                    .
+                                </div>
+                            </font></p>
+                        </Grid>
+
+                        {/* show graphs */}
+                        {isMobile ? (<Activegraph />) : (<Grid item xs={7}><Activegraph /></Grid>)}
+
                     </Grid>
-
-                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
-
-                    <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('65%')} aspect={isMobile ? ('1') : ('2.5')}>
-                        <ComposedChart data={noprojections} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 20, bottom: 0, left: 0 })}>
-                            <CartesianGrid />
-                            <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 1550']} fontSize="12" />)}
-                            <Bar dataKey="Active cases" fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
-                            <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                        </ComposedChart>
-                    </ResponsiveContainer>
 
                     {/* show texts */}
                     <BrowserView>
