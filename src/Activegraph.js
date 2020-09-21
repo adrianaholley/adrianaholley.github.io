@@ -229,29 +229,32 @@ class Activegraph extends Component {
         return (
             <div className='responsivecontainer'>
 
+                {isMobile ? (<br />) : ('')}
 
-                    {/* show graphs */}
-                    <Grid>
-                        <a><i><font size="2">
-                            <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
-                                <br />
-                                Case counts reflect the <b>date reported</b> on TTU's website, not first date of symptoms.
-                                They do not include those still needing to self-report, nor those waiting 0-3 days for results.
-                            </div>
-                        </font></i></a>
-                    </Grid>
+                {/* show disclaimers */}
+                <Grid>
+                    <h5 style={{ marginBottom: 10, marginTop: 5 }}>Active Cases Known on Given Date</h5>
+                    <a><i><font size="2">
+                        <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
+                            An active case is only included in these numbers starting the date reported to TTU's site.
+                            Due to reporting delays, this means a case could be included on the site for only 3-9 days instead of the 10-day minimum illness length.
+                            Past dates are not updated with new case data found.
+                        </div>
+                    </font></i></a>
+                </Grid>
 
-                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
+                <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
 
-                    <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.5')}>
-                        <ComposedChart data={noprojections} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
-                            <CartesianGrid />
-                            <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 1550']} fontSize="12" />)}
-                            <Bar dataKey="Active cases" fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
-                            <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                        </ComposedChart>
-                    </ResponsiveContainer>
+                {/* show graphs */}
+                <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.5')}>
+                    <ComposedChart data={noprojections} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
+                        <CartesianGrid />
+                        <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                        {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 1550']} fontSize="12" />)}
+                        <Bar dataKey="Active cases" fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
+                        <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+                    </ComposedChart>
+                </ResponsiveContainer>
 
             </div>
         )

@@ -555,8 +555,8 @@ class Totalgraph extends Component {
                 <Grid>
                     <h5 style={{ marginBottom: 10, marginTop: 5 }}>Cases by Day Since August 1</h5>
                     <a><i><font size="2">
-                        <div className="adjustabletext">
-                            Case counts reflect the date reported on TTU's website, not first date of symptoms.
+                    <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
+                            Case counts reflect the <b>date reported</b> on TTU's website, not first date of symptoms.
                             They do not include those still needing to self-report, nor those waiting 0-3 days for results.
                         </div>
                     </font></i></a>

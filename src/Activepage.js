@@ -268,7 +268,7 @@ class Activepage extends Component {
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
                                     Let's say that 50 positive people took a test today, and 50 positive people took one yesterday.
-                                    Since it takes a while to get results back, let's assume we don't see these cases reflected on the site until 2 days after tests are taken.
+                                    Since it takes a while to get and submit results, let's assume these cases aren't reflected on the site until 2 days after tests are taken.
                                     That means today's active case count should really be updated 2 days from now to add 100 more cases.
                                 </div>
                             </font></p>
