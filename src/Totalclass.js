@@ -21,7 +21,7 @@ class Totalclass extends Component {
                 {/* page title, subtitle */}
                 <h1></h1>
                 <h3 style={{ marginBottom: 0 }}>Total Reported Cases</h3>
-                <a><font size="2">Last updated Sunday, September 20 at 5:50pm. </font></a>
+                <a><font size="2">Last updated Monday, September 21 at 5:00pm. </font></a>
 
                 <center>
 
@@ -60,7 +60,7 @@ class Totalclass extends Component {
                                     <p>
                                         <font size="4">
                                             As of Sept 19, projections are now made comparing week-over-week and day-by-day case growth, using only data from the two most recent weeks.
-                                            For example, to create Monday's projection, we take the Fri-Mon case growth from a week ago, and the Fri-Mon case growth from two weeks ago.
+                                            For example, to create Monday's projection, we take the Fri-Mon case growth from a week before, and the Fri-Mon case growth from two weeks before.
                                             We see if the growth rate has increased or decreased, and by how much.
                                             Projections assume that growth rate trend will continue.
                                             Projections <b>do not</b> consider changes in circumstances, such as an increase in hand-washing or an increase in house parties.

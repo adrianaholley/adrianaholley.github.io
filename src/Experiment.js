@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { Bar, CartesianGrid, ComposedChart, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import Activegraph from './Activegraph';
+import Experimentgraph from './Experimentgraph.js';
 
 const noprojections = [
     {
@@ -196,16 +196,7 @@ const noprojections = [
         "Active cases": 187
     },
     {
-        "name": "Sept 19",
-        "no": 187
-    },
-    {
-        "name": "Sept 20",
-        "no": 187
-    },
-    {
-        "name": "Sept 21",
-        "Active cases": 222
+        "name": null
     }
 ]
 
@@ -223,7 +214,7 @@ const RedSwitch = withStyles({
     track: {},
 })(Switch);
 
-class Activepage extends Component {
+class Experiment extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -242,15 +233,15 @@ class Activepage extends Component {
                 {/* red bar */}
                 <svg width="100%" height="139">
                     <g>
-                        <rect width="100%" height="100%" fill="#B32317" />
+                        <rect width="100%" height="100%" fill="#1741b3" />
                         <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
                     </g>
                 </svg>
 
                 {/* title, subtitle */}
                 <h1></h1>
-                <h3 style={{ marginBottom: 0 }}>Active Reported Cases*</h3>
-                <a><font size="2">Last updated Monday, September 21 at 5:00pm.</font></a>
+                <h3 style={{ marginBottom: 0 }}>Playing with Data</h3>
+                <a><font size="2">Dolor sit amet</font></a>
 
                 <center>
 
@@ -260,51 +251,40 @@ class Activepage extends Component {
                             <br />
                             <h5 style={{ marginBottom: -10, marginTop: 5 }}>
                                 <div className="adjustabletext">
-                                    *This data is <u><i>not</i></u> an accurate reflection of active cases on a given date.
+                                    Lorem ipsum
                                 </div>
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    Past dates' counts are not updated to show the true number of active COVID cases once discovered.
+                                    Dolor sit amet
                                 </div>
                             </font></p>
 
                             <h5 style={{ marginBottom: -10, marginTop: 5 }}>
                                 <div className="adjustabletext">
-                                    What does this mean?
+                                    Lorem ipsum
                                 </div>
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    Let's say that 50 positive people took a test today, and 50 positive people took one yesterday.
-                                    Since it takes a while to get and submit results, let's assume these cases aren't reflected on the site until 2 days after tests are taken.
-                                    That means today's active case count should really be updated 2 days from now to add 100 more cases.
+                                    Dolor sit amet
                                 </div>
                             </font></p>
 
                             <h5 style={{ marginBottom: -10, marginTop: 5 }}>
                                 <div className="adjustabletext">
-                                    Why aren't these numbers accurate?
+                                    Lorem ipsum
                                 </div>
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    Texas Tech doesn't release that information.
-                                    If you think Texas Tech should show cases by test date like&nbsp;
-                                    <a href="https://bit.ly/3jTn8hb">
-                                        Texas State
-                                    </a>
-                                    &nbsp;does, email&nbsp;
-                                    <a href="mailto:covid19@ttu.edu">
-                                        covid19@ttu.edu
-                                    </a>
-                                    .
+                                    Dolor sit amet
                                 </div>
                             </font></p>
                         </Grid>
 
                         {/* show graphs */}
-                        {isMobile ? (<Activegraph />) : (<Grid item xs={7}><Activegraph /></Grid>)}
+                        {isMobile ? (<Experimentgraph />) : (<Grid item xs={8}><Experimentgraph /></Grid>)}
 
                     </Grid>
 
@@ -363,4 +343,4 @@ class Activepage extends Component {
     }
 }
 
-export default Activepage;
+export default Experiment;

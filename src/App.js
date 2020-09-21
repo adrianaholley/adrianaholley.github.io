@@ -14,6 +14,7 @@ import Contact from './Contact.js';
 import Totalclass from './Totalclass.js';
 import Activepage from './Activepage.js';
 import TotalA11yclass from './TotalA11yclass.js'
+import Experiment from './Experiment.js'
 
 function App() {
   return (
@@ -158,6 +159,7 @@ function App() {
             <Route path="/active"><Activepage /></Route>
             <Route path="/faq"><Faq /></Route>
             <Route path="/contact"><Contact /></Route>
+            <Route path="/experiment"><Experiment /></Route>
           </Switch>
         </HashRouter>
       </header>
