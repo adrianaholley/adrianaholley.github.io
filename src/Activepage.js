@@ -3,7 +3,6 @@ import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
-import { Bar, CartesianGrid, ComposedChart, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import Activegraph from './Activegraph';
 
 class Activepage extends Component {

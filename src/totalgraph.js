@@ -3,7 +3,7 @@ import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
-import { Bar, CartesianGrid, ComposedChart, LabelList, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
 
 const noprojections = [
     {
@@ -597,13 +597,17 @@ class Totalgraph extends Component {
                 <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
 
                 {/* bar chart */}
-                <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2')}>
+                <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.5')}>
                     <ComposedChart data={this.state.AddCurrentProjections ? (projections) : (noprojections)} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                         <CartesianGrid />
                         <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
                         {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={this.state.AddCurrentProjections ? (['0', 'dataMax + 487']) : (['0', 'dataMax + 719'])} fontSize="12" />)}
                         <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                         {this.state.AddCurrentProjections ? (<Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />) : ("")}
+                        <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
+                        <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2% of all students and employees (920)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
+                        <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3% of all students and employees (1,380)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
+                        <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4% of all students and employees (1,840)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
                         <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                     </ComposedChart>
                 </ResponsiveContainer>

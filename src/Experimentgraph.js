@@ -3,7 +3,7 @@ import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
-import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Area, Bar, CartesianGrid, ComposedChart, Label, Legend, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const noprojections = [
 	{
@@ -674,6 +674,10 @@ class Experimentgraph extends Component {
                         
                         <Area type="monotone" dataKey="txst"  fill="#DAA520" stroke="#DAA520" connectNulls={true}  fillOpacity={.1} />
                         <Line type="monotone" dataKey="Active cases" fill="#333333" connectNulls={true} dot={true} stroke="#333333" strokeDasharray="3 4" />
+                        <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
+                        <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2% of all students and employees (920)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
+                        <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3% of all students and employees (1,380)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
+                        <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4% of all students and employees (1,840)" position="insideTopLeft" fontSize="12"></Label></ReferenceLine>
                         <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                     </ComposedChart>
                 </ResponsiveContainer>
