@@ -205,6 +205,14 @@ const noprojections = [
     {
         "name": "Sept 21",
         "Active cases": 222
+    },
+    {
+        "name": "Sept 22",
+        "Active cases": 220
+    },
+    {
+        "name": "Sept 23",
+        "Active cases": 244
     }
 ]
 

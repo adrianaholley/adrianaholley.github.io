@@ -21,7 +21,7 @@ class Totalclass extends Component {
                 {/* page title, subtitle */}
                 <h1></h1>
                 <h3 style={{ marginBottom: 0 }}>Total Reported Cases</h3>
-                <a><font size="2">Last updated Monday, September 21 at 5:00pm. </font></a>
+                <a><font size="2">Last updated Wednesday, September 23 at 5:15pm. </font></a>
 
                 <center>
 

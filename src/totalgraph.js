@@ -255,6 +255,15 @@ const noprojections = [
         "name": "Sept 21",
         "Total": 1481,
         "nodata": 0
+    },
+    {
+        "name": "Sept 22",
+        "Total": 1490,
+        "nodata": 0
+    },
+    {
+        "name": "Sept 23",
+        "Total": 1530
     }
 ]
 
@@ -507,27 +516,27 @@ const projections = [
     {
         "name": "Sept 21",
         "Total": 1481,
-        "Projection for this date": 1481
+        "no": 1481
     },
     {
         "name": "Sept 22",
-        "nodata": 0,
-        "Projection for this date": 1483
+        "Total": 1490,
+        "no": 1490
     },
     {
         "name": "Sept 23",
-        "nodata": 0,
-        "Projection for this date": 1548
+        "Total": 1530,
+        "Projection for this date": 1530
     },
     {
         "name": "Sept 24",
         "nodata": 0,
-        "Projection for this date": 1651
+        "Projection for this date": 1632
     },
     {
         "name": "Sept 25",
         "nodata": 0,
-        "Projection for this date": 1686
+        "Projection for this date": 1667
     },
     {
         "name": "Sept 26",
@@ -542,7 +551,17 @@ const projections = [
     {
         "name": "Sept 28",
         "nodata": 0,
-        "Projection for this date": 1713
+        "Projection for this date": 1693
+    },
+    {
+        "name": "Sept 29",
+        "nodata": 0,
+        "Projection for this date": 1699
+    },
+    {
+        "name": "Sept 30",
+        "nodata": 0,
+        "Projection for this date" : 1731
     }
 ]
 
@@ -597,11 +616,11 @@ class Totalgraph extends Component {
                 <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
 
                 {/* bar chart */}
-                <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.5')}>
+                <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('1.8')}>
                     <ComposedChart data={this.state.AddCurrentProjections ? (projections) : (noprojections)} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                         <CartesianGrid />
                         <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                        {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={this.state.AddCurrentProjections ? (['0', 'dataMax + 487']) : (['0', 'dataMax + 719'])} fontSize="12" />)}
+                        {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={this.state.AddCurrentProjections ? (['0', 'dataMax + 469']) : (['0', 'dataMax + 670'])} fontSize="12" />)}
                         <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                         {this.state.AddCurrentProjections ? (<Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />) : ("")}
                         <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

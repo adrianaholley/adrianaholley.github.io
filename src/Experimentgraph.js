@@ -609,7 +609,29 @@ const noprojections = [
 		"missingfirst4 days": 188,
 		"missingfirst2days": 390,
 		"missing1stday": 390,
-		"txst": 390
+		"txst": 443
+	},
+	{
+		"name": "Sept 22",
+		"Active cases": 220,
+		"aandm": 399,
+		"missingfirst6days": 83,
+		"missingfirst5days": 115,
+		"missingfirst4 days": 147,
+		"missingfirst2days": 210,
+		"missing1stday": 399,
+		"txst": 254
+	},
+	{
+		"name": "Sept 23",
+		"Active cases": 244,
+		"aandm": 443,
+		"missingfirst6days": 127,
+		"missingfirst5days": 127,
+		"missingfirst4 days": 159,
+		"missingfirst2days": 241,
+		"missing1stday": 254,
+		"txst": 241
 	},
 	{
 		"name": null
