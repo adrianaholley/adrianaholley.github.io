@@ -253,7 +253,7 @@ const datereported = [
     },
     {
         "name": "Sept 18",
-        "Real Active": null,
+        "Real Active": 161,
         "Active": 187
     },
     {
@@ -290,6 +290,21 @@ const datereported = [
         "name": "Sept 25",
         "Real Active": null,
         "Active": 247
+    },
+    {
+        "name": "Sept 26",
+        "Real Active": null,
+        "Active": null
+    },
+    {
+        "name": "Sept 27",
+        "Real Active": null,
+        "Active": null
+    },
+    {
+        "name": "Sept 28",
+        "Real Active": null,
+        "Active": 260
     }
 ]
 
@@ -367,6 +382,13 @@ class Activegraph extends Component {
                     </ComposedChart>
                 </ResponsiveContainer>
 
+                <a><i><font size="1">
+                    <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
+                        <b>Uhhh, why does the data look off for Sept 18?</b> This data assumes a 10-day illness.
+                        Some may last longer, meaning some cases that got moved out of an "active" state and into "recovered" may actually still be active on this date. 
+                        All data is not reflective of the higher, actual number of cases due to some students not self-reporting to the university and asymptomatic individuals never being tested.
+                    </div>
+                </font></i></a>
             </div>
         )
     }

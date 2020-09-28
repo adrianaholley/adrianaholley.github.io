@@ -5,7 +5,7 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import Activegraph from './Activegraph';
 
-var siteupdatetime = "Last updated Sunday, September 27 at 11:45pm CST."
+var siteupdatetime = "Last updated Monday, September 28 at 5:15pm CST."
 
 class Activepage extends Component {
     constructor(props) {
@@ -75,12 +75,11 @@ class Activepage extends Component {
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    To recap, we (you and I) only know the number of illnesses that started during this time by counting 10 days backward once they've recovered. 
-                                    The cases that started in the past 10 days have not recovered yet, so we don't know how many cases started during that time. 
-                                    Texas Tech does know when cases start, but share this info. 
-                                    If you think Tech's dashboard should show cases by test date like&nbsp;
+                                    We (you and I) only know the number of illnesses that started during this time by counting 10 days backward once they've recovered. 
+                                    Since the cases that started in the past 10 days have not recovered yet, we don't know how many cases started during that time. 
+                                    If you think Tech's official dashboard should show cases by test date like&nbsp;
                                     <a href="https://bit.ly/3jTn8hb">
-                                        Texas State
+                                        Texas State's
                                     </a>
                                     &nbsp;does, email&nbsp;
                                     <a href="mailto:covid19@ttu.edu">
