@@ -222,7 +222,7 @@ class Experiment extends Component {
             OneWeek: true,
             TwoWeeks: true,
             activedata: {},
-            LogView: true
+            LogViewIsOff: true
         };
     }
 

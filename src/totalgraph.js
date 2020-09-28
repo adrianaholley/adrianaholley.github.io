@@ -3,566 +3,330 @@ import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
-import { Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
+import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
 
-const noprojections = [
-    {
-        "name": "Aug 3",
-        "Total": 18,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 4",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 5",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 6",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 7",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 8",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 9",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 10",
-        "Total": 44,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 11",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 12",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 13",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 14",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 15",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 16",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 17",
-        "Total": 67,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 18",
-        "Total": 75,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 19",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 20",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 21",
-        "Total": 103,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 22",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 23",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 24",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 25",
-        "Total": 149,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 26",
-        "Total": 206,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 27",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 28",
-        "Total": 260,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 29",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 30",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 31",
-        "Total": 378,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 1",
-        "Total": 551,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 2",
-        "Total": 624,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 3",
-        "Total": 671,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 4",
-        "Total": 717,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 5",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 6",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 7",
-        "Total": 945,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 8",
-        "Total": 1020,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 9",
-        "Total": 1055,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 10",
-        "Total": 1064,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 11",
-        "Total": 1091,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 12",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 13",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 14",
-        "Total": 1280,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 15",
-        "Total": 1293,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 16",
-        "Total": 1343,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 17",
-        "Total": 1375,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 18",
-        "Total": 1407,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 19",
-        "nodata": 1407,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 20",
-        "nodata": 1407,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 21",
-        "Total": 1481,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 22",
-        "Total": 1490,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 23",
-        "Total": 1530
-    }
-]
-
-const projections = [
-    {
-        "name": "Aug 3",
-        "Total": 18,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 4",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 5",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 6",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 7",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 8",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 9",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 10",
-        "Total": 44,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 11",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 12",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 13",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 14",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 15",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 16",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 17",
-        "Total": 67,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 18",
-        "Total": 75,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 19",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 20",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 21",
-        "Total": 103,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 22",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 23",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 24",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 25",
-        "Total": 149,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 26",
-        "Total": 206,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 27",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 28",
-        "Total": 260,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 29",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 30",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Aug 31",
-        "Total": 378,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 1",
-        "Total": 551,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 2",
-        "Total": 624,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 3",
-        "Total": 671,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 4",
-        "Total": 717,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 5",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 6",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 7",
-        "Total": 945,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 8",
-        "Total": 1020,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 9",
-        "Total": 1055,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 10",
-        "Total": 1064,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 11",
-        "Total": 1091,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 12",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 13",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 14",
-        "Total": 1280,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 15",
-        "Total": 1293,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 16",
-        "Total": 1343,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 17",
-        "Total": 1375,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 18",
-        "Total": 1407,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 19",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 20",
-        "nodata": 0,
-        "nodata": 0
-    },
-    {
-        "name": "Sept 21",
-        "Total": 1481,
-        "no": 1481
-    },
-    {
-        "name": "Sept 22",
-        "Total": 1490,
-        "no": 1490
-    },
-    {
-        "name": "Sept 23",
-        "Total": 1530,
-        "Projection for this date": 1530
-    },
-    {
-        "name": "Sept 24",
-        "nodata": 0,
-        "Projection for this date": 1632
-    },
-    {
-        "name": "Sept 25",
-        "nodata": 0,
-        "Projection for this date": 1667
+const datereported = [
+	{
+		"name": "Jul 31",
+		"Real Total": 19,
+		"Total": null
+	},
+	{
+		"name": "Aug 1",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 1",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 3",
+		"Real Total": null,
+		"Total": 18
+	},
+	{
+		"name": "Aug 4",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 5",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 6",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 7",
+		"Real Total": 29,
+		"Total": null
+	},
+	{
+		"name": "Aug 8",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 9",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 10",
+		"Real Total": null,
+		"Total": 44
+	},
+	{
+		"name": "Aug 11",
+		"Real Total": 50,
+		"Total": null
+	},
+	{
+		"name": "Aug 12",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 13",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 14",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 15",
+		"Real Total": 62,
+		"Total": null
+	},
+	{
+		"name": "Aug 16",
+		"Real Total": 68,
+		"Total": null
+	},
+	{
+		"name": "Aug 17",
+		"Real Total": null,
+		"Total": 67
+	},
+	{
+		"name": "Aug 18",
+		"Real Total": 92,
+		"Total": 75
+	},
+	{
+		"name": "Aug 19",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 20",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 21",
+		"Real Total": 116,
+		"Total": 103
+	},
+	{
+		"name": "Aug 22",
+		"Real Total": 139,
+		"Total": null
+	},
+	{
+		"name": "Aug 23",
+		"Real Total": 178,
+		"Total": null
+	},
+	{
+		"name": "Aug 24",
+		"Real Total": 201,
+		"Total": null
+	},
+	{
+		"name": "Aug 25",
+		"Real Total": 234,
+		"Total": 149
+	},
+	{
+		"name": "Aug 26",
+		"Real Total": null,
+		"Total": 206
+	},
+	{
+		"name": "Aug 27",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Aug 28",
+		"Real Total": 326,
+		"Total": 260
+	},
+	{
+		"name": "Aug 29",
+		"Real Total": 377,
+		"Total": null
+	},
+	{
+		"name": "Aug 30",
+		"Real Total": 424,
+		"Total": null
+	},
+	{
+		"name": "Aug 31",
+		"Real Total": 502,
+		"Total": 378
+	},
+	{
+		"name": "Sept 1",
+		"Real Total": 646,
+		"Total": 551
+	},
+	{
+		"name": "Sept 2",
+		"Real Total": null,
+		"Total": 624
+	},
+	{
+		"name": "Sept 3",
+		"Real Total": null,
+		"Total": 671
+	},
+	{
+		"name": "Sept 4",
+		"Real Total": 800,
+		"Total": 717
+	},
+	{
+		"name": "Sept 5",
+		"Real Total": 917,
+		"Total": null
+	},
+	{
+		"name": "Sept 6",
+		"Real Total": 1153,
+		"Total": null
+	},
+	{
+		"name": "Sept 7",
+		"Real Total": 1170,
+		"Total": 945
+	},
+	{
+		"name": "Sept 8",
+		"Real Total": 1201,
+		"Total": 1020
+	},
+	{
+		"name": "Sept 9",
+		"Real Total": null,
+		"Total": 1055
+	},
+	{
+		"name": "Sept 10",
+		"Real Total": null,
+		"Total": 1064
+	},
+	{
+		"name": "Sept 11",
+		"Real Total": 1240,
+		"Total": 1091
+	},
+	{
+		"name": "Sept 12",
+		"Real Total": 1251,
+		"Total": null
+	},
+	{
+		"name": "Sept 13",
+		"Real Total": 1267,
+		"Total": null
+	},
+	{
+		"name": "Sept 14",
+		"Real Total": 1297,
+		"Total": 1280
+	},
+	{
+		"name": "Sept 15",
+		"Real Total": 1319,
+		"Total": 1293
+	},
+	{
+		"name": "Sept 16",
+		"Real Total": null,
+		"Total": 1343
+	},
+	{
+		"name": "Sept 17",
+		"Real Total": null,
+		"Total": 1375
+	},
+	{
+		"name": "Sept 18",
+		"Real Total": null,
+		"Total": 1407
+	},
+	{
+		"name": "Sept 19",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Sept 20",
+		"Real Total": null,
+		"Total": null
+	},
+	{
+		"name": "Sept 21",
+		"Real Total": null,
+		"Total": 1481
+	},
+	{
+		"name": "Sept 22",
+		"Real Total": null,
+		"Total": 1490
+	},
+	{
+		"name": "Sept 23",
+		"Real Total": null,
+		"Total": 1530
+	},
+	{
+		"name": "Sept 24",
+		"Real Total": null,
+		"Total": 1553
+	},
+	{
+		"name": "Sept 25",
+		"Projection for this date": 1585,
+		"Total": 1585
     },
     {
         "name": "Sept 26",
-        "nodata": 0,
-        "nodata": 1555
+        "Real Total": null,
+        "Total": null
     },
     {
         "name": "Sept 27",
-        "nodata": 0,
-        "nodata": 1555
+        "Real Total": null,
+        "Total": null
     },
     {
         "name": "Sept 28",
-        "nodata": 0,
-        "Projection for this date": 1693
+        "Real Total": null,
+        "Projection for this date": 1610
     },
     {
         "name": "Sept 29",
-        "nodata": 0,
-        "Projection for this date": 1699
+        "Real Total": null,
+        "Projection for this date": 1616
     },
     {
         "name": "Sept 30",
-        "nodata": 0,
-        "Projection for this date" : 1731
-    }
+        "Real Total": null,
+        "Projection for this date": 1646
+    },
+    {
+        "name": "Oct 1",
+        "Real Total": null,
+        "Projection for this date": 1662
+    },
+    {
+        "name": "Oct 2",
+        "Real Total": null,
+        "Projection for this date": 1692
+    },
+    
 ]
 
 const RedSwitch = withStyles({
@@ -584,10 +348,10 @@ class Totalgraph extends Component {
         super();
         this.state = {
             name: "React",
-            AddCurrentProjections: true,
+            TrueStartDateIsOff: true,
             TwoWeeks: true,
             data: {},
-            LogView: true
+            LogViewIsOff: true
         };
     }
 
@@ -602,27 +366,37 @@ class Totalgraph extends Component {
 
                 {/* title, subtitle */}
                 <Grid>
-                    <h5 style={{ marginBottom: 10, marginTop: 5 }}>Cases by Day Since August 1</h5>
+                    <h5 style={{ marginBottom: 0, marginTop: 5 }}>{this.state.TrueStartDateIsOff ? ('Total Cases by Day Reported to University') : ('Total Cases by First Day of Symptoms')}</h5>
+                    {/* switches */}
+                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ TrueStartDateIsOff: !this.state.TrueStartDateIsOff })} name="TrueStartDateIsOff" />} label="Show by first day of illness*" />
+                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" />
+
                     <a><i><font size="2">
-                    <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
-                            Case counts reflect the <b>date reported</b> on TTU's website, not first date of symptoms.
-                            They do not include those still needing to self-report, nor those waiting 0-3 days for results.
+                        <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
+                            Case counts reflect the&nbsp;
+                            <b><u>{this.state.TrueStartDateIsOff ? ("date reported") : ("date of first symptoms")}</u></b>
+                            {this.state.TrueStartDateIsOff ?
+                                (" on TTU's website, not first date of symptoms. Due to testing delays, it can take 0-3 days for a case to be reflected in this view. ")
+                                :
+                                (' (or date of test for asymptomatic cases).  Due to sporadic reporting intervals by the university, a few cases may have start dates 1-2 days earlier (or greater, for August cases) than shown here. ')}
+                            {this.state.TrueStartDateIsOff ? ("If a student or employee tests at a non-TTU testing location, it is not included on this site unless it was self-reported to the university. ") : ('')}
+                            {this.state.TrueStartDateIsOff ? ('') : ('*Read more about the data ')}
+                            <a href="https://bit.ly/347xkvU">{this.state.TrueStartDateIsOff ? ('') : ('here')}</a>
+                            {this.state.TrueStartDateIsOff ? ('') : ('. ')}
                         </div>
                     </font></i></a>
                 </Grid>
 
-                {/* switches */}
-                <FormControlLabel control={<RedSwitch checked={this.state.AddCurrentProjections} onChange={() => this.setState({ AddCurrentProjections: !this.state.AddCurrentProjections })} name="AddCurrentProjections" />} label="Add projections" />
-                <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
 
                 {/* bar chart */}
-                <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('1.8')}>
-                    <ComposedChart data={this.state.AddCurrentProjections ? (projections) : (noprojections)} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
+                <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.4')}>
+                    <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                         <CartesianGrid />
                         <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                        {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={this.state.AddCurrentProjections ? (['0', 'dataMax + 469']) : (['0', 'dataMax + 670'])} fontSize="12" />)}
-                        <Bar dataKey="Total" fill="#333333" ><LabelList dataKey="Total" position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
-                        {this.state.AddCurrentProjections ? (<Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />) : ("")}
+                        {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 108']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 508']} fontSize="12" />)}
+                        <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
+                        <Area type="monotone" dataKey="Total"  fill="#333" stroke="#cc0000" connectNulls={true}  fillOpacity={.1} />
+                        <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />
                         <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                         <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                         <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3% of all students and employees (1,380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

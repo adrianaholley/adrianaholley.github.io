@@ -15,6 +15,7 @@ import Totalclass from './Totalclass.js';
 import Activepage from './Activepage.js';
 import TotalA11yclass from './TotalA11yclass.js'
 import Experiment from './Experiment.js'
+import Gameserver from './Gameserver.js'
 
 function App() {
   return (
@@ -53,13 +54,11 @@ function App() {
                       </Link>
                     </Grid>
                     <Grid item xs>
-                      <Link style={{ textDecoration: 'none' }} to="/active">
-                        <p style={{ fontStretch: "condensed" }}>
-                          <font size="3" color="#555555">
-                            <b>Active</b>
-                          </font>
-                        </p>
-                      </Link>
+                      <a style={{ textDecoration: 'none', fontStretch: "condensed" }} href="https://ttucovid19.com/#/active">
+                        <font size="3" color="#555555">
+                          <b>Active</b>
+                        </font>
+                      </a>
                     </Grid>
                     <Grid item xs>
                       <Link style={{ textDecoration: 'none' }} to="/faq">
@@ -118,32 +117,26 @@ function App() {
                       </Link>
                     </Grid>
                     <Grid item xs>
-                      <Link style={{ textDecoration: 'none' }} to="/active">
-                        <p style={{ fontStretch: "condensed" }}>
-                          <font size="2" color="#555555">
-                            <b>Active&nbsp;&nbsp;</b>
-                          </font>
-                        </p>
-                      </Link>
+                      <a style={{ textDecoration: 'none', fontStretch: "condensed" }} href="https://bit.ly/347xkvU">
+                        <font size="2" color="#555555">
+                          <b>Active&nbsp;&nbsp;</b>
+                        </font>
+                      </a>
                     </Grid>
                     <Grid item xs>
-                      <Link style={{ textDecoration: 'none' }} to="/faq">
-                        <p style={{ fontStretch: "condensed" }}>
-                          <font size="2" color="#555555">
-                            <b>FAQ&nbsp;&nbsp;</b>
-                          </font>
-                        </p>
-                      </Link>
+                      <a style={{ textDecoration: 'none', fontStretch: "condensed" }} href="https://bit.ly/3cAoMBI">
+                        <font size="2" color="#555555">
+                          <b>FAQ&nbsp;&nbsp;</b>
+                        </font>
+                      </a>
                     </Grid>
                     <Grid item xs>
                       {/* <div style={{ paddingInlineEnd:200 }}> */}
-                      <Link style={{ textDecoration: 'none' }} to="/contact">
-                        <p style={{ fontStretch: "condensed" }}>
+                      <a style={{ textDecoration: 'none', fontStretch: "condensed" }} href="https://bit.ly/348zAU1">
                           <font size="2" color="#555555">
                             <b>Contact</b>
                           </font>
-                        </p>
-                      </Link>
+                        </a>
                       {/* </div> */}
                     </Grid>
                   </Grid>
@@ -160,6 +153,7 @@ function App() {
             <Route path="/faq"><Faq /></Route>
             <Route path="/contact"><Contact /></Route>
             <Route path="/experiment"><Experiment /></Route>
+            <Route path="/GAMESERVER_"><Gameserver /></Route>
           </Switch>
         </HashRouter>
       </header>

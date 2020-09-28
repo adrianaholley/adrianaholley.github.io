@@ -17,7 +17,6 @@ function Contact() {
           <header className="App-header">
             <h3>Contact</h3>
             <div>
-              <br />
               <p><bold>Have a question or comment about the site?</bold><br />
                 <font size="4"><a href="https://bit.ly/3jKvDL7" target='_blank'>Reach out to me.</a></font></p>
               <p><bold>Have a question or comment about Texas Tech's COVID Response plan?</bold><br />

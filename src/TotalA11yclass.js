@@ -147,7 +147,7 @@ class TotalA11yclass extends Component {
 			OneWeek: true,
 			TwoWeeks: true,
 			data: {},
-			LogView: true
+			LogViewIsOff: true
 		};
 	}
 

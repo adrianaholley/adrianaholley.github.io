@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Totalpie from './Totalpie.js';
 import Totalgraph from './totalgraph.js';
 
+var siteupdatetime = "Last updated Sunday, September 27 at 11:45pm CST."
+
 class Totalclass extends Component {
 
     render() {
@@ -21,7 +23,7 @@ class Totalclass extends Component {
                 {/* page title, subtitle */}
                 <h1></h1>
                 <h3 style={{ marginBottom: 0 }}>Total Reported Cases</h3>
-                <a><font size="2">Last updated Wednesday, September 23 at 5:15pm. </font></a>
+                <a><font size="2">{siteupdatetime}</font></a>
 
                 <center>
 
@@ -51,6 +53,7 @@ class Totalclass extends Component {
                                         <li>September 9: Last day to drop a course and have charges removed<br /></li>
                                         <li>September 12: First football game, played at home</li>
                                         <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                                        <li>September 26: Second home game</li>
                                     </p></font>
                                 </Grid>
 
@@ -107,6 +110,7 @@ class Totalclass extends Component {
                                 <li>September 9: Last day to drop a course and have charges removed<br /></li>
                                 <li>September 12: First football game, played at home</li>
                                 <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                                <li>September 26: Second home game</li>
                             </p></font>
                         </div>
                     </MobileView>

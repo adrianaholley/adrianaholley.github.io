@@ -5,6 +5,8 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import Activegraph from './Activegraph';
 
+var siteupdatetime = "Last updated Sunday, September 27 at 11:45pm CST."
+
 class Activepage extends Component {
     constructor(props) {
         super(props);
@@ -13,7 +15,7 @@ class Activepage extends Component {
             OneWeek: true,
             TwoWeeks: true,
             activedata: {},
-            LogView: true
+            LogViewIsOff: true
         };
     }
 
@@ -31,48 +33,52 @@ class Activepage extends Component {
 
                 {/* title, subtitle */}
                 <h1></h1>
-                <h3 style={{ marginBottom: 0 }}>Active Reported Cases*</h3>
-                <a><font size="2">Last updated Wednesday, September 23 at 5:15pm.</font></a>
+                <h3 style={{ marginBottom: 0 }}>Active Reported Cases</h3>
+                <a><font size="2">{siteupdatetime}</font></a>
 
                 <center>
 
                     <Grid container>
-
                         <Grid item xs>
                             <br />
+                            
                             <h5 style={{ marginBottom: -10, marginTop: 5 }}>
                                 <div className="adjustabletext">
-                                    *This data is <u><i>not</i></u> an accurate reflection of active cases on a given date.
+                                    *How is the start date found? 
                                 </div>
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    Past dates' counts are not updated to show the true number of active COVID cases once discovered.
+                                    Each time Tech posts an update, they share the number of cases moved into "recovery" on that date. 
+                                    For example, Sept 14 they shared there were 154 new recoveries. 
+                                    Since the majority of COVID illnesses last 10 days from first symptoms or test date, we assume these cases began on Sept 4. 
+                                    
                                 </div>
                             </font></p>
 
                             <h5 style={{ marginBottom: -10, marginTop: 5 }}>
                                 <div className="adjustabletext">
-                                    What does this mean?
+                                    What if recovery numbers are shared on a Monday?
                                 </div>
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    Let's say that 50 positive people took a test today, and 50 positive people took one yesterday.
-                                    Since it takes a while to get and submit results, let's assume these cases aren't reflected on the site until 2 days after tests are taken.
-                                    That means today's active case count should really be updated 2 days from now to add 100 more cases.
+                                    Updates given on Mondays (or any update after a gap, really), are cumulative from the weekend, and Sept 14 was a Monday. 
+                                    That means some of those cases may have recovered on Sept 12 or Sept 13, which means they actually started Sept 2 or 3. 
                                 </div>
                             </font></p>
 
                             <h5 style={{ marginBottom: -10, marginTop: 5 }}>
                                 <div className="adjustabletext">
-                                    Why aren't these numbers accurate?
+                                    Why don't the 10 most recent days have bars?
                                 </div>
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    Texas Tech doesn't release that information.
-                                    If you think Texas Tech should show cases by test date like&nbsp;
+                                    To recap, we (you and I) only know the number of illnesses that started during this time by counting 10 days backward once they've recovered. 
+                                    The cases that started in the past 10 days have not recovered yet, so we don't know how many cases started during that time. 
+                                    Texas Tech does know when cases start, but share this info. 
+                                    If you think Tech's dashboard should show cases by test date like&nbsp;
                                     <a href="https://bit.ly/3jTn8hb">
                                         Texas State
                                     </a>
@@ -108,6 +114,7 @@ class Activepage extends Component {
                                         <li>September 9: Last day to drop a course and have charges removed<br /></li>
                                         <li>September 12: First football game, played at home</li>
                                         <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                                        <li>September 26: Second home game</li>
                                     </p></font>
                                 </Grid>
                                 <Grid item xs>
@@ -135,6 +142,7 @@ class Activepage extends Component {
                                 <li>September 9: Last day to drop a course and have charges removed<br /></li>
                                 <li>September 12: First football game, played at home</li>
                                 <li>September 21: Last day to withdraw and receive partial financial credit<br /></li>
+                                <li>September 26: Second home game</li>
                             </p></font>
                         </div>
                     </MobileView>

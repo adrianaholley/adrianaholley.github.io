@@ -660,7 +660,7 @@ class Experimentgraph extends Component {
             OneWeek: true,
             TwoWeeks: true,
             activedata: {},
-            LogView: true
+            LogViewIsOff: true
         };
     }
 
@@ -680,7 +680,7 @@ class Experimentgraph extends Component {
                     </font></i></a>
                 </Grid>
 
-                <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogView: !this.state.LogView })} />} label="View on logarithmic scale" />
+                <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" />
 
                 {/* show graphs */}
                 <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.5')}>
@@ -688,7 +688,7 @@ class Experimentgraph extends Component {
                         <CartesianGrid />
                         <Legend />
                         <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                        {this.state.LogView ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 1550']} fontSize="12" />)}
+                        {this.state.LogViewIsOff ? (<YAxis fontSize="12" />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 1550']} fontSize="12" />)}
                         {/* <Area type="monotone" dataKey="missing1stday" fill="#ff0000" stroke="#ff0000" connectNulls={true}   fillOpacity={.1}/> */}
                         {/* <Area type="monotone" dataKey="missingfirst2days" fill="#ff0000" stroke="#ff0000" connectNulls={true}   fillOpacity={.1}/> */}
                         {/* <Area type="monotone" dataKey="missingfirst5days" fill="#ff0000" stroke="#ff0000" connectNulls={true}   fillOpacity={.1}/> */}
