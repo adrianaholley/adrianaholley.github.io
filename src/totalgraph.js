@@ -258,7 +258,7 @@ const datereported = [
     },
     {
         "name": "Sept 19",
-        "Real Total": null,
+        "Real Total": 1375,
         "Total": null
     },
     {
@@ -303,28 +303,28 @@ const datereported = [
     },
     {
         "name": "Sept 28",
-        "Total": 1643,
-        "Projection for this date": 1643
+        "no": 1643,
+        "Total": 1643
     },
     {
         "name": "Sept 29",
-        "Real Total": null,
-        "Projection for this date": 1649
+        "Total": 1647,
+        "Projection for this date": 1647
     },
     {
         "name": "Sept 30",
         "Real Total": null,
-        "Projection for this date": 1680
+        "Projection for this date": 1678
     },
     {
         "name": "Oct 1",
         "Real Total": null,
-        "Projection for this date": 1696
+        "Projection for this date": 1694
     },
     {
         "name": "Oct 2",
         "Real Total": null,
-        "Projection for this date": 1727
+        "Projection for this date": 1725
     },
     {
         "name": "Oct 3",
@@ -339,7 +339,12 @@ const datereported = [
     {
         "name": "Oct 5",
         "Real Total": null,
-        "Projection for this date": 1771
+        "Projection for this date": 1768
+    },
+    {
+        "name": "Oct 6",
+        "Real Total": null,
+        "Projection for this date": 1770
     }
 
 ]
@@ -408,9 +413,9 @@ class Totalgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 29']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 508']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 30']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 508']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
-                            <Area type="monotone" dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
+                            <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
