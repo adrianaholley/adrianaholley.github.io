@@ -28,7 +28,7 @@ const datereported = [
     },
     {
         "name": "Aug 4",
-        "Real Active": null,
+        "Real Active": 26,
         "Active": null
     },
     {
@@ -83,12 +83,12 @@ const datereported = [
     },
     {
         "name": "Aug 15",
-        "Real Active": 43,
+        "Real Active": 36,
         "Active": null
     },
     {
         "name": "Aug 16",
-        "Real Active": 49,
+        "Real Active": 42,
         "Active": null
     },
     {
@@ -263,7 +263,7 @@ const datereported = [
     },
     {
         "name": "Sept 20",
-        "Real Active": null,
+        "Real Active": 245,
         "Active": null
     },
     {
@@ -310,6 +310,11 @@ const datereported = [
         "name": "Sept 29",
         "Real Active": null,
         "Active": 232
+    },
+    {
+        "name": "Sept 30",
+        "Real Active": null,
+        "Active": 222
     }
 ]
 
@@ -371,29 +376,33 @@ class Activegraph extends Component {
                     </font></i></a>
                 </Grid>
 
-                {/* show graphs */}
-                <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.4')}>
-                    <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
-                        <CartesianGrid />
-                        <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                        {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 18', 'dataMax + 350']) : (['dataMin - 18', 'dataMax + 81'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 1550']) : (['0', 'dataMax + 1281'])} fontSize="12" />)}
-                        <Bar dataKey={this.state.TrueStartDateIsOff ? ("Active") : ("Real Active")} fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
-                        <Area dataKey="Active" fill="#cc0000" stroke="#333333" connectNulls={true} fillOpacity={.1} />
-                        <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                        <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                        <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3% of all students and employees (1,380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                        <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4% of all students and employees (1,840)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                        <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                    </ComposedChart>
-                </ResponsiveContainer>
+                <Grid>
+                    {/* show graphs */}
+                    <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.3')}>
+                        <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
+                            <CartesianGrid />
+                            <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
+                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 18', 'dataMax + 350']) : (['dataMin - 18', 'dataMax + 81'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 1550']) : (['0', 'dataMax + 1281'])} fontSize="12" />)}
+                            <Bar dataKey={this.state.TrueStartDateIsOff ? ("Active") : ("Real Active")} fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
+                            <Area dataKey="Active" fill="#cc0000" stroke="#333333" connectNulls={true} fillOpacity={.1} />
+                            <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3% of all students and employees (1,380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4% of all students and employees (1,840)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+                        </ComposedChart>
+                    </ResponsiveContainer>
 
-                <a><i><font size="1">
-                    <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
-                        <b>Uhhh, why does the data look off for Sept 18?</b> This data assumes a 10-day illness.
-                        Some may last longer, meaning some cases that got moved out of an "active" state and into "recovered" may actually still be active on this date. 
+                    {this.state.TrueStartDateIsOff ? ('') : (
+                        <a><i><font size="1">
+                            <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
+                                <b>Uhhh, why does the data look off for Sept 18?</b> This data assumes a 10-day illness.
+                        Some may last longer, meaning some cases that got moved out of an "active" state and into "recovered" may actually still be active on this date.
                         All data is not reflective of the higher, actual number of cases due to some students not self-reporting to the university and asymptomatic individuals never being tested.
                     </div>
-                </font></i></a>
+                        </font></i></a>
+                    )}
+                </Grid>
             </div>
         )
     }

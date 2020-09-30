@@ -28,7 +28,7 @@ const datereported = [
     },
     {
         "name": "Aug 4",
-        "Real Total": null,
+        "Real Total": 26,
         "Total": null
     },
     {
@@ -263,7 +263,7 @@ const datereported = [
     },
     {
         "name": "Sept 20",
-        "Real Total": null,
+        "Real Total": 1427,
         "Total": null
     },
     {
@@ -308,23 +308,23 @@ const datereported = [
     },
     {
         "name": "Sept 29",
-        "Total": 1647,
-        "Projection for this date": 1647
+        "no": 1647,
+        "Total": 1647
     },
     {
         "name": "Sept 30",
-        "Real Total": null,
-        "Projection for this date": 1678
+        "Total": 1689,
+        "Projection for this date": 1689
     },
     {
         "name": "Oct 1",
         "Real Total": null,
-        "Projection for this date": 1694
+        "Projection for this date": 1705
     },
     {
         "name": "Oct 2",
         "Real Total": null,
-        "Projection for this date": 1725
+        "Projection for this date": 1736
     },
     {
         "name": "Oct 3",
@@ -339,12 +339,17 @@ const datereported = [
     {
         "name": "Oct 5",
         "Real Total": null,
-        "Projection for this date": 1768
+        "Projection for this date": 1780
     },
     {
         "name": "Oct 6",
         "Real Total": null,
-        "Projection for this date": 1770
+        "Projection for this date": 1782
+    },
+    {
+        "name": "Oct 7",
+        "Real Total": null,
+        "Projection for this date": 1825
     }
 
 ]
@@ -409,11 +414,11 @@ class Totalgraph extends Component {
 
                 <Grid>
                     {/* bar chart */}
-                    <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.4')}>
+                    <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.3')}>
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 30']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 508']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 175']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 365']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />
@@ -424,13 +429,16 @@ class Totalgraph extends Component {
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                         </ComposedChart>
                     </ResponsiveContainer>
-                    <a><i><font size="1">
-                        <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")}>
-                            <b>Uhhh, why does the data look off for Sept 18?</b> This data assumes a 10-day illness.
-                        Some may last longer, meaning some cases that started Sept 18 have not recovered yet and will be listed under a later recovery date.
-                        All data is not reflective of the higher, actual number of cases due to some students not self-reporting to the university and asymptomatic individuals never being tested.
-                    </div>
-                    </font></i></a>
+
+                    {this.state.TrueStartDateIsOff ? ('') : (
+                        <a><i><font size="1">
+                            <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")}>
+                                <b>Uhhh, why does the data look off for Sept 18?</b> This data assumes a 10-day illness.
+                                Some may last longer, meaning some cases that started Sept 18 have not recovered yet and will be listed under a later recovery date.
+                                All data is not reflective of the higher, actual number of cases due to some students not self-reporting to the university and asymptomatic individuals never being tested.
+                            </div>
+                        </font></i></a>
+                    )}
                 </Grid>
             </center>
         )
