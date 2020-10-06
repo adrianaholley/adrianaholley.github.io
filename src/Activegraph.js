@@ -6,316 +6,346 @@ import React, { Component } from 'react';
 import { Area, Bar, CartesianGrid, ComposedChart, Label, LabelList, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const datereported = [
-    {
-        "name": "Jul 31",
-        "Real Active": 19,
-        "Active": null
-    },
-    {
-        "name": "Aug 1",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 2",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 3",
-        "Real Active": null,
-        "Active": 18
-    },
-    {
-        "name": "Aug 4",
-        "Real Active": 26,
-        "Active": null
-    },
-    {
-        "name": "Aug 5",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 6",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 7",
-        "Real Active": 29,
-        "Active": null
-    },
-    {
-        "name": "Aug 8",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 9",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 10",
-        "Real Active": null,
-        "Active": 25
-    },
-    {
-        "name": "Aug 11",
-        "Real Active": 31,
-        "Active": null
-    },
-    {
-        "name": "Aug 12",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 13",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 14",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 15",
-        "Real Active": 36,
-        "Active": null
-    },
-    {
-        "name": "Aug 16",
-        "Real Active": 42,
-        "Active": null
-    },
-    {
-        "name": "Aug 17",
-        "Real Active": null,
-        "Active": 38
-    },
-    {
-        "name": "Aug 18",
-        "Real Active": 63,
-        "Active": null
-    },
-    {
-        "name": "Aug 19",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 20",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 21",
-        "Real Active": 66,
-        "Active": 53
-    },
-    {
-        "name": "Aug 22",
-        "Real Active": 89,
-        "Active": null
-    },
-    {
-        "name": "Aug 23",
-        "Real Active": 128,
-        "Active": null
-    },
-    {
-        "name": "Aug 24",
-        "Real Active": 151,
-        "Active": null
-    },
-    {
-        "name": "Aug 25",
-        "Real Active": 172,
-        "Active": 87
-    },
-    {
-        "name": "Aug 26",
-        "Real Active": null,
-        "Active": 146
-    },
-    {
-        "name": "Aug 27",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Aug 28",
-        "Real Active": 234,
-        "Active": 176
-    },
-    {
-        "name": "Aug 29",
-        "Real Active": 285,
-        "Active": null
-    },
-    {
-        "name": "Aug 30",
-        "Real Active": 332,
-        "Active": null
-    },
-    {
-        "name": "Aug 31",
-        "Real Active": 386,
-        "Active": 268
-    },
-    {
-        "name": "Sept 1",
-        "Real Active": 507,
-        "Active": 418
-    },
-    {
-        "name": "Sept 2",
-        "Real Active": null,
-        "Active": 453
-    },
-    {
-        "name": "Sept 3",
-        "Real Active": null,
-        "Active": 477
-    },
-    {
-        "name": "Sept 4",
-        "Real Active": 566,
-        "Active": 490
-    },
-    {
-        "name": "Sept 5",
-        "Real Active": 683,
-        "Active": null
-    },
-    {
-        "name": "Sept 6",
-        "Real Active": 919,
-        "Active": null
-    },
-    {
-        "name": "Sept 7",
-        "Real Active": 844,
-        "Active": 626
-    },
-    {
-        "name": "Sept 8",
-        "Real Active": 824,
-        "Active": 650
-    },
-    {
-        "name": "Sept 9",
-        "Real Active": null,
-        "Active": 612
-    },
-    {
-        "name": "Sept 10",
-        "Real Active": null,
-        "Active": 543
-    },
-    {
-        "name": "Sept 11",
-        "Real Active": 594,
-        "Active": 426
-    },
-    {
-        "name": "Sept 12",
-        "Real Active": 605,
-        "Active": null
-    },
-    {
-        "name": "Sept 13",
-        "Real Active": 621,
-        "Active": null
-    },
-    {
-        "name": "Sept 14",
-        "Real Active": 497,
-        "Active": 461
-    },
-    {
-        "name": "Sept 15",
-        "Real Active": 402,
-        "Active": 357
-    },
-    {
-        "name": "Sept 16",
-        "Real Active": null,
-        "Active": 171
-    },
-    {
-        "name": "Sept 17",
-        "Real Active": null,
-        "Active": 186
-    },
-    {
-        "name": "Sept 18",
-        "Real Active": 161,
-        "Active": 187
-    },
-    {
-        "name": "Sept 19",
-        "Real Active": 193,
-        "Active": null
-    },
-    {
-        "name": "Sept 20",
-        "Real Active": 245,
-        "Active": null
-    },
-    {
-        "name": "Sept 21",
-        "Real Active": null,
-        "Active": 222
-    },
-    {
-        "name": "Sept 22",
-        "Real Active": null,
-        "Active": 220
-    },
-    {
-        "name": "Sept 23",
-        "Real Active": null,
-        "Active": 244
-    },
-    {
-        "name": "Sept 24",
-        "Real Active": null,
-        "Active": 237
-    },
-    {
-        "name": "Sept 25",
-        "Real Active": null,
-        "Active": 247
-    },
-    {
-        "name": "Sept 26",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Sept 27",
-        "Real Active": null,
-        "Active": null
-    },
-    {
-        "name": "Sept 28",
-        "Real Active": null,
-        "Active": 260
-    },
-    {
-        "name": "Sept 29",
-        "Real Active": null,
-        "Active": 232
-    },
-    {
-        "name": "Sept 30",
-        "Real Active": null,
-        "Active": 222
-    }
+	{
+		"name": "Jul 30",
+		"Real Active": 19,
+		"Active": null
+	},
+	{
+		"name": "Jul 31",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 1",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 2",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 3",
+		"Real Active": 26,
+		"Active": 18
+	},
+	{
+		"name": "Aug 4",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 5",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 6",
+		"Real Active": 29,
+		"Active": null
+	},
+	{
+		"name": "Aug 7",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 8",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 9",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 10",
+		"Real Active": 31,
+		"Active": 25
+	},
+	{
+		"name": "Aug 11",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 12",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 13",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 14",
+		"Real Active": 36,
+		"Active": 37
+	},
+	{
+		"name": "Aug 15",
+		"Real Active": 44,
+		"Active": null
+	},
+	{
+		"name": "Aug 16",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 17",
+		"Real Active": 55,
+		"Active": 38
+	},
+	{
+		"name": "Aug 18",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 19",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Aug 20",
+		"Real Active": 81,
+		"Active": null
+	},
+	{
+		"name": "Aug 21",
+		"Real Active": 82,
+		"Active": 53
+	},
+	{
+		"name": "Aug 22",
+		"Real Active": 121,
+		"Active": null
+	},
+	{
+		"name": "Aug 23",
+		"Real Active": 144,
+		"Active": null
+	},
+	{
+		"name": "Aug 24",
+		"Real Active": 177,
+		"Active": null
+	},
+	{
+		"name": "Aug 25",
+		"Real Active": null,
+		"Active": 87
+	},
+	{
+		"name": "Aug 26",
+		"Real Active": null,
+		"Active": 146
+	},
+	{
+		"name": "Aug 27",
+		"Real Active": 249,
+		"Active": null
+	},
+	{
+		"name": "Aug 28",
+		"Real Active": 286,
+		"Active": 176
+	},
+	{
+		"name": "Aug 29",
+		"Real Active": 359,
+		"Active": null
+	},
+	{
+		"name": "Aug 30",
+		"Real Active": 437,
+		"Active": null
+	},
+	{
+		"name": "Aug 31",
+		"Real Active": 555,
+		"Active": 268
+	},
+	{
+		"name": "Sept 1",
+		"Real Active": null,
+		"Active": 418
+	},
+	{
+		"name": "Sept 2",
+		"Real Active": null,
+		"Active": 453
+	},
+	{
+		"name": "Sept 3",
+		"Real Active": 625,
+		"Active": 477
+	},
+	{
+		"name": "Sept 4",
+		"Real Active": 709,
+		"Active": 490
+	},
+	{
+		"name": "Sept 5",
+		"Real Active": 945,
+		"Active": null
+	},
+	{
+		"name": "Sept 6",
+		"Real Active": 962,
+		"Active": null
+	},
+	{
+		"name": "Sept 7",
+		"Real Active": 901,
+		"Active": 626
+	},
+	{
+		"name": "Sept 8",
+		"Real Active": null,
+		"Active": 650
+	},
+	{
+		"name": "Sept 9",
+		"Real Active": null,
+		"Active": 612
+	},
+	{
+		"name": "Sept 10",
+		"Real Active": 738,
+		"Active": 543
+	},
+	{
+		"name": "Sept 11",
+		"Real Active": 605,
+		"Active": 426
+	},
+	{
+		"name": "Sept 12",
+		"Real Active": 621,
+		"Active": null
+	},
+	{
+		"name": "Sept 13",
+		"Real Active": 651,
+		"Active": null
+	},
+	{
+		"name": "Sept 14",
+		"Real Active": 519,
+		"Active": 461
+	},
+	{
+		"name": "Sept 15",
+		"Real Active": null,
+		"Active": 357
+	},
+	{
+		"name": "Sept 16",
+		"Real Active": null,
+		"Active": 171
+	},
+	{
+		"name": "Sept 17",
+		"Real Active": 194,
+		"Active": 186
+	},
+	{
+		"name": "Sept 18",
+		"Real Active": 195,
+		"Active": 187
+	},
+	{
+		"name": "Sept 19",
+		"Real Active": 247,
+		"Active": null
+	},
+	{
+		"name": "Sept 20",
+		"Real Active": 281,
+		"Active": null
+	},
+	{
+		"name": "Sept 21",
+		"Real Active": 276,
+		"Active": 222
+	},
+	{
+		"name": "Sept 22",
+		"Real Active": null,
+		"Active": 220
+	},
+	{
+		"name": "Sept 23",
+		"Real Active": null,
+		"Active": 244
+	},
+	{
+		"name": "Sept 24",
+		"Real Active": 248,
+		"Active": 237
+	},
+	{
+		"name": "Sept 25",
+		"Real Active": null,
+		"Active": 247
+	},
+	{
+		"name": "Sept 26",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Sept 27",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Sept 28",
+		"Real Active": null,
+		"Active": 260
+	},
+	{
+		"name": "Sept 29",
+		"Real Active": null,
+		"Active": 232
+	},
+	{
+		"name": "Sept 30",
+		"Real Active": null,
+		"Active": 222
+	},
+	{
+		"name": "Oct 1",
+		"Real Active": null,
+		"Active": 210
+	},
+	{
+		"name": "Oct 2",
+		"Real Active": null,
+		"Active": 203
+	},
+	{
+		"name": "Oct 3",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Oct 4",
+		"Real Active": null,
+		"Active": null
+	},
+	{
+		"name": "Oct 5",
+		"Real Active": null,
+		"Active": 202
+	}
 ]
 
 
@@ -369,7 +399,7 @@ class Activegraph extends Component {
                             {this.state.TrueStartDateIsOff ?
                                 ("Due to reporting delays, this means a case could be included on the site for only 3-9 days instead of the 10-day minimum illness length. ")
                                 :
-                                ("This data assumes a 10-day illness. Due to sporadic reporting intervals by the university, a few cases may have start-end dates 1-2 days earlier (or greater, for August cases) than shown here. ")
+                                ("This data assumes an 11-day illness. Due to sporadic reporting intervals by the university, a few cases may have start-end dates 1-2 days earlier (or greater, for August cases) than shown here. ")
                             }
                             {this.state.TrueStartDateIsOff ? ("Past dates are not updated with new case data found. ") : ("")}
                         </div>
@@ -382,7 +412,7 @@ class Activegraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 18', 'dataMax + 350']) : (['dataMin - 18', 'dataMax + 81'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 1550']) : (['0', 'dataMax + 1281'])} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 18', 'dataMax + 350']) : (['dataMin - 18', 'dataMax + 38'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 1550']) : (['0', 'dataMax + 1238'])} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Active") : ("Real Active")} fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
                             <Area dataKey="Active" fill="#cc0000" stroke="#333333" connectNulls={true} fillOpacity={.1} />
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
@@ -394,13 +424,7 @@ class Activegraph extends Component {
                     </ResponsiveContainer>
 
                     {this.state.TrueStartDateIsOff ? ('') : (
-                        <a><i><font size="1">
-                            <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
-                                <b>Uhhh, why does the data look off for Sept 18?</b> This data assumes a 10-day illness.
-                        Some may last longer, meaning some cases that got moved out of an "active" state and into "recovered" may actually still be active on this date.
-                        All data is not reflective of the higher, actual number of cases due to some students not self-reporting to the university and asymptomatic individuals never being tested.
-                    </div>
-                        </font></i></a>
+                        ''
                     )}
                 </Grid>
             </div>

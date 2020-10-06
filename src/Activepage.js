@@ -5,7 +5,7 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import Activegraph from './Activegraph';
 
-var siteupdatetime = "Last updated Wednesday, September 30 at 5:00pm CST."
+var siteupdatetime = "Last updated Monday, October 5 at 8:45pm CST."
 
 class Activepage extends Component {
     constructor(props) {
@@ -51,7 +51,7 @@ class Activepage extends Component {
                                 <div className="adjustabletext">
                                     Each time Tech posts an update, they share the number of cases moved into "recovery" on that date. 
                                     For example, Sept 14 they shared there were 154 new recoveries. 
-                                    Since the majority of COVID illnesses last 10 days from first symptoms or test date, we assume these cases began on Sept 4. 
+                                    Since the majority of COVID illnesses are considered "recovered" 11 days from first symptoms or test date, we assume these cases began on Sept 3. 
                                     
                                 </div>
                             </font></p>
@@ -64,19 +64,19 @@ class Activepage extends Component {
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
                                     Updates given on Mondays (or any update after a gap, really), are cumulative from the weekend, and Sept 14 was a Monday. 
-                                    That means some of those cases may have recovered on Sept 12 or Sept 13, which means they actually started Sept 2 or 3. 
+                                    That means some of those cases may have recovered on Sept 11 or Sept 12, which means they actually started Sept 1 or 2. 
                                 </div>
                             </font></p>
 
                             <h5 style={{ marginBottom: -10, marginTop: 5 }}>
                                 <div className="adjustabletext">
-                                    Why don't the 10 most recent days have bars?
+                                    Why don't the 11 most recent days have bars?
                                 </div>
                             </h5>
                             <p><font size={isMobile ? (3) : (4)}>
                                 <div className="adjustabletext">
-                                    We (you and I) only know the number of illnesses that started during this time by counting 10 days backward once they've recovered. 
-                                    Since the cases that started in the past 10 days have not recovered yet, we don't know how many cases started during that time. 
+                                    We (you and I) only know the number of illnesses that started during this time by counting 11 days backward once they've recovered. 
+                                    Since the cases that started in the past 11 days have not recovered yet, we don't know how many cases started during that time. 
                                     If you think Tech's official dashboard should show cases by test date like&nbsp;
                                     <a href="https://bit.ly/3jTn8hb">
                                         Texas State's
