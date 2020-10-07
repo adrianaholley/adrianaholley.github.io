@@ -298,7 +298,7 @@ const datereported = [
 	},
 	{
 		"name": "Sept 25",
-		"Real Total": null,
+		"Real Total": 1631,
 		"Total": 1585
 	},
 	{
@@ -353,22 +353,22 @@ const datereported = [
 	},
 	{
 		"name": "Oct 6",
-		"Projection for this date": 1768,
+		"Real Total": null,
 		"Total": 1768
 	},
 	{
 		"name": "Oct 7",
-		"Projection for this date": 1811,
-		"Total": null
+		"Projection for this date": 1783,
+		"Total": 1783
 	},
 	{
 		"name": "Oct 8",
-		"Projection for this date": 1831,
+		"Projection for this date": 1803,
 		"Total": null
 	},
 	{
 		"name": "Oct 9",
-		"Projection for this date": 1853,
+		"Projection for this date": 1825,
 		"Total": null
 	},
 	{
@@ -383,12 +383,12 @@ const datereported = [
 	},
 	{
 		"name": "Oct 12",
-		"Projection for this date": 1867,
+		"Projection for this date": 1838,
 		"Total": null
 	},
 	{
 		"name": "Oct 13",
-		"Projection for this date": 1868,
+		"Projection for this date": 1839,
 		"Total": null
 	}
 ]
@@ -457,7 +457,7 @@ class Totalgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 132']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 332']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 161']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 332']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />

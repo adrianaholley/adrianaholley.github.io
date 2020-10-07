@@ -5,7 +5,7 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import Activegraph from './Activegraph';
 
-var siteupdatetime = "Last updated Tuesday, October 6 at 10:00pm CST."
+var siteupdatetime = "Last updated Wednesday, October 7 at 5:15pm CST."
 
 class Activepage extends Component {
     constructor(props) {

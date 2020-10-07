@@ -298,7 +298,7 @@ const datereported = [
 	},
 	{
 		"name": "Sept 25",
-		"Real Active": null,
+		"Real Active": 293,
 		"Active": 247
 	},
 	{
@@ -355,7 +355,12 @@ const datereported = [
 		"name": "Oct 6",
 		"Real Active": null,
 		"Active": 196
-	}
+    },
+    {
+        "name": "Oct 7",
+        "Real Active": null,
+        "Active": 152
+    }
 ]
 
 
