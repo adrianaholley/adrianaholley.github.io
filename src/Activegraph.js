@@ -7,8 +7,13 @@ import { Area, Bar, CartesianGrid, ComposedChart, Label, LabelList, ReferenceLin
 
 const datereported = [
 	{
-		"name": "Jul 30",
+		"name": "Jul 29",
 		"Real Active": 19,
+		"Active": null
+	},
+	{
+		"name": "Jul 30",
+		"Real Active": null,
 		"Active": null
 	},
 	{
@@ -23,12 +28,12 @@ const datereported = [
 	},
 	{
 		"name": "Aug 2",
-		"Real Active": null,
+		"Real Active": 26,
 		"Active": null
 	},
 	{
 		"name": "Aug 3",
-		"Real Active": 26,
+		"Real Active": null,
 		"Active": 18
 	},
 	{
@@ -38,12 +43,12 @@ const datereported = [
 	},
 	{
 		"name": "Aug 5",
-		"Real Active": null,
+		"Real Active": 29,
 		"Active": null
 	},
 	{
 		"name": "Aug 6",
-		"Real Active": 29,
+		"Real Active": null,
 		"Active": null
 	},
 	{
@@ -58,12 +63,12 @@ const datereported = [
 	},
 	{
 		"name": "Aug 9",
-		"Real Active": null,
+		"Real Active": 50,
 		"Active": null
 	},
 	{
 		"name": "Aug 10",
-		"Real Active": 31,
+		"Real Active": null,
 		"Active": 25
 	},
 	{
@@ -78,27 +83,27 @@ const datereported = [
 	},
 	{
 		"name": "Aug 13",
-		"Real Active": null,
+		"Real Active": 43,
 		"Active": null
 	},
 	{
 		"name": "Aug 14",
-		"Real Active": 36,
+		"Real Active": 44,
 		"Active": 37
 	},
 	{
 		"name": "Aug 15",
-		"Real Active": 44,
-		"Active": null
-	},
-	{
-		"name": "Aug 16",
 		"Real Active": null,
 		"Active": null
 	},
 	{
+		"name": "Aug 16",
+		"Real Active": 58,
+		"Active": null
+	},
+	{
 		"name": "Aug 17",
-		"Real Active": 55,
+		"Real Active": null,
 		"Active": 38
 	},
 	{
@@ -108,32 +113,32 @@ const datereported = [
 	},
 	{
 		"name": "Aug 19",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 20",
 		"Real Active": 81,
 		"Active": null
 	},
 	{
+		"name": "Aug 20",
+		"Real Active": 103,
+		"Active": null
+	},
+	{
 		"name": "Aug 21",
-		"Real Active": 82,
+		"Real Active": 121,
 		"Active": 53
 	},
 	{
 		"name": "Aug 22",
-		"Real Active": 121,
-		"Active": null
-	},
-	{
-		"name": "Aug 23",
 		"Real Active": 144,
 		"Active": null
 	},
 	{
-		"name": "Aug 24",
+		"name": "Aug 23",
 		"Real Active": 177,
+		"Active": null
+	},
+	{
+		"name": "Aug 24",
+		"Real Active": null,
 		"Active": null
 	},
 	{
@@ -143,32 +148,32 @@ const datereported = [
 	},
 	{
 		"name": "Aug 26",
-		"Real Active": null,
+		"Real Active": 249,
 		"Active": 146
 	},
 	{
 		"name": "Aug 27",
-		"Real Active": 249,
+		"Real Active": 300,
 		"Active": null
 	},
 	{
 		"name": "Aug 28",
-		"Real Active": 286,
+		"Real Active": 359,
 		"Active": 176
 	},
 	{
 		"name": "Aug 29",
-		"Real Active": 359,
-		"Active": null
-	},
-	{
-		"name": "Aug 30",
 		"Real Active": 437,
 		"Active": null
 	},
 	{
+		"name": "Aug 30",
+		"Real Active": 581,
+		"Active": null
+	},
+	{
 		"name": "Aug 31",
-		"Real Active": 555,
+		"Real Active": null,
 		"Active": 268
 	},
 	{
@@ -178,32 +183,32 @@ const datereported = [
 	},
 	{
 		"name": "Sept 2",
-		"Real Active": null,
+		"Real Active": 648,
 		"Active": 453
 	},
 	{
 		"name": "Sept 3",
-		"Real Active": 625,
+		"Real Active": 742,
 		"Active": 477
 	},
 	{
 		"name": "Sept 4",
-		"Real Active": 709,
+		"Real Active": 945,
 		"Active": 490
 	},
 	{
 		"name": "Sept 5",
-		"Real Active": 945,
-		"Active": null
-	},
-	{
-		"name": "Sept 6",
 		"Real Active": 962,
 		"Active": null
 	},
 	{
+		"name": "Sept 6",
+		"Real Active": 993,
+		"Active": null
+	},
+	{
 		"name": "Sept 7",
-		"Real Active": 901,
+		"Real Active": null,
 		"Active": 626
 	},
 	{
@@ -213,32 +218,32 @@ const datereported = [
 	},
 	{
 		"name": "Sept 9",
-		"Real Active": null,
+		"Real Active": 816,
 		"Active": 612
 	},
 	{
 		"name": "Sept 10",
-		"Real Active": 738,
+		"Real Active": 749,
 		"Active": 543
 	},
 	{
 		"name": "Sept 11",
-		"Real Active": 605,
+		"Real Active": 621,
 		"Active": 426
 	},
 	{
 		"name": "Sept 12",
-		"Real Active": 621,
-		"Active": null
-	},
-	{
-		"name": "Sept 13",
 		"Real Active": 651,
 		"Active": null
 	},
 	{
+		"name": "Sept 13",
+		"Real Active": 673,
+		"Active": null
+	},
+	{
 		"name": "Sept 14",
-		"Real Active": 519,
+		"Real Active": null,
 		"Active": 461
 	},
 	{
@@ -248,32 +253,32 @@ const datereported = [
 	},
 	{
 		"name": "Sept 16",
-		"Real Active": null,
+		"Real Active": 211,
 		"Active": 171
 	},
 	{
 		"name": "Sept 17",
-		"Real Active": 194,
+		"Real Active": 226,
 		"Active": 186
 	},
 	{
 		"name": "Sept 18",
-		"Real Active": 195,
+		"Real Active": 247,
 		"Active": 187
 	},
 	{
 		"name": "Sept 19",
-		"Real Active": 247,
-		"Active": null
-	},
-	{
-		"name": "Sept 20",
 		"Real Active": 281,
 		"Active": null
 	},
 	{
+		"name": "Sept 20",
+		"Real Active": 315,
+		"Active": null
+	},
+	{
 		"name": "Sept 21",
-		"Real Active": 276,
+		"Real Active": null,
 		"Active": 222
 	},
 	{
@@ -283,12 +288,12 @@ const datereported = [
 	},
 	{
 		"name": "Sept 23",
-		"Real Active": null,
+		"Real Active": 278,
 		"Active": 244
 	},
 	{
 		"name": "Sept 24",
-		"Real Active": 248,
+		"Real Active": 256,
 		"Active": 237
 	},
 	{
@@ -345,6 +350,11 @@ const datereported = [
 		"name": "Oct 5",
 		"Real Active": null,
 		"Active": 202
+	},
+	{
+		"name": "Oct 6",
+		"Real Active": null,
+		"Active": 196
 	}
 ]
 
@@ -399,7 +409,7 @@ class Activegraph extends Component {
                             {this.state.TrueStartDateIsOff ?
                                 ("Due to reporting delays, this means a case could be included on the site for only 3-9 days instead of the 10-day minimum illness length. ")
                                 :
-                                ("This data assumes an 11-day illness. Due to sporadic reporting intervals by the university, a few cases may have start-end dates 1-2 days earlier (or greater, for August cases) than shown here. ")
+                                ("This data assumes a 12-day illness. Due to sporadic reporting intervals by the university, a few cases may have start-end dates 1-2 days earlier (or greater, for August cases) than shown here. ")
                             }
                             {this.state.TrueStartDateIsOff ? ("Past dates are not updated with new case data found. ") : ("")}
                         </div>
@@ -412,7 +422,7 @@ class Activegraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 18', 'dataMax + 350']) : (['dataMin - 18', 'dataMax + 38'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 1550']) : (['0', 'dataMax + 1238'])} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 18', 'dataMax + 350']) : (['dataMin - 18', 'dataMax + 7'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 1550']) : (['0', 'dataMax + 1207'])} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Active") : ("Real Active")} fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
                             <Area dataKey="Active" fill="#cc0000" stroke="#333333" connectNulls={true} fillOpacity={.1} />
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

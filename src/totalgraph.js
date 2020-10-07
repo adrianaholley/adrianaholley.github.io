@@ -7,8 +7,13 @@ import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine
 
 const datereported = [
 	{
-		"name": "Jul 30",
+		"name": "Jul 29",
 		"Real Total": 19,
+		"Total": null
+	},
+	{
+		"name": "Jul 30",
+		"Real Total": null,
 		"Total": null
 	},
 	{
@@ -23,12 +28,12 @@ const datereported = [
 	},
 	{
 		"name": "Aug 1",
-		"Real Total": null,
+		"Real Total": 26,
 		"Total": null
 	},
 	{
 		"name": "Aug 3",
-		"Real Total": 26,
+		"Real Total": null,
 		"Total": 18
 	},
 	{
@@ -38,12 +43,12 @@ const datereported = [
 	},
 	{
 		"name": "Aug 5",
-		"Real Total": null,
+		"Real Total": 29,
 		"Total": null
 	},
 	{
 		"name": "Aug 6",
-		"Real Total": 29,
+		"Real Total": null,
 		"Total": null
 	},
 	{
@@ -58,12 +63,12 @@ const datereported = [
 	},
 	{
 		"name": "Aug 9",
-		"Real Total": null,
+		"Real Total": 50,
 		"Total": null
 	},
 	{
 		"name": "Aug 10",
-		"Real Total": 50,
+		"Real Total": null,
 		"Total": 44
 	},
 	{
@@ -78,27 +83,27 @@ const datereported = [
 	},
 	{
 		"name": "Aug 13",
-		"Real Total": null,
+		"Real Total": 62,
 		"Total": null
 	},
 	{
 		"name": "Aug 14",
-		"Real Total": 62,
+		"Real Total": 70,
 		"Total": 63
 	},
 	{
 		"name": "Aug 15",
-		"Real Total": 70,
-		"Total": null
-	},
-	{
-		"name": "Aug 16",
 		"Real Total": null,
 		"Total": null
 	},
 	{
-		"name": "Aug 17",
+		"name": "Aug 16",
 		"Real Total": 84,
+		"Total": null
+	},
+	{
+		"name": "Aug 17",
+		"Real Total": null,
 		"Total": 67
 	},
 	{
@@ -108,32 +113,32 @@ const datereported = [
 	},
 	{
 		"name": "Aug 19",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 20",
 		"Real Total": 110,
 		"Total": null
 	},
 	{
-		"name": "Aug 21",
+		"name": "Aug 20",
 		"Real Total": 132,
+		"Total": null
+	},
+	{
+		"name": "Aug 21",
+		"Real Total": 171,
 		"Total": 103
 	},
 	{
 		"name": "Aug 22",
-		"Real Total": 171,
-		"Total": null
-	},
-	{
-		"name": "Aug 23",
 		"Real Total": 194,
 		"Total": null
 	},
 	{
-		"name": "Aug 24",
+		"name": "Aug 23",
 		"Real Total": 227,
+		"Total": null
+	},
+	{
+		"name": "Aug 24",
+		"Real Total": null,
 		"Total": null
 	},
 	{
@@ -143,32 +148,32 @@ const datereported = [
 	},
 	{
 		"name": "Aug 26",
-		"Real Total": null,
+		"Real Total": 319,
 		"Total": 206
 	},
 	{
 		"name": "Aug 27",
-		"Real Total": 319,
+		"Real Total": 370,
 		"Total": null
 	},
 	{
 		"name": "Aug 28",
-		"Real Total": 370,
+		"Real Total": 443,
 		"Total": 260
 	},
 	{
 		"name": "Aug 29",
-		"Real Total": 443,
-		"Total": null
-	},
-	{
-		"name": "Aug 30",
 		"Real Total": 521,
 		"Total": null
 	},
 	{
-		"name": "Aug 31",
+		"name": "Aug 30",
 		"Real Total": 665,
+		"Total": null
+	},
+	{
+		"name": "Aug 31",
+		"Real Total": null,
 		"Total": 378
 	},
 	{
@@ -178,32 +183,32 @@ const datereported = [
 	},
 	{
 		"name": "Sept 2",
-		"Real Total": null,
+		"Real Total": 819,
 		"Total": 624
 	},
 	{
 		"name": "Sept 3",
-		"Real Total": 819,
+		"Real Total": 936,
 		"Total": 671
 	},
 	{
 		"name": "Sept 4",
-		"Real Total": 936,
+		"Real Total": 1172,
 		"Total": 717
 	},
 	{
 		"name": "Sept 5",
-		"Real Total": 1172,
-		"Total": null
-	},
-	{
-		"name": "Sept 6",
 		"Real Total": 1189,
 		"Total": null
 	},
 	{
-		"name": "Sept 7",
+		"name": "Sept 6",
 		"Real Total": 1220,
+		"Total": null
+	},
+	{
+		"name": "Sept 7",
+		"Real Total": null,
 		"Total": 945
 	},
 	{
@@ -213,32 +218,32 @@ const datereported = [
 	},
 	{
 		"name": "Sept 9",
-		"Real Total": null,
+		"Real Total": 1259,
 		"Total": 1055
 	},
 	{
 		"name": "Sept 10",
-		"Real Total": 1259,
+		"Real Total": 1270,
 		"Total": 1064
 	},
 	{
 		"name": "Sept 11",
-		"Real Total": 1270,
+		"Real Total": 1286,
 		"Total": 1091
 	},
 	{
 		"name": "Sept 12",
-		"Real Total": 1286,
-		"Total": null
-	},
-	{
-		"name": "Sept 13",
 		"Real Total": 1316,
 		"Total": null
 	},
 	{
-		"name": "Sept 14",
+		"name": "Sept 13",
 		"Real Total": 1338,
+		"Total": null
+	},
+	{
+		"name": "Sept 14",
+		"Real Total": null,
 		"Total": 1280
 	},
 	{
@@ -248,32 +253,32 @@ const datereported = [
 	},
 	{
 		"name": "Sept 16",
-		"Real Total": null,
+		"Real Total": 1383,
 		"Total": 1343
 	},
 	{
 		"name": "Sept 17",
-		"Real Total": 1383,
+		"Real Total": 1415,
 		"Total": 1375
 	},
 	{
 		"name": "Sept 18",
-		"Real Total": 1415,
+		"Real Total": 1467,
 		"Total": 1407
 	},
 	{
 		"name": "Sept 19",
-		"Real Total": 1467,
-		"Total": null
-	},
-	{
-		"name": "Sept 20",
 		"Real Total": 1501,
 		"Total": null
 	},
 	{
-		"name": "Sept 21",
+		"name": "Sept 20",
 		"Real Total": 1535,
+		"Total": null
+	},
+	{
+		"name": "Sept 21",
+		"Real Total": null,
 		"Total": 1481
 	},
 	{
@@ -283,12 +288,12 @@ const datereported = [
 	},
 	{
 		"name": "Sept 23",
-		"Real Total": null,
+		"Real Total": 1564,
 		"Total": 1530
 	},
 	{
 		"name": "Sept 24",
-		"Real Total": 1564,
+		"Real Total": 1572,
 		"Total": 1553
 	},
 	{
@@ -343,44 +348,49 @@ const datereported = [
 	},
 	{
 		"name": "Oct 5",
-		"Total": 1766,
-		"Projection for this date": 1766
-    },
+		"Real Total": null,
+		"Total": 1766
+	},
 	{
 		"name": "Oct 6",
-		"Real Total": null,
-		"Projection for this date": 1768
-    },
+		"Projection for this date": 1768,
+		"Total": 1768
+	},
 	{
 		"name": "Oct 7",
-		"Real Total": null,
-		"Projection for this date": 1811
-    },
+		"Projection for this date": 1811,
+		"Total": null
+	},
 	{
 		"name": "Oct 8",
-		"Real Total": null,
-		"Projection for this date": 1831
-    },
+		"Projection for this date": 1831,
+		"Total": null
+	},
 	{
 		"name": "Oct 9",
-		"Real Total": null,
-		"Projection for this date": 1853
-    },
+		"Projection for this date": 1853,
+		"Total": null
+	},
 	{
 		"name": "Oct 10",
-		"Real Total": null,
-		"Projection for this date": null
-    },
+		"Projection for this date": null,
+		"Total": null
+	},
 	{
 		"name": "Oct 11",
-		"Real Total": null,
-		"Projection for this date": null
-    },
+		"Projection for this date": null,
+		"Total": null
+	},
 	{
 		"name": "Oct 12",
-		"Real Total": null,
-		"Projection for this date": 1866
-    }
+		"Projection for this date": 1867,
+		"Total": null
+	},
+	{
+		"name": "Oct 13",
+		"Projection for this date": 1868,
+		"Total": null
+	}
 ]
 
 const RedSwitch = withStyles({
@@ -447,7 +457,7 @@ class Totalgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 134']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 334']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 132']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 332']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />
