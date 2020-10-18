@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import { PieChart, Pie, Legend, ResponsiveContainer, Tooltip, Cell, Label, Sector } from "recharts";
 import { isMobile } from 'react-device-detect';
 
-const COLORS = ['#cc0000', '#cccccc'];
+const COLORS = ['#333333', '#333333'];
 
-const data01 = [{ name: 'Group A', value: 1972 }, { name: 'Group B', value: 44028 }] //
+const data01 = [{ name: 'Group A', value: 10 }, { name: 'Group B', value: 10 }]
 
-//if oct 16 is 1976
+var aweekagodate = "Oct 9"
 var currentdate = "Oct 16"
-var totaltoday = 1972 
-var percentagetoday = "4.29%" 
-var percentagetodaychange = "(+.33%)"
-var aweekago = "3.96%"
-var aweekagochange = "(+.18%)"
-var twoweeksago = "3.78%"
+var totaltoday = 1972
+var percentagetoday = "21.6"
+var percentagetodaychange = "(+9.7)"
+var aweekago = "11.9"
+var aweekagochange = "(-10.0)"
+var twoweeksago = "21.9"
 
-class Totalpie extends Component {
+class Newpie extends Component {
 
     
     render() {
@@ -24,8 +24,9 @@ class Totalpie extends Component {
                 {isMobile ? (<br />) : ('')}
 
                 {/* title, subtilte */}
-                <h5 style={{ marginBottom: 0, marginTop: 5 }}>Percent That Has Had COVID</h5>
-                <a><i><font size="2">{totaltoday.toLocaleString()} positive reports from 46,000 students and employees.</font></i></a>
+                <br/>
+                <h5 style={{ marginBottom: 0, marginTop: 5 }}>7-Day Average</h5>
+                <a><i><font size="2">The average amount of new cases reported in the last 7 days.</font></i></a>
 
                 {/* pie chart */}
                 <ResponsiveContainer width={'100%'} height={"100%"} aspect={isMobile ? ('1.6') : ('2.5')}>
@@ -33,9 +34,9 @@ class Totalpie extends Component {
                         <Pie data={data01} innerRadius={80} outerRadius={120} fill="#8884d8" paddingAngle={5}>
                             <Label value={percentagetodaychange} position="centerBottom" className='label-top-top' fontSize='12px' />
                             <Label value={percentagetoday} position="centerBottom" className='label' fontSize='38px' />
-                            <Label value="of Red Raiders have" position="center" className='label-top' fontSize='12px' />
-                            <Label value="reported positive results" position="center" className='label-middle' fontSize='12px' />
-                            <Label value={"Aug 1 - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
+                            <Label value="is the average number" position="center" className='label-top' fontSize='12px' />
+                            <Label value="of new cases per day, " position="center" className='label-middle' fontSize='12px' />
+                            <Label value={aweekagodate + " - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
                             {data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)}
                         </Pie>
                     </PieChart>
@@ -49,9 +50,9 @@ class Totalpie extends Component {
                 {/* disclaimer */}
                 <p className="popinfo"><i><font size="2">
                     <div className={isMobile ? ("adjustabletextmobile") : ('adjustabletextseventy')}>
-                        The total population includes those who are 100% remote and is an estimate,
+                        {/* The total population includes those who are 100% remote and is an estimate,
                         as Dr. Schovanec stated Sept 16 that there are "more than 46,000" students and employees.
-                        The Interim Director of Emergency Management did not respond to a request for the exact metric.
+                        The Interim Director of Emergency Management did not respond to a request for the exact metric. */}
                     </div>
                 </font></i></p>
             </div>
@@ -59,4 +60,4 @@ class Totalpie extends Component {
     }
 }
 
-export default Totalpie;
+export default Newpie;

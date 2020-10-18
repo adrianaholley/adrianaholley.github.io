@@ -328,22 +328,22 @@ const datereported = [
 	},
 	{
 		"name": "Oct 1",
-		"Real Total": null,
+		"Real Total": 1767,
 		"Total": 1711
 	},
 	{
 		"name": "Oct 2",
-		"Real Total": null,
+		"Real Total": 1780,
 		"Total": 1738
 	},
 	{
 		"name": "Oct 3",
-		"Real Total": null,
+		"Real Total": 1795,
 		"Total": null
 	},
 	{
 		"name": "Oct 4",
-		"Real Total": null,
+		"Real Total": 1809,
 		"Total": null
 	},
 	{
@@ -383,28 +383,28 @@ const datereported = [
 	},
 	{
 		"name": "Oct 12",
-		"Projection for this date": 1882,
+		"Projection for this date": null,
 		"Total": 1882
 	},
 	{
 		"name": "Oct 13",
-		"Projection for this date": 1883,
-		"Total": null
+		"Projection for this date": null,
+		"Total": 1892
     },
     {
         "name": "Oct 14",
-        "Projection for this date": 1888,
-        "Total": null
+        "Projection for this date": null,
+        "Total": 1917
     },
     {
         "name": "Oct 15",
-        "Projection for this date": 1900,
-        "Total": null
+        "Projection for this date": null,
+        "Total": 1943
     },
     {
         "name": "Oct 16",
-        "Projection for this date": 1918,
-        "Total": null
+        "Projection for this date": 1972,
+        "Total": 1972
 	},
     {
         "name": "Oct 17",
@@ -418,10 +418,29 @@ const datereported = [
 	},
     {
         "name": "Oct 19",
-        "Projection for this date": 2052,
+        "Projection for this date": 2109,
         "Total": null
+	},
+    {
+        "name": "Oct 20",
+        "Projection for this date": 2162,
+        "Total": null
+	},
+	{
+		"name": "Oct 21",
+		"Projection for this date": 2206,
+		"Total": null
+	},
+	{
+		"name": "Oct 22",
+		"Projection for this date": 2251,
+		"Total": null
+	},
+	{
+		"name": "Oct 23",
+		"Projection for this date": 2292,
+		"Total": null
 	}
-	
 ]
 
 const RedSwitch = withStyles({
@@ -488,7 +507,7 @@ class Totalgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 348']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 331']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 108']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 308']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />

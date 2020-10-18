@@ -6,6 +6,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #e9e9e9;
 }
+.label-top-top {
+  transform: translateY(-34px);
+}
 .label-top {
   transform: translateY(12px);
 }

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Totalpie from './Totalpie.js';
 import Totalgraph from './totalgraph.js';
 
-var siteupdatetime = "Last updated Monday, October 12 at 6:00pm CST."
+var siteupdatetime = "Last updated Friday, October 16 at 8:10pm CST."
 
 class Totalclass extends Component {
 

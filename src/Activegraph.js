@@ -328,22 +328,22 @@ const datereported = [
 	},
 	{
 		"name": "Oct 1",
-		"Real Active": null,
+		"Real Active": 266,
 		"Active": 210
 	},
 	{
 		"name": "Oct 2",
-		"Real Active": null,
+		"Real Active": 245,
 		"Active": 203
 	},
 	{
 		"name": "Oct 3",
-		"Real Active": null,
+		"Real Active": 260,
 		"Active": null
 	},
 	{
 		"name": "Oct 4",
-		"Real Active": null,
+		"Real Active": 274,
 		"Active": null
 	},
 	{
@@ -385,6 +385,26 @@ const datereported = [
 		"name": "Oct 12",
 		"Real Active": null,
 		"Active": 157
+	},
+	{
+		"name": "Oct 13",
+		"Real Active": null,
+		"Active": 125
+	},
+	{
+		"name": "Oct 14",
+		"Real Active": null,
+		"Active": 137
+	},
+	{
+		"name": "Oct 15",
+		"Real Active": null,
+		"Active": 148
+	},
+	{
+		"name": "Oct 16",
+		"Real Active": null,
+		"Active": 163
 	}
 ]
 
@@ -448,7 +468,7 @@ class Activegraph extends Component {
 
                 <Grid>
                     {/* show graphs */}
-                    <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.9')}>
+                    <ResponsiveContainer height={'65%'} width={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.3')}>
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />

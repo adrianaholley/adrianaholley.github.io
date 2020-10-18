@@ -12,6 +12,7 @@ import { ReactComponent as hat } from './maskhat.png'
 import Faq from './Faq.js';
 import Contact from './Contact.js';
 import Totalclass from './Totalclass.js';
+import New from './New.js';
 import Activepage from './Activepage.js';
 import TotalA11yclass from './TotalA11yclass.js'
 import Experiment from './Experiment.js'
@@ -48,6 +49,17 @@ function App() {
                           <font size="3" color="#555555">
                             <b>
                               Total
+                          </b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/daily">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="3" color="#555555">
+                            <b>
+                              Daily
                           </b>
                           </font>
                         </p>
@@ -99,7 +111,7 @@ function App() {
                         <Link style={{ textDecoration: 'none' }} to="/total">
                           <p style={{ fontFamily: "Georgia" }}>
                             <font size="2" color="#333333">
-                              &nbsp;Coronavirus (COVID-19) Dashboard
+                              &nbsp;COVID-19 Dashboard
                             </font>
                           </p>
                         </Link>
@@ -111,6 +123,17 @@ function App() {
                           <font size="2" color="#555555">
                             <b>
                               Total&nbsp;&nbsp;
+                          </b>
+                          </font>
+                        </p>
+                      </Link>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/daily">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="2" color="#555555">
+                            <b>
+                              Daily&nbsp;&nbsp;
                           </b>
                           </font>
                         </p>
@@ -154,6 +177,7 @@ function App() {
             <Route path="/contact"><Contact /></Route>
             <Route path="/experiment"><Experiment /></Route>
             <Route path="/GAMESERVER_"><Gameserver /></Route>
+            <Route path="/daily"><New /></Route>
           </Switch>
         </HashRouter>
       </header>
