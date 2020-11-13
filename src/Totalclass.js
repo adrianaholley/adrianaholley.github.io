@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 import Totalpie from './Totalpie.js';
 import Totalgraph from './totalgraph.js';
 
-var siteupdatetime = "Last updated Friday, October 16 at 8:10pm CST."
-
+var siteupdatetime = "Last updated Thursday, November 12 at 6:00pm CST."
+var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs."
 class Totalclass extends Component {
 
     render() {
@@ -24,6 +24,8 @@ class Totalclass extends Component {
                 <h1></h1>
                 <h3 style={{ marginBottom: 0 }}>Total Reported Cases</h3>
                 <a><font size="2">{siteupdatetime}</font></a>
+                <br/>
+                <a><b><font color="cc0000" size="2">{notice}</font></b></a>
 
                 <center>
 

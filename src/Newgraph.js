@@ -500,36 +500,36 @@ const datereported = [
 		"name": "Oct 7",
 		"Daily": 15,
 		"Daily avg": 13.4,
-		"Real daily": null,
-		"Real daily avg": null
+		"Real daily": 23,
+		"Real daily avg": 15.3
 	},
 	{
 		"name": "Oct 8",
 		"Daily": 16,
 		"Daily avg": 12.6,
-		"Real daily": null,
-		"Real daily avg": null
+		"Real daily": 6,
+		"Real daily avg": 10.1
 	},
 	{
 		"name": "Oct 9",
 		"Daily": 22,
 		"Daily avg": 11.9,
-		"Real daily": null,
-		"Real daily avg": null
+		"Real daily": 5,
+		"Real daily avg": 9.0
 	},
 	{
 		"name": "Oct 10",
 		"Daily": null,
 		"Daily avg": null,
-		"Real daily": null,
-		"Real daily avg": null
+		"Real daily": 44,
+		"Real daily avg": 13.1
 	},
 	{
 		"name": "Oct 11",
 		"Daily": null,
 		"Daily avg": null,
-		"Real daily": null,
-		"Real daily avg": null
+		"Real daily": 18,
+		"Real daily avg": 13.7
 	},
 	{
 		"name": "Oct 12",
@@ -549,50 +549,206 @@ const datereported = [
 		"name": "Oct 14",
 		"Daily": 25,
 		"Daily avg": 19.1,
-		"Real daily": null,
-		"Real daily avg": null
+		"Real daily": 33,
+		"Real daily avg": 15.1
 	},
 	{
 		"name": "Oct 15",
 		"Daily": 26,
 		"Daily avg": 20.6,
-		"Real daily": null,
-		"Real daily avg": null,
+		"Real daily": 13,
+		"Real daily avg": 16.1,
 		"Projected avg": null
 	},
 	{
 		"name": "Oct 16",
 		"Daily": 29,
 		"Daily avg": 21.6,
-		"Real daily": null,
-		"Real daily avg": null,
-		"Projected avg": 21.6,
+		"Real daily": 17,
+		"Real daily avg": 17.9,
+		"Projected avg": null,
 	},
 	{
 		"name": "Oct 17",
+		"Real daily": 16,
+		"Real daily avg": 13.9
 	},
 	{
 		"name": "Oct 18",
+		"Real daily": 38,
+		"Real daily avg": 16.7
 	},
 	{
 		"name": "Oct 19",
-		"Projected avg": 32.4, 
+		"Daily": 48,
+		"Daily avg": 19.7,
+		"Real daily": null,
+		"Real daily avg": null
 	},
 	{
 		"name": "Oct 20",
-		"Projected avg": 38.6, 
+		"Daily": 7,
+		"Daily avg": 19.3,
+		"Projected avg": null, 
 	},
 	{
 		"name": "Oct 21",
-		"Projected avg": 41.3
+		"Daily": 7,
+		"Daily avg": 16.7,
+		"Real daily": 44,
+		"Real daily avg": 18.3
 	},
 	{
 		"name": "Oct 22",
-		"Projected avg": 44.0, 
+		"Daily": 50,
+		"Daily avg": 20.1,
+		"Real daily": 15,
+		"Real daily avg": 18.6,
+		"Projected avg": null
 	},
 	{
 		"name": "Oct 23",
-		"Projected avg": 45.7
+		"Daily": 27,
+		"Daily avg": 19.9,
+		"Real daily": 33,
+		"Real daily avg": 20.9,
+		"Projected avg": null
+	},
+	{
+		"name": "Oct 24",
+		"Projected avg": null,
+		"Real daily": 28,
+		"Real daily avg": 22.6,
+	},
+	{
+		"name": "Oct 25",
+		"Real daily": 33,
+		"Real daily avg": 21.9,
+	},
+	{
+		"name": "Oct 26",
+		"Daily": 49,
+		"Daily avg": 20.0
+	},
+	{
+		"name": "Oct 27",
+		"Daily": 5,
+		"Daily avg": 19.7,
+	},
+	{
+		"name": "Oct 28",
+		"Daily": 0,
+		"Daily avg": 18.7,
+		"Real daily": 40,
+		"Real daily avg": 21.3
+	},
+	{
+		"name": "Oct 29",
+		"Daily": 2,
+		"Daily avg": 11.9,
+		"Real daily": 38,
+		"Real daily avg": 24.6
+	},
+	{
+		"name": "Oct 30",
+		"Daily": 34,
+		"Daily avg": 12.9,
+		"Real daily": 13,
+		"Real daily avg": 21.7,
+		"Projected avg": null
+	},
+	{
+		"name": "Oct 31",		
+		"Real daily": 19,
+		"Real daily avg": 20.4,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 1"
+	},
+	{
+		"name": "Nov 2",
+		"Daily": 58,
+		"Daily avg": 14.1,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 3",
+		"Daily": 10,
+		"Daily avg": 14.9,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 4",
+		"Daily": 37,
+		"Daily avg": 20.1,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 5",
+		"Daily": 25,
+		"Daily avg": 23.4,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 6",
+		"Daily": 42,
+		"Daily avg": 24.6,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 7",
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 8"
+	},
+	{
+		"name": "Nov 9",
+		"Daily": 79,
+		"Daily avg": 27.9,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 10",
+		"Daily": 15,
+		"Daily avg": 29.1,
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 11",
+		"Daily": 56,
+		"Daily avg": 31.0,
+		"Projected avg": 31.0
+	},
+	{
+		"name": "Nov 12",
+		"Daily": 42,
+		"Daily avg": 33.4,
+		"Projected avg": 32.0
+	},
+	{
+		"name": "Nov 13",
+		"Projected avg": 33.6
+	},
+	{
+		"name": "Nov 14",
+		"Projected avg": null
+	},
+	{
+		"name": "Nov 15"
+	},
+	{
+		"name": "Nov 16",
+		"Projected avg": 36.3
+	},
+	{
+		"name": "Nov 17",
+		"Projected avg": 36.7
+	},
+	{
+		"name": "Nov 18",
+		"Projected avg": 39.3
 	}
 ]
 
@@ -660,7 +816,7 @@ class Newgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={this.state.TrueStartDateIsOff ? (['dataMin - 2', 'dataMax + 12']) : (['dataMin - 1.4', 'dataMax + 4'])} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={this.state.TrueStartDateIsOff ? (['dataMin', 'dataMax + 12']) : (['dataMin - 1.4', 'dataMax + 4'])} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Daily") : ("Real daily")} fill="#666666" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("Daily") : ("Real daily")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey={this.state.TrueStartDateIsOff ? ("Daily avg") : ('Real daily avg')} fill="#666666" stroke={this.state.TrueStartDateIsOff ? ('#333333') : ("#333333")} connectNulls={true} fillOpacity={.15} />
 							{this.state.TrueStartDateIsOff ? ('') : (<Line dataKey="Daily avg" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}

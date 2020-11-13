@@ -4,16 +4,17 @@ import { isMobile } from 'react-device-detect';
 
 const COLORS = ['#cc0000', '#cccccc'];
 
-const data01 = [{ name: 'Group A', value: 1972 }, { name: 'Group B', value: 44028 }] //
+const data01 = [{ name: 'Group A', value: 2565 }, { name: 'Group B', value: 43435 }] //
 
-//if oct 16 is 1976
-var currentdate = "Oct 16"
-var totaltoday = 1972 
-var percentagetoday = "4.29%" 
-var percentagetodaychange = "(+.33%)"
-var aweekago = "3.96%"
-var aweekagochange = "(+.18%)"
-var twoweeksago = "3.78%"
+var currentdate = "Nov 12" //done
+var totaltoday = 2565
+var percentagetoday = "5.58%" 
+var percentagetodaychange = "(+0.51)"
+var aweekago = "5.07%" //done
+var aweekagochange = "(+0.36)" //done
+var twoweeksago = "4.71%" //done 
+var twoweeksagochange = "(+0.18)" //done
+var threeweeksago = "4.53%" //done 
 
 class Totalpie extends Component {
 
@@ -44,7 +45,9 @@ class Totalpie extends Component {
                 {/* past projections */}
                 <a><font size="3">One week before {currentdate}:<b> {aweekago} </b> {aweekagochange}</font></a>
                 <br />
-                <a><font size="3">Two weeks before {currentdate}:<b> {twoweeksago}</b></font></a>
+                <a><font size="3">Two weeks before {currentdate}:<b> {twoweeksago}</b>  {twoweeksagochange}</font></a>
+                <br />
+                <a><font size="3">Three weeks before {currentdate}:<b> {threeweeksago} </b></font></a>
 
                 {/* disclaimer */}
                 <p className="popinfo"><i><font size="2">

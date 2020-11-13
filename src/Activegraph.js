@@ -358,27 +358,27 @@ const datereported = [
     },
     {
         "name": "Oct 7",
-        "Real Active": null,
+        "Real Active": 201,
         "Active": 152
     },
     {
         "name": "Oct 8",
-        "Real Active": null,
+        "Real Active": 195,
         "Active": 156
 	},
 	{
 		"name": "Oct 9",
-		"Real Active": null,
+		"Real Active": 156,
 		"Active": 134
 	},
 	{
 		"name": "Oct 10",
-		"Real Active": null,
+		"Real Active": 200,
 		"Active": null
 	},
 	{
 		"name": "Oct 11",
-		"Real Active": null,
+		"Real Active": 218,
 		"Active": null
 	},
 	{
@@ -393,18 +393,129 @@ const datereported = [
 	},
 	{
 		"name": "Oct 14",
-		"Real Active": null,
+		"Real Active": 158,
 		"Active": 137
 	},
 	{
 		"name": "Oct 15",
-		"Real Active": null,
+		"Real Active": 156,
 		"Active": 148
 	},
 	{
 		"name": "Oct 16",
-		"Real Active": null,
+		"Real Active": 159,
 		"Active": 163
+	},
+	{
+		"name": "Oct 17",
+		"Real Active": 175
+	},
+	{
+		"name": "Oct 18",
+		"Real Active": 213
+	},
+	{
+		"name": "Oct 19",
+		"Active": 188
+	},
+	{
+		"name": "Oct 20",
+		"Active": 189
+	},
+	{
+		"name": "Oct 21",
+		"Real Active": 223,
+		"Active": 191
+	},
+	{
+		"name": "Oct 22",
+		"Real Active": 194,
+		"Active": 197
+	},
+	{
+		"name": "Oct 23",
+		"Active": 206,
+		"Real Active": 209
+	},
+	{
+		"name": "Oct 24",
+		"Real Active": 237
+	},
+	{
+		"name": "Oct 25",
+		"Real Active": 270
+	},
+	{
+		"name": "Oct 26",
+		"Active": 222
+	},
+	{
+		"name": "Oct 27",
+		"Active": 214
+	},
+	{
+		"name": "Oct 28",
+		"Real Active": 247,
+		"Active": 197
+	},
+	{
+		"name": "Oct 29",
+		"Active": 183,
+		"Real Active": 269
+	},
+	{
+		"name": "Oct 30",
+		"Real Active": 244,
+		"Active": 179
+	},
+	{
+		"name": "Oct 31",
+		"Real Active": 263
+	},
+	{
+		"name": "Nov 1"
+	},
+	{
+		"name": "Nov 2",
+		"Active": 193
+	},
+	{
+		"name": "Nov 3",
+		"Active": 188
+	},
+	{
+		"name": "Nov 4",
+		"Active": 192
+	},
+	{
+		"name": "Nov 5",
+		"Active": 189
+	},
+	{
+		"name": "Nov 6",
+		"Active": 198
+	},
+	{
+		"name": "Nov 7"
+	},
+	{
+		"name": "Nov 8"
+	},
+	{
+		"name": "Nov 9",
+		"Active": 237
+	},
+	{
+		"name": "Nov 10",
+		"Active": 214
+	},
+	{
+		"name": "Nov 11",
+		"Active": 257
+	},
+	{
+		"name": "Nov 12",
+		"Active": 280
 	}
 ]
 
@@ -477,8 +588,8 @@ class Activegraph extends Component {
                             <Area dataKey="Active" fill="#cc0000" stroke="#333333" connectNulls={true} fillOpacity={.1} />
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                            <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3% of all students and employees (1,380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                            <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4% of all students and employees (1,840)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={690} stroke="#333" strokeDasharray="2"><Label value="1.5% of all students and employees (690)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                         </ComposedChart>
                     </ResponsiveContainer>

@@ -358,27 +358,27 @@ const datereported = [
 	},
 	{
 		"name": "Oct 7",
-		"Real Total": null,
+		"Real Total": 1832,
 		"Total": 1783
 	},
 	{
 		"name": "Oct 8",
-		"Real Total": null,
+		"Real Total": 1838,
 		"Total": 1799
 	},
 	{
 		"name": "Oct 9",
-		"Real Total": null,
+		"Real Total": 1843,
 		"Total": 1821
 	},
 	{
 		"name": "Oct 10",
-		"Projection for this date": null,
+		"Real Total": 1887,
 		"Total": null
 	},
 	{
 		"name": "Oct 11",
-		"Projection for this date": null,
+		"Real Total": 1905,
 		"Total": null
 	},
 	{
@@ -393,53 +393,168 @@ const datereported = [
     },
     {
         "name": "Oct 14",
-        "Projection for this date": null,
+		"Real Total": 1938,
         "Total": 1917
     },
     {
         "name": "Oct 15",
-        "Projection for this date": null,
+        "Real Total": 1951,
         "Total": 1943
     },
     {
         "name": "Oct 16",
-        "Projection for this date": 1972,
+        "Real Total": 1968,
         "Total": 1972
 	},
     {
         "name": "Oct 17",
-        "Projection for this date": null,
+        "Real Total": 1984,
         "Total": null
 	},
     {
         "name": "Oct 18",
-        "Projection for this date": null,
+        "Real Total": 2022,
         "Total": null
 	},
     {
         "name": "Oct 19",
-        "Projection for this date": 2109,
-        "Total": null
+        "Projection for this date": null,
+        "Total": 2020
 	},
     {
         "name": "Oct 20",
-        "Projection for this date": 2162,
-        "Total": null
+        "Projection for this date": null,
+        "Total": 2027
 	},
 	{
 		"name": "Oct 21",
-		"Projection for this date": 2206,
-		"Total": null
+		"Real Total": 2047,
+		"Total": 2034
 	},
 	{
 		"name": "Oct 22",
-		"Projection for this date": 2251,
-		"Total": null
+		"Real Total": 2081,
+		"Total": 2084
 	},
 	{
 		"name": "Oct 23",
-		"Projection for this date": 2292,
-		"Total": null
+		"Real Total": 2114,
+		"Total": 2111
+	},
+	{
+		"name": "Oct 24",
+		"Real Total": 2142
+	},
+	{
+		"name": "Oct 25",
+		"Real Total": 2175
+	},
+	{
+		"name": "Oct 26",
+		"Total": 2160
+	},
+	{
+		"name": "Oct 27",
+		"Total": 2165
+	},
+	{
+		"name": "Oct 28*",
+		"Total": 2165,
+		"Real Total": 2215
+	},
+	{
+		"name": "Oct 29",
+		"Total": 2167,
+		"Real Total": 2253
+	},
+	{
+		"name": "Oct 30",
+		"Total": 2201,
+		"Real Total": 2266
+	},
+	{
+		"name": "Oct 31",
+		"Real Total": 2285
+	},
+	{
+		"name": "Nov 1"
+	},
+	{
+		"name": "Nov 2",
+		"Total": 2259,
+		"Projection for this date": null
+	},
+	{
+		"name": "Nov 3",
+		"Total": 2269,
+		"Real Total": null
+	},
+	{
+		"name": "Nov 4",
+		"Total": 2306,
+		"null": 2306
+	},
+	{
+		"name": "Nov 5",
+		"Total": 2331,
+		"null": 2331
+	},
+	{
+		"name": "Nov 6",
+		"Total": 2373,
+		"Projection for this date": null
+	},
+	{
+		"name": "Nov 7"
+	},
+	{
+		"name": "Nov 8"
+	},
+	{
+		"name": "Nov 9",
+		"Total": 2452,
+		"Projection for this date": null
+	},
+	{
+		"name": "Nov 10",
+		"Total": 2467,
+		"Projection for this date": null
+	},
+	{
+		"name": "Nov 11",
+		"Total": 2523,
+		"Projection for this date": null
+	},
+	{
+		"name": "Nov 12",
+		"Total": 2565,
+		"Projection for this date": 2565
+	},
+	{
+		"name": "Nov 13",
+		"Projection for this date": 2618
+	},
+	{
+		"name": "Nov 14"
+	},
+	{
+		"name": "Nov 15"
+	},
+	{
+		"name": "Nov 16",
+		"Projection for this date": 2728
+	},
+	{
+		"name": "Nov 17",
+		"Projection for this date": 2751
+	},
+	{
+		"name": "Nov 18",
+		"Projection for this date": 2838
+	},
+	{
+		"name": "Nov 19",
+		"Projection for this date": 2911
 	}
 ]
 
@@ -507,7 +622,7 @@ class Totalgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 108']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 308']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 89']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 289']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />
@@ -516,6 +631,7 @@ class Totalgraph extends Component {
                             <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3% of all students and employees (1,380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4% of all students and employees (1,840)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={2300} stroke="#333" strokeDasharray="2"><Label value="5% of all students and employees (2,300)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={2760} stroke="#333" strokeDasharray="2"><Label value="6% of all students and employees (2,760)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                         </ComposedChart>
                     </ResponsiveContainer>
