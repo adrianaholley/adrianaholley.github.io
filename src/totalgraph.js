@@ -7,555 +7,350 @@ import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine
 
 const datereported = [
 	{
-		"name": "Jul 29",
-		"Real Total": 19,
-		"Total": null
-	},
-	{
-		"name": "Jul 30",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Jul 31",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 1",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 1",
-		"Real Total": 26,
-		"Total": null
-	},
-	{
-		"name": "Aug 3",
-		"Real Total": null,
-		"Total": 18
-	},
-	{
-		"name": "Aug 4",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 5",
-		"Real Total": 29,
-		"Total": null
-	},
-	{
-		"name": "Aug 6",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 7",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 8",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 9",
-		"Real Total": 50,
-		"Total": null
-	},
-	{
-		"name": "Aug 10",
-		"Real Total": null,
-		"Total": 44
-	},
-	{
-		"name": "Aug 11",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 12",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 13",
-		"Real Total": 62,
-		"Total": null
-	},
-	{
-		"name": "Aug 14",
-		"Real Total": 70,
-		"Total": 63
-	},
-	{
-		"name": "Aug 15",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 16",
-		"Real Total": 84,
-		"Total": null
-	},
-	{
-		"name": "Aug 17",
-		"Real Total": null,
-		"Total": 67
-	},
-	{
-		"name": "Aug 18",
-		"Real Total": null,
-		"Total": 75
-	},
-	{
-		"name": "Aug 19",
-		"Real Total": 110,
-		"Total": null
-	},
-	{
-		"name": "Aug 20",
-		"Real Total": 132,
-		"Total": null
-	},
-	{
-		"name": "Aug 21",
-		"Real Total": 171,
-		"Total": 103
-	},
-	{
-		"name": "Aug 22",
-		"Real Total": 194,
-		"Total": null
-	},
-	{
-		"name": "Aug 23",
-		"Real Total": 227,
-		"Total": null
-	},
-	{
-		"name": "Aug 24",
-		"Real Total": null,
-		"Total": null
-	},
-	{
-		"name": "Aug 25",
-		"Real Total": null,
-		"Total": 149
-	},
-	{
-		"name": "Aug 26",
-		"Real Total": 319,
-		"Total": 206
-	},
-	{
-		"name": "Aug 27",
-		"Real Total": 370,
-		"Total": null
-	},
-	{
-		"name": "Aug 28",
-		"Real Total": 443,
-		"Total": 260
-	},
-	{
-		"name": "Aug 29",
-		"Real Total": 521,
-		"Total": null
-	},
-	{
-		"name": "Aug 30",
-		"Real Total": 665,
-		"Total": null
-	},
-	{
-		"name": "Aug 31",
-		"Real Total": null,
-		"Total": 378
-	},
-	{
-		"name": "Sept 1",
-		"Real Total": null,
-		"Total": 551
-	},
-	{
-		"name": "Sept 2",
-		"Real Total": 819,
-		"Total": 624
-	},
-	{
-		"name": "Sept 3",
-		"Real Total": 936,
-		"Total": 671
-	},
-	{
-		"name": "Sept 4",
-		"Real Total": 1172,
-		"Total": 717
-	},
-	{
-		"name": "Sept 5",
-		"Real Total": 1189,
-		"Total": null
-	},
-	{
-		"name": "Sept 6",
-		"Real Total": 1220,
-		"Total": null
-	},
-	{
-		"name": "Sept 7",
-		"Real Total": null,
-		"Total": 945
-	},
-	{
-		"name": "Sept 8",
-		"Real Total": null,
-		"Total": 1020
-	},
-	{
-		"name": "Sept 9",
-		"Real Total": 1259,
-		"Total": 1055
-	},
-	{
-		"name": "Sept 10",
-		"Real Total": 1270,
-		"Total": 1064
-	},
-	{
-		"name": "Sept 11",
-		"Real Total": 1286,
-		"Total": 1091
-	},
-	{
-		"name": "Sept 12",
-		"Real Total": 1316,
-		"Total": null
-	},
-	{
-		"name": "Sept 13",
-		"Real Total": 1338,
-		"Total": null
-	},
-	{
-		"name": "Sept 14",
-		"Real Total": null,
-		"Total": 1280
-	},
-	{
-		"name": "Sept 15",
-		"Real Total": null,
-		"Total": 1293
-	},
-	{
 		"name": "Sept 16",
-		"Real Total": 1383,
-		"Total": 1343
+		"Total": 1343,
+		"Real Total": 1415
 	},
 	{
 		"name": "Sept 17",
-		"Real Total": 1415,
-		"Total": 1375
+		"Total": 1375,
+		"Real Total": 1467
 	},
 	{
 		"name": "Sept 18",
-		"Real Total": 1467,
-		"Total": 1407
+		"Total": 1407,
+		"Real Total": 1501
 	},
 	{
 		"name": "Sept 19",
-		"Real Total": 1501,
-		"Total": null
+		"Total": null,
+		"Real Total": 1535
 	},
 	{
 		"name": "Sept 20",
-		"Real Total": 1535,
-		"Total": null
+		"Total": null,
+		"Real Total": null
 	},
 	{
 		"name": "Sept 21",
-		"Real Total": null,
-		"Total": 1481
+		"Total": 1481,
+		"Real Total": null
 	},
 	{
 		"name": "Sept 22",
-		"Real Total": null,
-		"Total": 1490
+		"Total": 1490,
+		"Real Total": 1564
 	},
 	{
 		"name": "Sept 23",
-		"Real Total": 1564,
-		"Total": 1530
+		"Total": 1530,
+		"Real Total": 1572
 	},
 	{
 		"name": "Sept 24",
-		"Real Total": 1572,
-		"Total": 1553
+		"Total": 1553,
+		"Real Total": 1631
 	},
 	{
 		"name": "Sept 25",
-		"Real Total": 1631,
-		"Total": 1585
+		"Total": 1585,
+		"Real Total": 1643
 	},
 	{
 		"name": "Sept 26",
-		"Real Total": 1643,
-		"Total": null
+		"Total": null,
+		"Real Total": 1687
 	},
 	{
 		"name": "Sept 27",
-		"Real Total": 1687,
-		"Total": null
+		"Total": null,
+		"Real Total": null
 	},
 	{
 		"name": "Sept 28",
-		"Real Total": null,
-		"Total": 1643
+		"Total": 1643,
+		"Real Total": null
 	},
 	{
 		"name": "Sept 29",
-		"Real Total": null,
-		"Total": 1647
+		"Total": 1647,
+		"Real Total": 1725
 	},
 	{
 		"name": "Sept 30",
-		"Real Total": 1725,
-		"Total": 1689
+		"Total": 1689,
+		"Real Total": 1767
 	},
 	{
 		"name": "Oct 1",
-		"Real Total": 1767,
-		"Total": 1711
+		"Total": 1711,
+		"Real Total": 1780
 	},
 	{
 		"name": "Oct 2",
-		"Real Total": 1780,
-		"Total": 1738
+		"Total": 1738,
+		"Real Total": 1795
 	},
 	{
 		"name": "Oct 3",
-		"Real Total": 1795,
-		"Total": null
+		"Total": null,
+		"Real Total": 1809
 	},
 	{
 		"name": "Oct 4",
-		"Real Total": 1809,
-		"Total": null
+		"Total": null,
+		"Real Total": null
 	},
 	{
 		"name": "Oct 5",
-		"Real Total": null,
-		"Total": 1766
+		"Total": 1766,
+		"Real Total": null
 	},
 	{
 		"name": "Oct 6",
-		"Real Total": null,
-		"Total": 1768
+		"Total": 1768,
+		"Real Total": 1832
 	},
 	{
 		"name": "Oct 7",
-		"Real Total": 1832,
-		"Total": 1783
+		"Total": 1783,
+		"Real Total": 1838
 	},
 	{
 		"name": "Oct 8",
-		"Real Total": 1838,
-		"Total": 1799
+		"Total": 1799,
+		"Real Total": 1843
 	},
 	{
 		"name": "Oct 9",
-		"Real Total": 1843,
-		"Total": 1821
+		"Total": 1821,
+		"Real Total": 1887
 	},
 	{
 		"name": "Oct 10",
-		"Real Total": 1887,
-		"Total": null
+		"Total": null,
+		"Real Total": 1905
 	},
 	{
 		"name": "Oct 11",
-		"Real Total": 1905,
-		"Total": null
+		"Total": null,
+		"Real Total": null
 	},
 	{
 		"name": "Oct 12",
-		"Projection for this date": null,
-		"Total": 1882
+		"Total": 1882,
+		"Real Total": null
 	},
 	{
 		"name": "Oct 13",
-		"Projection for this date": null,
-		"Total": 1892
-    },
-    {
-        "name": "Oct 14",
-		"Real Total": 1938,
-        "Total": 1917
-    },
-    {
-        "name": "Oct 15",
-        "Real Total": 1951,
-        "Total": 1943
-    },
-    {
-        "name": "Oct 16",
-        "Real Total": 1968,
-        "Total": 1972
+		"Total": 1892,
+		"Real Total": 1938
 	},
-    {
-        "name": "Oct 17",
-        "Real Total": 1984,
-        "Total": null
+	{
+		"name": "Oct 14",
+		"Total": 1917,
+		"Real Total": 1951
 	},
-    {
-        "name": "Oct 18",
-        "Real Total": 2022,
-        "Total": null
+	{
+		"name": "Oct 15",
+		"Total": 1943,
+		"Real Total": 1968
 	},
-    {
-        "name": "Oct 19",
-        "Projection for this date": null,
-        "Total": 2020
+	{
+		"name": "Oct 16",
+		"Total": 1972,
+		"Real Total": 1984
 	},
-    {
-        "name": "Oct 20",
-        "Projection for this date": null,
-        "Total": 2027
+	{
+		"name": "Oct 17",
+		"Total": null,
+		"Real Total": 2022
+	},
+	{
+		"name": "Oct 18",
+		"Total": null,
+		"Real Total": null
+	},
+	{
+		"name": "Oct 19",
+		"Total": 2020,
+		"Real Total": null
+	},
+	{
+		"name": "Oct 20",
+		"Total": 2027,
+		"Real Total": 2047
 	},
 	{
 		"name": "Oct 21",
-		"Real Total": 2047,
-		"Total": 2034
+		"Total": 2034,
+		"Real Total": 2081
 	},
 	{
 		"name": "Oct 22",
-		"Real Total": 2081,
-		"Total": 2084
+		"Total": 2084,
+		"Real Total": 2114
 	},
 	{
 		"name": "Oct 23",
-		"Real Total": 2114,
-		"Total": 2111
-	},
-	{
-		"name": "Oct 24",
+		"Total": 2111,
 		"Real Total": 2142
 	},
 	{
-		"name": "Oct 25",
+		"name": "Oct 24",
+		"Total": null,
 		"Real Total": 2175
 	},
 	{
+		"name": "Oct 25",
+		"Total": null,
+		"Real Total": null
+	},
+	{
 		"name": "Oct 26",
-		"Total": 2160
+		"Total": 2160,
+		"Real Total": null
 	},
 	{
 		"name": "Oct 27",
-		"Total": 2165
-	},
-	{
-		"name": "Oct 28*",
 		"Total": 2165,
 		"Real Total": 2215
 	},
 	{
+		"name": "Oct 28",
+		"Total": 2166,
+		"Real Total": 2253
+	},
+	{
 		"name": "Oct 29",
 		"Total": 2167,
-		"Real Total": 2253
+		"Real Total": 2266
 	},
 	{
 		"name": "Oct 30",
 		"Total": 2201,
-		"Real Total": 2266
-	},
-	{
-		"name": "Oct 31",
 		"Real Total": 2285
 	},
 	{
-		"name": "Nov 1"
+		"name": "Oct 31",
+		"Total": null,
+		"Real Total": 2313
+	},
+	{
+		"name": "Nov 1",
+		"Total": null,
+		"Real Total": null
 	},
 	{
 		"name": "Nov 2",
 		"Total": 2259,
-		"Projection for this date": null
+		"Real Total": null
 	},
 	{
 		"name": "Nov 3",
 		"Total": 2269,
-		"Real Total": null
+		"Real Total": 2342
 	},
 	{
 		"name": "Nov 4",
 		"Total": 2306,
-		"null": 2306
+		"Real Total": null
 	},
 	{
 		"name": "Nov 5",
 		"Total": 2331,
-		"null": 2331
+		"Real Total": null
 	},
 	{
 		"name": "Nov 6",
 		"Total": 2373,
-		"Projection for this date": null
+		"Real Total": null
 	},
 	{
-		"name": "Nov 7"
+		"name": "Nov 7",
+		"Total": null,
+		"Real Total": null
 	},
 	{
-		"name": "Nov 8"
+		"name": "Nov 8",
+		"Total": null,
+		"Real Total": null
 	},
 	{
 		"name": "Nov 9",
 		"Total": 2452,
-		"Projection for this date": null
+		"Real Total": null
 	},
 	{
 		"name": "Nov 10",
 		"Total": 2467,
-		"Projection for this date": null
+		"Real Total": null
 	},
 	{
 		"name": "Nov 11",
 		"Total": 2523,
-		"Projection for this date": null
+		"Real Total": null
 	},
 	{
 		"name": "Nov 12",
 		"Total": 2565,
-		"Projection for this date": 2565
+		"Real Total": null
 	},
 	{
 		"name": "Nov 13",
-		"Projection for this date": 2618
+		"Total": 2587,
+		"Real Total": null
 	},
 	{
-		"name": "Nov 14"
+		"name": "Nov 14",
+		"Total": null,
+		"Real Total": null
 	},
 	{
-		"name": "Nov 15"
+		"name": "Nov 15",
+		"Total": null,
+		"Real Total": null
 	},
 	{
 		"name": "Nov 16",
-		"Projection for this date": 2728
+		"Total": 2664,
+		"Projection for this date": 2664
 	},
 	{
 		"name": "Nov 17",
-		"Projection for this date": 2751
+		"Total": null,
+		"Projection for this date": 2680
 	},
 	{
 		"name": "Nov 18",
-		"Projection for this date": 2838
+		"Total": null,
+		"Projection for this date": 2741
 	},
 	{
 		"name": "Nov 19",
-		"Projection for this date": 2911
-	}
+		"Total": null,
+		"Projection for this date": 2787
+	},
+	{
+		"name": "Nov 20",
+		"Total": null,
+		"Projection for this date": 2811
+	},
+	{
+		"name": "Nov 21",
+		"Total": null,
+		"Projection for this date": null
+	},
+	{
+		"name": "Nov 22",
+		"Total": null,
+		"Projection for this date": null
+	},
+	{
+		"name": "Nov 23",
+		"Total": null,
+		"Projection for this date": 2895
+	},
 ]
 
 const RedSwitch = withStyles({
@@ -622,7 +417,7 @@ class Totalgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 18', 'dataMax + 89']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 289']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 1343', 'dataMax + 105']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 305']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />

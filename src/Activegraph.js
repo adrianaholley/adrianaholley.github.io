@@ -7,515 +7,314 @@ import { Area, Bar, CartesianGrid, ComposedChart, Label, LabelList, ReferenceLin
 
 const datereported = [
 	{
-		"name": "Jul 29",
-		"Real Active": 19,
-		"Active": null
-	},
-	{
-		"name": "Jul 30",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Jul 31",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 1",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 2",
-		"Real Active": 26,
-		"Active": null
-	},
-	{
-		"name": "Aug 3",
-		"Real Active": null,
-		"Active": 18
-	},
-	{
-		"name": "Aug 4",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 5",
-		"Real Active": 29,
-		"Active": null
-	},
-	{
-		"name": "Aug 6",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 7",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 8",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 9",
-		"Real Active": 50,
-		"Active": null
-	},
-	{
-		"name": "Aug 10",
-		"Real Active": null,
-		"Active": 25
-	},
-	{
-		"name": "Aug 11",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 12",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 13",
-		"Real Active": 43,
-		"Active": null
-	},
-	{
-		"name": "Aug 14",
-		"Real Active": 44,
-		"Active": 37
-	},
-	{
-		"name": "Aug 15",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 16",
-		"Real Active": 58,
-		"Active": null
-	},
-	{
-		"name": "Aug 17",
-		"Real Active": null,
-		"Active": 38
-	},
-	{
-		"name": "Aug 18",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 19",
-		"Real Active": 81,
-		"Active": null
-	},
-	{
-		"name": "Aug 20",
-		"Real Active": 103,
-		"Active": null
-	},
-	{
-		"name": "Aug 21",
-		"Real Active": 121,
-		"Active": 53
-	},
-	{
-		"name": "Aug 22",
-		"Real Active": 144,
-		"Active": null
-	},
-	{
-		"name": "Aug 23",
-		"Real Active": 177,
-		"Active": null
-	},
-	{
-		"name": "Aug 24",
-		"Real Active": null,
-		"Active": null
-	},
-	{
-		"name": "Aug 25",
-		"Real Active": null,
-		"Active": 87
-	},
-	{
-		"name": "Aug 26",
-		"Real Active": 249,
-		"Active": 146
-	},
-	{
-		"name": "Aug 27",
-		"Real Active": 300,
-		"Active": null
-	},
-	{
-		"name": "Aug 28",
-		"Real Active": 359,
-		"Active": 176
-	},
-	{
-		"name": "Aug 29",
-		"Real Active": 437,
-		"Active": null
-	},
-	{
-		"name": "Aug 30",
-		"Real Active": 581,
-		"Active": null
-	},
-	{
-		"name": "Aug 31",
-		"Real Active": null,
-		"Active": 268
-	},
-	{
-		"name": "Sept 1",
-		"Real Active": null,
-		"Active": 418
-	},
-	{
-		"name": "Sept 2",
-		"Real Active": 648,
-		"Active": 453
-	},
-	{
-		"name": "Sept 3",
-		"Real Active": 742,
-		"Active": 477
-	},
-	{
-		"name": "Sept 4",
-		"Real Active": 945,
-		"Active": 490
-	},
-	{
-		"name": "Sept 5",
-		"Real Active": 962,
-		"Active": null
-	},
-	{
-		"name": "Sept 6",
-		"Real Active": 993,
-		"Active": null
-	},
-	{
-		"name": "Sept 7",
-		"Real Active": null,
-		"Active": 626
-	},
-	{
-		"name": "Sept 8",
-		"Real Active": null,
-		"Active": 650
-	},
-	{
-		"name": "Sept 9",
-		"Real Active": 816,
-		"Active": 612
-	},
-	{
-		"name": "Sept 10",
-		"Real Active": 749,
-		"Active": 543
-	},
-	{
-		"name": "Sept 11",
-		"Real Active": 621,
-		"Active": 426
-	},
-	{
-		"name": "Sept 12",
-		"Real Active": 651,
-		"Active": null
-	},
-	{
-		"name": "Sept 13",
-		"Real Active": 673,
-		"Active": null
-	},
-	{
-		"name": "Sept 14",
-		"Real Active": null,
-		"Active": 461
-	},
-	{
-		"name": "Sept 15",
-		"Real Active": null,
-		"Active": 357
-	},
-	{
 		"name": "Sept 16",
-		"Real Active": 211,
-		"Active": 171
+		"Active": 171,
+		"Real Active": 243
 	},
 	{
 		"name": "Sept 17",
-		"Real Active": 226,
-		"Active": 186
+		"Active": 186,
+		"Real Active": 278
 	},
 	{
 		"name": "Sept 18",
-		"Real Active": 247,
-		"Active": 187
+		"Active": 187,
+		"Real Active": 281
 	},
 	{
 		"name": "Sept 19",
-		"Real Active": 281,
-		"Active": null
+		"Active": null,
+		"Real Active": 315
 	},
 	{
 		"name": "Sept 20",
-		"Real Active": 315,
-		"Active": null
+		"Active": null,
+		"Real Active": null
 	},
 	{
 		"name": "Sept 21",
-		"Real Active": null,
-		"Active": 222
+		"Active": 222,
+		"Real Active": null
 	},
 	{
 		"name": "Sept 22",
-		"Real Active": null,
-		"Active": 220
+		"Active": 220,
+		"Real Active": 294
 	},
 	{
 		"name": "Sept 23",
-		"Real Active": 278,
-		"Active": 244
+		"Active": 244,
+		"Real Active": 286
 	},
 	{
 		"name": "Sept 24",
-		"Real Active": 256,
-		"Active": 237
+		"Active": 237,
+		"Real Active": 315
 	},
 	{
 		"name": "Sept 25",
-		"Real Active": 293,
-		"Active": 247
+		"Active": 247,
+		"Real Active": 305
 	},
 	{
 		"name": "Sept 26",
-		"Real Active": 305,
-		"Active": null
+		"Active": null,
+		"Real Active": 349
 	},
 	{
 		"name": "Sept 27",
-		"Real Active": 349,
-		"Active": null
+		"Active": null,
+		"Real Active": null
 	},
 	{
 		"name": "Sept 28",
-		"Real Active": null,
-		"Active": 260
+		"Active": 260,
+		"Real Active": null
 	},
 	{
 		"name": "Sept 29",
-		"Real Active": null,
-		"Active": 232
+		"Active": 232,
+		"Real Active": 310
 	},
 	{
 		"name": "Sept 30",
-		"Real Active": 258,
-		"Active": 222
+		"Active": 222,
+		"Real Active": 300
 	},
 	{
 		"name": "Oct 1",
-		"Real Active": 266,
-		"Active": 210
+		"Active": 210,
+		"Real Active": 279
 	},
 	{
 		"name": "Oct 2",
-		"Real Active": 245,
-		"Active": 203
+		"Active": 203,
+		"Real Active": 260
 	},
 	{
 		"name": "Oct 3",
-		"Real Active": 260,
-		"Active": null
+		"Active": null,
+		"Real Active": 274
 	},
 	{
 		"name": "Oct 4",
-		"Real Active": 274,
-		"Active": null
+		"Active": null,
+		"Real Active": null
 	},
 	{
 		"name": "Oct 5",
-		"Real Active": null,
-		"Active": 202
+		"Active": 202,
+		"Real Active": null
 	},
 	{
 		"name": "Oct 6",
-		"Real Active": null,
-		"Active": 196
-    },
-    {
-        "name": "Oct 7",
-        "Real Active": 201,
-        "Active": 152
-    },
-    {
-        "name": "Oct 8",
-        "Real Active": 195,
-        "Active": 156
+		"Active": 196,
+		"Real Active": 260
+	},
+	{
+		"name": "Oct 7",
+		"Active": 152,
+		"Real Active": 207
+	},
+	{
+		"name": "Oct 8",
+		"Active": 156,
+		"Real Active": 200
 	},
 	{
 		"name": "Oct 9",
-		"Real Active": 156,
-		"Active": 134
+		"Active": 134,
+		"Real Active": 200
 	},
 	{
 		"name": "Oct 10",
-		"Real Active": 200,
-		"Active": null
+		"Active": null,
+		"Real Active": 218
 	},
 	{
 		"name": "Oct 11",
-		"Real Active": 218,
-		"Active": null
+		"Active": null,
+		"Real Active": null
 	},
 	{
 		"name": "Oct 12",
-		"Real Active": null,
-		"Active": 157
+		"Active": 157,
+		"Real Active": null
 	},
 	{
 		"name": "Oct 13",
-		"Real Active": null,
-		"Active": 125
+		"Active": 125,
+		"Real Active": 171
 	},
 	{
 		"name": "Oct 14",
-		"Real Active": 158,
-		"Active": 137
+		"Active": 137,
+		"Real Active": 171
 	},
 	{
 		"name": "Oct 15",
-		"Real Active": 156,
-		"Active": 148
+		"Active": 148,
+		"Real Active": 173
 	},
 	{
 		"name": "Oct 16",
-		"Real Active": 159,
-		"Active": 163
-	},
-	{
-		"name": "Oct 17",
+		"Active": 163,
 		"Real Active": 175
 	},
 	{
-		"name": "Oct 18",
+		"name": "Oct 17",
+		"Active": null,
 		"Real Active": 213
 	},
 	{
+		"name": "Oct 18",
+		"Active": null,
+		"Real Active": null
+	},
+	{
 		"name": "Oct 19",
-		"Active": 188
+		"Active": 188,
+		"Real Active": null
 	},
 	{
 		"name": "Oct 20",
-		"Active": 189
+		"Active": 189,
+		"Real Active": 228
 	},
 	{
 		"name": "Oct 21",
-		"Real Active": 223,
-		"Active": 191
+		"Active": 191,
+		"Real Active": 238
 	},
 	{
 		"name": "Oct 22",
-		"Real Active": 194,
-		"Active": 197
+		"Active": 197,
+		"Real Active": 227
 	},
 	{
 		"name": "Oct 23",
 		"Active": 206,
-		"Real Active": 209
-	},
-	{
-		"name": "Oct 24",
 		"Real Active": 237
 	},
 	{
-		"name": "Oct 25",
+		"name": "Oct 24",
+		"Active": null,
 		"Real Active": 270
 	},
 	{
+		"name": "Oct 25",
+		"Active": null,
+		"Real Active": null
+	},
+	{
 		"name": "Oct 26",
-		"Active": 222
+		"Active": 222,
+		"Real Active": null
 	},
 	{
 		"name": "Oct 27",
-		"Active": 214
+		"Active": 214,
+		"Real Active": 264
 	},
 	{
 		"name": "Oct 28",
-		"Real Active": 247,
-		"Active": 197
+		"Active": 197,
+		"Real Active": 285
 	},
 	{
 		"name": "Oct 29",
 		"Active": 183,
-		"Real Active": 269
+		"Real Active": 282
 	},
 	{
 		"name": "Oct 30",
-		"Real Active": 244,
-		"Active": 179
-	},
-	{
-		"name": "Oct 31",
+		"Active": 179,
 		"Real Active": 263
 	},
 	{
-		"name": "Nov 1"
+		"name": "Oct 31",
+		"Active": null,
+		"Real Active": 291
+	},
+	{
+		"name": "Nov 1",
+		"Active": null,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 2",
-		"Active": 193
+		"Active": 193,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 3",
-		"Active": 188
+		"Active": 188,
+		"Real Active": 261
 	},
 	{
 		"name": "Nov 4",
-		"Active": 192
+		"Active": 192,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 5",
-		"Active": 189
+		"Active": 189,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 6",
-		"Active": 198
+		"Active": 198,
+		"Real Active": null
 	},
 	{
-		"name": "Nov 7"
+		"name": "Nov 7",
+		"Active": null,
+		"Real Active": null
 	},
 	{
-		"name": "Nov 8"
+		"name": "Nov 8",
+		"Active": null,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 9",
-		"Active": 237
+		"Active": 237,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 10",
-		"Active": 214
+		"Active": 214,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 11",
-		"Active": 257
+		"Active": 257,
+		"Real Active": null
 	},
 	{
 		"name": "Nov 12",
-		"Active": 280
+		"Active": 280,
+		"Real Active": null
+	},
+	{
+		"name": "Nov 13",
+		"Active": 274,
+		"Real Active": null
+	},
+	{
+		"name": "Nov 14",
+		"Active": null,
+		"Real Active": null
+	},
+	{
+		"name": "Nov 15",
+		"Active": null,
+		"Real Active": null
+	},
+	{
+		"name": "Nov 16",
+		"Active": 322,
+		"Real Active": null
 	}
 ]
 
@@ -583,7 +382,7 @@ class Activegraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 18', 'dataMax + 350']) : (['dataMin - 18', 'dataMax + 7'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 1550']) : (['0', 'dataMax + 1207'])} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 125', 'dataMax + 78']) : (['dataMin - 125', 'dataMax + 51'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 200']) : (['0', 'dataMax + 200'])} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Active") : ("Real Active")} fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
                             <Area dataKey="Active" fill="#cc0000" stroke="#333333" connectNulls={true} fillOpacity={.1} />
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

@@ -4,17 +4,17 @@ import { isMobile } from 'react-device-detect';
 
 const COLORS = ['#cc0000', '#cccccc'];
 
-const data01 = [{ name: 'Group A', value: 2565 }, { name: 'Group B', value: 43435 }] //
+const data01 = [{ name: 'Group A', value: 2587 }, { name: 'Group B', value: 43413 }] //
 
-var currentdate = "Nov 12" //done
-var totaltoday = 2565
-var percentagetoday = "5.58%" 
-var percentagetodaychange = "(+0.51)"
-var aweekago = "5.07%" //done
-var aweekagochange = "(+0.36)" //done
-var twoweeksago = "4.71%" //done 
-var twoweeksagochange = "(+0.18)" //done
-var threeweeksago = "4.53%" //done 
+var currentdate = "Nov 16" //done
+var totaltoday = 2664
+var percentagetoday = "5.79%" 
+var percentagetodaychange = "(+0.46)"
+var aweekago = "5.33%" //done
+var aweekagochange = "(+0.42)" //done
+var twoweeksago = "4.91%" //done 
+var twoweeksagochange = "(+0.21)" //done
+var threeweeksago = "4.70%" //done 
 
 class Totalpie extends Component {
 
