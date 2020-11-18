@@ -254,7 +254,7 @@ const datereported = [
 	{
 		"name": "Nov 4",
 		"Active": 192,
-		"Real Active": null
+		"Real Active": 257
 	},
 	{
 		"name": "Nov 5",
@@ -314,6 +314,11 @@ const datereported = [
 	{
 		"name": "Nov 16",
 		"Active": 322,
+		"Real Active": null
+	},
+	{
+		"name": "Nov 17",
+		"Active": 326,
 		"Real Active": null
 	}
 ]
@@ -382,7 +387,7 @@ class Activegraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 125', 'dataMax + 78']) : (['dataMin - 125', 'dataMax + 51'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 200']) : (['0', 'dataMax + 200'])} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis fontSize="12" interval={0} angle={-14} domain={this.state.TrueStartDateIsOff ? (['dataMin - 125', 'dataMax + 74']) : (['dataMin - 125', 'dataMax + 51'])} />) : (<YAxis interval={8} scale="log" domain={this.state.TrueStartDateIsOff ? (['0', 'dataMax + 200']) : (['0', 'dataMax + 200'])} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Active") : ("Real Active")} fill="#cc0000"><LabelList dataKey="Active cases" position="top" fontSize={isMobile ? (8) : (12)} /></Bar>
                             <Area dataKey="Active" fill="#cc0000" stroke="#333333" connectNulls={true} fillOpacity={.1} />
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

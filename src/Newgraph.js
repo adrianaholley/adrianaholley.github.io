@@ -7,13 +7,6 @@ import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine
 
 const datereported = [
 	{
-		"name": "Sept 16",
-		"Daily": 50,
-		"Daily avg": 41.1,
-		"Real daily": 32,
-		"Real daily avg": 20.7
-	},
-	{
 		"name": "Sept 17",
 		"Daily": 32,
 		"Daily avg": 44.4,
@@ -353,8 +346,8 @@ const datereported = [
 		"name": "Nov 4",
 		"Daily": 37,
 		"Daily avg": 20.1,
-		"Real daily": null,
-		"Real daily avg": null
+		"Real daily": 29,
+		"Real daily avg": 16.9
 	},
 	{
 		"name": "Nov 5",
@@ -437,35 +430,35 @@ const datereported = [
 		"name": "Nov 16",
 		"Daily": 77,
 		"Daily avg": 30.3,
-		"Projection for this date": 30.3,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 17",
-		"Daily": null,
-		"Projection for this date": 30.4,
+		"Daily": 33,
+		"Daily avg": 32.9,
+		"Projection for this date": 32.9,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 18",
 		"Daily": null,
-		"Projection for this date": 31.1,
+		"Projection for this date": 37,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 19",
 		"Daily": null,
-		"Projection for this date": 31.7,
+		"Projection for this date": 41.4,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 20",
 		"Daily": null,
-		"Projection for this date": 32,
+		"Projection for this date": 39.7,
 		"Real daily": null,
 		"Real daily avg": null
 	},
@@ -486,7 +479,14 @@ const datereported = [
 	{
 		"name": "Nov 23",
 		"Daily": null,
-		"Projection for this date": 33,
+		"Projection for this date": 39.6,
+		"Real daily": null,
+		"Real daily avg": null
+	},
+	{
+		"name": "Nov 24",
+		"Daily": null,
+		"Projection for this date": 45.4,
 		"Real daily": null,
 		"Real daily avg": null
 	}

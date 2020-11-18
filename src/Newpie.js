@@ -6,13 +6,13 @@ const COLORS = ['#333333', '#333333'];
 
 const data01 = [{ name: 'Group A', value: 10 }, { name: 'Group B', value: 10 }]
 
-var aweekagodate = "Nov 10" //done
-var currentdate = "Nov 16" //done
-var percentagetoday = "30.3"
-var percentagetodaychange = "(+2.7)"
-var aweekago = "27.6" //done    
-var aweekagochange = "(+13.5)" //done
-var twoweeksago = "14.1" //done
+var aweekagodate = "Nov 11" //done
+var currentdate = "Nov 17" //done
+var percentagetoday = "32.9"
+var percentagetodaychange = "(+4.6)"
+var aweekago = "28.3" //done    
+var aweekagochange = "(+13.4)" //done
+var twoweeksago = "14.9" //done
 
 class Newpie extends Component {
 
