@@ -7,11 +7,6 @@ import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine
 
 const datereported = [
 	{
-		"name": "Sept 17",
-		"Total": 1375,
-		"Real Total": 1467
-	},
-	{
 		"name": "Sept 18",
 		"Total": 1407,
 		"Real Total": 1501
@@ -249,7 +244,7 @@ const datereported = [
 	{
 		"name": "Nov 4",
 		"Total": 2306,
-		"Real Total": null
+		"Real Total": 2411
 	},
 	{
 		"name": "Nov 5",
@@ -309,27 +304,27 @@ const datereported = [
 	{
 		"name": "Nov 16",
 		"Total": 2664,
-		"Projection for this date": 2664
+		"Projection for this date": null
 	},
 	{
 		"name": "Nov 17",
 		"Total": 2697,
-		"Projection for this date": 2697
+		"Projection for this date": null
 	},
 	{
 		"name": "Nov 18",
-		"Total": null,
-		"Projection for this date": 2782
+		"Total": 2725,
+		"Projection for this date": 2725
 	},
 	{
 		"name": "Nov 19",
 		"Total": null,
-		"Projection for this date": 2853
+		"Projection for this date": 2795
 	},
 	{
 		"name": "Nov 20",
 		"Total": null,
-		"Projection for this date": 2865
+		"Projection for this date": 2806
 	},
 	{
 		"name": "Nov 21",
@@ -344,12 +339,17 @@ const datereported = [
 	{
 		"name": "Nov 23",
 		"Total": null,
-		"Projection for this date": 2941
+		"Projection for this date": 2881
 	},
 	{
 		"name": "Nov 24",
 		"Total": null,
-		"Projection for this date": 3015
+		"Projection for this date": 2953
+	},
+	{
+		"name": "Nov 25",
+		"Total": null,
+		"Projection for this date": 2967
 	}
 ]
 
@@ -417,7 +417,7 @@ class Totalgraph extends Component {
                         <ComposedChart data={datereported} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
                             <XAxis interval={isMobile ? (2) : (1)} dataKey="name" angle={-45} textAnchor="end" fontSize="12" height="60" />
-                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 1375', 'dataMax + 185']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 385']} fontSize="12" />)}
+                            {this.state.LogViewIsOff ? (<YAxis interval={0} angle={-14} fontSize="12" domain={['dataMin - 1407', 'dataMax + 233']} />) : (<YAxis interval={8} scale="log" domain={['0', 'dataMax + 433']} fontSize="12" />)}
                             <Bar dataKey={this.state.TrueStartDateIsOff ? ("Total") : ("Real Total")} fill="#333333" ><LabelList dataKey={this.state.TrueStartDateIsOff ? ("none") : ("none")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
                             <Area dataKey="Total" fill="#333" stroke="#cc0000" connectNulls={true} fillOpacity={.1} />
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#cc0000" fill="#333333" strokeDasharray="3 4" />

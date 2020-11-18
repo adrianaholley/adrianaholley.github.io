@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Newpie from './Newpie.js';
 import Newgraph from './Newgraph.js';
 
-var siteupdatetime = "Last updated Tuesday, November 17 at 6:35pm CST."
+var siteupdatetime = "Last updated Wednesday, November 18 at 5:25pm CST."
 var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs. This will affect the 7-day average for the first week of November."
 class New extends Component {
 

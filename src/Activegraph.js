@@ -7,16 +7,6 @@ import { Area, Bar, CartesianGrid, ComposedChart, Label, LabelList, ReferenceLin
 
 const datereported = [
 	{
-		"name": "Sept 16",
-		"Active": 171,
-		"Real Active": 243
-	},
-	{
-		"name": "Sept 17",
-		"Active": 186,
-		"Real Active": 278
-	},
-	{
 		"name": "Sept 18",
 		"Active": 187,
 		"Real Active": 281
@@ -259,7 +249,7 @@ const datereported = [
 	{
 		"name": "Nov 5",
 		"Active": 189,
-		"Real Active": null
+		"Real Active": 269
 	},
 	{
 		"name": "Nov 6",
@@ -319,6 +309,11 @@ const datereported = [
 	{
 		"name": "Nov 17",
 		"Active": 326,
+		"Real Active": null
+	},
+	{
+		"name": "Nov 18",
+		"Active": 314,
 		"Real Active": null
 	}
 ]
