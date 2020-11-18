@@ -6,7 +6,7 @@ const COLORS = ['#cc0000', '#cccccc'];
 
 const data01 = [{ name: 'Group A', value: 2725 }, { name: 'Group B', value: 43275 }] //
 
-var currentdate = "Nov 17" //done
+var currentdate = "Nov 18" //done
 var totaltoday = 2725
 var percentagetoday = "5.92%" 
 var percentagetodaychange = "(+0.43)"

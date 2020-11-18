@@ -1,7 +1,7 @@
-import { FormControlLabel, Grid, Radio, Switch } from '@material-ui/core';
+import { FormControlLabel, Grid, Switch } from '@material-ui/core';
 import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
 
@@ -430,28 +430,28 @@ const datereported = [
 		"name": "Nov 17",
 		"Daily": 33,
 		"Daily avg": 32.9,
-		"Projection for this date": 32.9,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 18",
-		"Daily": null,
-		"Projection for this date": 37,
+		"Daily": 28,
+		"Daily avg": 28.9,
+		"Projection for this date": 28.9,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 19",
 		"Daily": null,
-		"Projection for this date": 41.4,
+		"Projection for this date": 32.9,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 20",
 		"Daily": null,
-		"Projection for this date": 39.7,
+		"Projection for this date": 31.3,
 		"Real daily": null,
 		"Real daily avg": null
 	},
@@ -472,14 +472,21 @@ const datereported = [
 	{
 		"name": "Nov 23",
 		"Daily": null,
-		"Projection for this date": 39.6,
+		"Projection for this date": 31.0,
 		"Real daily": null,
 		"Real daily avg": null
 	},
 	{
 		"name": "Nov 24",
 		"Daily": null,
-		"Projection for this date": 45.4,
+		"Projection for this date": 36.6,
+		"Real daily": null,
+		"Real daily avg": null
+	},
+	{
+		"name": "Nov 25",
+		"Daily": null,
+		"Projection for this date": 34.6,
 		"Real daily": null,
 		"Real daily avg": null
 	}
