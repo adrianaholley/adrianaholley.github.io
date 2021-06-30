@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import './Faq.js';
+import './faq.js';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { BrowserView, MobileView, } from 'react-device-detect';
 import { BrowserRouter as Router, Switch, Redirect, Route, Link, HashRouter } from 'react-router-dom';
-import Total, { totaldata } from './components/Total';
-import Active, { activedata } from './components/Active';
 import { Appbar, Grid } from '@material-ui/core';
 import { ReactComponent as hat } from './maskhat.png'
-import Faq from './Faq.js';
+import Faq from './faq.js';
 import Contact from './Contact.js';
 import Totalclass from './Totalclass.js';
 import New from './New.js';
