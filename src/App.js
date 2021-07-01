@@ -4,7 +4,7 @@ import './faq.js';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { BrowserView, MobileView, } from 'react-device-detect';
-import { BrowserRouter as Switch, Redirect, Route, Link, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Redirect, Route, Link, HashRouter } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import Faq from './faq.js';
 import Contact from './Contact.js';
