@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Checkbox, Appbar, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { BrowserView, MobileView, } from 'react-device-detect';
-import { BrowserRouter as Router, Switch, Redirect, Route, Link, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 
 function Faq() {
   const [isSC1Open, setIsSC1Open] = useState(false)
@@ -41,7 +41,7 @@ function Faq() {
                   <h5>Site Content</h5>
                   <button onClick={() => setIsSC1Open(!isSC1Open)} class="accordion"><center>What is Texas Tech's test positivity rate?</center></button>
                   <div class={isSC1Open ? "" : "panel"}>
-                    <p><font size={2}>Although <a href="https://bit.ly/3brUpwK" target='_blank'>Baylor University</a> and other schools provide this data for their communities, Texas Tech has not publicized the number of tests performed so there is no official positivity rate. If this is something you'd like to see, reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>Although <a href="https://bit.ly/3brUpwK" rel="noopener noreferrer" target='_blank'>Baylor University</a> and other schools provide this data for their communities, Texas Tech has not publicized the number of tests performed so there is no official positivity rate. If this is something you'd like to see, reach out to <a href="mailto:covid19@ttu.edu" rel="noopener noreferrer" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC2Open(!isSC2Open)} class="accordion"><center>Are the quarantine dorms full?</center></button>
@@ -51,17 +51,17 @@ function Faq() {
                       The quarantine and isolation dorms are currently full, according to an internal email from the Managing Director of University Student Housing.
                       Students were once able to be moved into a quarantine or isolation dorm within 1-3 hours, but as Thursday, September 4, a student and their roommate must stay in their dorm while waiting 36-48 hours for hotel accomodations.
                       The university is working to provide more hotel room availability so non-positive residents won't have to share restrooms or common areas with COVID-positive students.
-                      If you think the university should provide exact counts of COVID dorm and COVID hotel room occupancies, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
+                      If you think the university should provide exact counts of COVID dorm and COVID hotel room occupancies, please reach out to <a href="mailto:covid19@ttu.edu" rel="noopener noreferrer" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC3Open(!isSC3Open)} class="accordion"><center>Why aren't there updates during the weekend?</center></button>
                   <div class={isSC3Open ? "" : "panel"}>
-                    <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" target='_blank'>Texas State University</a> and other schools do, email <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" rel="noopener noreferrer" target='_blank'>Texas State University</a> and other schools do, email <a href="mailto:covid19@ttu.edu" rel="noopener noreferrer" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC4Open(!isSC4Open)} class="accordion"><center>How accurate is this data?</center></button>
                   <div class={isSC4Open ? "" : "panel"}>
-                    <p><font size={2}>The total and active case counts come from <a target='_blank' href="https://bit.ly/356VfOn">Texas Tech</a>. Please keep in mind that if a student or employee tests outside of the university, their result will not be counted here unless they self-report. Also, there are currently presymptomatic and asymptomatic cases unaccounted for. TTU's site does not give any past data. If you would like them to provide that, let them know at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>. </font></p>
+                    <p><font size={2}>The total and active case counts come from <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/356VfOn">Texas Tech</a>. Please keep in mind that if a student or employee tests outside of the university, their result will not be counted here unless they self-report. Also, there are currently presymptomatic and asymptomatic cases unaccounted for. TTU's site does not give any past data. If you would like them to provide that, let them know at <a target='_blank' rel="noopener noreferrer" href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>. </font></p>
                   </div>
 
                   <button onClick={() => setIsSC5Open(!isSC5Open)} class="accordion"><center>Have any of these cases been hostpitalized?</center></button>
@@ -78,7 +78,7 @@ function Faq() {
                   <h5>TTU COVID Response</h5>
                   <button onClick={() => setIsCR1Open(!isCR1Open)} class="accordion"><center>How often must Texas Tech students get tested?</center></button>
                   <div class={isCR1Open ? "" : "panel"}>
-                    <p><font size={2}>Many schools are mandating tests as a part of their robust COVID response plan. For example, <a target='_blank' href="https://bit.ly/2QWtkZc">Boston University</a> is mandating all dorm residents to take a coronavirus test twice a week. The <a target='_blank' href="https://bit.ly/31Z7ri2">University of Arizona</a> has screened sewage to find previously undetected COVID cases in dorm halls. Texas Tech has not mandated any testing at any frequency, and no plans of early detection screening have been announced. </font></p>
+                    <p><font size={2}>Many schools are mandating tests as a part of their robust COVID response plan. For example, <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/2QWtkZc">Boston University</a> is mandating all dorm residents to take a coronavirus test twice a week. The <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/31Z7ri2">University of Arizona</a> has screened sewage to find previously undetected COVID cases in dorm halls. Texas Tech has not mandated any testing at any frequency, and no plans of early detection screening have been announced. </font></p>
                   </div>
 
                   <button onClick={() => setIsCR2Open(!isCR2Open)} class="accordion"><center>How soon will I be notified that a classmate tested positive?</center></button>
@@ -100,12 +100,12 @@ function Faq() {
 
                   <button onClick={() => setIsCR4Open(!isCR4Open)} class="accordion"><center>Are there any disciplinary procedures for improper mask wear?</center></button>
                   <div class={isCR4Open ? "" : "panel"}>
-                    <p><font size={2}>Individuals <a target='_blank' href="https://bit.ly/3lP19tj">will be given</a> a warning, then disciplinary action. The disciplinary actions for students have not been specified. For university employees, a first violation <a target='_blank' href="https://bit.ly/2Z4Ur8H">will result in</a> an informal meeting with their supervisor; the second will result in a verbal warning; the third will result in formal written reprimand with a warning and disciplinary meeting; the fourth will result in a final written reprimand as a final warning and disciplinary meeting; the fifth will result in a request for temination of employment.</font></p>
+                    <p><font size={2}>Individuals <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/3lP19tj">will be given</a> a warning, then disciplinary action. The disciplinary actions for students have not been specified. For university employees, a first violation <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/2Z4Ur8H">will result in</a> an informal meeting with their supervisor; the second will result in a verbal warning; the third will result in formal written reprimand with a warning and disciplinary meeting; the fourth will result in a final written reprimand as a final warning and disciplinary meeting; the fifth will result in a request for temination of employment.</font></p>
                   </div>
 
                   <button onClick={() => setIsCR5Open(!isCR5Open)} class="accordion"><center>What percent of courses are online?</center></button>
                   <div class={isCR5Open ? "" : "panel"}>
-                    <p><font size={2}>In <a target='_blank' href="https://bit.ly/3gZYysU">an interview</a> with the student newspaper released August 24, Dr. Schovanec shared that less than half of classes were solely online. 39% were online, 24% were hybrid, and 37% were in in-person. Freshmen courses made up about 72% of all class with some degree of face-to-face instruction. Since the article, more courses have shifted online for two weeks. Some due to a moderate-to-high risk of COVID exposure, some as a precaution. </font></p>
+                    <p><font size={2}>In <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/3gZYysU">an interview</a> with the student newspaper released August 24, Dr. Schovanec shared that less than half of classes were solely online. 39% were online, 24% were hybrid, and 37% were in in-person. Freshmen courses made up about 72% of all class with some degree of face-to-face instruction. Since the article, more courses have shifted online for two weeks. Some due to a moderate-to-high risk of COVID exposure, some as a precaution. </font></p>
                   </div>
 
                   <button onClick={() => setIsCR6Open(!isCR6Open)} class="accordion"><center>How many cases must there be for Texas Tech to return to 100% online classes?</center></button>
@@ -135,7 +135,7 @@ function Faq() {
                   <h5>Site Content</h5>
                   <button onClick={() => setIsSC1Open(!isSC1Open)} class="accordion"><center>What is Texas Tech's test positivity rate?</center></button>
                   <div class={isSC1Open ? "" : "panel"}>
-                    <p><font size={2}>Although <a href="https://bit.ly/3brUpwK" target='_blank'>Baylor University</a> and other schools provide this data for their communities, Texas Tech has not publicized the number of tests performed so there is no official positivity rate. If this is something you'd like to see, reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>Although <a href="https://bit.ly/3brUpwK" rel="noopener noreferrer" target='_blank'>Baylor University</a> and other schools provide this data for their communities, Texas Tech has not publicized the number of tests performed so there is no official positivity rate. If this is something you'd like to see, reach out to <a href="mailto:covid19@ttu.edu" rel="noopener noreferrer" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC2Open(!isSC2Open)} class="accordion"><center>How are the quarantine dorm capacity levels?</center></button>
@@ -145,17 +145,17 @@ function Faq() {
                       The quarantine and isolation dorms are currently full, according to an internal email from the Managing Director of University Student Housing.
                       Students were once able to be moved into a quarantine or isolation dorm within 1-3 hours, but as Thursday, September 4, a student and their roommate must stay in their dorm while waiting 36-48 hours for hotel accomodations.
                       The university is working to provide more hotel room availability so non-positive residents won't have to share restrooms or common areas with COVID-positive students.
-                      If you think the university should provide exact counts of COVID dorm and COVID hotel room occupancies, please reach out to <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
+                      If you think the university should provide exact counts of COVID dorm and COVID hotel room occupancies, please reach out to <a rel="noopener noreferrer" href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a> to let them know.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC3Open(!isSC3Open)} class="accordion"><center>Why aren't there updates during the weekend?</center></button>
                   <div class={isSC3Open ? "" : "panel"}>
-                    <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" target='_blank'>Texas State University</a> and other schools do, email <a href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
+                    <p><font size={2}>If you would like to Texas Tech to provide weekend updates like <a href="https://bit.ly/3jTn8hb" rel="noopener noreferrer" target='_blank'>Texas State University</a> and other schools do, email <a rel="noopener noreferrer" href="mailto:covid19@ttu.edu" target='_blank'>covid19@ttu.edu</a>.</font></p>
                   </div>
 
                   <button onClick={() => setIsSC4Open(!isSC4Open)} class="accordion" target='_blank'><center>How accurate is this data?</center></button>
                   <div class={isSC4Open ? "" : "panel"}>
-                    <p><font size={2}>The total and active case counts come from <a target='_blank' href="https://bit.ly/356VfOn">Texas Tech</a>. Please keep in mind that if a student or employee tests outside of the university, their result will not be counted here unless they self-report. Also, there are currently presymptomatic and asymptomatic cases unaccounted for. TTU's site does not give any past data. If you would like them to provide that, let them know at <a target='_blank' href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>. </font></p>
+                    <p><font size={2}>The total and active case counts come from <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/356VfOn">Texas Tech</a>. Please keep in mind that if a student or employee tests outside of the university, their result will not be counted here unless they self-report. Also, there are currently presymptomatic and asymptomatic cases unaccounted for. TTU's site does not give any past data. If you would like them to provide that, let them know at <a target='_blank' rel="noopener noreferrer" href="mailto:covid19@ttu.edu">covid19@ttu.edu</a>. </font></p>
                   </div>
 
                   <button onClick={() => setIsSC5Open(!isSC5Open)} class="accordion"><center>Have any of these cases been hostpitalized?</center></button>
@@ -172,7 +172,7 @@ function Faq() {
                   <h5>TTU COVID Response</h5>
                   <button onClick={() => setIsCR1Open(!isCR1Open)} class="accordion"><center>How often must Texas Tech students get tested?</center></button>
                   <div class={isCR1Open ? "" : "panel"}>
-                    <p><font size={2}>Many schools are mandating tests as a part of their robust COVID response plan. For example, <a target='_blank' href="https://bit.ly/2QWtkZc">Boston University</a> is mandating all dorm residents to take a coronavirus test twice a week. The <a target='_blank' href="https://bit.ly/31Z7ri2">University of Arizona</a> has screened sewage to find previously undetected COVID cases in dorm halls. Texas Tech has not mandated any testing at any frequency, and no plans of early detection screening have been announced. </font></p>
+                    <p><font size={2}>Many schools are mandating tests as a part of their robust COVID response plan. For example, <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/2QWtkZc">Boston University</a> is mandating all dorm residents to take a coronavirus test twice a week. The <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/31Z7ri2">University of Arizona</a> has screened sewage to find previously undetected COVID cases in dorm halls. Texas Tech has not mandated any testing at any frequency, and no plans of early detection screening have been announced. </font></p>
                   </div>
 
                   <button onClick={() => setIsCR2Open(!isCR2Open)} class="accordion"><center>How soon will I be notified that a classmate tested positive?</center></button>
@@ -194,12 +194,12 @@ function Faq() {
 
                   <button onClick={() => setIsCR4Open(!isCR4Open)} class="accordion"><center>Are there any disciplinary procedures for improper mask wear?</center></button>
                   <div class={isCR4Open ? "" : "panel"}>
-                    <p><font size={2}>Individuals <a target='_blank' href="https://bit.ly/3lP19tj">will be given</a> a warning, then disciplinary action. The disciplinary actions for students have not been specified. For university employees, a first violation <a target='_blank' href="https://bit.ly/2Z4Ur8H">will result in</a> an informal meeting with their supervisor; the second will result in a verbal warning; the third will result in formal written reprimand with a warning and disciplinary meeting; the fourth will result in a final written reprimand as a final warning and disciplinary meeting; the fifth will result in a request for temination of employment.</font></p>
+                    <p><font size={2}>Individuals <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/3lP19tj">will be given</a> a warning, then disciplinary action. The disciplinary actions for students have not been specified. For university employees, a first violation <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/2Z4Ur8H">will result in</a> an informal meeting with their supervisor; the second will result in a verbal warning; the third will result in formal written reprimand with a warning and disciplinary meeting; the fourth will result in a final written reprimand as a final warning and disciplinary meeting; the fifth will result in a request for temination of employment.</font></p>
                   </div>
 
                   <button onClick={() => setIsCR5Open(!isCR5Open)} class="accordion"><center>What percent of courses are online?</center></button>
                   <div class={isCR5Open ? "" : "panel"}>
-                    <p><font size={2}>In <a target='_blank' href="https://bit.ly/3gZYysU">an interview</a> with the student newspaper released August 24, Dr. Schovanec shared that less than half of classes were solely online. 39% were online, 24% were hybrid, and 37% were in in-person. Freshmen courses made up about 72% of all class with some degree of face-to-face instruction. Since the article, more courses have shifted online for two weeks. Some due to a moderate-to-high risk of COVID exposure, some as a precaution. </font></p>
+                    <p><font size={2}>In <a target='_blank' rel="noopener noreferrer" href="https://bit.ly/3gZYysU">an interview</a> with the student newspaper released August 24, Dr. Schovanec shared that less than half of classes were solely online. 39% were online, 24% were hybrid, and 37% were in in-person. Freshmen courses made up about 72% of all class with some degree of face-to-face instruction. Since the article, more courses have shifted online for two weeks. Some due to a moderate-to-high risk of COVID exposure, some as a precaution. </font></p>
                   </div>
 
                   <button onClick={() => setIsCR6Open(!isCR6Open)} class="accordion"><center>How many cases must there be for Texas Tech to return to 100% online classes?</center></button>

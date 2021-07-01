@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PieChart, Pie, Legend, ResponsiveContainer, Tooltip, Cell, Label, Sector } from "recharts";
+import { PieChart, Pie, ResponsiveContainer, Cell, Label } from "recharts";
 import { isMobile } from 'react-device-detect';
 
 const COLORS = ['#333333', '#333333'];

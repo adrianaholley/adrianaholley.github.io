@@ -1,20 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import './faq.js';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { BrowserView, MobileView, } from 'react-device-detect';
-import { BrowserRouter as Router, Switch, Redirect, Route, Link, HashRouter } from 'react-router-dom';
-import { Appbar, Grid } from '@material-ui/core';
-import { ReactComponent as hat } from './maskhat.png'
+import { BrowserRouter as Switch, Redirect, Route, Link, HashRouter } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
 import Faq from './faq.js';
 import Contact from './Contact.js';
 import Totalclass from './Totalclass.js';
 import New from './New.js';
 import Activepage from './Activepage.js';
-import TotalA11yclass from './TotalA11yclass.js'
-import Experiment from './Experiment.js'
-import Gameserver from './Gameserver.js'
 
 function App() {
   return (
@@ -169,12 +165,9 @@ function App() {
           <Switch>
             <Route exact path="/"><Redirect to="/total" /></Route>
             <Route path="/total"><Totalclass /></Route>
-            <Route path="/a11y"><TotalA11yclass /></Route>
             <Route path="/active"><Activepage /></Route>
             <Route path="/faq"><Faq /></Route>
             <Route path="/contact"><Contact /></Route>
-            <Route path="/experiment"><Experiment /></Route>
-            <Route path="/GAMESERVER_"><Gameserver /></Route>
             <Route path="/daily"><New /></Route>
           </Switch>
         </HashRouter>

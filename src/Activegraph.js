@@ -1,7 +1,7 @@
 import { FormControlLabel, Grid, Switch } from '@material-ui/core';
 import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { Area, Bar, CartesianGrid, ComposedChart, Label, LabelList, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
