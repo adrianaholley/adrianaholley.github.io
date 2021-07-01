@@ -1,5 +1,5 @@
 # Texas Tech University COVID-19 Dashboard - [ttucovid19.com](https://www.ttucovid19.com/)
-An interactive, mobile-compatible site that shows COVID spread over time. See projections with an exponential regression curve or two, and get your Texas Tech COVID fast facts. Made with React.  
+An interactive, mobile-compatible site that shows COVID spread over time. See projections, seven-day averages, data logged over time, and get your Texas Tech COVID fast facts. Made with React and Recharts.
 
 ### Motivation
 The University's dashboard was underwhelming. Just one table with current numbers of total, active, and recovered COVID-19 cases. There was no way to see past data and analyze growth. It was not interactive, and there were no projections. 
