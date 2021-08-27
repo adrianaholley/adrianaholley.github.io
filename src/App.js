@@ -23,12 +23,12 @@ function App() {
               <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
                 <Toolbar>
                   <Grid container justify={"center"} alignItems={"center"}>
-                    <Link style={{ textDecoration: 'none' }} to="/total">
+                    <Link style={{ textDecoration: 'none' }} to="/daily">
                       <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
                     </Link>
                     <Grid item xs={5}>
                       <div style={{ paddingInlineEnd: 200 }}>
-                        <Link style={{ textDecoration: 'none' }} to="/total">
+                        <Link style={{ textDecoration: 'none' }} to="/daily">
                           <p style={{ fontFamily: "Georgia" }}>
                             <font size="5" color="#333333">
                               &nbsp;&nbsp;Coronavirus (COVID-19) Dashboard
@@ -97,12 +97,12 @@ function App() {
               <AppBar boxShadow={3} style={{ minHeight: 84 }} className="MuiAppBar" color="white" >
                 <Toolbar>
                   <Grid container justify={"center"} alignItems={"center"}>
-                    <Link style={{ textDecoration: 'none' }} to="/total">
+                    <Link style={{ textDecoration: 'none' }} to="/daily">
                       <img src="https://user-images.githubusercontent.com/32581742/92211600-53dfde80-ee56-11ea-9568-f5178fd2ab80.png" height="60" width="60" />
                     </Link>
                     <Grid item xs={5}>
                       <div style={{ paddingInlineEnd: 0 }}>
-                        <Link style={{ textDecoration: 'none' }} to="/total">
+                        <Link style={{ textDecoration: 'none' }} to="/daily">
                           <p style={{ fontFamily: "Georgia" }}>
                             <font size="2" color="#333333">
                               &nbsp;COVID-19 Dashboard
@@ -110,17 +110,6 @@ function App() {
                           </p>
                         </Link>
                       </div>
-                    </Grid>
-                    <Grid item xs>
-                      <Link style={{ textDecoration: 'none' }} to="/total">
-                        <p style={{ fontStretch: "condensed" }}>
-                          <font size="2" color="#555555">
-                            <b>
-                              Total&nbsp;&nbsp;
-                          </b>
-                          </font>
-                        </p>
-                      </Link>
                     </Grid>
                     <Grid item xs>
                       <Link style={{ textDecoration: 'none' }} to="/daily">
@@ -139,6 +128,17 @@ function App() {
                           <b>Active&nbsp;&nbsp;</b>
                         </font>
                       </a>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/total">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="2" color="#555555">
+                            <b>
+                              Total&nbsp;&nbsp;
+                          </b>
+                          </font>
+                        </p>
+                      </Link>
                     </Grid>
                     <Grid item xs>
                       <a style={{ textDecoration: 'none', fontStretch: "condensed" }} href="https://bit.ly/3cAoMBI">
