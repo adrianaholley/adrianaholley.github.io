@@ -21,14 +21,14 @@ class Totalclass extends Component {
                 </svg>
 
                 {/* page title, subtitle */}
-                <p className="popinfo"><i><font color="blue" size="3">
+                {/* <p className="popinfo"><i><font color="blue" size="3">
                     <div>
                         Note from the Developer: 
                         Thank you for your support during my daily updates throughout the Fall 2020 semester. 
                         Your donations and kind words were much appreciated. 
                         Get vaccinated as soon as you can, and be sure to stay up to date on CDC guidelines to help reduce spread of the more contagious COVID variants.
                     </div>
-                </font></i></p>
+                </font></i></p> */}
                 
                 <h3 style={{ marginBottom: 0 }}>Total Reported Cases</h3>
                 <a><font size="2">{siteupdatetime}</font></a>

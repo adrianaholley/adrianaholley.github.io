@@ -3,6 +3,8 @@ import { Grid } from '@material-ui/core';
 import { BrowserView, MobileView, } from 'react-device-detect';
 import { BrowserRouter as Link } from 'react-router-dom';
 
+var siteupdatetime = "Last updated Wednesday, November 18, 2020 at 5:25pm CST."
+
 function Faq() {
   const [isSC1Open, setIsSC1Open] = useState(false)
   const [isSC2Open, setIsSC2Open] = useState(false)
@@ -33,6 +35,7 @@ function Faq() {
       <div className="App">
         <header className="App-header">
           <h3 style={{ marginBottom: 5 }}>Frequently Asked Questions</h3>
+          <a><font size="2">{siteupdatetime}</font></a>
 
           <BrowserView>
             <div>
