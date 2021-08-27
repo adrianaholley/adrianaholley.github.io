@@ -38,17 +38,6 @@ function App() {
                       </div>
                     </Grid>
                     <Grid item xs>
-                      <Link style={{ textDecoration: 'none' }} to="/total">
-                        <p style={{ fontStretch: "condensed" }}>
-                          <font size="3" color="#555555">
-                            <b>
-                              Total
-                          </b>
-                          </font>
-                        </p>
-                      </Link>
-                    </Grid>
-                    <Grid item xs>
                       <Link style={{ textDecoration: 'none' }} to="/daily">
                         <p style={{ fontStretch: "condensed" }}>
                           <font size="3" color="#555555">
@@ -65,6 +54,17 @@ function App() {
                           <b>Active</b>
                         </font>
                       </a>
+                    </Grid>
+                    <Grid item xs>
+                      <Link style={{ textDecoration: 'none' }} to="/total">
+                        <p style={{ fontStretch: "condensed" }}>
+                          <font size="3" color="#555555">
+                            <b>
+                              Total
+                          </b>
+                          </font>
+                        </p>
+                      </Link>
                     </Grid>
                     <Grid item xs>
                       <Link style={{ textDecoration: 'none' }} to="/faq">
@@ -163,12 +163,12 @@ function App() {
           </MobileView>
 
           <Switch>
-            <Route exact path="/"><Redirect to="/total" /></Route>
-            <Route path="/total"><Totalclass /></Route>
+            <Route exact path="/"><Redirect to="/daily" /></Route>
+            <Route path="/daily"><New /></Route>
             <Route path="/active"><Activepage /></Route>
+            <Route path="/total"><Totalclass /></Route>
             <Route path="/faq"><Faq /></Route>
             <Route path="/contact"><Contact /></Route>
-            <Route path="/daily"><New /></Route>
           </Switch>
         </HashRouter>
       </header>
