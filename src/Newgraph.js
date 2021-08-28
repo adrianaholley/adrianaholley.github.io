@@ -43,7 +43,7 @@ class Newgraph extends Component {
 
                 {/* title, subtitle */}
                 <Grid>
-                    <h5 style={{ marginBottom: 0, marginTop: 5 }}>{this.state.PastDataIsOff ? ('Daily Cases by Day Reported to University') : ('Daily Cases by First Day of Symptoms')}</h5>
+                    <h5 style={{ marginBottom: 0, marginTop: 5 }}>Daily Cases by Day Reported to University</h5>
                     {/* switches */}
                     <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
                     <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" />
@@ -62,13 +62,15 @@ class Newgraph extends Component {
                     <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.3')}>
                         <ComposedChart data={fall2020} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
+
 							<XAxis 
 								interval={isMobile ? (2) : (1)} 
 								dataKey="Date" angle={-45} textAnchor="end" fontSize="12" height="60" 
 							/>
+
                             {this.state.LogViewIsOff ? (
 								<YAxis 
-									interval={0} angle={-14} fontSize="12" 
+									angle={-14} fontSize="12" 
 									domain={this.state.PastDataIsOff ? 
 										(['dataMin - 16.6', 'dataMax + 134']) 
 										: (['dataMin', 'dataMax + 22'])} 
@@ -76,17 +78,60 @@ class Newgraph extends Component {
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
 							}
 
-                            <Bar dataKey={this.state.PastDataIsOff ? ("Daily 2021") : ("Daily 2020")} fill="#666666" ><LabelList dataKey={this.state.PastDataIsOff ? ("Daily 2021") : ("Daily 2020")} position="top" fontSize={isMobile ? ("8") : ("12")} /></Bar>
-                            <Area dataKey={this.state.PastDataIsOff ? ("Daily 2021 avg") : ('Daily 2020 avg')} fill="#666666" stroke={this.state.PastDataIsOff ? ('#333333') : ("#333333")} connectNulls={true} fillOpacity={.15} />
+                            {/* 2021 */}
+                            <Bar 
+                                dataKey={"Daily 2021"} 
+                                fill="#cc0000" >
+                                    <LabelList 
+                                        dataKey={"Daily 2021"} 
+                                        position="top"
+                                        fontSize={isMobile ? ("8") : ("12")} 
+                                    />
+                            </Bar>
+
+                            {/* 2020 */}
+                            {this.state.PastDataIsOff ? ("") : 
+                                <Bar 
+                                    dataKey={"Daily 2020"} 
+                                    fill="#666666" >
+                                        <LabelList 
+                                            dataKey="Daily 2020"
+                                            position="top" 
+                                            fontSize={isMobile ? ("8") : ("12")} 
+                                        />
+                                </Bar>
+                            }
+
+                            {/* 2021 */}
+                            <Area 
+                                dataKey="Daily 2021 avg"
+                                fill="#cc0000" 
+                                stroke="#333333"
+                                connectNulls={true} 
+                                fillOpacity={.25} 
+                            />
+
+                            {/* 2020 */}
+                            {this.state.PastDataIsOff ? ("") : 
+                                <Area 
+                                    dataKey="Daily 2020 avg"
+                                    fill="#666666" 
+                                    strokeDasharray="3 4"
+                                    stroke="#666666"
+                                    connectNulls={true} 
+                                    fillOpacity={.1} 
+                                />
+                            }
+
 							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Daily 2021 avg" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
+
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />
+
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                            <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                         </ComposedChart>
                     </ResponsiveContainer>
-
-                    {this.state.PastDataIsOff ? ('') : ('')}
                 </Grid>
             </center>
         )
