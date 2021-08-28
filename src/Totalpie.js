@@ -4,17 +4,20 @@ import { isMobile } from 'react-device-detect';
 
 const COLORS = ['#cc0000', '#cccccc'];
 
-const data01 = [{ name: 'Group A', value: 2725 }, { name: 'Group B', value: 43275 }] //
 
-var currentdate = "Nov 18" //done
-var totaltoday = 2725
-var percentagetoday = "5.92%" 
-var percentagetodaychange = "(+0.43)"
-var aweekago = "5.49%" //done
-var aweekagochange = "(+0.48)" //done
-var twoweeksago = "5.01%" //done 
-var twoweeksagochange = "(+0.30)" //done
-var threeweeksago = "4.71%" //done 
+var currentdate = "Aug 27" //done
+var totaltoday = 303
+var notinfected = (46000-totaltoday)
+var percentagetoday = (totaltoday/46000*100).toFixed(2)
+var percentagetodaychange = "(+0.66)"
+var aweekago = "0.00%" //done
+var aweekagochange = "(+0.00)" //done
+var twoweeksago = "0.00%" //done 
+var twoweeksagochange = "(+0.00)" //done
+var threeweeksago = "0.00%" //done 
+
+const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }] //
+
 
 class Totalpie extends Component {
 
@@ -37,7 +40,7 @@ class Totalpie extends Component {
                             <Label value={percentagetoday} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="of Red Raiders have" position="center" className='label-top' fontSize='12px' />
                             <Label value="reported positive results" position="center" className='label-middle' fontSize='12px' />
-                            <Label value={"Aug 1 - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
+                            <Label value={"Aug 23 - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
                             {data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)}
                         </Pie>
                     </PieChart>
@@ -54,8 +57,8 @@ class Totalpie extends Component {
                 <p className="popinfo"><i><font size="2">
                     <div className={isMobile ? ("adjustabletextmobile") : ('adjustabletextseventy')}>
                         The total population includes those who are 100% remote and is an estimate,
-                        as Dr. Schovanec stated Sept 16 that there are "more than 46,000" students and employees.
-                        The Interim Director of Emergency Management did not respond to a request for the exact metric.
+                        as Dr. Schovanec stated Sept 16, 2020 that there are "more than 46,000" students and employees.
+                        The Office of Communications did not respond to a request for the exact metric.
                     </div>
                 </font></i></p>
             </div>

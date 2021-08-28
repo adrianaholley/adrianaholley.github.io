@@ -872,6 +872,16 @@ const fall2020 = [
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
 		"Total 2020": 2725
+	},
+	{
+		"Date": "Dec 1",
+	},
+	{
+		"Date": "Dec 15"
+	},
+	{
+		"Date": "Dec 28",
+		"Total 2020": 3197
 	}
 ];
 

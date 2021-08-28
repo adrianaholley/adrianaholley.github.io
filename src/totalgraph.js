@@ -45,7 +45,7 @@ class Totalgraph extends Component {
                 <Grid>
                     <h5 style={{ marginBottom: 0, marginTop: 5 }}>Total Cases by Day Reported to University</h5>
                     {/* switches */}
-                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data*" />
+                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
                     <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" />
 
                     <a><i><font size="2">
@@ -70,41 +70,41 @@ class Totalgraph extends Component {
 
                             {this.state.LogViewIsOff ? (
 								<YAxis 
-									angle={-14} fontSize="12" 
+									fontSize="12"
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 16.6', 'dataMax + 134']) 
-										: (['dataMin', 'dataMax + 22'])} 
+										(['dataMin - 116', 'dataMax + 97']) 
+										: (['dataMin - 18', 'dataMax + 103'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
 							}
 
                             {/* 2021 */}
                             <Bar 
-                                dataKey={"Daily 2021"} 
+                                dataKey={"Total 2021"} 
                                 fill="#cc0000" >
                                     <LabelList 
-                                        dataKey={"Daily 2021"} 
+                                        dataKey={"Total 2021"} 
                                         position="top"
-                                        fontSize={isMobile ? ("8") : ("12")} 
+										fontSize={isMobile ? ("8") : ("10")}
                                     />
                             </Bar>
 
                             {/* 2020 */}
                             {this.state.PastDataIsOff ? ("") : 
                                 <Bar 
-                                    dataKey={"Daily 2020"} 
+                                    dataKey={"Total 2020"} 
                                     fill="#666666" >
                                         <LabelList 
-                                            dataKey="Daily 2020"
+                                            dataKey="Total 2020"
                                             position="top" 
-                                            fontSize={isMobile ? ("8") : ("12")} 
+                                            fontSize={isMobile ? ("8") : ("10")} 
                                         />
                                 </Bar>
                             }
 
                             {/* 2021 */}
                             <Area 
-                                dataKey="Daily 2021 avg"
+                                dataKey="Total 2021"
                                 fill="#cc0000" 
                                 stroke="#333333"
                                 connectNulls={true} 
@@ -114,7 +114,7 @@ class Totalgraph extends Component {
                             {/* 2020 */}
                             {this.state.PastDataIsOff ? ("") : 
                                 <Area 
-                                    dataKey="Daily 2020 avg"
+                                    dataKey="Total 2020"
                                     fill="#666666" 
                                     strokeDasharray="3 4"
                                     stroke="#666666"
@@ -123,11 +123,18 @@ class Totalgraph extends Component {
                                 />
                             }
 
-							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Daily 2021 avg" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
+							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Total 2021" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
 
                             <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />
 
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1.0% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2.0% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3.0% of all students and employees (1380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4.0% of all students and employees (1840)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={2300} stroke="#333" strokeDasharray="2"><Label value="5.0% of all students and employees (2300)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={2710} stroke="#333" strokeDasharray="2"><Label value="6.0% of all students and employees (2710)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={3220} stroke="#333" strokeDasharray="2"><Label value="7.0% of all students and employees (3220)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
 
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                         </ComposedChart>

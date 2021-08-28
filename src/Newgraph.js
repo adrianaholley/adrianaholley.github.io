@@ -70,7 +70,7 @@ class Newgraph extends Component {
 
                             {this.state.LogViewIsOff ? (
 								<YAxis 
-									angle={-14} fontSize="12" 
+									fontSize="12" 
 									domain={this.state.PastDataIsOff ? 
 										(['dataMin - 16.6', 'dataMax + 134']) 
 										: (['dataMin', 'dataMax + 22'])} 
