@@ -1,6 +1,7 @@
 import { FormControlLabel, Grid, Switch } from '@material-ui/core';
 import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
+import { Card } from '@material-ui/core';
 import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { fall2020 } from './fall2020.js';
@@ -50,7 +51,7 @@ class Newgraph extends Component {
 
                     <a><i><font size="2">
                         <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
-                            Case counts reflect the&nbsp;<b><u>date reported</u></b>on TTU's website, not first date of symptoms. 
+                            Case counts reflect the&nbsp;<b><u>date reported</u></b> on TTU's website, not first date of symptoms. 
 							Due to testing delays, it can take 0-3 days for a case to be reflected in this view.
                             If a student or employee tests at a non-TTU testing location, it is not included on this site unless it was self-reported to the university.
                         </div>
