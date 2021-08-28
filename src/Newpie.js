@@ -6,13 +6,13 @@ const COLORS = ['#333333', '#333333'];
 
 const data01 = [{ name: 'Group A', value: 10 }, { name: 'Group B', value: 10 }]
 
-var aweekagodate = "Nov 12" //done
-var currentdate = "Nov 18" //done
-var percentagetoday = "28.9"
-var percentagetodaychange = "(-2.1)"
-var aweekago = "31.0" //done    
-var aweekagochange = "(+10.9)" //done
-var twoweeksago = "20.1" //done
+var aweekagodate = "Aug 20" //done
+var currentdate = "Aug 27" //done
+var avgtoday = "43.3"
+var avgtodaychange = "(+43.3)"
+var aweekago = "0" //done    
+var aweekagochange = "(+- 0)" //done
+var twoweeksago = "0" //done
 
 class Newpie extends Component {
 
@@ -31,8 +31,8 @@ class Newpie extends Component {
                 <ResponsiveContainer width={'100%'} height={"100%"} aspect={isMobile ? ('1.6') : ('2.5')}>
                     <PieChart margin={{ top: 0, left: 0, right: 0, bottom: 0 }} >
                         <Pie data={data01} innerRadius={80} outerRadius={120} fill="#8884d8" paddingAngle={5}>
-                            <Label value={percentagetodaychange} position="centerBottom" className='label-top-top' fontSize='12px' />
-                            <Label value={percentagetoday} position="centerBottom" className='label' fontSize='38px' />
+                            <Label value={avgtodaychange} position="centerBottom" className='label-top-top' fontSize='12px' />
+                            <Label value={avgtoday} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="is the average number" position="center" className='label-top' fontSize='12px' />
                             <Label value="of new cases per day, " position="center" className='label-middle' fontSize='12px' />
                             <Label value={aweekagodate + " - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
