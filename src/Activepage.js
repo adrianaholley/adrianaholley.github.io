@@ -1,4 +1,5 @@
 import { Grid } from '@material-ui/core';
+import { Card } from '@material-ui/core';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import Activegraph from './Activegraph';
@@ -43,15 +44,20 @@ class Activepage extends Component {
                 <h3 style={{ marginBottom: 0 }}>Active Reported Cases</h3>
                 <a><font size="2">{siteupdatetime}</font></a>
                 <br/>
+                <br/>
                 {/* <a><b><font color="cc0000" size="2">{notice}</font></b></a> */}
 
                 <center>
-
-                        {/* show graphs */}
-                        {isMobile ? (<Activegraph />) : (<Grid item xs={7}><Activegraph /></Grid>)}
-
-                    {/* show texts */}
-
+                {/* show graphs */}
+                {isMobile ? (
+                    <Activegraph />
+                ) : (
+                    <Grid item xs={7}>
+                        <Card>
+                            <Activegraph />
+                        </Card>
+                    </Grid>
+                )}
                 </center>
             </div>
         )
