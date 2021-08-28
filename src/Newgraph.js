@@ -1,7 +1,6 @@
 import { FormControlLabel, Grid, Switch } from '@material-ui/core';
 import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
-import { Card } from '@material-ui/core';
 import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { fall2020 } from './fall2020.js';

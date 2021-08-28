@@ -25,6 +25,7 @@ class Totalpie extends Component {
                 {isMobile ? (<br />) : ('')}
 
                 {/* title, subtilte */}
+                <br/>
                 <h5 style={{ marginBottom: 0, marginTop: 5 }}>Percent That Has Had COVID</h5>
                 <a><i><font size="2">{totaltoday.toLocaleString()} positive reports from 46,000 students and employees.</font></i></a>
 

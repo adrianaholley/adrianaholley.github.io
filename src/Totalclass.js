@@ -1,4 +1,5 @@
 import { Grid } from '@material-ui/core';
+import { Card } from '@material-ui/core';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import Totalpie from './Totalpie.js';
@@ -33,14 +34,27 @@ class Totalclass extends Component {
                 <h3 style={{ marginBottom: 0 }}>Total Reported Cases</h3>
                 <a><font size="2">{siteupdatetime}</font></a>
                 <br/>
+                <br/>
                 {/* <a><b><font color="cc0000" size="2">{notice}</font></b></a> */}
 
                 <center>
 
                     {/* show graphs */}
-                    <Grid container>
-                        <Grid item xs><Totalpie /></Grid>
-                        {isMobile ? (<Totalgraph />) : (<Grid item xs={7}><Totalgraph /></Grid>)}
+                    <Grid container spacing={1}>
+                        <Grid item xs>
+                            <Card>
+                                <Totalpie />
+                            </Card>
+                        </Grid>
+                        {isMobile ? (
+                            <Totalgraph />
+                        ) : (
+                            <Grid item xs={8}>
+                                <Card>
+                                    <Totalgraph />
+                                </Card>
+                            </Grid>
+                        )}
                     </Grid>
 
                     {/* show texts */}
