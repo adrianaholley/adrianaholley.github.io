@@ -20,8 +20,6 @@ class Newpie extends Component {
     render() {
         return (
             <div>
-                {isMobile ? (<br />) : ('')}
-
                 {/* title, subtilte */}
                 <br/>
                 <h5 style={{ marginBottom: 0, marginTop: 5 }}>7-Day Average</h5>
