@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { fall2020 } from './fall2020.js';
-import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
+import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Legend, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
 
 const RedSwitch = withStyles({
     switchBase: {
@@ -126,11 +126,12 @@ class Newgraph extends Component {
 
 							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Daily 2021 avg" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
 
-                            <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />
-
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
 
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+
+                            <Legend verticalAlign="top"  height={36}/>
+
                         </ComposedChart>
                     </ResponsiveContainer>
                 </Grid>

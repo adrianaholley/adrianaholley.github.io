@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { fall2020 } from './fall2020.js';
-import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
+import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Legend, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
 
 const RedSwitch = withStyles({
     switchBase: {
@@ -126,8 +126,6 @@ class Totalgraph extends Component {
 
 							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Total 2021" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
 
-                            <Line dataKey="Projection for this date" connectNulls={true} dot={false} stroke="#333333" fill="#333333" strokeDasharray="3 4" />
-
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1.0% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2.0% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
@@ -138,6 +136,9 @@ class Totalgraph extends Component {
                             <ReferenceLine y={3220} stroke="#333" strokeDasharray="2"><Label value="7.0% of all students and employees (3220)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
 
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
+
+                            <Legend verticalAlign="top"  height={36}/>
+
                         </ComposedChart>
                     </ResponsiveContainer>
                 </Grid>
