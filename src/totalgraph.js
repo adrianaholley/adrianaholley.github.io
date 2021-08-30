@@ -47,7 +47,7 @@ class Totalgraph extends Component {
                     <h5 style={{ marginBottom: 0, marginTop: 5 }}>Total Cases by Day Reported to University</h5>
                     {/* switches */}
                     <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
-                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" />
+                    {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" /> */}
 
                     <a><i><font size="2">
                         <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >

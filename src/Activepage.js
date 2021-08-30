@@ -53,19 +53,32 @@ class Activepage extends Component {
                     {/* show graphs */}
                     <Grid container spacing={1}>
 
-                    <Grid item xs>
+                        {/* if mobile, don't show table first */}
+                        {isMobile ? ('') : (
+                            <Grid item xs>
+                                <Box border={1} borderRadius={4}>
+                                    <Card >
+                                        <SemesterComparisons />
+                                    </Card>
+                                </Box>
+                            </Grid>
+                        )}
+
+                        <Grid item xs={isMobile ? ('0') : ('8')}>
+                            <Card>
+                                <Activegraph />
+                            </Card>
+                        </Grid>
+
+                        {/* mobile, so show table last */}
+                        {isMobile ? (
                             <Box border={1} borderRadius={4}>
                                 <Card >
                                     <SemesterComparisons />
                                 </Card>
                             </Box>
-                        </Grid>
+                        ) : ('')}
 
-                        <Grid item xs = {8}>
-                            <Card>
-                                <Activegraph />
-                            </Card>
-                        </Grid>
                     </Grid>
                 </center>
             </div>

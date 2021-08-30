@@ -45,7 +45,7 @@ class Activegraph extends Component {
 
                     {/* switches */}
                     <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
-                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" />
+                    {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" /> */}
 
                     <a><i><font size="2">
                         <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >

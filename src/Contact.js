@@ -1,5 +1,7 @@
 import React from 'react';
 
+var siteupdatetime = "Last updated Wednesday, November 18, 2020 at 5:25pm CST."
+
 function Contact() {
     return (
       <div>
@@ -15,6 +17,8 @@ function Contact() {
         <div className="App">
           <header className="App-header">
             <h3>Contact</h3>
+            <a><font size="2">{siteupdatetime}</font></a>
+
             <div>
               <p><bold>Have a question or comment about the site?</bold><br />
                 <font size="4"><a rel="noopener noreferrer" href="https://bit.ly/3jKvDL7" target='_blank'>Reach out to me.</a></font></p>

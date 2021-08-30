@@ -42,25 +42,53 @@ class Totalclass extends Component {
 
                     {/* show graphs */}
                     <Grid container spacing={1}>
-                    <Grid item xs>
+                        <Grid item xs>
+
+                            {/* if mobile, don't show table first */}
+                            {isMobile ? ('') : (
+                                <Box border={1} borderRadius={4}>
+                                    <Card >
+                                        <SemesterComparisons />
+                                    </Card>
+                                </Box>
+                            )}
+
+                            {/* if mobile, don't show pie next */}
+                            {isMobile ? ('') : (
+                                <Box paddingTop={1}>
+                                    <Card>
+                                        <Totalpie />
+                                    </Card>
+                                </Box>
+                            )}
+                            
+
+                        </Grid>
+
+                        <Grid item xs={isMobile ? ('0') : ('8')}>
+                            <Card>
+                                <Totalgraph />
+                            </Card>
+                        </Grid>
+
+                        {/* mobile, so show pie second  */}
+                        {isMobile ? (
+                        <Card>
+                            <Totalpie />
+                        </Card>
+                        ) : ('')}
+                        
+
+
+                        {/* mobile, so show table last */}
+                        {isMobile ? (
                             <Box border={1} borderRadius={4}>
                                 <Card >
                                     <SemesterComparisons />
                                 </Card>
                             </Box>
-                            <Box paddingTop={1}></Box>
-                            <Card>
-                                <Totalpie />
-                            </Card>
-                        </Grid>
- 
+                        ) : ('')}
 
-
-                        <Grid item xs={8}>
-                            <Card>
-                                <Totalgraph />
-                            </Card>
-                        </Grid>
                     </Grid>
 
                 </center>

@@ -45,43 +45,53 @@ class New extends Component {
                     {/* show graphs */}
                     <Grid container spacing={1}>
                         <Grid item xs>
-                            <Box border={1} borderRadius={4}>
-                                <Card >
-                                    <SemesterComparisons />
-                                </Card>
-                            </Box>
-                            <Box paddingTop={1}></Box>
-                            <Card>
-                                <Newpie />
-                            </Card>
+
+                            {/* if mobile, don't show table first */}
+                            {isMobile ? ('') : (
+                                <Box border={1} borderRadius={4}>
+                                    <Card >
+                                        <SemesterComparisons />
+                                    </Card>
+                                </Box>
+                            )}
+
+                            {/* if mobile, don't show pie next */}
+                            {isMobile ? ('') : (
+                                <Box paddingTop={1}>
+                                    <Card>
+                                        <Newpie />
+                                    </Card>
+                                </Box>
+                            )}
+                            
+
                         </Grid>
 
-                        <Grid item xs={8}>
+                        <Grid item xs={isMobile ? ('0') : ('8')}>
                             <Card>
                                 <Newgraph />
                             </Card>
                         </Grid>
+
+                        {/* mobile, so show pie second  */}
+                        {isMobile ? (
+                        <Card>
+                            <Newpie />
+                        </Card>
+                        ) : ('')}
+                        
+
+
+                        {/* mobile, so show table last */}
+                        {isMobile ? (
+                            <Box border={1} borderRadius={4}>
+                            <Card >
+                                <SemesterComparisons />
+                            </Card>
+                        </Box>
+                        ) : ('')}
+
                     </Grid>
-
-                    {/* show texts */}
-                    <BrowserView>
-                        <div className="adjustabletext">
-                            <h4>What is logarithmic scale?</h4>
-                            <p><font size="4">
-                                Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. 
-                                A logarithmic scale is a more helpful way to see that. 
-                                Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. 
-                                For example, 20, 200, and 2000 each increase tenfold.  
-                            </font></p>
-                        </div>
-                    </BrowserView>
-
-                    <MobileView>
-                        <div className="adjustabletextmobile">
-                            <h4>What is logarithmic scale?</h4>
-                            <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
-                        </div>
-                    </MobileView>
 
                 </center>
             </div>
