@@ -1,7 +1,8 @@
-import { Grid } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
 import { Card } from '@material-ui/core';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
+import SemesterComparisons from './SemesterComparisons.js';
 import Activegraph from './Activegraph';
 
 var siteupdatetime = "Last updated Friday, August 27, 2021 at 9:00pm CST."
@@ -48,16 +49,24 @@ class Activepage extends Component {
                 {/* <a><b><font color="cc0000" size="2">{notice}</font></b></a> */}
 
                 <center>
-                {/* show graphs */}
-                {isMobile ? (
-                    <Activegraph />
-                ) : (
-                    <Grid item xs={7}>
-                        <Card>
-                            <Activegraph />
-                        </Card>
+
+                    {/* show graphs */}
+                    <Grid container spacing={1}>
+
+                    <Grid item xs>
+                            <Box border={1} borderRadius={4}>
+                                <Card >
+                                    <SemesterComparisons />
+                                </Card>
+                            </Box>
+                        </Grid>
+
+                        <Grid item xs = {8}>
+                            <Card>
+                                <Activegraph />
+                            </Card>
+                        </Grid>
                     </Grid>
-                )}
                 </center>
             </div>
         )

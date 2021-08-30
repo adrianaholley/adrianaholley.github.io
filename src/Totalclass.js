@@ -1,7 +1,8 @@
-import { Grid } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
 import { Card } from '@material-ui/core';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
+import SemesterComparisons from './SemesterComparisons.js';
 import Totalpie from './Totalpie.js';
 import Totalgraph from './totalgraph.js';
 
@@ -41,41 +42,26 @@ class Totalclass extends Component {
 
                     {/* show graphs */}
                     <Grid container spacing={1}>
-                        <Grid item xs>
+                    <Grid item xs>
+                            <Box border={1} borderRadius={4}>
+                                <Card >
+                                    <SemesterComparisons />
+                                </Card>
+                            </Box>
+                            <Box paddingTop={1}></Box>
                             <Card>
                                 <Totalpie />
                             </Card>
                         </Grid>
-                        {isMobile ? (
-                            <Totalgraph />
-                        ) : (
-                            <Grid item xs={8}>
-                                <Card>
-                                    <Totalgraph />
-                                </Card>
-                            </Grid>
-                        )}
+ 
+
+
+                        <Grid item xs={8}>
+                            <Card>
+                                <Totalgraph />
+                            </Card>
+                        </Grid>
                     </Grid>
-
-                    {/* show texts */}
-                    <BrowserView>
-                        <div className="adjustabletext">
-                            <Grid container spacing={5}>
-                                <Grid item xs>
-                                    <h4>What is logarithmic scale?</h4>
-                                    <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
-                                </Grid>
-                            </Grid>
-                        </div>
-                    </BrowserView>
-
-                    <MobileView>
-                        <div className="adjustabletextmobile">
-                            {/* middle */}
-                            <h4>What is logarithmic scale?</h4>
-                            <p><font size="4">Sometimes, case counts can increase so rapidly it's hard see if the growth rate is getting better or worse. A logarithmic scale is a more helpful way to see that. Instead of our y-axis ticks increasing by the same constant (such as 1, 2, 3 or 50, 100, 150), they increase by the same proportion. For example, 20, 200, and 2000 each increase tenfold.  </font></p>
-                        </div>
-                    </MobileView>
 
                 </center>
             </div>

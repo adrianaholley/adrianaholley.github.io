@@ -1,6 +1,5 @@
-import { Box, Grid, Table } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
 import { Card } from '@material-ui/core';
-import { spacing } from '@material-ui/system';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
@@ -56,14 +55,12 @@ class New extends Component {
                                 <Newpie />
                             </Card>
                         </Grid>
-                        {isMobile ? (
-                            <Newgraph />
-                        ) : (
-                            <Grid item xs={8}>
-                                <Card>
-                                    <Newgraph />
-                                </Card>
-                            </Grid>)}
+
+                        <Grid item xs={8}>
+                            <Card>
+                                <Newgraph />
+                            </Card>
+                        </Grid>
                     </Grid>
 
                     {/* show texts */}
