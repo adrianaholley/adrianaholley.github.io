@@ -1,7 +1,9 @@
-import { Grid } from '@material-ui/core';
+import { Box, Grid, Table } from '@material-ui/core';
 import { Card } from '@material-ui/core';
+import { spacing } from '@material-ui/system';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
+import SemesterComparisons from './SemesterComparisons.js';
 import Newpie from './Newpie.js';
 import Newgraph from './Newgraph.js';
 
@@ -44,6 +46,12 @@ class New extends Component {
                     {/* show graphs */}
                     <Grid container spacing={1}>
                         <Grid item xs>
+                            <Box border={1} borderRadius={4}>
+                                <Card >
+                                    <SemesterComparisons />
+                                </Card>
+                            </Box>
+                            <Box paddingTop={1}></Box>
                             <Card>
                                 <Newpie />
                             </Card>

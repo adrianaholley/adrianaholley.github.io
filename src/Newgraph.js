@@ -42,6 +42,7 @@ class Newgraph extends Component {
                 {isMobile ? (<br />) : ('')}
 
                 {/* title, subtitle */}
+                <br/>
                 <Grid>
                     <h5 style={{ marginBottom: 0, marginTop: 5 }}>Daily Cases by Day Reported to University</h5>
                     {/* switches */}
@@ -119,7 +120,7 @@ class Newgraph extends Component {
                                     strokeDasharray="3 4"
                                     stroke="#666666"
                                     connectNulls={true} 
-                                    fillOpacity={.1} 
+                                    fillOpacity={.07} 
                                 />
                             }
 

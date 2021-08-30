@@ -42,6 +42,7 @@ class Totalgraph extends Component {
                 {isMobile ? (<br />) : ('')}
 
                 {/* title, subtitle */}
+                <br/>
                 <Grid>
                     <h5 style={{ marginBottom: 0, marginTop: 5 }}>Total Cases by Day Reported to University</h5>
                     {/* switches */}

@@ -7,6 +7,7 @@ const fall2020 = [
 		"Daily 2020 avg": 2.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 28,
 		"Total 2020": 18
 	},
 	{
@@ -15,6 +16,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	,
@@ -24,6 +26,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -32,6 +35,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -40,6 +44,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -48,6 +53,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -56,6 +62,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -64,6 +71,7 @@ const fall2020 = [
 		"Daily 2020 avg": 3.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 25, 
 		"Total 2020": 44
 	},
 	{
@@ -72,6 +80,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	,
@@ -81,6 +90,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -89,6 +99,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -97,6 +108,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 37,
 		"Total 2020": 63
 	},
 	{
@@ -105,6 +117,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -113,6 +126,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -121,6 +135,7 @@ const fall2020 = [
 		"Daily 2020 avg": 3.3,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 38,
 		"Total 2020": 67
 	},
 	{
@@ -129,6 +144,7 @@ const fall2020 = [
 		"Daily 2020 avg": 4.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": 75
 	},
 	{
@@ -137,6 +153,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -145,6 +162,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -153,6 +171,7 @@ const fall2020 = [
 		"Daily 2020 avg": 8.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 53,
 		"Total 2020": 103
 	},
 	{
@@ -161,6 +180,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -169,6 +189,8 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": 116,
 		"Daily 2021 avg": 16.6,
+		"Active 2020": null,
+		"Active 2021": 116,
 		"Total 2020": null,
 		"Total 2021": 116
 	},
@@ -178,6 +200,8 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": 30,
 		"Daily 2021 avg": 20.9,
+		"Active 2020": null,
+		"Active 2021": 135,
 		"Total 2020": null,
 		"Total 2021": 146
 	},
@@ -187,6 +211,8 @@ const fall2020 = [
 		"Daily 2020 avg": 7.7,
 		"Daily 2021": 51,
 		"Daily 2021 avg": 28.1,
+		"Active 2020": 87,
+		"Active 2021": 185,
 		"Total 2020": 149,
 		"Total 2021": 197
 	},
@@ -196,6 +222,8 @@ const fall2020 = [
 		"Daily 2020 avg": 15.9,
 		"Daily 2021": 59,
 		"Daily 2021 avg": 36.6,
+		"Active 2020": 146,
+		"Active 2021": 230,
 		"Total 2020": 206,
 		"Total 2021": 256
 	},
@@ -205,6 +233,8 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": 47,
 		"Daily 2021 avg": 43.3,
+		"Active 2020": null,
+		"Active 2021": 257,
 		"Total 2020": null,
 		"Total 2021": 303
 	},
@@ -214,6 +244,7 @@ const fall2020 = [
 		"Daily 2020 avg": 19.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 176,
 		"Total 2020": 260
 	},
 	{
@@ -222,6 +253,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -230,6 +262,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -238,6 +271,7 @@ const fall2020 = [
 		"Daily 2020 avg": 36.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 268,
 		"Total 2020": 378
 	},
 	{
@@ -246,6 +280,7 @@ const fall2020 = [
 		"Daily 2020 avg": 52.3,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 418,
 		"Total 2020": 551
 	},
 	{
@@ -254,6 +289,7 @@ const fall2020 = [
 		"Daily 2020 avg": 54.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 453,
 		"Total 2020": 624
 	},
 	{
@@ -262,6 +298,7 @@ const fall2020 = [
 		"Daily 2020 avg": 61.3,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 477,
 		"Total 2020": 671
 	},
 	{
@@ -270,6 +307,7 @@ const fall2020 = [
 		"Daily 2020 avg": 62.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 490,
 		"Total 2020": 717
 	},
 	{
@@ -278,6 +316,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -286,6 +325,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -294,6 +334,7 @@ const fall2020 = [
 		"Daily 2020 avg": 78.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 626,
 		"Total 2020": 945
 	},
 	{
@@ -302,6 +343,7 @@ const fall2020 = [
 		"Daily 2020 avg": 69.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 650,
 		"Total 2020": 1020
 	},
 	{
@@ -310,6 +352,7 @@ const fall2020 = [
 		"Daily 2020 avg": 64.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 612,
 		"Total 2020": 1055
 	},
 	{
@@ -318,6 +361,7 @@ const fall2020 = [
 		"Daily 2020 avg": 58.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 543,
 		"Total 2020": 1064
 	},
 	{
@@ -326,6 +370,7 @@ const fall2020 = [
 		"Daily 2020 avg": 53.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 426,
 		"Total 2020": 1091
 	},
 	{
@@ -334,6 +379,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -342,6 +388,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -350,6 +397,7 @@ const fall2020 = [
 		"Daily 2020 avg": 47.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 461,
 		"Total 2020": 1280
 	},
 	{
@@ -358,6 +406,7 @@ const fall2020 = [
 		"Daily 2020 avg": 28.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 357,
 		"Total 2020": 1293
 	},	
 	{
@@ -366,6 +415,7 @@ const fall2020 = [
 		"Daily 2020 avg": 41.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 171,
 		"Total 2020": 1343
 	},
 	{
@@ -374,6 +424,7 @@ const fall2020 = [
 		"Daily 2020 avg": 44.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 186,
 		"Total 2020": 1375
 	},
 	{
@@ -382,6 +433,7 @@ const fall2020 = [
 		"Daily 2020 avg": 45.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 187,
 		"Total 2020": 1407
 	},
 	{
@@ -390,6 +442,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -398,6 +451,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -406,6 +460,7 @@ const fall2020 = [
 		"Daily 2020 avg": 28.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 222,
 		"Total 2020": 1481
 	},
 	{
@@ -414,6 +469,7 @@ const fall2020 = [
 		"Daily 2020 avg": 28.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 220,
 		"Total 2020": 1490
 	},
 	{
@@ -422,6 +478,7 @@ const fall2020 = [
 		"Daily 2020 avg": 26.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 244,
 		"Total 2020": 1530
 	},
 	{
@@ -430,6 +487,7 @@ const fall2020 = [
 		"Daily 2020 avg": 25.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 237,
 		"Total 2020": 1553
 	},
 	{
@@ -438,6 +496,7 @@ const fall2020 = [
 		"Daily 2020 avg": 25.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 247,
 		"Total 2020": 1585
 	},
 	{
@@ -446,6 +505,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -454,6 +514,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -462,6 +523,7 @@ const fall2020 = [
 		"Daily 2020 avg": 23.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 260,
 		"Total 2020": 1643
 	},
 	{
@@ -470,6 +532,7 @@ const fall2020 = [
 		"Daily 2020 avg": 22.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 232,
 		"Total 2020": 1647
 	},
 	{
@@ -478,6 +541,7 @@ const fall2020 = [
 		"Daily 2020 avg": 22.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 222,
 		"Total 2020": 1689
 	},
 	{
@@ -486,6 +550,7 @@ const fall2020 = [
 		"Daily 2020 avg": 22.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 210,
 		"Total 2020": 1711
 	},
 	{
@@ -494,6 +559,7 @@ const fall2020 = [
 		"Daily 2020 avg": 21.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 203,
 		"Total 2020": 1738
 	},
 	{
@@ -502,6 +568,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -510,6 +577,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -518,6 +586,7 @@ const fall2020 = [
 		"Daily 2020 avg": 17.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 202,
 		"Total 2020": 1766,
 	},
 	{
@@ -526,6 +595,7 @@ const fall2020 = [
 		"Daily 2020 avg": 17.3,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 196,
 		"Total 2020": 1768
 	},
 	{
@@ -534,6 +604,7 @@ const fall2020 = [
 		"Daily 2020 avg": 13.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 152,
 		"Total 2020": 1783
 	},
 	{
@@ -542,6 +613,7 @@ const fall2020 = [
 		"Daily 2020 avg": 12.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 156,
 		"Total 2020": 1799
 	},
 	{
@@ -550,6 +622,7 @@ const fall2020 = [
 		"Daily 2020 avg": 11.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 134,
 		"Total 2020": 1821
 	},
 	{
@@ -558,6 +631,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -566,6 +640,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -574,6 +649,7 @@ const fall2020 = [
 		"Daily 2020 avg": 16.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 157,
 		"Total 2020": 1882
 
 	},
@@ -583,6 +659,7 @@ const fall2020 = [
 		"Daily 2020 avg": 17.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 125,
 		"Total 2020": 1892
 	},
 	{
@@ -591,6 +668,7 @@ const fall2020 = [
 		"Daily 2020 avg": 19.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 137,
 		"Total 2020": 1917
 	},
 	{
@@ -599,6 +677,7 @@ const fall2020 = [
 		"Daily 2020 avg": 20.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 148,
 		"Total 2020": 1943
 	},
 	{
@@ -607,6 +686,7 @@ const fall2020 = [
 		"Daily 2020 avg": 21.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 163,
 		"Total 2020": 1972
 	},
 	{
@@ -615,6 +695,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -623,6 +704,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -631,6 +713,7 @@ const fall2020 = [
 		"Daily 2020 avg": 19.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 188,
 		"Total 2020": 2020
 	},
 	{
@@ -639,6 +722,7 @@ const fall2020 = [
 		"Daily 2020 avg": 19.3,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 189,
 		"Total 2020": 2027
 	},
 	{
@@ -647,6 +731,7 @@ const fall2020 = [
 		"Daily 2020 avg": 16.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 191,
 		"Total 2020": 2034
 	},
 	{
@@ -655,6 +740,7 @@ const fall2020 = [
 		"Daily 2020 avg": 20.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 197,
 		"Total 2020": 2084
 	},
 	{
@@ -663,6 +749,7 @@ const fall2020 = [
 		"Daily 2020 avg": 19.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 206,
 		"Total 2020": 2111
 	},
 	{
@@ -671,6 +758,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -679,6 +767,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -687,6 +776,7 @@ const fall2020 = [
 		"Daily 2020 avg": 20,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 222,
 		"Total 2020": 2160
 	},
 	{
@@ -695,6 +785,7 @@ const fall2020 = [
 		"Daily 2020 avg": 19.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 214,
 		"Total 2020": 2165
 	},
 	{
@@ -703,6 +794,7 @@ const fall2020 = [
 		"Daily 2020 avg": 18.7,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 197,
 		"Total 2020": 2166
 	},
 	{
@@ -711,6 +803,7 @@ const fall2020 = [
 		"Daily 2020 avg": 11.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 183,
 		"Total 2020": 2167
 	},
 	{
@@ -719,6 +812,7 @@ const fall2020 = [
 		"Daily 2020 avg": 12.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 179,
 		"Total 2020": 2201
 	},
 	{
@@ -727,6 +821,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -735,6 +830,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -743,6 +839,7 @@ const fall2020 = [
 		"Daily 2020 avg": 14.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 193,
 		"Total 2020": 2259
 	},
 	{
@@ -751,6 +848,7 @@ const fall2020 = [
 		"Daily 2020 avg": 14.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 188,
 		"Total 2020": 2269
 	},
 	{
@@ -759,6 +857,7 @@ const fall2020 = [
 		"Daily 2020 avg": 20.1,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 192,
 		"Total 2020": 2306
 	},
 	{
@@ -767,6 +866,7 @@ const fall2020 = [
 		"Daily 2020 avg": 23.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 189,
 		"Total 2020": 2331
 	},
 	{
@@ -775,6 +875,7 @@ const fall2020 = [
 		"Daily 2020 avg": 24.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 198,
 		"Total 2020": 2373
 	},
 	{
@@ -783,6 +884,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -791,6 +893,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -799,6 +902,7 @@ const fall2020 = [
 		"Daily 2020 avg": 27.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 237,
 		"Total 2020": 2452
 	},
 	{
@@ -807,6 +911,7 @@ const fall2020 = [
 		"Daily 2020 avg": 28.3,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 214,
 		"Total 2020": 2467
 	},
 	{
@@ -815,6 +920,7 @@ const fall2020 = [
 		"Daily 2020 avg": 31,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 257,
 		"Total 2020": 2523
 	},
 	{
@@ -823,6 +929,7 @@ const fall2020 = [
 		"Daily 2020 avg": 33.4,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 280,
 		"Total 2020": 2565
 	},
 	{
@@ -831,6 +938,7 @@ const fall2020 = [
 		"Daily 2020 avg": 30.6,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 274,
 		"Total 2020": 2587
 	},
 	{
@@ -839,6 +947,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -847,6 +956,7 @@ const fall2020 = [
 		"Daily 2020 avg": null,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": null,
 		"Total 2020": null
 	},
 	{
@@ -855,6 +965,7 @@ const fall2020 = [
 		"Daily 2020 avg": 30.3,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 322,
 		"Total 2020": 2664
 	},
 	{
@@ -863,6 +974,7 @@ const fall2020 = [
 		"Daily 2020 avg": 32.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 326,
 		"Total 2020": 2697
 	},
 	{
@@ -871,6 +983,7 @@ const fall2020 = [
 		"Daily 2020 avg": 28.9,
 		"Daily 2021": null,
 		"Daily 2021 avg": null,
+		"Active 2020": 314,
 		"Total 2020": 2725
 	},
 	{
