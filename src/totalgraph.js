@@ -73,7 +73,7 @@ class Totalgraph extends Component {
 								<YAxis 
 									fontSize="12"
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 116', 'dataMax + 97']) 
+										(['dataMin - 116', 'dataMax + 68']) 
 										: (['dataMin - 18', 'dataMax + 103'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)

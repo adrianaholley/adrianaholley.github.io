@@ -5,12 +5,12 @@ import { isMobile } from 'react-device-detect';
 const COLORS = ['#cc0000', '#cccccc'];
 
 
-var currentdate = "Aug 27" //done
-var totaltoday = 303
+var currentdate = "Aug 30" //done
+var totaltoday = 432
 var notinfected = (46000-totaltoday)
 var percentagetoday = (totaltoday/46000*100).toFixed(2)
-var percentagetodaychange = "(+0.66)"
-var aweekago = "0.00%" //done
+var percentagetodaychange = "+0.69"
+var aweekago = 0.25 //done
 var aweekagochange = "(+0.00)" //done
 var twoweeksago = "0.00%" //done 
 var twoweeksagochange = "(+0.00)" //done
@@ -37,7 +37,7 @@ class Totalpie extends Component {
                     <PieChart margin={{ top: 0, left: 0, right: 0, bottom: 0 }} >
                         <Pie data={data01} innerRadius={80} outerRadius={120} fill="#8884d8" paddingAngle={5}>
                             <Label value={percentagetodaychange} position="centerBottom" className='label-top-top' fontSize='12px' />
-                            <Label value={percentagetoday} position="centerBottom" className='label' fontSize='38px' />
+                            <Label value={percentagetoday + "%"} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="of Red Raiders have" position="center" className='label-top' fontSize='12px' />
                             <Label value="reported positive results" position="center" className='label-middle' fontSize='12px' />
                             <Label value={"Aug 23 - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
@@ -47,7 +47,7 @@ class Totalpie extends Component {
                 </ResponsiveContainer>
 
                 {/* past projections */}
-                <a><font size="3">One week before {currentdate}:<b> {aweekago} </b> {aweekagochange}</font></a>
+                <a><font size="3">One week before {currentdate}:<b> {aweekago + "%"} </b> {aweekagochange}</font></a>
                 <br />
                 <a><font size="3">Two weeks before {currentdate}:<b> {twoweeksago}</b>  {twoweeksagochange}</font></a>
                 <br />

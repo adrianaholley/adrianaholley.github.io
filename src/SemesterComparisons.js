@@ -14,7 +14,7 @@ function createData(name, calories, fat) {
   }
 
 const rows = [
-    createData('Fall 2021 (in progress)', 303, 46),
+    createData('Fall 2021 (in progress)', 432, 111),
     createData('Spring 2021', 274, 274),
     createData('Fall 2020', 3196, 3194),
   ];

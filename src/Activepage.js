@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
 import Activegraph from './Activegraph';
 
-var siteupdatetime = "Last updated Friday, August 27, 2021 at 9:00pm CST."
+var siteupdatetime = "Last updated Monday, August 30, 2021 at 7:25pm CST."
 // var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs."
 
 class Activepage extends Component {
