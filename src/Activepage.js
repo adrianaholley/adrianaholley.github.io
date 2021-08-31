@@ -4,8 +4,8 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
 import Activegraph from './Activegraph';
+import { globaldate } from './fall2020.js';
 
-var siteupdatetime = "Last updated Monday, August 30, 2021 at 7:25pm CST."
 // var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs."
 
 class Activepage extends Component {
@@ -43,7 +43,7 @@ class Activepage extends Component {
                 </font></i></p> */}
 
                 <h3 style={{ marginBottom: 0 }}>Active Reported Cases</h3>
-                <a><font size="2">{siteupdatetime}</font></a>
+                <a><font size="2">{globaldate}</font></a>
                 <br/>
                 <br/>
                 {/* <a><b><font color="cc0000" size="2">{notice}</font></b></a> */}

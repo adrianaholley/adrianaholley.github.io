@@ -1,4 +1,6 @@
-// all 2021s are incorrect
+//update daily
+var globaldate = "Last updated Tuesday, August 31, 2021 at 6:35pm CST."
+var todayinarray = 30
 
 const fall2020 = [
 	{
@@ -271,10 +273,13 @@ const fall2020 = [
 		"Date": "Aug 31",
 		"Daily 2020": 118,
 		"Daily 2020 avg": 36.4,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 67,
+		"Daily 2021 avg": 50.4,
 		"Active 2020": 268,
-		"Total 2020": 378
+		"Active 2021": 357,
+		"Total 2020": 378,
+		"Total 2021": 499,
+		"Total Recoveries 2021": 111
 	},
 	{
 		"Date": "Sept 1",
@@ -1000,4 +1005,4 @@ const fall2020 = [
 	}
 ];
 
-export { fall2020 };
+export { fall2020, globaldate, todayinarray };

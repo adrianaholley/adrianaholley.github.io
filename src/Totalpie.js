@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell, Label } from "recharts";
 import { isMobile } from 'react-device-detect';
+import { fall2020, todayinarray } from './fall2020';
 
 const COLORS = ['#cc0000', '#cccccc'];
 
+var today = fall2020[todayinarray] //update daily
+var weekago = fall2020[todayinarray - 7]
+var twoweeksago = fall2020[todayinarray - 14]
 
-var currentdate = "Aug 30" //done
-var totaltoday = 432
+var todaydate = today.Date
+var weekagodate = weekago.Date
+
+var totaltoday = today["Total 2021"]
 var notinfected = (46000-totaltoday)
 var percentagetoday = (totaltoday/46000*100).toFixed(2)
-var percentagetodaychange = "+0.69"
-var aweekago = 0.25 //done
-var aweekagochange = "(+0.00)" //done
-var twoweeksago = "0.00%" //done 
-var twoweeksagochange = "(+0.00)" //done
+var percentagetodaychange = "+" + (percentagetoday - .94).toFixed(2) //update the decimal daily
+var percentageaweekago = (weekago["Total 2021"]/46000*100).toFixed(2) 
+var aweekagochange = "(+0.00)" 
+var percentagetwoweeksago = "0.00" //(twoweeksago["Total 2021"]/46000*100).toFixed(2) 
+var twoweeksagochange = "(+0.00)" 
 var threeweeksago = "0.00%" //done 
 
 const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }] //
@@ -40,18 +46,18 @@ class Totalpie extends Component {
                             <Label value={percentagetoday + "%"} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="of Red Raiders have" position="center" className='label-top' fontSize='12px' />
                             <Label value="reported positive results" position="center" className='label-middle' fontSize='12px' />
-                            <Label value={"Aug 23 - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
+                            <Label value={weekagodate + " - " + todaydate} position="centerTop" className='label-bottom' fontSize='12px' />
                             {data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)}
                         </Pie>
                     </PieChart>
                 </ResponsiveContainer>
 
                 {/* past projections */}
-                <a><font size="3">One week before {currentdate}:<b> {aweekago + "%"} </b> {aweekagochange}</font></a>
+                <a><font size="3">One week before {todaydate}:<b> {percentageaweekago + "%"} </b> {aweekagochange}</font></a>
                 <br />
-                <a><font size="3">Two weeks before {currentdate}:<b> {twoweeksago}</b>  {twoweeksagochange}</font></a>
+                <a><font size="3">Two weeks before {todaydate}:<b> {percentagetwoweeksago}</b>  {twoweeksagochange}</font></a>
                 <br />
-                <a><font size="3">Three weeks before {currentdate}:<b> {threeweeksago} </b></font></a>
+                <a><font size="3">Three weeks before {todaydate}:<b> {threeweeksago} </b></font></a>
 
                 {/* disclaimer */}
                 <p className="popinfo"><i><font size="2">
