@@ -1,6 +1,6 @@
 //update daily
-var globaldate = "Last updated Tuesday, August 31, 2021 at 6:35pm CST."
-var todayinarray = 30
+var globaldate = "Last updated Wednesday, September 1, 2021 at 11:45pm CST."
+var todayinarray = 31
 
 const fall2020 = [
 	{
@@ -279,16 +279,19 @@ const fall2020 = [
 		"Active 2021": 357,
 		"Total 2020": 378,
 		"Total 2021": 499,
-		"Total Recoveries 2021": 111
+		"Total Recoveries 2021": 142
 	},
 	{
 		"Date": "Sept 1",
 		"Daily 2020": 137,
 		"Daily 2020 avg": 52.3,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 45,
+		"Daily 2021 avg": 49.6,
 		"Active 2020": 418,
-		"Total 2020": 551
+		"Active 2021": 372,
+		"Total 2020": 551,
+		"Total 2021": 544,
+		"Total Recoveries 2021": 172
 	},
 	{
 		"Date": "Sept 2",

@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell, Label } from "recharts";
 import { isMobile } from 'react-device-detect';
+import { fall2020, todayinarray } from './fall2020';
 
 const COLORS = ['#333333', '#333333'];
 
 const data01 = [{ name: 'Group A', value: 10 }, { name: 'Group B', value: 10 }]
 
-var aweekagodate = "Aug 24" //done
-var currentdate = "Aug 31" //done
-var avgtoday = "50.4"
-var avgtodaychange = "(+5.3)"
-var aweekago = "20.9" //done    
-var aweekagochange = "(+- 0%)" //done
-var twoweeksago = "0" //done
+var today = fall2020[todayinarray] 
+var weekago = fall2020[todayinarray - 7]
 
+var todaydate = today.Date 
+var weekagodate = weekago.Date 
+var avgtoday = today["Daily 2021 avg"]
+var avgtodaychange = "+" + (49.6-28.1)
+var avgaweekago = weekago["Daily 2021 avg"] 
+var avgaweekagochange = "(+21.5)" 
+var twoweeksago = "0"
 class Newpie extends Component {
 
     
@@ -33,16 +36,16 @@ class Newpie extends Component {
                             <Label value={avgtoday} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="is the average number" position="center" className='label-top' fontSize='12px' />
                             <Label value="of new cases per day, " position="center" className='label-middle' fontSize='12px' />
-                            <Label value={aweekagodate + " - " + currentdate} position="centerTop" className='label-bottom' fontSize='12px' />
+                            <Label value={todaydate + " - " + weekagodate} position="centerTop" className='label-bottom' fontSize='12px' />
                             {data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)}
                         </Pie>
                     </PieChart>
                 </ResponsiveContainer>
 
                 {/* past projections */}
-                <a><font size="3">One week before {currentdate}:<b> {aweekago} </b> {aweekagochange}</font></a>
+                <a><font size="3">One week before {weekagodate}:<b> {avgaweekago} </b> {avgaweekagochange}</font></a>
                 <br />
-                <a><font size="3">Two weeks before {currentdate}:<b> {twoweeksago}</b></font></a>
+                <a><font size="3">Two weeks before {weekagodate}:<b> {twoweeksago}</b></font></a>
 
                 {/* disclaimer */}
                 <p className="popinfo"><i><font size="2">

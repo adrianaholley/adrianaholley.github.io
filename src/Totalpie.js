@@ -5,7 +5,7 @@ import { fall2020, todayinarray } from './fall2020';
 
 const COLORS = ['#cc0000', '#cccccc'];
 
-var today = fall2020[todayinarray] //update daily
+var today = fall2020[todayinarray] 
 var weekago = fall2020[todayinarray - 7]
 var twoweeksago = fall2020[todayinarray - 14]
 
@@ -15,9 +15,9 @@ var weekagodate = weekago.Date
 var totaltoday = today["Total 2021"]
 var notinfected = (46000-totaltoday)
 var percentagetoday = (totaltoday/46000*100).toFixed(2)
-var percentagetodaychange = "+" + (percentagetoday - .94).toFixed(2) //update the decimal daily
+var percentagetodaychange = "+" + (1.18-.43).toFixed(2) //update the decimal daily
 var percentageaweekago = (weekago["Total 2021"]/46000*100).toFixed(2) 
-var aweekagochange = "(+0.00)" 
+var aweekagochange = "(+0.43)" 
 var percentagetwoweeksago = "0.00" //(twoweeksago["Total 2021"]/46000*100).toFixed(2) 
 var twoweeksagochange = "(+0.00)" 
 var threeweeksago = "0.00%" //done 
