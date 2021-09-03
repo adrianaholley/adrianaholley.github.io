@@ -10,16 +10,26 @@ object-assign
   http://jedwatson.github.io/classnames
 */
 
-/*! decimal.js-light v2.5.0 https://github.com/MikeMcl/decimal.js-light/LICENCE */
+/*!
+ * 
+ *   typed.js - A JavaScript Typing Animation Library
+ *   Author: Matt Boldt <me@mattboldt.com>
+ *   Version: v2.0.11
+ *   Url: https://github.com/mattboldt/typed.js
+ *   License(s): MIT
+ * 
+ */
 
-/*!@license
- * UAParser.js v0.7.28
+/*!
+ * UAParser.js v0.7.21
  * Lightweight JavaScript-based User-Agent string parser
  * https://github.com/faisalman/ua-parser-js
  *
- * Copyright © 2012-2021 Faisal Salman <f@faisalman.com>
+ * Copyright © 2012-2019 Faisal Salman <f@faisalman.com>
  * Licensed under MIT License
  */
+
+/*! decimal.js-light v2.5.0 https://github.com/MikeMcl/decimal.js-light/LICENCE */
 
 /**
  * A better abstraction over CSS.
