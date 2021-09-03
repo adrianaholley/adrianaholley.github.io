@@ -13,9 +13,9 @@ var weekago = fall2020[todayinarray - 7]
 var todaydate = today.Date 
 var weekagodate = weekago.Date 
 var avgtoday = today["Daily 2021 avg"]
-var avgtodaychange = "+" + (49.6-28.1)
+var avgtodaychange = "(+" + (51.3-36.6).toFixed(1) + ")"
 var avgaweekago = weekago["Daily 2021 avg"] 
-var avgaweekagochange = "(+21.5)" 
+var avgaweekagochange = "(+36.6)" 
 var twoweeksago = "0"
 class Newpie extends Component {
 
@@ -36,7 +36,7 @@ class Newpie extends Component {
                             <Label value={avgtoday} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="is the average number" position="center" className='label-top' fontSize='12px' />
                             <Label value="of new cases per day, " position="center" className='label-middle' fontSize='12px' />
-                            <Label value={todaydate + " - " + weekagodate} position="centerTop" className='label-bottom' fontSize='12px' />
+                            <Label value={weekagodate + " - " + todaydate} position="centerTop" className='label-bottom' fontSize='12px' />
                             {data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)}
                         </Pie>
                     </PieChart>
