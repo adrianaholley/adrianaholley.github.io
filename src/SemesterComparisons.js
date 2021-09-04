@@ -21,8 +21,8 @@ const rows = [
   ];
 
 const otherRows = [
-    createData('Fall 2021, Week 1', 303),
-    createData('Fall 2020, Week 1', 176)
+    createData('Fall 2021', '303 new cases', '347 new cases'),
+    createData('Fall 2020', '176 new cases', '439 new cases')
 ]
 
 class SemesterComparisons extends Component {
@@ -38,8 +38,9 @@ class SemesterComparisons extends Component {
                     <Table aria-label="simple table">
                         <TableHead>
                             <TableRow>
-                                <TableCell><b>Week-by-Week Comparisons</b></TableCell>
-                                <TableCell align="right"><b>New Cases</b></TableCell>
+                                <TableCell><b>Semester</b></TableCell>
+                                <TableCell align="right"><b>Week 1</b></TableCell>
+                                <TableCell align="right"><b>Week 2</b></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -49,6 +50,7 @@ class SemesterComparisons extends Component {
                                         {otherRows.name}
                                     </TableCell>
                                     <TableCell align="right">{otherRows.calories}</TableCell>
+                                    <TableCell align="right">{otherRows.fat}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

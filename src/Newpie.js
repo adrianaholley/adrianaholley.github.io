@@ -13,9 +13,9 @@ var weekago = fall2020[todayinarray - 7]
 var todaydate = today.Date 
 var weekagodate = weekago.Date 
 var avgtoday = today["Daily 2021 avg"]
-var avgtodaychange = "(+" + (51.3-36.6).toFixed(1) + ")"
+var avgtodaychange = "(+" + (59.6-43.3).toFixed(1) + ")"
 var avgaweekago = weekago["Daily 2021 avg"] 
-var avgaweekagochange = "(+36.6)" 
+var avgaweekagochange = "(+43.3)" 
 var twoweeksago = "0"
 class Newpie extends Component {
 
