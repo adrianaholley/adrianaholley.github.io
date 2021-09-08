@@ -13,10 +13,11 @@ var weekago = fall2020[todayinarray - 7]
 var todaydate = today.Date 
 var weekagodate = weekago.Date 
 var avgtoday = today["Daily 2021 avg"]
-var avgtodaychange = "(+" + (59.6-43.3).toFixed(1) + ")"
 var avgaweekago = weekago["Daily 2021 avg"] 
-var avgaweekagochange = "(+43.3)" 
-var twoweeksago = "0"
+var avgtwoweeksago = (0)
+
+var avgtodaychange = "(" + (avgtoday-avgaweekago).toFixed(1) + ")"
+var avgaweekagochange = "(+" + (avgaweekago-avgtwoweeksago) + ")"
 class Newpie extends Component {
 
     
@@ -45,7 +46,7 @@ class Newpie extends Component {
                 {/* past projections */}
                 <a><font size="3">One week before {weekagodate}:<b> {avgaweekago} </b> {avgaweekagochange}</font></a>
                 <br />
-                <a><font size="3">Two weeks before {weekagodate}:<b> {twoweeksago}</b></font></a>
+                <a><font size="3">Two weeks before {weekagodate}:<b> {avgtwoweeksago}</b></font></a>
 
                 {/* disclaimer */}
                 <p className="popinfo"><i><font size="2">

@@ -15,12 +15,13 @@ var weekagodate = weekago.Date
 var totaltoday = today["Total 2021"]
 var notinfected = (46000-totaltoday)
 var percentagetoday = (totaltoday/46000*100).toFixed(2)
-var percentagetodaychange = "(+" + (1.41-.66).toFixed(2) + ")" //update the decimal daily
 var percentageaweekago = (weekago["Total 2021"]/46000*100).toFixed(2) 
-var aweekagochange = "(+0.66)" 
-var percentagetwoweeksago = "0.00" //(twoweeksago["Total 2021"]/46000*100).toFixed(2) 
-var twoweeksagochange = "(+0.00)" 
-var threeweeksago = "0.00%" //done 
+var percentagetwoweeksago = (twoweeksago["Total 2021"]/46000*100).toFixed(2) 
+var percentagethreeweeksago = (0).toFixed(2)
+
+var percentagetodaychange = "(+" + (percentagetoday-percentageaweekago).toFixed(2) + ")" 
+var aweekagochange = "(+" + (percentageaweekago-percentagetwoweeksago).toFixed(2) + ")"
+var twoweeksagochange = "(+" + (percentagetwoweeksago-percentagethreeweeksago).toFixed(2) + ")"
 
 const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }] //
 
@@ -55,9 +56,9 @@ class Totalpie extends Component {
                 {/* past projections */}
                 <a><font size="3">One week before {todaydate}:<b> {percentageaweekago + "%"} </b> {aweekagochange}</font></a>
                 <br />
-                <a><font size="3">Two weeks before {todaydate}:<b> {percentagetwoweeksago}</b>  {twoweeksagochange}</font></a>
+                <a><font size="3">Two weeks before {todaydate}:<b> {percentagetwoweeksago + "%"}</b>  {twoweeksagochange}</font></a>
                 <br />
-                <a><font size="3">Three weeks before {todaydate}:<b> {threeweeksago} </b></font></a>
+                <a><font size="3">Three weeks before {todaydate}:<b> {percentagethreeweeksago + "%"} </b></font></a>
 
                 {/* disclaimer */}
                 <p className="popinfo"><i><font size="2">
