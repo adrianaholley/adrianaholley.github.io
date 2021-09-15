@@ -10,8 +10,8 @@ import Paper from '@material-ui/core/Paper';
 import { Component } from 'react';
 import { fall2020, todayinarray } from './fall2020';
 
-function createData(name, calories, fat) {
-    return { name, calories, fat};
+function createData(name, calories, fat, week3) {
+    return { name, calories, fat, week3};
   }
 
 const rows = [
@@ -21,8 +21,8 @@ const rows = [
   ];
 
 const otherRows = [
-    createData('Fall 2021', '303 new cases', '347 new cases'),
-    createData('Fall 2020', '176 new cases', '439 new cases')
+    createData('Fall 2021', '303 new cases', '347', '280'),
+    createData('Fall 2020', '176 new cases', '439', '374')
 ]
 
 class SemesterComparisons extends Component {
@@ -41,6 +41,7 @@ class SemesterComparisons extends Component {
                                 <TableCell><b>Semester</b></TableCell>
                                 <TableCell align="right"><b>Week 1</b></TableCell>
                                 <TableCell align="right"><b>Week 2</b></TableCell>
+                                <TableCell align="right"><b>Week 3</b></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -51,6 +52,7 @@ class SemesterComparisons extends Component {
                                     </TableCell>
                                     <TableCell align="right">{otherRows.calories}</TableCell>
                                     <TableCell align="right">{otherRows.fat}</TableCell>
+                                    <TableCell align="right">{otherRows.week3}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
@@ -65,7 +67,7 @@ class SemesterComparisons extends Component {
                             <TableRow>
                                 <TableCell><b>All Semesters</b></TableCell>
                                 <TableCell align="right"><b>Total Cases</b></TableCell>
-                                <TableCell align="right"><b>Total Recoveries</b></TableCell>
+                                <TableCell align="right"><b>Total Survivals</b></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>

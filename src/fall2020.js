@@ -1,6 +1,6 @@
 //update daily
-var globaldate = "Last updated Wednesday, September 8, 2021 at 5:55pm CST."
-var todayinarray = 37
+var globaldate = "Last updated Tuesday, September 14, 2021 at 11:50pm CST."
+var todayinarray = 43
 
 const fall2020 = [
 	{
@@ -371,19 +371,25 @@ const fall2020 = [
 		"Date": "Sept 9",
 		"Daily 2020": 35,
 		"Daily 2020 avg": 64.1,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 77,
+		"Daily 2021 avg": 39.6,
 		"Active 2020": 612,
-		"Total 2020": 1055
+		"Active 2021": 305,
+		"Total 2020": 1055,
+		"Total 2021": 892,
+		"Total Recoveries 2021": 587
 	},
 	{
 		"Date": "Sept 10",
 		"Daily 2020": 9,
 		"Daily 2020 avg": 58.7,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 38,
+		"Daily 2021 avg": 40.0,
 		"Active 2020": 543,
-		"Total 2020": 1064
+		"Active 2021": 314,
+		"Total 2020": 1064,
+		"Total 2021": 930,
+		"Total Recoveries 2021": 616
 	},
 	{
 		"Date": "Sept 11",
@@ -407,19 +413,25 @@ const fall2020 = [
 		"Date": "Sept 13",
 		"Daily 2020": null,
 		"Daily 2020 avg": null,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 64,
+		"Daily 2021 avg": 49.1,
 		"Active 2020": null,
-		"Total 2020": null
+		"Active 2021": 299,
+		"Total 2020": null,
+		"Total 2021": 994,
+		"Total Recoveries 2021": 695
 	},
 	{
 		"Date": "Sept 14",
 		"Daily 2020": 189,
 		"Daily 2020 avg": 47.9,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 25,
+		"Daily 2021 avg": 34.9,
 		"Active 2020": 461,
-		"Total 2020": 1280
+		"Active 2021": 285,
+		"Total 2020": 1280,
+		"Total 2021": 1019,
+		"Total Recoveries 2021": 734
 	},
 	{
 		"Date": "Sept 15",
