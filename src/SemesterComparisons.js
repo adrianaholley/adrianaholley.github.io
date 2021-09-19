@@ -10,19 +10,19 @@ import Paper from '@material-ui/core/Paper';
 import { Component } from 'react';
 import { fall2020, todayinarray } from './fall2020';
 
-function createData(name, calories, fat, week3) {
-    return { name, calories, fat, week3};
+function createData(name, calories, fat, week3, week4) {
+    return { name, calories, fat, week3, week4};
   }
 
 const rows = [
-    createData('Fall 2021 (in progress)', fall2020[todayinarray]["Total 2021"], fall2020[todayinarray]["Total Recoveries 2021"]), //daily update right
+    createData('Fall 2021 (in progress)', fall2020[todayinarray]["Total 2021"], fall2020[todayinarray]["Total Recoveries 2021"]),
     createData('Spring 2021', 274, 274),
     createData('Fall 2020', '3,196', '3,194'),
   ];
 
 const otherRows = [
-    createData('Fall 2021', '303 new cases', '347', '280'),
-    createData('Fall 2020', '176 new cases', '439', '374')
+    createData('Fall 2021', '303 new cases', '347', '280', '161'),
+    createData('Fall 2020', '176 new cases', '439', '374', '377')
 ]
 
 class SemesterComparisons extends Component {
@@ -42,6 +42,7 @@ class SemesterComparisons extends Component {
                                 <TableCell align="right"><b>Week 1</b></TableCell>
                                 <TableCell align="right"><b>Week 2</b></TableCell>
                                 <TableCell align="right"><b>Week 3</b></TableCell>
+                                <TableCell align="right"><b>Week 4</b></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -53,6 +54,7 @@ class SemesterComparisons extends Component {
                                     <TableCell align="right">{otherRows.calories}</TableCell>
                                     <TableCell align="right">{otherRows.fat}</TableCell>
                                     <TableCell align="right">{otherRows.week3}</TableCell>
+                                    <TableCell align="right">{otherRows.week4}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

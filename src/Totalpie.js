@@ -26,7 +26,6 @@ var twoweeksagochange = "+" + (percentagetwoweeksago-percentagethreeweeksago).to
 
 const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }] //
 
-
 class Totalpie extends Component {
 
     
