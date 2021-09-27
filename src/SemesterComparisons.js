@@ -10,8 +10,8 @@ import Paper from '@material-ui/core/Paper';
 import { Component } from 'react';
 import { fall2020, todayinarray } from './fall2020';
 
-function createData(name, calories, fat, week3, week4) {
-    return { name, calories, fat, week3, week4};
+function createData(name, calories, fat, week3, week4, week5) {
+    return { name, calories, fat, week3, week4, week5};
   }
 
 const rows = [
@@ -21,8 +21,8 @@ const rows = [
   ];
 
 const otherRows = [
-    createData('Fall 2021', '303 new cases', '347', '280', '161'),
-    createData('Fall 2020', '176 new cases', '439', '374', '377')
+    createData('Fall 2021', '303 new cases', '347', '280', '161', '56'),
+    createData('Fall 2020', '176 new cases', '439', '374', '377', '111')
 ]
 
 class SemesterComparisons extends Component {
@@ -43,6 +43,7 @@ class SemesterComparisons extends Component {
                                 <TableCell align="right"><b>Week 2</b></TableCell>
                                 <TableCell align="right"><b>Week 3</b></TableCell>
                                 <TableCell align="right"><b>Week 4</b></TableCell>
+                                <TableCell align="right"><b>Week 5</b></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -55,6 +56,7 @@ class SemesterComparisons extends Component {
                                     <TableCell align="right">{otherRows.fat}</TableCell>
                                     <TableCell align="right">{otherRows.week3}</TableCell>
                                     <TableCell align="right">{otherRows.week4}</TableCell>
+                                    <TableCell align="right">{otherRows.week5}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

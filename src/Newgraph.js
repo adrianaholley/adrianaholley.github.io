@@ -73,7 +73,7 @@ class Newgraph extends Component {
 								<YAxis 
 									fontSize="12" 
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 10', 'dataMax + 121']) 
+										(['dataMin - 8', 'dataMax + 121']) 
 										: (['dataMin', 'dataMax + 22'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
