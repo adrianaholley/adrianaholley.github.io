@@ -7,9 +7,7 @@ import Newpie from './Newpie.js';
 import Newgraph from './Newgraph.js';
 import { globaldate } from './fall2020.js';
 
-// var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs. This will affect the 7-day average for the first week of November."
 class New extends Component {
-
     render() {
         return (
             <div className='responsivecontainer'>
@@ -24,28 +22,15 @@ class New extends Component {
                     </g>
                 </svg>
 
-                {/* page title, subtitle */}
-                {/* <p className="popinfo"><i><font color="blue" size="3">
-                    <div>
-                        Note from the Developer: 
-                        Thank you for your support during my daily updates throughout the Fall 2020 semester. 
-                        Your donations and kind words were much appreciated. 
-                        Get vaccinated as soon as you can, and be sure to stay up to date on CDC guidelines to help reduce spread of the more contagious COVID variants.
-                    </div>
-                </font></i></p> */}
-
                 <h3 style={{ marginBottom: 0 }}>Daily Reported Cases</h3>
                 <a><font size="2">{globaldate}</font></a>
                 <br/>
                 <br/>
-                {/* <a><b><font color="cc0000" size="2">{notice}</font></b></a> */}
 
                 <center>
-
                     {/* show graphs */}
                     <Grid container spacing={1}>
                         <Grid item xs>
-
                             {/* if mobile, don't show table first */}
                             {isMobile ? ('') : (
                                 <Box border={1} borderRadius={4}>
@@ -63,8 +48,6 @@ class New extends Component {
                                     </Card>
                                 </Box>
                             )}
-                            
-
                         </Grid>
 
                         <Grid item xs={isMobile ? ('0') : ('8')}>
@@ -80,8 +63,6 @@ class New extends Component {
                         </Card>
                         ) : ('')}
                         
-
-
                         {/* mobile, so show table last */}
                         {isMobile ? (
                             <Box border={1} borderRadius={4}>
@@ -90,9 +71,7 @@ class New extends Component {
                             </Card>
                         </Box>
                         ) : ('')}
-
                     </Grid>
-
                 </center>
             </div>
         )

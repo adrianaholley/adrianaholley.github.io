@@ -23,7 +23,6 @@ class Activepage extends Component {
     render() {
         return (
             <div className='responsivecontainer'>
-
                 {/* red bar */}
                 <svg width="100%" height="139">
                     <g>
@@ -32,29 +31,19 @@ class Activepage extends Component {
                     </g>
                 </svg>
 
-                {/* title, subtitle */}
-                {/* <p className="popinfo"><i><font color="blue" size="3">
-                    <div>
-                        Note from the Developer: 
-                        Thank you for your support during my daily updates throughout the Fall 2020 semester. 
-                        Your donations and kind words were much appreciated. 
-                        Get vaccinated as soon as you can, and be sure to stay up to date on CDC guidelines to help reduce spread of the more contagious COVID variants.
-                    </div>
-                </font></i></p> */}
-
                 <h3 style={{ marginBottom: 0 }}>Active Reported Cases</h3>
                 <a><font size="2">{globaldate}</font></a>
                 <br/>
                 <br/>
-                {/* <a><b><font color="cc0000" size="2">{notice}</font></b></a> */}
 
                 <center>
-
                     {/* show graphs */}
                     <Grid container spacing={1}>
 
                         {/* if mobile, don't show table first */}
-                        {isMobile ? ('') : (
+                        {isMobile ? (
+                            ''
+                        ) : (
                             <Grid item xs>
                                 <Box border={1} borderRadius={4}>
                                     <Card >
@@ -77,8 +66,9 @@ class Activepage extends Component {
                                     <SemesterComparisons />
                                 </Card>
                             </Box>
-                        ) : ('')}
-
+                        ) : (
+                            ''
+                        )}
                     </Grid>
                 </center>
             </div>
