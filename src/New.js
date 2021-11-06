@@ -22,57 +22,36 @@ class New extends Component {
                     </g>
                 </svg>
 
-                <h3 style={{ marginBottom: 0 }}>Daily Reported Cases</h3>
-                <a><font size="2">{globaldate}</font></a>
-                <br/>
-                <br/>
+                {/* page title */}
+                <div className="page-heading">
+                    <div>
+                        <span className="page-heading-title">
+                            Daily Reported Cases
+                        </span>
+                    </div>
+                    <div>
+                        <span className="page-heading-subtitle">
+                            {globaldate}
+                        </span>
+                    </div>
+                </div>
 
-                <center>
-                    {/* show graphs */}
-                    <Grid container spacing={1}>
-                        <Grid item xs>
-                            {/* if mobile, don't show table first */}
-                            {isMobile ? ('') : (
-                                <Box border={1} borderRadius={4}>
-                                    <Card >
-                                        <SemesterComparisons />
-                                    </Card>
-                                </Box>
-                            )}
-
-                            {/* if mobile, don't show pie next */}
-                            {isMobile ? ('') : (
-                                <Box paddingTop={1}>
-                                    <Card>
-                                        <Newpie />
-                                    </Card>
-                                </Box>
-                            )}
-                        </Grid>
-
-                        <Grid item xs={isMobile ? ('0') : ('8')}>
-                            <Card>
-                                <Newgraph />
-                            </Card>
-                        </Grid>
-
-                        {/* mobile, so show pie second  */}
-                        {isMobile ? (
-                        <Card>
-                            <Newpie />
-                        </Card>
-                        ) : ('')}
-                        
-                        {/* mobile, so show table last */}
-                        {isMobile ? (
-                            <Box border={1} borderRadius={4}>
-                            <Card >
-                                <SemesterComparisons />
-                            </Card>
-                        </Box>
-                        ) : ('')}
-                    </Grid>
-                </center>
+                {/* show graphs */}
+                <div className="row1">
+                    <Card className="card-padding">
+                        <Newpie />
+                    </Card>
+                
+                    <Card className="card-padding">
+                        <Newgraph />
+                    </Card>
+                </div>
+                
+                <div className="row2">                    
+                    <Card className="card-padding">
+                        <SemesterComparisons />
+                    </Card>
+                </div>
             </div>
         )
     }

@@ -26,14 +26,14 @@ class Newpie extends Component {
     
     render() {
         return (
-            <div>
+            <div className="card-padding">
                 {/* title, subtilte */}
                 <br/>
                 <h5 style={{ marginBottom: 0, marginTop: 5 }}>7-Day Average</h5>
                 <a><i><font size="2">The average amount of new cases reported in the last 7 days.</font></i></a>
 
                 {/* pie chart */}
-                <ResponsiveContainer width={'100%'} height={"100%"} aspect={isMobile ? ('1.6') : ('2.5')}>
+                <ResponsiveContainer width={'100%'} height={"100%"} aspect={isMobile ? ('1.6') : ('1')}>
                     <PieChart margin={{ top: 0, left: 0, right: 0, bottom: 0 }} >
                         <Pie data={data01} innerRadius={80} outerRadius={120} fill="#8884d8" paddingAngle={5}>
                             <Label value={"(" + avgtodaychange + ")"} position="centerBottom" className='label-top-top' fontSize='12px' />

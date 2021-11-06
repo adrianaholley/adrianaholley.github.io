@@ -44,7 +44,10 @@ class Newgraph extends Component {
                 {/* title, subtitle */}
                 <br/>
                 <Grid>
-                    <h5 style={{ marginBottom: 0, marginTop: 5 }}>Daily Cases by Day Reported to University</h5>
+                    <div>
+                        <span className="chart-title">Daily Cases by Day Reported to University</span>
+                    </div>
+                    
                     {/* switches */}
                     <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
                     {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" /> */}
@@ -60,7 +63,7 @@ class Newgraph extends Component {
 
                 <Grid>
                     {/* bar chart */}
-                    <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.3')}>
+                    <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('3')}>
                         <ComposedChart data={fall2020} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
                             <CartesianGrid />
 

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-content: center;
 }
 
 .responsivecontainer {
@@ -65,6 +66,44 @@
 
 .MuiAppBar {
   background-color: #ffffff !important;
+}
+
+.page-heading {
+  padding: 32px;
+}
+
+.page-heading-title {
+  font-weight: 800;
+  font-size: calc(12px + 2vmin);
+}
+
+.page-heading-subtitle {
+  font-size: calc(.5px + 2vmin);
+}
+
+.chart-title {
+  font-weight: 600;
+  font-size: calc(8px + 2vmin);
+}
+
+.row1 {
+  padding: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row2 {
+  padding: 16px;
+  padding-top: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-padding {
+  margin: 16px;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
