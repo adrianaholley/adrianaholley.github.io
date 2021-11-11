@@ -1,6 +1,6 @@
 //update daily
-var globaldate = "Last updated Wednesday, October 6, 2021 at 6:40pm CST."
-var todayinarray = 65
+var globaldate = "Last updated Wednesday, November 10, 2021 at 9:00pm CST."
+var todayinarray = 100
 
 const fall2020 = [
 	{
@@ -684,25 +684,25 @@ const fall2020 = [
 		"Date": "Oct 7",
 		"Daily 2020": 15,
 		"Daily 2020 avg": 13.4,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 6,
+		"Daily 2021 avg": 3.3,
 		"Active 2020": 152,
-		"Active 2021": null,
+		"Active 2021": 33,
 		"Total 2020": 1783,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1209,
+		"Total Recoveries 2021": 1176
 	},
 	{
 		"Date": "Oct 8",
 		"Daily 2020": 16,
 		"Daily 2020 avg": 12.6,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 5,
+		"Daily 2021 avg": 3.6,
 		"Active 2020": 156,
-		"Active 2021": null,
+		"Active 2021": 26,
 		"Total 2020": 1799,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1214,
+		"Total Recoveries 2021": 1188
 	},
 	{
 		"Date": "Oct 9",
@@ -732,61 +732,61 @@ const fall2020 = [
 		"Date": "Oct 11",
 		"Daily 2020": null,
 		"Daily 2020 avg": null,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 4,
+		"Daily 2021 avg": 3.4,
 		"Active 2020": null,
-		"Active 2021": null,
+		"Active 2021": 27,
 		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1217,
+		"Total Recoveries 2021": 1190
 	},
 	{
 		"Date": "Oct 12",
 		"Daily 2020": 61,
 		"Daily 2020 avg": 16.6,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 4,
+		"Daily 2021 avg": 2.9,
 		"Active 2020": 157,
-		"Active 2021": null,
+		"Active 2021": 25,
 		"Total 2020": 1882,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1221,
+		"Total Recoveries 2021": 1196
 	},
 	{
 		"Date": "Oct 13",
 		"Daily 2020": 10,
 		"Daily 2020 avg": 17.7,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 5,
+		"Daily 2021 avg": 3.3,
 		"Active 2020": 125,
-		"Active 2021": null,
+		"Active 2021": 29,
 		"Total 2020": 1892,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1226,
+		"Total Recoveries 2021": 1197
 	},
 	{
 		"Date": "Oct 14",
 		"Daily 2020": 25,
 		"Daily 2020 avg": 19.1,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 4,
+		"Daily 2021 avg": 3.0,
 		"Active 2020": 137,
-		"Active 2021": null,
+		"Active 2021": 29,
 		"Total 2020": 1917,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1230,
+		"Total Recoveries 2021": 1201
 	},
 	{
 		"Date": "Oct 15",
 		"Daily 2020": 26,
 		"Daily 2020 avg": 20.6,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 2.6,
 		"Active 2020": 148,
-		"Active 2021": null,
+		"Active 2021": 28,
 		"Total 2020": 1943,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1232,
+		"Total Recoveries 2021": 1204
 	},
 	{
 		"Date": "Oct 16",
@@ -816,61 +816,61 @@ const fall2020 = [
 		"Date": "Oct 18",
 		"Daily 2020": null,
 		"Daily 2020 avg": null,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 5,
+		"Daily 2021 avg": 2.9,
 		"Active 2020": null,
-		"Active 2021": null,
+		"Active 2021": 29,
 		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1237,
+		"Total Recoveries 2021": 1208
 	},
 	{
 		"Date": "Oct 19",
 		"Daily 2020": 48,
 		"Daily 2020 avg": 19.7,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 3,
+		"Daily 2021 avg": 2.7,
 		"Active 2020": 188,
-		"Active 2021": null,
+		"Active 2021": 28,
 		"Total 2020": 2020,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1240,
+		"Total Recoveries 2021": 1212
 	},
 	{
 		"Date": "Oct 20",
 		"Daily 2020": 7,
 		"Daily 2020 avg": 19.3,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 6,
+		"Daily 2021 avg": 2.9,
 		"Active 2020": 189,
-		"Active 2021": null,
+		"Active 2021": 33,
 		"Total 2020": 2027,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1246,
+		"Total Recoveries 2021": 1213
 	},
 	{
 		"Date": "Oct 21",
 		"Daily 2020": 7,
 		"Daily 2020 avg": 16.7,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 5,
+		"Daily 2021 avg": 3.0,
 		"Active 2020": 191,
-		"Active 2021": null,
+		"Active 2021": 38,
 		"Total 2020": 2034,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1251,
+		"Total Recoveries 2021": 1213
 	},
 	{
 		"Date": "Oct 22",
 		"Daily 2020": 50,
 		"Daily 2020 avg": 20.1,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 3.0,
 		"Active 2020": 197,
-		"Active 2021": null,
+		"Active 2021": 38,
 		"Total 2020": 2084,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1253,
+		"Total Recoveries 2021": 1215
 	},
 	{
 		"Date": "Oct 23",
@@ -900,61 +900,61 @@ const fall2020 = [
 		"Date": "Oct 25",
 		"Daily 2020": null,
 		"Daily 2020 avg": null,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 11,
+		"Daily 2021 avg": 3.9,
 		"Active 2020": null,
-		"Active 2021": null,
+		"Active 2021": 36,
 		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1264,
+		"Total Recoveries 2021": 1228
 	},
 	{
 		"Date": "Oct 26",
 		"Daily 2020": 49,
 		"Daily 2020 avg": 20,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 3.7,
 		"Active 2020": 222,
-		"Active 2021": null,
+		"Active 2021": 35,
 		"Total 2020": 2160,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1266,
+		"Total Recoveries 2021": 1231
 	},
 	{
 		"Date": "Oct 27",
 		"Daily 2020": 5,
 		"Daily 2020 avg": 19.7,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 14,
+		"Daily 2021 avg": 4.9,
 		"Active 2020": 214,
-		"Active 2021": null,
+		"Active 2021": 44,
 		"Total 2020": 2165,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1280,
+		"Total Recoveries 2021": 1236
 	},
 	{
 		"Date": "Oct 28",
 		"Daily 2020": 0,
 		"Daily 2020 avg": 18.7,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 4.4,
 		"Active 2020": 197,
-		"Active 2021": null,
+		"Active 2021": 42,
 		"Total 2020": 2166,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1282,
+		"Total Recoveries 2021": 1240
 	},
 	{
 		"Date": "Oct 29",
 		"Daily 2020": 2,
 		"Daily 2020 avg": 11.9,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 4.4,
 		"Active 2020": 183,
-		"Active 2021": null,
+		"Active 2021": 42,
 		"Total 2020": 2167,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1284,
+		"Total Recoveries 2021": 1242
 	},
 	{
 		"Date": "Oct 30",
@@ -984,61 +984,61 @@ const fall2020 = [
 		"Date": "Nov 1",
 		"Daily 2020": null,
 		"Daily 2020 avg": null,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 4,
+		"Daily 2021 avg": 3.4,
 		"Active 2020": null,
-		"Active 2021": null,
+		"Active 2021": 32,
 		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1288,
+		"Total Recoveries 2021": 1256
 	},
 	{
 		"Date": "Nov 2",
 		"Daily 2020": 58,
 		"Daily 2020 avg": 14.1,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 9,
+		"Daily 2021 avg": 4.4,
 		"Active 2020": 193,
-		"Active 2021": null,
+		"Active 2021": 37,
 		"Total 2020": 2259,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1297,
+		"Total Recoveries 2021": 1260
 	},
 	{
 		"Date": "Nov 3",
 		"Daily 2020": 10,
 		"Daily 2020 avg": 14.9,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 2.7,
 		"Active 2020": 188,
-		"Active 2021": null,
+		"Active 2021": 31,
 		"Total 2020": 2269,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1299,
+		"Total Recoveries 2021": 1268
 	},
 	{
 		"Date": "Nov 4",
 		"Daily 2020": 37,
 		"Daily 2020 avg": 20.1,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 2.7,
 		"Active 2020": 192,
-		"Active 2021": null,
+		"Active 2021": 23,
 		"Total 2020": 2306,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1301,
+		"Total Recoveries 2021": 1278
 	},
 	{
 		"Date": "Nov 5",
 		"Daily 2020": 25,
 		"Daily 2020 avg": 23.4,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 3,
+		"Daily 2021 avg": 2.9,
 		"Active 2020": 189,
-		"Active 2021": null,
+		"Active 2021": 23,
 		"Total 2020": 2331,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1304,
+		"Total Recoveries 2021": 1281
 	},
 	{
 		"Date": "Nov 6",
@@ -1068,37 +1068,37 @@ const fall2020 = [
 		"Date": "Nov 8",
 		"Daily 2020": null,
 		"Daily 2020 avg": null,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 6,
+		"Daily 2021 avg": 3.1,
 		"Active 2020": null,
-		"Active 2021": null,
+		"Active 2021": 29,
 		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1310,
+		"Total Recoveries 2021": 1281
 	},
 	{
 		"Date": "Nov 9",
 		"Daily 2020": 79,
 		"Daily 2020 avg": 27.6,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 6,
+		"Daily 2021 avg": 2.7,
 		"Active 2020": 237,
-		"Active 2021": null,
+		"Active 2021": 24,
 		"Total 2020": 2452,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1316,
+		"Total Recoveries 2021": 1292
 	},
 	{
 		"Date": "Nov 10",
 		"Daily 2020": 15,
 		"Daily 2020 avg": 28.3,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 4,
+		"Daily 2021 avg": 3.0,
 		"Active 2020": 214,
-		"Active 2021": null,
+		"Active 2021": 27,
 		"Total 2020": 2467,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1320,
+		"Total Recoveries 2021": 1293
 	},
 	{
 		"Date": "Nov 11",
@@ -1197,10 +1197,121 @@ const fall2020 = [
 		"Total Recoveries 2021": null
 	},
 	{
+		"Date": "Nov 19"
+	},
+	{
+		"Date": "Nov 20"
+	},
+	{
+		"Date": "Nov 21"
+	},
+	{
+		"Date": "Nov 22"
+	},
+	{
+		"Date": "Nov 23"
+	},
+	{
+		"Date": "Nov 24"
+	},
+	{
+		"Date": "Nov 25"
+	},
+	{
+		"Date": "Nov 26"
+	},
+	{
+		"Date": "Nov 27"
+	},
+	{
+		"Date": "Nov 28"
+	},
+	{
+		"Date": "Nov 29"
+	},
+	{
+		"Date": "Nov 30"
+	},
+	{
 		"Date": "Dec 1",
 	},
 	{
+		"Date": "Dec 2",
+	},
+	{
+		"Date": "Dec 3",
+	},
+	{
+		"Date": "Dec 4",
+	},
+	{
+		"Date": "Dec 5",
+	},
+	{
+		"Date": "Dec 6",
+	},
+	{
+		"Date": "Dec 7",
+	},
+	{
+		"Date": "Dec 8",
+	},
+	{
+		"Date": "Dec 9",
+	},
+	{
+		"Date": "Dec 10"
+	},
+	{
+		"Date": "Dec 11"
+	},
+	{
+		"Date": "Dec 12"
+	},
+	{
+		"Date": "Dec 13"
+	},
+	{
+		"Date": "Dec 14"
+	},
+	{
 		"Date": "Dec 15"
+	},
+	{
+		"Date": "Dec 16"
+	},
+	{
+		"Date": "Dec 17"
+	},
+	{
+		"Date": "Dec 18"
+	},
+	{
+		"Date": "Dec 19"
+	},
+	{
+		"Date": "Dec 20"
+	},
+	{
+		"Date": "Dec 21"
+	},
+	{
+		"Date": "Dec 22"
+	},
+	{
+		"Date": "Dec 23"
+	},
+	{
+		"Date": "Dec 24"
+	},
+	{
+		"Date": "Dec 25"
+	},
+	{
+		"Date": "Dec 26"
+	},
+	{
+		"Date": "Dec 27"
 	},
 	{
 		"Date": "Dec 28",

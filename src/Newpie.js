@@ -14,7 +14,7 @@ var twoweeksago = fall2020[todayinarray - 14]
 var todaydate = today.Date 
 var weekagodate = weekago.Date 
 
-var avgtoday = today["Daily 2021 avg"]
+var avgtoday = today["Daily 2021 avg"].toFixed(1)
 var avgaweekago = weekago["Daily 2021 avg"] 
 var avgtwoweeksago = twoweeksago["Daily 2021 avg"]
 
@@ -23,20 +23,27 @@ var avgaweekagochange = (avgaweekago-avgtwoweeksago).toFixed(1)
 
 class Newpie extends Component {
 
-    
     render() {
         return (
-            <div className="card-padding">
+            <div className="pie-padding">
+
                 {/* title, subtilte */}
-                <br/>
-                <h5 style={{ marginBottom: 0, marginTop: 5 }}>7-Day Average</h5>
-                <a><i><font size="2">The average amount of new cases reported in the last 7 days.</font></i></a>
+                <div>
+                    <span className="chart-title">
+                        7-Day Average
+                    </span>
+                </div>
+                <div>
+                    <span className="chart-subtitle">
+                    The average amount of new cases reported in the last 7 days.
+                    </span>
+                </div>
 
                 {/* pie chart */}
-                <ResponsiveContainer width={'100%'} height={"100%"} aspect={isMobile ? ('1.6') : ('1')}>
+                <ResponsiveContainer aspect={isMobile ? ('1.3') : ('1')}>
                     <PieChart margin={{ top: 0, left: 0, right: 0, bottom: 0 }} >
                         <Pie data={data01} innerRadius={80} outerRadius={120} fill="#8884d8" paddingAngle={5}>
-                            <Label value={"(" + avgtodaychange + ")"} position="centerBottom" className='label-top-top' fontSize='12px' />
+                            <Label value={"(+" + avgtodaychange + ")"} position="centerBottom" className='label-top-top' fontSize='12px' />
                             <Label value={avgtoday} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="is the average number" position="center" className='label-top' fontSize='12px' />
                             <Label value="of new cases per day, " position="center" className='label-middle' fontSize='12px' />
@@ -47,18 +54,16 @@ class Newpie extends Component {
                 </ResponsiveContainer>
 
                 {/* past projections */}
-                <a><font size="3">One week before {todaydate}:<b> {avgaweekago}</b> ({avgaweekagochange})</font></a>
-                <br />
-                <a><font size="3">Two weeks before {todaydate}:<b> {avgtwoweeksago}</b></font></a>
-
-                {/* disclaimer */}
-                <p className="popinfo"><i><font size="2">
-                    <div className={isMobile ? ("adjustabletextmobile") : ('adjustabletextseventy')}>
-                        {/* The total population includes those who are 100% remote and is an estimate,
-                        as Dr. Schovanec stated Sept 16 that there are "more than 46,000" students and employees.
-                        The Interim Director of Emergency Management did not respond to a request for the exact metric. */}
-                    </div>
-                </font></i></p>
+                <div>
+                    <span className="chart-week-befores">
+                    One week before {todaydate}:<b> {avgaweekago}</b> ({avgaweekagochange})
+                    </span>
+                </div>
+                <div>
+                    <span className="chart-week-befores">
+                        Two weeks before {todaydate}:<b> {avgtwoweeksago}</b>
+                    </span>
+                </div>
             </div>
         );
     }

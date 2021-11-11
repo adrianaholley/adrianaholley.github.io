@@ -50,7 +50,6 @@ class Newgraph extends Component {
                     
                     {/* switches */}
                     <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
-                    {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" /> */}
 
                     <a><i><font size="2">
                         <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >
@@ -64,7 +63,7 @@ class Newgraph extends Component {
                 <Grid>
                     {/* bar chart */}
                     <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('3')}>
-                        <ComposedChart data={fall2020} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
+                        <ComposedChart data={fall2020} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 40, bottom: 0, left: 0 })}>
                             <CartesianGrid />
 
 							<XAxis 

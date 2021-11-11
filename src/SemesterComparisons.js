@@ -10,8 +10,8 @@ import Paper from '@material-ui/core/Paper';
 import { Component } from 'react';
 import { fall2020, todayinarray } from './fall2020';
 
-function createData(name, calories, fat, week3, week4, week5, week6) {
-    return { name, calories, fat, week3, week4, week5, week6};
+function createData(name, calories, fat, week3, week4, week5, week6, week7, week8, week9, week10, week11) {
+    return { name, calories, fat, week3, week4, week5, week6, week7, week8, week9, week10, week11};
   }
 
 const rows = [
@@ -21,8 +21,8 @@ const rows = [
   ];
 
 const otherRows = [
-    createData('Fall 2021', '303 new cases', '347', '280', '161', '56', '43'),
-    createData('Fall 2020', '176 new cases', '439', '374', '377', '111', '153')
+    createData('Fall 2021', '303 new cases', '347', '280', '161', '56', '43', '25', '19', '21', '31', '20'),
+    createData('Fall 2020', '176 new cases', '439', '374', '377', '111', '153', '83', '151', '139', '90', '172')
 ]
 
 class SemesterComparisons extends Component {
@@ -45,6 +45,11 @@ class SemesterComparisons extends Component {
                                 <TableCell align="right"><b>Week 4</b></TableCell>
                                 <TableCell align="right"><b>Week 5</b></TableCell>
                                 <TableCell align="right"><b>Week 6</b></TableCell>
+                                <TableCell align="right"><b>Week 7</b></TableCell>
+                                <TableCell align="right"><b>Week 8</b></TableCell>
+                                <TableCell align="right"><b>Week 9</b></TableCell>
+                                <TableCell align="right"><b>Week 10</b></TableCell>
+                                <TableCell align="right"><b>Week 11</b></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -59,6 +64,11 @@ class SemesterComparisons extends Component {
                                     <TableCell align="right">{otherRows.week4}</TableCell>
                                     <TableCell align="right">{otherRows.week5}</TableCell>
                                     <TableCell align="right">{otherRows.week6}</TableCell>
+                                    <TableCell align="right">{otherRows.week7}</TableCell>
+                                    <TableCell align="right">{otherRows.week8}</TableCell>
+                                    <TableCell align="right">{otherRows.week9}</TableCell>
+                                    <TableCell align="right">{otherRows.week10}</TableCell>
+                                    <TableCell align="right">{otherRows.week11}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

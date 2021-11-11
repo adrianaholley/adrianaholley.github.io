@@ -34,7 +34,7 @@ class Activegraph extends Component {
 
     render() {
         return (
-            <div className='responsivecontainer'>
+            <center>
 
                 {isMobile ? (<br />) : ('')}
 
@@ -58,8 +58,8 @@ class Activegraph extends Component {
 
                 <Grid>
                     {/* bar chart */}
-                    <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('2.3')}>
-                        <ComposedChart data={fall2020} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 80, bottom: 0, left: 0 })}>
+                    <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('3.8')}>
+                        <ComposedChart data={fall2020} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 32, bottom: 0, left: 0 })}>
                             <CartesianGrid />
 
 							<XAxis 
@@ -71,8 +71,8 @@ class Activegraph extends Component {
 								<YAxis 
 									fontSize="12" 
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 35', 'dataMax + 11']) 
-										: (['dataMin - 25', 'dataMax + 50'])} 
+										(['dataMin - 23', 'dataMax + 11']) 
+										: (['dataMin - 23', 'dataMax + 50'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
 							}
@@ -134,7 +134,7 @@ class Activegraph extends Component {
                         </ComposedChart>
                     </ResponsiveContainer>
                 </Grid>
-            </div>
+            </center>
         )
     }
 }

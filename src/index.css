@@ -19,7 +19,10 @@ body {
   transform: translateY(35px);
 }
 
-/* this doesn't work */
 .popinfo {
   line-height: 1;
+}
+
+.pie-info {
+  font-size: calc(2px + 1vmin);
 }

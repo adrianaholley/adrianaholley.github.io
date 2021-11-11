@@ -23,11 +23,14 @@ class Activepage extends Component {
     render() {
         return (
             <div className='responsivecontainer'>
+                
                 {/* red bar */}
                 <svg width="100%" height="139">
                     <g>
                         <rect width="100%" height="100%" fill="#B32317" />
-                        <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
+                        <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">
+                            Powered by a concerned Red Raider
+                        </text>
                     </g>
                 </svg>
 
@@ -45,41 +48,40 @@ class Activepage extends Component {
                     </div>
                 </div>
 
-                <center>
-                    {/* show graphs */}
-                    <Grid container spacing={1}>
-
-                        {/* if mobile, don't show table first */}
-                        {isMobile ? (
-                            ''
-                        ) : (
-                            <Grid item xs>
-                                <Box border={1} borderRadius={4}>
-                                    <Card >
-                                        <SemesterComparisons />
-                                    </Card>
-                                </Box>
-                            </Grid>
-                        )}
-
-                        <Grid item xs={isMobile ? ('0') : ('8')}>
-                            <Card>
+                {/* show graphs */}
+                {isMobile ? (
+                    /* mobile */
+                    <div>
+                        <div className="row-top-mobile">
+                            <Card className="card-padding">
                                 <Activegraph />
                             </Card>
-                        </Grid>
-
-                        {/* mobile, so show table last */}
-                        {isMobile ? (
-                            <Box border={1} borderRadius={4}>
-                                <Card >
+                        </div>
+                        <div className="row-bottom-mobile">
+                            <Card >
+                                <Box border={1} borderRadius={4}>
                                     <SemesterComparisons />
-                                </Card>
-                            </Box>
-                        ) : (
-                            ''
-                        )}
-                    </Grid>
-                </center>
+                                </Box>
+                            </Card>
+                        </div>
+                    </div>
+                ) : (
+                    /* desktop */
+                    <div>
+                        <div className="row-top">
+                            <Card className="card-padding">
+                                <Activegraph />
+                            </Card>
+                        </div>
+                        <div className="row-bottom">
+                            <Card className="card-padding">
+                                <Box border={1} borderRadius={4}>
+                                    <SemesterComparisons />
+                                </Box>
+                            </Card>
+                        </div>
+                    </div>
+                )}
             </div>
         )
     }

@@ -72,6 +72,11 @@
   padding: 32px;
 }
 
+.page-heading-mobile {
+  padding: 12px;
+  padding-bottom: 0px;
+}
+
 .page-heading-title {
   font-weight: 800;
   font-size: calc(12px + 2vmin);
@@ -86,7 +91,16 @@
   font-size: calc(8px + 2vmin);
 }
 
-.row1 {
+.chart-subtitle {
+  font-size: calc(.5px + 1.5vmin);
+  font-style: italic;
+}
+
+.chart-week-befores {
+  font-size: calc(2px + 1.5vmin);
+}
+
+.row-top {
   padding: 16px;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -95,14 +109,41 @@
   justify-content: center;
 }
 
-.row2 {
+.row-middle {
+  padding: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row-bottom {
   padding: 16px;
   padding-top: 0px;
   flex-direction: row;
   justify-content: center;
 }
 
+.row-top-mobile {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row-middle-mobile {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row-bottom-mobile {
+  flex-direction: row;
+  justify-content: center;
+}
+
 .card-padding {
+  margin: 16px;
+}
+
+.pie-padding {
   margin: 16px;
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { PieChart, Pie, ResponsiveContainer, Cell, Label } from "recharts";
 import { isMobile } from 'react-device-detect';
+import { Cell, Label, Pie, PieChart, ResponsiveContainer } from "recharts";
 import { fall2020, todayinarray } from './fall2020';
 
 const COLORS = ['#cc0000', '#cccccc'];
@@ -27,21 +27,26 @@ var twoweeksagochange = "+" + (percentagetwoweeksago-percentagethreeweeksago).to
 const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }] //
 
 class Totalpie extends Component {
-
     
     render() {
         return (
-            <div>
-                {isMobile ? (<br />) : ('')}
+            <div className="pie-padding">
 
                 {/* title, subtilte */}
-                <br/>
-                <h5 style={{ marginBottom: 0, marginTop: 5 }}>Percent That Has Had COVID</h5>
-                <a><i><font size="2">{totaltoday.toLocaleString()} positive reports from 46,000 students and employees.</font></i></a>
+                <div>
+                    <span className="chart-title">
+                        Percent That Has Had COVID
+                    </span>
+                </div>
+                <div>
+                    <span className="chart-subtitle">
+                        {totaltoday.toLocaleString()} positive reports from 46,000 students and employees.
+                    </span>
+                </div>
 
                 {/* pie chart */}
-                <ResponsiveContainer width={'100%'} height={"100%"} aspect={isMobile ? ('1.6') : ('2.5')}>
-                    <PieChart margin={{ top: 0, left: 0, right: 0, bottom: 0 }} >
+                <ResponsiveContainer aspect={isMobile ? ('1.3') : ('1')}>
+                    <PieChart>
                         <Pie data={data01} innerRadius={80} outerRadius={120} fill="#8884d8" paddingAngle={5}>
                             <Label value={"(" + percentagetodaychange + ")"} position="centerBottom" className='label-top-top' fontSize='12px' />
                             <Label value={percentagetoday + "%"} position="centerBottom" className='label' fontSize='38px' />
@@ -54,20 +59,21 @@ class Totalpie extends Component {
                 </ResponsiveContainer>
 
                 {/* past projections */}
-                <a><font size="3">One week before {todaydate}:<b> {percentageaweekago + "%"} </b> ({aweekagochange})</font></a>
-                <br />
-                <a><font size="3">Two weeks before {todaydate}:<b> {percentagetwoweeksago + "%"}</b>  ({twoweeksagochange})</font></a>
-                <br />
-                <a><font size="3">Three weeks before {todaydate}:<b> {percentagethreeweeksago + "%"} </b></font></a>
-
-                {/* disclaimer */}
-                <p className="popinfo"><i><font size="2">
-                    <div className={isMobile ? ("adjustabletextmobile") : ('adjustabletextseventy')}>
-                        The total population includes those who are 100% remote and is an estimate,
-                        as Dr. Schovanec stated Sept 16, 2020 that there are "more than 46,000" students and employees.
-                        The Office of Communications did not respond to a request for the exact metric.
-                    </div>
-                </font></i></p>
+                <div>
+                    <span className="chart-week-befores">
+                        One week before {todaydate}:<b> {percentageaweekago + "%"} </b> ({aweekagochange})
+                    </span>
+                </div>
+                <div>
+                    <span className="chart-week-befores">
+                        Two weeks before {todaydate}:<b> {percentagetwoweeksago + "%"}</b>  ({twoweeksagochange})
+                    </span>
+                </div>
+                <div>
+                    <span className="chart-week-befores">
+                        Three weeks before {todaydate}:<b> {percentagethreeweeksago + "%"} </b>
+                    </span>
+                </div>
             </div>
         );
     }

@@ -23,7 +23,7 @@ class New extends Component {
                 </svg>
 
                 {/* page title */}
-                <div className="page-heading">
+                <div className={isMobile ? ("page-heading-mobile") : ("page-heading")}>
                     <div>
                         <span className="page-heading-title">
                             Daily Reported Cases
@@ -37,21 +37,47 @@ class New extends Component {
                 </div>
 
                 {/* show graphs */}
-                <div className="row1">
-                    <Card className="card-padding">
-                        <Newpie />
-                    </Card>
-                
-                    <Card className="card-padding">
-                        <Newgraph />
-                    </Card>
-                </div>
-                
-                <div className="row2">                    
-                    <Card className="card-padding">
-                        <SemesterComparisons />
-                    </Card>
-                </div>
+                {isMobile ? (
+                    /* mobile */
+                    <div>
+                        <div className="row-top-mobile">
+                            <Card className="card-padding">
+                                <Newgraph />
+                            </Card>
+                        </div>
+                        <div className="row-middle-mobile">                    
+                            <Card className="card-padding">
+                                <Newpie />
+                            </Card>
+                        </div> 
+                        <div className="row-bottom-mobile">                    
+                            <Box border={1} borderRadius={4}>
+                                <SemesterComparisons />
+                            </Box>
+                        </div> 
+                    </div>
+                ) : (
+                    /* desktop */
+                    <div>
+                        <div className="row-top">
+                            <Card className="card-padding">
+                                <Newpie />
+                            </Card>
+                        
+                            <Card className="card-padding">
+                                <Newgraph />
+                            </Card>
+                        </div>
+
+                        <div className="row-bottom">
+                                <Card className="card-padding">
+                                    <Box border={1} borderRadius={4}>
+                                        <SemesterComparisons />
+                                    </Box>
+                                </Card>
+                        </div> 
+                    </div>
+                )}
             </div>
         )
     }
