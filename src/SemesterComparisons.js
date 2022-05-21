@@ -8,14 +8,14 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { Component } from 'react';
-import { fall2020, todayinarray } from './fall2020';
+import { data, todayinarray } from './data';
 
 function createData(name, calories, fat, week3, week4, week5, week6, week7, week8, week9, week10, week11) {
     return { name, calories, fat, week3, week4, week5, week6, week7, week8, week9, week10, week11};
   }
 
 const rows = [
-    createData('Fall 2021 (in progress)', fall2020[todayinarray]["Total 2021"], fall2020[todayinarray]["Total Recoveries 2021"]),
+    createData('Fall 2021 (in progress)', data[todayinarray]["Total 2021"], data[todayinarray]["Total Recoveries 2021"]),
     createData('Spring 2021', 274, 274),
     createData('Fall 2020', '3,196', '3,194'),
   ];

@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
 import Newpie from './Newpie.js';
 import Newgraph from './Newgraph.js';
-import { globaldate } from './fall2020.js';
+import { globaldate } from './data.js';
 
 class New extends Component {
     render() {
@@ -50,10 +50,12 @@ class New extends Component {
                                 <Newpie />
                             </Card>
                         </div> 
-                        <div className="row-bottom-mobile">                    
-                            <Box border={1} borderRadius={4}>
-                                <SemesterComparisons />
-                            </Box>
+                        <div className="row-bottom-mobile">     
+                            <Card className="card-padding">
+                                <Box border={1} borderRadius={4}>
+                                    <SemesterComparisons />
+                                </Box>
+                            </Card>               
                         </div> 
                     </div>
                 ) : (
@@ -70,11 +72,11 @@ class New extends Component {
                         </div>
 
                         <div className="row-bottom">
-                                <Card className="card-padding">
-                                    <Box border={1} borderRadius={4}>
-                                        <SemesterComparisons />
-                                    </Box>
-                                </Card>
+                            <Card className="card-padding">
+                                <Box border={1} borderRadius={4}>
+                                    <SemesterComparisons />
+                                </Box>
+                            </Card>
                         </div> 
                     </div>
                 )}

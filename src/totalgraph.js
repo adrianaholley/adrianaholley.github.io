@@ -3,7 +3,7 @@ import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
 import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
-import { fall2020 } from './fall2020.js';
+import { data } from './data.js';
 import { Area, Bar, CartesianGrid, ComposedChart, LabelList, Legend, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, Label } from "recharts";
 
 const RedSwitch = withStyles({
@@ -63,7 +63,7 @@ class Totalgraph extends Component {
                 <Grid>
                     {/* bar chart */}
                     <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('3')}>
-					<ComposedChart data={fall2020} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 40, bottom: 0, left: 0 })}>
+					<ComposedChart data={data} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 40, bottom: 0, left: 0 })}>
                             <CartesianGrid />
 
 							<XAxis 

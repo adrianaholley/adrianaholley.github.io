@@ -4,7 +4,7 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
 import Activegraph from './Activegraph';
-import { globaldate } from './fall2020.js';
+import { globaldate } from './data.js';
 
 // var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs."
 
@@ -35,10 +35,10 @@ class Activepage extends Component {
                 </svg>
 
                 {/* page title */}
-                <div className="page-heading">
+                <div className={isMobile ? ("page-heading-mobile") : ("page-heading")}>
                     <div>
                         <span className="page-heading-title">
-                            Daily Reported Cases
+                            Daily Active Cases
                         </span>
                     </div>
                     <div>
@@ -58,7 +58,7 @@ class Activepage extends Component {
                             </Card>
                         </div>
                         <div className="row-bottom-mobile">
-                            <Card >
+                            <Card className="card-padding">
                                 <Box border={1} borderRadius={4}>
                                     <SemesterComparisons />
                                 </Box>

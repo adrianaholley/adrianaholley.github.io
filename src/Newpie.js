@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell, Label } from "recharts";
 import { isMobile } from 'react-device-detect';
-import { fall2020, todayinarray } from './fall2020';
+import { data, todayinarray } from './data';
 
 const COLORS = ['#333333', '#333333'];
 
 const data01 = [{ name: 'Group A', value: 10 }, { name: 'Group B', value: 10 }]
 
-var today = fall2020[todayinarray] 
-var weekago = fall2020[todayinarray - 7]
-var twoweeksago = fall2020[todayinarray - 14]
+var today = data[todayinarray] 
+var weekago = data[todayinarray - 7]
+var twoweeksago = data[todayinarray - 14]
 
 var todaydate = today.Date 
 var weekagodate = weekago.Date 

@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
 import Totalpie from './Totalpie.js';
 import Totalgraph from './totalgraph.js';
-import { globaldate } from './fall2020.js';
+import { globaldate } from './data.js';
 
 class Totalclass extends Component {
     render() {

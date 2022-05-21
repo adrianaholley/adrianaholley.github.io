@@ -2,7 +2,7 @@
 var globaldate = "Last updated Wednesday, November 10, 2021 at 9:00pm CST."
 var todayinarray = 100
 
-const fall2020 = [
+const data = [
 	{
 		"Date": "Aug 3",
 		"Daily 2020": 18,
@@ -1104,13 +1104,13 @@ const fall2020 = [
 		"Date": "Nov 11",
 		"Daily 2020": 56,
 		"Daily 2020 avg": 31,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 5,
+		"Daily 2021 avg": 3.4,
 		"Active 2020": 257,
-		"Active 2021": null,
+		"Active 2021": 31,
 		"Total 2020": 2523,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1328,
+		"Total Recoveries 2021": 1295
 	},
 	{
 		"Date": "Nov 12",
@@ -1319,4 +1319,4 @@ const fall2020 = [
 	}
 ];
 
-export { fall2020, globaldate, todayinarray };
+export { data, globaldate, todayinarray };
