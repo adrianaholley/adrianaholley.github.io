@@ -1,6 +1,6 @@
 //update daily
-var globaldate = "Last updated Wednesday, November 10, 2021 at 9:00pm CST."
-var todayinarray = 100
+var globaldate = "Last updated Thursday, November 11, 2021 at 9:00pm CST."
+var todayinarray = 112
 
 const data = [
 	{
@@ -1109,20 +1109,20 @@ const data = [
 		"Active 2020": 257,
 		"Active 2021": 31,
 		"Total 2020": 2523,
-		"Total 2021": 1328,
-		"Total Recoveries 2021": 1295
+		"Total 2021": 1325,
+		"Total Recoveries 2021": 1294
 	},
 	{
 		"Date": "Nov 12",
 		"Daily 2020": 42,
 		"Daily 2020 avg": 33.4,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 3,
+		"Daily 2021 avg": 3.4,
 		"Active 2020": 280,
-		"Active 2021": null,
+		"Active 2021": 33,
 		"Total 2020": 2565,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1328,
+		"Total Recoveries 2021": 1295
 	},
 	{
 		"Date": "Nov 13",
@@ -1152,52 +1152,57 @@ const data = [
 		"Date": "Nov 15",
 		"Daily 2020": null,
 		"Daily 2020 avg": null,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 2,
+		"Daily 2021 avg": 2.9,
 		"Active 2020": null,
-		"Active 2021": null,
+		"Active 2021": 32,
 		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1330,
+		"Total Recoveries 2021": 1298
 	},
 	{
 		"Date": "Nov 16",
 		"Daily 2020": 77,
 		"Daily 2020 avg": 30.3,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 8,
+		"Daily 2021 avg": 3.1,
 		"Active 2020": 322,
-		"Active 2021": null,
+		"Active 2021": 37,
 		"Total 2020": 2664,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1338,
+		"Total Recoveries 2021": 1301
 	},
 	{
 		"Date": "Nov 17",
 		"Daily 2020": 33,
 		"Daily 2020 avg": 32.9,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 4,
+		"Daily 2021 avg": 3.1,
 		"Active 2020": 326,
-		"Active 2021": null,
+		"Active 2021": 30,
 		"Total 2020": 2697,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1342,
+		"Total Recoveries 2021": 1312
 	},
 	{
 		"Date": "Nov 18",
 		"Daily 2020": 28,
 		"Daily 2020 avg": 28.9,
-		"Daily 2021": null,
-		"Daily 2021 avg": null,
+		"Daily 2021": 5,
+		"Daily 2021 avg": 3.1,
 		"Active 2020": 314,
-		"Active 2021": null,
+		"Active 2021": 33,
 		"Total 2020": 2725,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Total 2021": 1347,
+		"Total Recoveries 2021": 1314
 	},
 	{
-		"Date": "Nov 19"
+		"Date": "Nov 19",
+		"Daily 2021": 5,
+		"Daily 2021 avg": 3.1,
+		"Active 2021": 34,
+		"Total 2021": 1352,
+		"Total Recoveries 2021": 1318
 	},
 	{
 		"Date": "Nov 20"
@@ -1206,10 +1211,20 @@ const data = [
 		"Date": "Nov 21"
 	},
 	{
-		"Date": "Nov 22"
+		"Date": "Nov 22",
+		"Daily 2021": 2,
+		"Daily 2021 avg": 3.4,
+		"Active 2021": 35,
+		"Total 2021": 1354,
+		"Total Recoveries 2021": 1319
 	},
 	{
-		"Date": "Nov 23"
+		"Date": "Nov 23",
+		"Daily 2021": 3,
+		"Daily 2021 avg": 2.7,
+		"Active 2021": 24,
+		"Total 2021": 1357,
+		"Total Recoveries 2021": 1333
 	},
 	{
 		"Date": "Nov 24"
@@ -1227,13 +1242,28 @@ const data = [
 		"Date": "Nov 28"
 	},
 	{
-		"Date": "Nov 29"
+		"Date": "Nov 29",
+		"Daily 2021": 11,
+		"Daily 2021 avg": 2.0,
+		"Active 2021": 27,
+		"Total 2021": 1368,
+		"Total Recoveries 2021": 1341
 	},
 	{
-		"Date": "Nov 30"
+		"Date": "Nov 30",
+		"Daily 2021": 6,
+		"Daily 2021 avg": 2.4,
+		"Active 2021": 20,
+		"Total 2021": 1374,
+		"Total Recoveries 2021": 1354
 	},
 	{
 		"Date": "Dec 1",
+		"Daily 2021": 3,
+		"Daily 2021 avg": 2.9,
+		"Active 2021": 23,
+		"Total 2021": 1377,
+		"Total Recoveries 2021": 1354
 	},
 	{
 		"Date": "Dec 2",
@@ -1316,6 +1346,396 @@ const data = [
 	{
 		"Date": "Dec 28",
 		"Total 2020": 3197
+	},
+	{
+		"Date": "Dec 29",
+	},
+	{
+		"Date": "Dec 30",
+	},
+	{
+		"Date": "Dec 31",
+	},
+	{
+		"Date": "Jan 1",
+	},
+	{
+		"Date": "Jan 2",
+	},
+	{
+		"Date": "Jan 3",
+	},
+	{
+		"Date": "Jan 4",
+	},
+	{
+		"Date": "Jan 5",
+	},
+	{
+		"Date": "Jan 6",
+		"Daily 2021": 109,
+		"Daily 2021 avg": 15.6,
+		"Active 2021": 109,
+		"Total 2021": 149,
+		"Total Recoveries 2021": 40
+	},
+	{
+		"Date": "Jan 7",
+		"Daily 2021": 33,
+		"Daily 2021 avg": 20.3,
+		"Active 2021": 115,
+		"Total 2021": 182,
+		"Total Recoveries 2021": 67
+	},
+	{
+		"Date": "Jan 8",
+	},
+	{
+		"Date": "Jan 9",
+	},
+	{
+		"Date": "Jan 10",
+		"Daily 2021": 108,
+		"Daily 2021 avg": 35.7,
+		"Active 2021": 141,
+		"Total 2021": 290,
+		"Total Recoveries 2021": 149
+	},
+	{
+		"Date": "Jan 11",
+		"Daily 2021": 61,
+		"Daily 2021 avg": 44.4,
+		"Active 2021": 157,
+		"Total 2021": 351,
+		"Total Recoveries 2021": 194
+	},
+	{
+		"Date": "Jan 12",
+		"Daily 2021": 113,
+		"Daily 2021 avg": 60.6,
+		"Active 2021": 211,
+		"Total 2021": 464,
+		"Total Recoveries 2021": 253
+	},
+	{
+		"Date": "Jan 13",
+		"Daily 2021": 111,
+		"Daily 2021 avg": 60.9,
+		"Active 2021": 111,
+		"Total 2021": 575,
+		"Total Recoveries 2021": 332
+	},
+	{
+		"Date": "Jan 14",
+		"Daily 2021": 67,
+		"Daily 2021 avg": 65.7,
+		"Active 2021": 256,
+		"Total 2021": 642,
+		"Total Recoveries 2021": 386
+	},
+	{
+		"Date": "Jan 15",
+	},
+	{
+		"Date": "Jan 16",
+	},
+	{
+		"Date": "Jan 17",
+	},
+	{
+		"Date": "Jan 18",
+		"Daily 2021": 259,
+		"Daily 2021 avg": 78.6,
+		"Active 2021": 198,
+		"Total 2021": 901,
+		"Total Recoveries 2021": 703
+	},
+	{
+		"Date": "Jan 19",
+		"Daily 2021": 120,
+		"Daily 2021 avg": 79.6,
+		"Active 2021": 253,
+		"Total 2021": 1021,
+		"Total Recoveries 2021": 768
+	},
+	{
+		"Date": "Jan 20",
+		"Daily 2021": 93,
+		"Daily 2021 avg": 77.0,
+		"Active 2021": 285,
+		"Total 2021": 1114,
+		"Total Recoveries 2021": 829
+	},
+	{
+		"Date": "Jan 21",
+		"Daily 2021": 71,
+		"Daily 2021 avg": 77.6,
+		"Active 2021": 294,
+		"Total 2021": 1185,
+		"Total Recoveries 2021": 891
+	},
+	{
+		"Date": "Jan 22",
+	},
+	{
+		"Date": "Jan 23",
+	},
+	{
+		"Date": "Jan 24",
+		"Daily 2021": 184,
+		"Daily 2021 avg": 103.9,
+		"Active 2021": 199,
+		"Total 2021": 1369,
+		"Total Recoveries 2021": 1170
+	},
+	{
+		"Date": "Jan 25",
+		"Daily 2021": 51,
+		"Daily 2021 avg": 74.1,
+		"Active 2021": 184,
+		"Total 2021": 1420,
+		"Total Recoveries 2021": 1236
+	},
+	{
+		"Date": "Jan 26",
+		"Daily 2021": 65,
+		"Daily 2021 avg": 66.3,
+		"Active 2021": 188,
+		"Total 2021": 1485,
+		"Total Recoveries 2021": 1297
+	},
+	{
+		"Date": "Jan 27",
+		"Daily 2021": 69,
+		"Daily 2021 avg": 62.9,
+		"Active 2021": 201,
+		"Total 2021": 1554,
+		"Total Recoveries 2021": 1353
+	},
+	{
+		"Date": "Jan 28",
+		"Daily 2021": 27,
+		"Daily 2021 avg": 56.6,
+		"Active 2021": 169,
+		"Total 2021": 1518,
+		"Total Recoveries 2021": 1412
+	},
+	{
+		"Date": "Jan 29",
+	},
+	{
+		"Date": "Jan 30",
+	},
+	{
+		"Date": "Jan 31",
+		"Daily 2021": 56,
+		"Daily 2021 avg": 38.3,
+		"Active 2021": 72,
+		"Total 2021": 1637,
+		"Total Recoveries 2021": 1565
+	},
+	{
+		"Date": "Feb 1",
+		"Daily 2021": 32,
+		"Daily 2021 avg": 35.6,
+		"Active 2021": 66,
+		"Total 2021": 1669,
+		"Total Recoveries 2021": 1603
+	},
+	{
+		"Date": "Feb 2",
+		"Daily 2021": 30,
+		"Daily 2021 avg": 30.6,
+		"Active 2021": 71,
+		"Total 2021": 1699,
+		"Total Recoveries 2021": 1628
+	},
+	{
+		"Date": "Feb 3",
+	},
+	{
+		"Date": "Feb 4",
+		"Daily 2021": 18,
+		"Daily 2021 avg": 19.4,
+		"Active 2021": 60,
+		"Total 2021": 1717,
+		"Total Recoveries 2021": 1659
+	},
+	{
+		"Date": "Feb 5",
+	},
+	{
+		"Date": "Feb 6",
+	},
+	{
+		"Date": "Feb 7",
+		"Daily 2021": 27,
+		"Daily 2021 avg": 15.3,
+		"Active 2021": 35,
+		"Total 2021": 1744,
+		"Total Recoveries 2021": 1709
+	},
+	{
+		"Date": "Feb 8",
+		"Daily 2021": 10,
+		"Daily 2021 avg": 12.1,
+		"Active 2021": 36,
+		"Total 2021": 1754,
+		"Total Recoveries 2021": 1718
+	},
+	{
+		"Date": "Feb 9",
+		"Daily 2021": 9,
+		"Daily 2021 avg": 9.1,
+		"Active 2021": 39,
+		"Total 2021": 1763,
+		"Total Recoveries 2021": 1724
+	},
+	{
+		"Date": "Feb 10",
+		"Daily 2021": 12,
+		"Daily 2021 avg": 10.9,
+		"Active 2021": 40,
+		"Total 2021": 1775,
+		"Total Recoveries 2021": 1735
+	},
+	{
+		"Date": "Feb 11",
+		"Daily 2021": 5,
+		"Daily 2021 avg": 9.0,
+		"Active 2021": 34,
+		"Total 2021": 1780,
+		"Total Recoveries 2021": 1746
+	},
+	{
+		"Date": "Feb 12",
+	},
+	{
+		"Date": "Feb 13",
+	},
+	{
+		"Date": "Feb 14",
+		"Daily 2021": 9,
+		"Daily 2021 avg": 6.4,
+		"Active 2021": 26,
+		"Total 2021": 1789,
+		"Total Recoveries 2021": 1763
+	},
+	{
+		"Date": "Feb 15",
+		"Daily 2021": 4,
+		"Daily 2021 avg": 5.6,
+		"Active 2021": 22,
+		"Total 2021": 1793,
+		"Total Recoveries 2021": 1771
+	},
+	{
+		"Date": "Feb 16",
+		"Daily 2021": 7,
+		"Daily 2021 avg": 5.3,
+		"Active 2021": 22,
+		"Total 2021": 1800,
+		"Total Recoveries 2021": 1778
+	},
+	{
+		"Date": "Feb 17",
+		"Daily 2021": 5,
+		"Daily 2021 avg": 4.3,
+		"Active 2021": 26,
+		"Total 2021": 1805,
+		"Total Recoveries 2021": 1779
+	},
+	{
+		"Date": "Feb 18",
+		"Daily 2021": 3,
+		"Daily 2021 avg": 4.0,
+		"Active 2021": 25,
+		"Total 2021": 1808,
+		"Total Recoveries 2021": 1783
+	},
+	{
+		"Date": "Feb 19",
+	},
+	{
+		"Date": "Feb 20",
+	},
+	{
+		"Date": "Feb 21",
+		"Daily 2021": 6,
+		"Daily 2021 avg": 3.6,
+		"Active 2021": 21,
+		"Total 2021": 1814,
+		"Total Recoveries 2021": 1793
+	},
+	{
+		"Date": "Feb 22",
+		"Daily 2021": 5,
+		"Daily 2021 avg": 3.7,
+		"Active 2021": 19,
+		"Total 2021": 1819,
+		"Total Recoveries 2021": 1800
+	},
+	{
+		"Date": "Feb 23",
+		"Daily 2021": 2,
+		"Daily 2021 avg": 3.0,
+		"Active 2021": 17,
+		"Total 2021": 1821,
+		"Total Recoveries 2021": 1804
+	},
+	{
+		"Date": "Feb 24",
+		"Daily 2021": 4,
+		"Daily 2021 avg": 2.9,
+		"Active 2021": 19,
+		"Total 2021": 1825,
+		"Total Recoveries 2021": 1806
+	},
+	{
+		"Date": "Feb 25",
+		"Daily 2021": 1,
+		"Daily 2021 avg": 2.6,
+		"Active 2021": 20,
+		"Total 2021": 1826,
+		"Total Recoveries 2021": 1806
+	},
+	{
+		"Date": "Feb 26",
+	},
+	{
+		"Date": "Feb 27",
+	},
+	{
+		"Date": "Feb 28",
+		"Daily 2021": 8,
+		"Daily 2021 avg": 2.9,
+		"Active 2021": 18,
+		"Total 2021": 1834,
+		"Total Recoveries 2021": 1816
+	},
+	{
+		"Date": "Mar 1",
+		"Daily 2021": 4,
+		"Daily 2021 avg": 2.7,
+		"Active 2021": 18,
+		"Total 2021": 1838,
+		"Total Recoveries 2021": 1820
+	},
+	{
+		"Date": "Mar 2",
+		"Daily 2021": 2,
+		"Daily 2021 avg": 2.7,
+		"Active 2021": 19,
+		"Total 2021": 1840,
+		"Total Recoveries 2021": 1821
+	},
+	{
+		"Date": "Mar 3",
+		"Daily 2021": 3,
+		"Daily 2021 avg": 2.6,
+		"Active 2021": 19,
+		"Total 2021": 1843,
+		"Total Recoveries 2021": 1824
 	}
 ];
 
