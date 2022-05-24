@@ -20,7 +20,7 @@ const RedSwitch = withStyles({
     track: {},
 })(Switch);
 
-class Activegraph extends Component {
+class ActiveGraph extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -139,4 +139,4 @@ class Activegraph extends Component {
     }
 }
 
-export default Activegraph;
+export default ActiveGraph;

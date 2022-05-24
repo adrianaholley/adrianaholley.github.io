@@ -26,7 +26,7 @@ var twoweeksagochange = "+" + (percentagetwoweeksago-percentagethreeweeksago).to
 
 const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }] //
 
-class Totalpie extends Component {
+class TotalPie extends Component {
     
     render() {
         return (
@@ -79,4 +79,4 @@ class Totalpie extends Component {
     }
 }
 
-export default Totalpie;
+export default TotalPie;

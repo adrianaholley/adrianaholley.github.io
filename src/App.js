@@ -8,9 +8,9 @@ import { BrowserRouter as Router, Switch, Redirect, Route, Link, HashRouter } fr
 import { Grid } from '@material-ui/core';
 import Faq from './faq.js';
 import Contact from './Contact.js';
-import Totalclass from './Totalclass.js';
+import Total from './Total.js';
 import Daily from './Daily.js';
-import Activepage from './Activepage.js';
+import Active from './Active.js';
 
 function App() {
   return (
@@ -165,8 +165,8 @@ function App() {
           <Switch>
             <Route exact path="/"><Redirect to="/daily" /></Route>
             <Route path="/daily"><Daily /></Route>
-            <Route path="/active"><Activepage /></Route>
-            <Route path="/total"><Totalclass /></Route>
+            <Route path="/active"><Active /></Route>
+            <Route path="/total"><Total /></Route>
             <Route path="/faq"><Faq /></Route>
             <Route path="/contact"><Contact /></Route>
           </Switch>

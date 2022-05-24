@@ -3,12 +3,12 @@ import { Card } from '@material-ui/core';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
-import Activegraph from './Activegraph';
+import ActiveGraph from './ActiveGraph';
 import { globaldate } from './data.js';
 
 // var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs."
 
-class Activepage extends Component {
+class Active extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -54,7 +54,7 @@ class Activepage extends Component {
                     <div>
                         <div className="row-top-mobile">
                             <Card className="card-padding">
-                                <Activegraph />
+                                <ActiveGraph />
                             </Card>
                         </div>
                         <div className="row-bottom-mobile">
@@ -70,7 +70,7 @@ class Activepage extends Component {
                     <div>
                         <div className="row-top">
                             <Card className="card-padding">
-                                <Activegraph />
+                                <ActiveGraph />
                             </Card>
                         </div>
                         <div className="row-bottom">
@@ -87,4 +87,4 @@ class Activepage extends Component {
     }
 }
 
-export default Activepage;
+export default Active;

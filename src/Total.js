@@ -3,11 +3,11 @@ import { Card } from '@material-ui/core';
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
-import Totalpie from './Totalpie.js';
-import Totalgraph from './totalgraph.js';
+import TotalPie from './TotalPie.js';
+import TotalGraph from './TotalGraph.js';
 import { globaldate } from './data.js';
 
-class Totalclass extends Component {
+class Total extends Component {
     render() {
         return (
             <div className='responsivecontainer'>
@@ -42,12 +42,12 @@ class Totalclass extends Component {
                     <div>
                         <div className="row-top-mobile">
                             <Card className="card-padding">
-                                <Totalgraph />
+                                <TotalGraph />
                             </Card>
                         </div>
                         <div className="row-middle-mobile">                    
                             <Card className="card-padding">
-                                <Totalpie />
+                                <TotalPie />
                             </Card>
                         </div> 
                         <div className="row-bottom-mobile">                    
@@ -63,10 +63,10 @@ class Totalclass extends Component {
                     <div>
                         <div className="row-top">
                             <Card className="card-padding">
-                                <Totalpie />
+                                <TotalPie />
                             </Card>
                             <Card className="card-padding">
-                                <Totalgraph />
+                                <TotalGraph />
                             </Card>
                         </div>
                         <div className="row-bottom">                    
@@ -83,4 +83,4 @@ class Totalclass extends Component {
     }
 }
 
-export default Totalclass;
+export default Total;

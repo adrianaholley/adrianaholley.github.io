@@ -20,7 +20,7 @@ const RedSwitch = withStyles({
     track: {},
 })(Switch);
 
-class Totalgraph extends Component {
+class TotalGraph extends Component {
     constructor() {
         super();
         this.state = {
@@ -151,4 +151,4 @@ class Totalgraph extends Component {
     }
 }
 
-export default Totalgraph;
+export default TotalGraph;
