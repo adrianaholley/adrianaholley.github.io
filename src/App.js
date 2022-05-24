@@ -9,7 +9,7 @@ import { Grid } from '@material-ui/core';
 import Faq from './faq.js';
 import Contact from './Contact.js';
 import Totalclass from './Totalclass.js';
-import New from './New.js';
+import Daily from './Daily.js';
 import Activepage from './Activepage.js';
 
 function App() {
@@ -164,7 +164,7 @@ function App() {
 
           <Switch>
             <Route exact path="/"><Redirect to="/daily" /></Route>
-            <Route path="/daily"><New /></Route>
+            <Route path="/daily"><Daily /></Route>
             <Route path="/active"><Activepage /></Route>
             <Route path="/total"><Totalclass /></Route>
             <Route path="/faq"><Faq /></Route>

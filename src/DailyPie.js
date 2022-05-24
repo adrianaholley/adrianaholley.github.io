@@ -21,7 +21,7 @@ var avgtwoweeksago = twoweeksago["Daily 2021-2022 avg"]
 var avgtodaychange = (avgtoday-avgaweekago).toFixed(1)
 var avgaweekagochange = (avgaweekago-avgtwoweeksago).toFixed(1)
 
-class Newpie extends Component {
+class DailyPie extends Component {
 
     render() {
         return (
@@ -69,4 +69,4 @@ class Newpie extends Component {
     }
 }
 
-export default Newpie;
+export default DailyPie;
