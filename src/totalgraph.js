@@ -67,7 +67,7 @@ class TotalGraph extends Component {
                             <CartesianGrid />
 
 							<XAxis 
-								interval={isMobile ? (2) : (1)} 
+								interval={isMobile ? (2) : (6)} 
 								dataKey="Date" angle={-45} textAnchor="end" fontSize="12" height="60" 
 							/>
 
