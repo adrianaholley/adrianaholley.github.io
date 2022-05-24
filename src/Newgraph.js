@@ -83,10 +83,10 @@ class Newgraph extends Component {
 
                             {/* 2021 */}
                             <Bar 
-                                dataKey={"Daily 2021"} 
+                                dataKey={"Daily 2021-2022"} 
                                 fill="#cc0000" >
                                     <LabelList 
-                                        dataKey={"Daily 2021"} 
+                                        dataKey={"Daily 2021-2022"} 
                                         position="top"
                                         fontSize={isMobile ? ("8") : ("12")} 
                                     />
@@ -107,7 +107,7 @@ class Newgraph extends Component {
 
                             {/* 2021 */}
                             <Area 
-                                dataKey="Daily 2021 avg"
+                                dataKey="Daily 2021-2022 avg"
                                 fill="#cc0000" 
                                 stroke="#333333"
                                 connectNulls={true} 
@@ -126,7 +126,7 @@ class Newgraph extends Component {
                                 />
                             }
 
-							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Daily 2021 avg" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
+							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Daily 2021-2022 avg" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
 
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
 

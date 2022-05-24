@@ -14,9 +14,9 @@ var twoweeksago = data[todayinarray - 14]
 var todaydate = today.Date 
 var weekagodate = weekago.Date 
 
-var avgtoday = today["Daily 2021 avg"].toFixed(1)
-var avgaweekago = weekago["Daily 2021 avg"] 
-var avgtwoweeksago = twoweeksago["Daily 2021 avg"]
+var avgtoday = today["Daily 2021-2022 avg"] // TODO .toFixed(1) 
+var avgaweekago = weekago["Daily 2021-2022 avg"] 
+var avgtwoweeksago = twoweeksago["Daily 2021-2022 avg"]
 
 var avgtodaychange = (avgtoday-avgaweekago).toFixed(1)
 var avgaweekagochange = (avgaweekago-avgtwoweeksago).toFixed(1)
