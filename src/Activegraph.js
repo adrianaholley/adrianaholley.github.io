@@ -71,8 +71,8 @@ class ActiveGraph extends Component {
 								<YAxis 
 									fontSize="12" 
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 23', 'dataMax + 11']) 
-										: (['dataMin - 23', 'dataMax + 50'])} 
+										(['dataMin - 17', 'dataMax + 71']) 
+										: (['dataMin - 17', 'dataMax + 40'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
 							}

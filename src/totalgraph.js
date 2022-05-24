@@ -75,8 +75,8 @@ class TotalGraph extends Component {
 								<YAxis 
 									fontSize="12"
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 116', 'dataMax + 47']) 
-										: (['dataMin - 18', 'dataMax + 103'])} 
+										(['dataMin - 116', 'dataMax + 180']) 
+										: (['dataMin - 18', 'dataMax + 180'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
 							}
@@ -128,11 +128,8 @@ class TotalGraph extends Component {
 
 							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Total 2021-2022" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
 
-                            <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1.0% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                            <ReferenceLine y={690} stroke="#333" strokeDasharray="2"><Label value="1.5% of all students and employees (690)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={920} stroke="#333" strokeDasharray="2"><Label value="2.0% of all students and employees (920)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                            <ReferenceLine y={1150} stroke="#333" strokeDasharray="2"><Label value="2.5% of all students and employees (1150)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3.0% of all students and employees (1380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4.0% of all students and employees (1840)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={2300} stroke="#333" strokeDasharray="2"><Label value="5.0% of all students and employees (2300)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

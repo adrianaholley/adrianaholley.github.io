@@ -75,8 +75,8 @@ class DailyGraph extends Component {
 								<YAxis 
 									fontSize="12" 
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 2', 'dataMax + 121']) 
-										: (['dataMin', 'dataMax + 22'])} 
+										(['dataMin - 1', 'dataMax + 21']) 
+										: (['dataMin', 'dataMax + 21'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
 							}
