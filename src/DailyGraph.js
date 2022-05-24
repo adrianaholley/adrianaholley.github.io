@@ -20,7 +20,7 @@ const RedSwitch = withStyles({
     track: {},
 })(Switch);
 
-class Newgraph extends Component {
+class DailyGraph extends Component {
     constructor() {
         super();
         this.state = {
@@ -142,4 +142,4 @@ class Newgraph extends Component {
     }
 }
 
-export default Newgraph;
+export default DailyGraph;

@@ -1,6 +1,6 @@
 //update daily
-var globaldate = "Last updated Thursday, November 11, 2021 at 9:00pm CST."
-var todayinarray = 112
+var globaldate = "Last updated Monday, May 23, 2022 at 8:00pm CST."
+var todayinarray = 213
 
 const data = [
 	{

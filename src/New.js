@@ -4,7 +4,7 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
 import Newpie from './Newpie.js';
-import Newgraph from './Newgraph.js';
+import DailyGraph from './DailyGraph.js';
 import { globaldate } from './data.js';
 
 class New extends Component {
@@ -42,7 +42,7 @@ class New extends Component {
                     <div>
                         <div className="row-top-mobile">
                             <Card className="card-padding">
-                                <Newgraph />
+                                <DailyGraph />
                             </Card>
                         </div>
                         <div className="row-middle-mobile">                    
@@ -67,7 +67,7 @@ class New extends Component {
                             </Card>
                         
                             <Card className="card-padding">
-                                <Newgraph />
+                                <DailyGraph />
                             </Card>
                         </div>
 
