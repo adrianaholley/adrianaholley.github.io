@@ -95,10 +95,10 @@ class Newgraph extends Component {
                             {/* 2020 */}
                             {this.state.PastDataIsOff ? ("") : 
                                 <Bar 
-                                    dataKey={"Daily 2020"} 
+                                    dataKey={"Daily 2020-2021"} 
                                     fill="#666666" >
                                         <LabelList 
-                                            dataKey="Daily 2020"
+                                            dataKey="Daily 2020-2021"
                                             position="top" 
                                             fontSize={isMobile ? ("8") : ("12")} 
                                         />
@@ -117,7 +117,7 @@ class Newgraph extends Component {
                             {/* 2020 */}
                             {this.state.PastDataIsOff ? ("") : 
                                 <Area 
-                                    dataKey="Daily 2020 avg"
+                                    dataKey="Daily 2020-2021 avg"
                                     fill="#666666" 
                                     strokeDasharray="3 4"
                                     stroke="#666666"
