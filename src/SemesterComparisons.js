@@ -15,7 +15,7 @@ function createData(name, calories, fat, week3, week4, week5, week6, week7, week
   }
 
 const rows = [
-    createData('Fall 2021 (in progress)', data[todayinarray]["Total 2021"], data[todayinarray]["Total Recoveries 2021"]),
+    createData('Fall 2021 (in progress)', data[todayinarray]["Total 2021-2022"], data[todayinarray]["Total Recoveries 2021-2022"]),
     createData('Spring 2021', 274, 274),
     createData('Fall 2020', '3,196', '3,194'),
   ];

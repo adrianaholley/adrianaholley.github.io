@@ -79,10 +79,10 @@ class Activegraph extends Component {
 
                             {/* 2021 */}
                             <Bar 
-                                dataKey={"Active 2021"} 
+                                dataKey={"Active 2021-2022"} 
                                 fill="#cc0000" >
                                     <LabelList 
-                                        dataKey={"Active 2021"} 
+                                        dataKey={"Active 2021-2022"} 
                                         position="top"
                                         fontSize={isMobile ? ("8") : ("12")} 
                                     />
@@ -103,7 +103,7 @@ class Activegraph extends Component {
 
                             {/* 2021 */}
                             <Area 
-                                dataKey="Active 2021"
+                                dataKey="Active 2021-2022"
                                 fill="#cc0000" 
                                 stroke="#333333"
                                 connectNulls={true} 
@@ -122,7 +122,7 @@ class Activegraph extends Component {
                                 />
                             }
 
-							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Active 2021" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
+							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Active 2021-2022" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
 
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1.0% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

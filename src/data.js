@@ -10,7 +10,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 28,
-		"Total 2020": 18
+		"Total 2020-2021": 18
 	},
 	{
 		"Date": "Aug 4",
@@ -19,7 +19,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 5",
@@ -28,7 +28,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 6",
@@ -37,7 +37,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 7",
@@ -46,7 +46,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 8",
@@ -55,7 +55,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 9",
@@ -64,7 +64,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 10",
@@ -73,7 +73,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 25, 
-		"Total 2020": 44
+		"Total 2020-2021": 44
 	},
 	{
 		"Date": "Aug 11",
@@ -82,7 +82,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	,
 	{
@@ -92,7 +92,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 13",
@@ -101,7 +101,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 14",
@@ -110,7 +110,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 37,
-		"Total 2020": 63
+		"Total 2020-2021": 63
 	},
 	{
 		"Date": "Aug 15",
@@ -119,7 +119,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 16",
@@ -128,7 +128,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 17",
@@ -137,7 +137,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 38,
-		"Total 2020": 67
+		"Total 2020-2021": 67
 	},
 	{
 		"Date": "Aug 18",
@@ -146,7 +146,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": 75
+		"Total 2020-2021": 75
 	},
 	{
 		"Date": "Aug 19",
@@ -155,7 +155,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 20",
@@ -164,7 +164,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 21",
@@ -173,7 +173,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 53,
-		"Total 2020": 103
+		"Total 2020-2021": 103
 	},
 	{
 		"Date": "Aug 22",
@@ -182,7 +182,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 23",
@@ -191,9 +191,9 @@ const data = [
 		"Daily 2021-2022": 116,
 		"Daily 2021-2022 avg": 16.6,
 		"Active 2020-2021": null,
-		"Active 2021": 116,
-		"Total 2020": null,
-		"Total 2021": 116
+		"Active 2021-2022": 116,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 116
 	},
 	{
 		"Date": "Aug 24",
@@ -202,9 +202,9 @@ const data = [
 		"Daily 2021-2022": 30,
 		"Daily 2021-2022 avg": 20.9,
 		"Active 2020-2021": null,
-		"Active 2021": 135,
-		"Total 2020": null,
-		"Total 2021": 146
+		"Active 2021-2022": 135,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 146
 	},
 	{
 		"Date": "Aug 25",
@@ -213,9 +213,9 @@ const data = [
 		"Daily 2021-2022": 51,
 		"Daily 2021-2022 avg": 28.1,
 		"Active 2020-2021": 87,
-		"Active 2021": 185,
-		"Total 2020": 149,
-		"Total 2021": 197
+		"Active 2021-2022": 185,
+		"Total 2020-2021": 149,
+		"Total 2021-2022": 197
 	},
 	{
 		"Date": "Aug 26",
@@ -224,9 +224,9 @@ const data = [
 		"Daily 2021-2022": 59,
 		"Daily 2021-2022 avg": 36.6,
 		"Active 2020-2021": 146,
-		"Active 2021": 230,
-		"Total 2020": 206,
-		"Total 2021": 256
+		"Active 2021-2022": 230,
+		"Total 2020-2021": 206,
+		"Total 2021-2022": 256
 	},
 	{
 		"Date": "Aug 27",
@@ -235,9 +235,9 @@ const data = [
 		"Daily 2021-2022": 47,
 		"Daily 2021-2022 avg": 43.3,
 		"Active 2020-2021": null,
-		"Active 2021": 257,
-		"Total 2020": null,
-		"Total 2021": 303
+		"Active 2021-2022": 257,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 303
 	},
 	{
 		"Date": "Aug 28",
@@ -246,7 +246,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 176,
-		"Total 2020": 260
+		"Total 2020-2021": 260
 	},
 	{
 		"Date": "Aug 29",
@@ -255,7 +255,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Aug 30",
@@ -264,9 +264,9 @@ const data = [
 		"Daily 2021-2022": 129,
 		"Daily 2021-2022 avg": 45.1,
 		"Active 2020-2021": null,
-		"Active 2021": 321,
-		"Total 2020": null,
-		"Total 2021": 432
+		"Active 2021-2022": 321,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 432
 	},
 	{
 		"Date": "Aug 31",
@@ -275,10 +275,10 @@ const data = [
 		"Daily 2021-2022": 67,
 		"Daily 2021-2022 avg": 50.4,
 		"Active 2020-2021": 268,
-		"Active 2021": 357,
-		"Total 2020": 378,
-		"Total 2021": 499,
-		"Total Recoveries 2021": 142
+		"Active 2021-2022": 357,
+		"Total 2020-2021": 378,
+		"Total 2021-2022": 499,
+		"Total Recoveries 2021-2022": 142
 	},
 	{
 		"Date": "Sept 1",
@@ -287,10 +287,10 @@ const data = [
 		"Daily 2021-2022": 45,
 		"Daily 2021-2022 avg": 49.6,
 		"Active 2020-2021": 418,
-		"Active 2021": 372,
-		"Total 2020": 551,
-		"Total 2021": 544,
-		"Total Recoveries 2021": 172
+		"Active 2021-2022": 372,
+		"Total 2020-2021": 551,
+		"Total 2021-2022": 544,
+		"Total Recoveries 2021-2022": 172
 	},
 	{
 		"Date": "Sept 2",
@@ -299,10 +299,10 @@ const data = [
 		"Daily 2021-2022": 71,
 		"Daily 2021-2022 avg": 51.3,
 		"Active 2020-2021": 453,
-		"Active 2021": 389,
-		"Total 2020": 624,
-		"Total 2021": 615,
-		"Total Recoveries 2021": 226
+		"Active 2021-2022": 389,
+		"Total 2020-2021": 624,
+		"Total 2021-2022": 615,
+		"Total Recoveries 2021-2022": 226
 	},
 	{
 		"Date": "Sept 3",
@@ -311,10 +311,10 @@ const data = [
 		"Daily 2021-2022": 35,
 		"Daily 2021-2022 avg": 49.6,
 		"Active 2020-2021": 477,
-		"Active 2021": 370,
-		"Total 2020": 671,
-		"Total 2021": 650,
-		"Total Recoveries 2021": 280
+		"Active 2021-2022": 370,
+		"Total 2020-2021": 671,
+		"Total 2021-2022": 650,
+		"Total Recoveries 2021-2022": 280
 	},
 	{
 		"Date": "Sept 4",
@@ -323,7 +323,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 490,
-		"Total 2020": 717
+		"Total 2020-2021": 717
 	},
 	{
 		"Date": "Sept 5",
@@ -332,7 +332,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Sept 6",
@@ -341,7 +341,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Sept 7",
@@ -350,10 +350,10 @@ const data = [
 		"Daily 2021-2022": 125,
 		"Daily 2021-2022 avg": 39.4,
 		"Active 2020-2021": 626,
-		"Active 2021": 354,
-		"Total 2020": 945,
-		"Total 2021": 775,
-		"Total Recoveries 2021": 421
+		"Active 2021-2022": 354,
+		"Total 2020-2021": 945,
+		"Total 2021-2022": 775,
+		"Total Recoveries 2021-2022": 421
 	},
 	{
 		"Date": "Sept 8",
@@ -362,10 +362,10 @@ const data = [
 		"Daily 2021-2022": 40,
 		"Daily 2021-2022 avg": 38.7,
 		"Active 2020-2021": 650,
-		"Active 2021": 364,
-		"Total 2020": 1020,
-		"Total 2021": 815,
-		"Total Recoveries 2021": 451
+		"Active 2021-2022": 364,
+		"Total 2020-2021": 1020,
+		"Total 2021-2022": 815,
+		"Total Recoveries 2021-2022": 451
 	},
 	{
 		"Date": "Sept 9",
@@ -374,10 +374,10 @@ const data = [
 		"Daily 2021-2022": 77,
 		"Daily 2021-2022 avg": 39.6,
 		"Active 2020-2021": 612,
-		"Active 2021": 305,
-		"Total 2020": 1055,
-		"Total 2021": 892,
-		"Total Recoveries 2021": 587
+		"Active 2021-2022": 305,
+		"Total 2020-2021": 1055,
+		"Total 2021-2022": 892,
+		"Total Recoveries 2021-2022": 587
 	},
 	{
 		"Date": "Sept 10",
@@ -386,10 +386,10 @@ const data = [
 		"Daily 2021-2022": 38,
 		"Daily 2021-2022 avg": 40.0,
 		"Active 2020-2021": 543,
-		"Active 2021": 314,
-		"Total 2020": 1064,
-		"Total 2021": 930,
-		"Total Recoveries 2021": 616
+		"Active 2021-2022": 314,
+		"Total 2020-2021": 1064,
+		"Total 2021-2022": 930,
+		"Total Recoveries 2021-2022": 616
 	},
 	{
 		"Date": "Sept 11",
@@ -398,7 +398,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 426,
-		"Total 2020": 1091
+		"Total 2020-2021": 1091
 	},
 	{
 		"Date": "Sept 12",
@@ -407,7 +407,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Sept 13",
@@ -416,10 +416,10 @@ const data = [
 		"Daily 2021-2022": 64,
 		"Daily 2021-2022 avg": 49.1,
 		"Active 2020-2021": null,
-		"Active 2021": 299,
-		"Total 2020": null,
-		"Total 2021": 994,
-		"Total Recoveries 2021": 695
+		"Active 2021-2022": 299,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 994,
+		"Total Recoveries 2021-2022": 695
 	},
 	{
 		"Date": "Sept 14",
@@ -428,10 +428,10 @@ const data = [
 		"Daily 2021-2022": 25,
 		"Daily 2021-2022 avg": 34.9,
 		"Active 2020-2021": 461,
-		"Active 2021": 285,
-		"Total 2020": 1280,
-		"Total 2021": 1019,
-		"Total Recoveries 2021": 734
+		"Active 2021-2022": 285,
+		"Total 2020-2021": 1280,
+		"Total 2021-2022": 1019,
+		"Total Recoveries 2021-2022": 734
 	},
 	{
 		"Date": "Sept 15",
@@ -440,10 +440,10 @@ const data = [
 		"Daily 2021-2022": 18,
 		"Daily 2021-2022 avg": 31.7,
 		"Active 2020-2021": 357,
-		"Active 2021": 245,
-		"Total 2020": 1293,
-		"Total 2021": 1037,
-		"Total Recoveries 2021": 792
+		"Active 2021-2022": 245,
+		"Total 2020-2021": 1293,
+		"Total 2021-2022": 1037,
+		"Total Recoveries 2021-2022": 792
 	},	
 	{
 		"Date": "Sept 16",
@@ -452,10 +452,10 @@ const data = [
 		"Daily 2021-2022": 29,
 		"Daily 2021-2022 avg": 24.9,
 		"Active 2020-2021": 171,
-		"Active 2021": 232,
-		"Total 2020": 1343,
-		"Total 2021": 1066,
-		"Total Recoveries 2021": 834
+		"Active 2021-2022": 232,
+		"Total 2020-2021": 1343,
+		"Total 2021-2022": 1066,
+		"Total Recoveries 2021-2022": 834
 	},
 	{
 		"Date": "Sept 17",
@@ -464,10 +464,10 @@ const data = [
 		"Daily 2021-2022": 24,
 		"Daily 2021-2022 avg": 22.9,
 		"Active 2020-2021": 186,
-		"Active 2021": 217,
-		"Total 2020": 1375,
-		"Total 2021": 1090,
-		"Total Recoveries 2021": 873
+		"Active 2021-2022": 217,
+		"Total 2020-2021": 1375,
+		"Total 2021-2022": 1090,
+		"Total Recoveries 2021-2022": 873
 	},
 	{
 		"Date": "Sept 18",
@@ -476,7 +476,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 187,
-		"Total 2020": 1407
+		"Total 2020-2021": 1407
 	},
 	{
 		"Date": "Sept 19",
@@ -485,7 +485,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Sept 20",
@@ -494,10 +494,10 @@ const data = [
 		"Daily 2021-2022": 13,
 		"Daily 2021-2022 avg": 15.6,
 		"Active 2020-2021": null,
-		"Active 2021": 144,
-		"Total 2020": null,
-		"Total 2021": 1103,
-		"Total Recoveries 2021": 959
+		"Active 2021-2022": 144,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1103,
+		"Total Recoveries 2021-2022": 959
 
 	},
 	{
@@ -507,10 +507,10 @@ const data = [
 		"Daily 2021-2022": 13,
 		"Daily 2021-2022 avg": 13.9,
 		"Active 2020-2021": 222,
-		"Active 2021": 138,
-		"Total 2020": 1481,
-		"Total 2021": 1116,
-		"Total Recoveries 2021": 978
+		"Active 2021-2022": 138,
+		"Total 2020-2021": 1481,
+		"Total 2021-2022": 1116,
+		"Total Recoveries 2021-2022": 978
 	},
 	{
 		"Date": "Sept 22",
@@ -519,10 +519,10 @@ const data = [
 		"Daily 2021-2022": 11,
 		"Daily 2021-2022 avg": 12.9,
 		"Active 2020-2021": 220,
-		"Active 2021": 125,
-		"Total 2020": 1490,
-		"Total 2021": 1127,
-		"Total Recoveries 2021": 1002
+		"Active 2021-2022": 125,
+		"Total 2020-2021": 1490,
+		"Total 2021-2022": 1127,
+		"Total Recoveries 2021-2022": 1002
 	},
 	{
 		"Date": "Sept 23",
@@ -531,10 +531,10 @@ const data = [
 		"Daily 2021-2022": 10,
 		"Daily 2021-2022 avg": 10.1,
 		"Active 2020-2021": 244,
-		"Active 2021": 115,
-		"Total 2020": 1530,
-		"Total 2021": 1137,
-		"Total Recoveries 2021": 1022
+		"Active 2021-2022": 115,
+		"Total 2020-2021": 1530,
+		"Total 2021-2022": 1137,
+		"Total Recoveries 2021-2022": 1022
 	},
 	{
 		"Date": "Sept 24",
@@ -543,10 +543,10 @@ const data = [
 		"Daily 2021-2022": 9,
 		"Daily 2021-2022 avg": 8.0,
 		"Active 2020-2021": 237,
-		"Active 2021": 100,
-		"Total 2020": 1553,
-		"Total 2021": 1146,
-		"Total Recoveries 2021": 1046
+		"Active 2021-2022": 100,
+		"Total 2020-2021": 1553,
+		"Total 2021-2022": 1146,
+		"Total Recoveries 2021-2022": 1046
 	},
 	{
 		"Date": "Sept 25",
@@ -555,7 +555,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 247,
-		"Total 2020": 1585
+		"Total 2020-2021": 1585
 	},
 	{
 		"Date": "Sept 26",
@@ -564,7 +564,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Sept 27",
@@ -573,10 +573,10 @@ const data = [
 		"Daily 2021-2022": 13,
 		"Daily 2021-2022 avg": 8.0,
 		"Active 2020-2021": null,
-		"Active 2021": 63,
-		"Total 2020": null,
-		"Total 2021": 1159,
-		"Total Recoveries 2021": 1096
+		"Active 2021-2022": 63,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1159,
+		"Total Recoveries 2021-2022": 1096
 	},
 	{
 		"Date": "Sept 28",
@@ -585,10 +585,10 @@ const data = [
 		"Daily 2021-2022": 10,
 		"Daily 2021-2022 avg": 7.6,
 		"Active 2020-2021": 260,
-		"Active 2021": 63,
-		"Total 2020": 1643,
-		"Total 2021": 1169,
-		"Total Recoveries 2021": 1102
+		"Active 2021-2022": 63,
+		"Total 2020-2021": 1643,
+		"Total 2021-2022": 1169,
+		"Total Recoveries 2021-2022": 1102
 	},
 	{
 		"Date": "Sept 29",
@@ -597,10 +597,10 @@ const data = [
 		"Daily 2021-2022": 11,
 		"Daily 2021-2022 avg": 5.9,
 		"Active 2020-2021": 232,
-		"Active 2021": 62,
-		"Total 2020": 1647,
-		"Total 2021": 1180,
-		"Total Recoveries 2021": 1118
+		"Active 2021-2022": 62,
+		"Total 2020-2021": 1647,
+		"Total 2021-2022": 1180,
+		"Total Recoveries 2021-2022": 1118
 	},
 	{
 		"Date": "Sept 30",
@@ -609,10 +609,10 @@ const data = [
 		"Daily 2021-2022": 6,
 		"Daily 2021-2022 avg": 5.3,
 		"Active 2020-2021": 222,
-		"Active 2021": 55,
-		"Total 2020": 1689,
-		"Total 2021": 1186,
-		"Total Recoveries 2021": 1131
+		"Active 2021-2022": 55,
+		"Total 2020-2021": 1689,
+		"Total 2021-2022": 1186,
+		"Total Recoveries 2021-2022": 1131
 	},
 	{
 		"Date": "Oct 1",
@@ -621,10 +621,10 @@ const data = [
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 4.4,
 		"Active 2020-2021": 210,
-		"Active 2021": 48,
-		"Total 2020": 1711,
-		"Total 2021": 1189,
-		"Total Recoveries 2021": 1141
+		"Active 2021-2022": 48,
+		"Total 2020-2021": 1711,
+		"Total 2021-2022": 1189,
+		"Total Recoveries 2021-2022": 1141
 	},
 	{
 		"Date": "Oct 2",
@@ -633,7 +633,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 203,
-		"Total 2020": 1738
+		"Total 2020-2021": 1738
 	},
 	{
 		"Date": "Oct 3",
@@ -642,7 +642,7 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Total 2020": null
+		"Total 2020-2021": null
 	},
 	{
 		"Date": "Oct 4",
@@ -651,10 +651,10 @@ const data = [
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 4.9,
 		"Active 2020-2021": null,
-		"Active 2021": 39,
-		"Total 2020": null,
-		"Total 2021": 1193,
-		"Total Recoveries 2021": 1154
+		"Active 2021-2022": 39,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1193,
+		"Total Recoveries 2021-2022": 1154
 	},
 	{
 		"Date": "Oct 5",
@@ -663,10 +663,10 @@ const data = [
 		"Daily 2021-2022": 8,
 		"Daily 2021-2022 avg": 3.1,
 		"Active 2020-2021": 202,
-		"Active 2021": 38,
-		"Total 2020": 1766,
-		"Total 2021": 1201,
-		"Total Recoveries 2021": 1163
+		"Active 2021-2022": 38,
+		"Total 2020-2021": 1766,
+		"Total 2021-2022": 1201,
+		"Total Recoveries 2021-2022": 1163
 	},
 	{
 		"Date": "Oct 6",
@@ -675,10 +675,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 3.3,
 		"Active 2020-2021": 196,
-		"Active 2021": 35,
-		"Total 2020": 1768,
-		"Total 2021": 1203,
-		"Total Recoveries 2021": 1168
+		"Active 2021-2022": 35,
+		"Total 2020-2021": 1768,
+		"Total 2021-2022": 1203,
+		"Total Recoveries 2021-2022": 1168
 	},
 	{
 		"Date": "Oct 7",
@@ -687,10 +687,10 @@ const data = [
 		"Daily 2021-2022": 6,
 		"Daily 2021-2022 avg": 3.3,
 		"Active 2020-2021": 152,
-		"Active 2021": 33,
-		"Total 2020": 1783,
-		"Total 2021": 1209,
-		"Total Recoveries 2021": 1176
+		"Active 2021-2022": 33,
+		"Total 2020-2021": 1783,
+		"Total 2021-2022": 1209,
+		"Total Recoveries 2021-2022": 1176
 	},
 	{
 		"Date": "Oct 8",
@@ -699,10 +699,10 @@ const data = [
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 3.6,
 		"Active 2020-2021": 156,
-		"Active 2021": 26,
-		"Total 2020": 1799,
-		"Total 2021": 1214,
-		"Total Recoveries 2021": 1188
+		"Active 2021-2022": 26,
+		"Total 2020-2021": 1799,
+		"Total 2021-2022": 1214,
+		"Total Recoveries 2021-2022": 1188
 	},
 	{
 		"Date": "Oct 9",
@@ -711,10 +711,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 134,
-		"Active 2021": null,
-		"Total 2020": 1821,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": 1821,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Oct 10",
@@ -723,10 +723,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Active 2021": null,
-		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": null,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Oct 11",
@@ -735,10 +735,10 @@ const data = [
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 3.4,
 		"Active 2020-2021": null,
-		"Active 2021": 27,
-		"Total 2020": null,
-		"Total 2021": 1217,
-		"Total Recoveries 2021": 1190
+		"Active 2021-2022": 27,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1217,
+		"Total Recoveries 2021-2022": 1190
 	},
 	{
 		"Date": "Oct 12",
@@ -747,10 +747,10 @@ const data = [
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 2.9,
 		"Active 2020-2021": 157,
-		"Active 2021": 25,
-		"Total 2020": 1882,
-		"Total 2021": 1221,
-		"Total Recoveries 2021": 1196
+		"Active 2021-2022": 25,
+		"Total 2020-2021": 1882,
+		"Total 2021-2022": 1221,
+		"Total Recoveries 2021-2022": 1196
 	},
 	{
 		"Date": "Oct 13",
@@ -759,10 +759,10 @@ const data = [
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 3.3,
 		"Active 2020-2021": 125,
-		"Active 2021": 29,
-		"Total 2020": 1892,
-		"Total 2021": 1226,
-		"Total Recoveries 2021": 1197
+		"Active 2021-2022": 29,
+		"Total 2020-2021": 1892,
+		"Total 2021-2022": 1226,
+		"Total Recoveries 2021-2022": 1197
 	},
 	{
 		"Date": "Oct 14",
@@ -771,10 +771,10 @@ const data = [
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 3.0,
 		"Active 2020-2021": 137,
-		"Active 2021": 29,
-		"Total 2020": 1917,
-		"Total 2021": 1230,
-		"Total Recoveries 2021": 1201
+		"Active 2021-2022": 29,
+		"Total 2020-2021": 1917,
+		"Total 2021-2022": 1230,
+		"Total Recoveries 2021-2022": 1201
 	},
 	{
 		"Date": "Oct 15",
@@ -783,10 +783,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 2.6,
 		"Active 2020-2021": 148,
-		"Active 2021": 28,
-		"Total 2020": 1943,
-		"Total 2021": 1232,
-		"Total Recoveries 2021": 1204
+		"Active 2021-2022": 28,
+		"Total 2020-2021": 1943,
+		"Total 2021-2022": 1232,
+		"Total Recoveries 2021-2022": 1204
 	},
 	{
 		"Date": "Oct 16",
@@ -795,10 +795,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 163,
-		"Active 2021": null,
-		"Total 2020": 1972,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": 1972,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Oct 17",
@@ -807,10 +807,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Active 2021": null,
-		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": null,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Oct 18",
@@ -819,10 +819,10 @@ const data = [
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 2.9,
 		"Active 2020-2021": null,
-		"Active 2021": 29,
-		"Total 2020": null,
-		"Total 2021": 1237,
-		"Total Recoveries 2021": 1208
+		"Active 2021-2022": 29,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1237,
+		"Total Recoveries 2021-2022": 1208
 	},
 	{
 		"Date": "Oct 19",
@@ -831,10 +831,10 @@ const data = [
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 2.7,
 		"Active 2020-2021": 188,
-		"Active 2021": 28,
-		"Total 2020": 2020,
-		"Total 2021": 1240,
-		"Total Recoveries 2021": 1212
+		"Active 2021-2022": 28,
+		"Total 2020-2021": 2020,
+		"Total 2021-2022": 1240,
+		"Total Recoveries 2021-2022": 1212
 	},
 	{
 		"Date": "Oct 20",
@@ -843,10 +843,10 @@ const data = [
 		"Daily 2021-2022": 6,
 		"Daily 2021-2022 avg": 2.9,
 		"Active 2020-2021": 189,
-		"Active 2021": 33,
-		"Total 2020": 2027,
-		"Total 2021": 1246,
-		"Total Recoveries 2021": 1213
+		"Active 2021-2022": 33,
+		"Total 2020-2021": 2027,
+		"Total 2021-2022": 1246,
+		"Total Recoveries 2021-2022": 1213
 	},
 	{
 		"Date": "Oct 21",
@@ -855,10 +855,10 @@ const data = [
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 3.0,
 		"Active 2020-2021": 191,
-		"Active 2021": 38,
-		"Total 2020": 2034,
-		"Total 2021": 1251,
-		"Total Recoveries 2021": 1213
+		"Active 2021-2022": 38,
+		"Total 2020-2021": 2034,
+		"Total 2021-2022": 1251,
+		"Total Recoveries 2021-2022": 1213
 	},
 	{
 		"Date": "Oct 22",
@@ -867,10 +867,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 3.0,
 		"Active 2020-2021": 197,
-		"Active 2021": 38,
-		"Total 2020": 2084,
-		"Total 2021": 1253,
-		"Total Recoveries 2021": 1215
+		"Active 2021-2022": 38,
+		"Total 2020-2021": 2084,
+		"Total 2021-2022": 1253,
+		"Total Recoveries 2021-2022": 1215
 	},
 	{
 		"Date": "Oct 23",
@@ -879,10 +879,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 206,
-		"Active 2021": null,
-		"Total 2020": 2111,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": 2111,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Oct 24",
@@ -891,10 +891,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Active 2021": null,
-		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": null,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Oct 25",
@@ -903,10 +903,10 @@ const data = [
 		"Daily 2021-2022": 11,
 		"Daily 2021-2022 avg": 3.9,
 		"Active 2020-2021": null,
-		"Active 2021": 36,
-		"Total 2020": null,
-		"Total 2021": 1264,
-		"Total Recoveries 2021": 1228
+		"Active 2021-2022": 36,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1264,
+		"Total Recoveries 2021-2022": 1228
 	},
 	{
 		"Date": "Oct 26",
@@ -915,10 +915,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 3.7,
 		"Active 2020-2021": 222,
-		"Active 2021": 35,
-		"Total 2020": 2160,
-		"Total 2021": 1266,
-		"Total Recoveries 2021": 1231
+		"Active 2021-2022": 35,
+		"Total 2020-2021": 2160,
+		"Total 2021-2022": 1266,
+		"Total Recoveries 2021-2022": 1231
 	},
 	{
 		"Date": "Oct 27",
@@ -927,10 +927,10 @@ const data = [
 		"Daily 2021-2022": 14,
 		"Daily 2021-2022 avg": 4.9,
 		"Active 2020-2021": 214,
-		"Active 2021": 44,
-		"Total 2020": 2165,
-		"Total 2021": 1280,
-		"Total Recoveries 2021": 1236
+		"Active 2021-2022": 44,
+		"Total 2020-2021": 2165,
+		"Total 2021-2022": 1280,
+		"Total Recoveries 2021-2022": 1236
 	},
 	{
 		"Date": "Oct 28",
@@ -939,10 +939,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 4.4,
 		"Active 2020-2021": 197,
-		"Active 2021": 42,
-		"Total 2020": 2166,
-		"Total 2021": 1282,
-		"Total Recoveries 2021": 1240
+		"Active 2021-2022": 42,
+		"Total 2020-2021": 2166,
+		"Total 2021-2022": 1282,
+		"Total Recoveries 2021-2022": 1240
 	},
 	{
 		"Date": "Oct 29",
@@ -951,10 +951,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 4.4,
 		"Active 2020-2021": 183,
-		"Active 2021": 42,
-		"Total 2020": 2167,
-		"Total 2021": 1284,
-		"Total Recoveries 2021": 1242
+		"Active 2021-2022": 42,
+		"Total 2020-2021": 2167,
+		"Total 2021-2022": 1284,
+		"Total Recoveries 2021-2022": 1242
 	},
 	{
 		"Date": "Oct 30",
@@ -963,10 +963,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 179,
-		"Active 2021": null,
-		"Total 2020": 2201,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": 2201,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Oct 31",
@@ -975,10 +975,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Active 2021": null,
-		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": null,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Nov 1",
@@ -987,10 +987,10 @@ const data = [
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 3.4,
 		"Active 2020-2021": null,
-		"Active 2021": 32,
-		"Total 2020": null,
-		"Total 2021": 1288,
-		"Total Recoveries 2021": 1256
+		"Active 2021-2022": 32,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1288,
+		"Total Recoveries 2021-2022": 1256
 	},
 	{
 		"Date": "Nov 2",
@@ -999,10 +999,10 @@ const data = [
 		"Daily 2021-2022": 9,
 		"Daily 2021-2022 avg": 4.4,
 		"Active 2020-2021": 193,
-		"Active 2021": 37,
-		"Total 2020": 2259,
-		"Total 2021": 1297,
-		"Total Recoveries 2021": 1260
+		"Active 2021-2022": 37,
+		"Total 2020-2021": 2259,
+		"Total 2021-2022": 1297,
+		"Total Recoveries 2021-2022": 1260
 	},
 	{
 		"Date": "Nov 3",
@@ -1011,10 +1011,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 2.7,
 		"Active 2020-2021": 188,
-		"Active 2021": 31,
-		"Total 2020": 2269,
-		"Total 2021": 1299,
-		"Total Recoveries 2021": 1268
+		"Active 2021-2022": 31,
+		"Total 2020-2021": 2269,
+		"Total 2021-2022": 1299,
+		"Total Recoveries 2021-2022": 1268
 	},
 	{
 		"Date": "Nov 4",
@@ -1023,10 +1023,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 2.7,
 		"Active 2020-2021": 192,
-		"Active 2021": 23,
-		"Total 2020": 2306,
-		"Total 2021": 1301,
-		"Total Recoveries 2021": 1278
+		"Active 2021-2022": 23,
+		"Total 2020-2021": 2306,
+		"Total 2021-2022": 1301,
+		"Total Recoveries 2021-2022": 1278
 	},
 	{
 		"Date": "Nov 5",
@@ -1035,10 +1035,10 @@ const data = [
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 2.9,
 		"Active 2020-2021": 189,
-		"Active 2021": 23,
-		"Total 2020": 2331,
-		"Total 2021": 1304,
-		"Total Recoveries 2021": 1281
+		"Active 2021-2022": 23,
+		"Total 2020-2021": 2331,
+		"Total 2021-2022": 1304,
+		"Total Recoveries 2021-2022": 1281
 	},
 	{
 		"Date": "Nov 6",
@@ -1047,10 +1047,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 198,
-		"Active 2021": null,
-		"Total 2020": 2373,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": 2373,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Nov 7",
@@ -1059,10 +1059,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Active 2021": null,
-		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": null,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Nov 8",
@@ -1071,10 +1071,10 @@ const data = [
 		"Daily 2021-2022": 6,
 		"Daily 2021-2022 avg": 3.1,
 		"Active 2020-2021": null,
-		"Active 2021": 29,
-		"Total 2020": null,
-		"Total 2021": 1310,
-		"Total Recoveries 2021": 1281
+		"Active 2021-2022": 29,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1310,
+		"Total Recoveries 2021-2022": 1281
 	},
 	{
 		"Date": "Nov 9",
@@ -1083,10 +1083,10 @@ const data = [
 		"Daily 2021-2022": 6,
 		"Daily 2021-2022 avg": 2.7,
 		"Active 2020-2021": 237,
-		"Active 2021": 24,
-		"Total 2020": 2452,
-		"Total 2021": 1316,
-		"Total Recoveries 2021": 1292
+		"Active 2021-2022": 24,
+		"Total 2020-2021": 2452,
+		"Total 2021-2022": 1316,
+		"Total Recoveries 2021-2022": 1292
 	},
 	{
 		"Date": "Nov 10",
@@ -1095,10 +1095,10 @@ const data = [
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 3.0,
 		"Active 2020-2021": 214,
-		"Active 2021": 27,
-		"Total 2020": 2467,
-		"Total 2021": 1320,
-		"Total Recoveries 2021": 1293
+		"Active 2021-2022": 27,
+		"Total 2020-2021": 2467,
+		"Total 2021-2022": 1320,
+		"Total Recoveries 2021-2022": 1293
 	},
 	{
 		"Date": "Nov 11",
@@ -1107,10 +1107,10 @@ const data = [
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 3.4,
 		"Active 2020-2021": 257,
-		"Active 2021": 31,
-		"Total 2020": 2523,
-		"Total 2021": 1325,
-		"Total Recoveries 2021": 1294
+		"Active 2021-2022": 31,
+		"Total 2020-2021": 2523,
+		"Total 2021-2022": 1325,
+		"Total Recoveries 2021-2022": 1294
 	},
 	{
 		"Date": "Nov 12",
@@ -1119,10 +1119,10 @@ const data = [
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 3.4,
 		"Active 2020-2021": 280,
-		"Active 2021": 33,
-		"Total 2020": 2565,
-		"Total 2021": 1328,
-		"Total Recoveries 2021": 1295
+		"Active 2021-2022": 33,
+		"Total 2020-2021": 2565,
+		"Total 2021-2022": 1328,
+		"Total Recoveries 2021-2022": 1295
 	},
 	{
 		"Date": "Nov 13",
@@ -1131,10 +1131,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": 274,
-		"Active 2021": null,
-		"Total 2020": 2587,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": 2587,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Nov 14",
@@ -1143,10 +1143,10 @@ const data = [
 		"Daily 2021-2022": null,
 		"Daily 2021-2022 avg": null,
 		"Active 2020-2021": null,
-		"Active 2021": null,
-		"Total 2020": null,
-		"Total 2021": null,
-		"Total Recoveries 2021": null
+		"Active 2021-2022": null,
+		"Total 2020-2021": null,
+		"Total 2021-2022": null,
+		"Total Recoveries 2021-2022": null
 	},
 	{
 		"Date": "Nov 15",
@@ -1155,10 +1155,10 @@ const data = [
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 2.9,
 		"Active 2020-2021": null,
-		"Active 2021": 32,
-		"Total 2020": null,
-		"Total 2021": 1330,
-		"Total Recoveries 2021": 1298
+		"Active 2021-2022": 32,
+		"Total 2020-2021": null,
+		"Total 2021-2022": 1330,
+		"Total Recoveries 2021-2022": 1298
 	},
 	{
 		"Date": "Nov 16",
@@ -1167,10 +1167,10 @@ const data = [
 		"Daily 2021-2022": 8,
 		"Daily 2021-2022 avg": 3.1,
 		"Active 2020-2021": 322,
-		"Active 2021": 37,
-		"Total 2020": 2664,
-		"Total 2021": 1338,
-		"Total Recoveries 2021": 1301
+		"Active 2021-2022": 37,
+		"Total 2020-2021": 2664,
+		"Total 2021-2022": 1338,
+		"Total Recoveries 2021-2022": 1301
 	},
 	{
 		"Date": "Nov 17",
@@ -1179,10 +1179,10 @@ const data = [
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 3.1,
 		"Active 2020-2021": 326,
-		"Active 2021": 30,
-		"Total 2020": 2697,
-		"Total 2021": 1342,
-		"Total Recoveries 2021": 1312
+		"Active 2021-2022": 30,
+		"Total 2020-2021": 2697,
+		"Total 2021-2022": 1342,
+		"Total Recoveries 2021-2022": 1312
 	},
 	{
 		"Date": "Nov 18",
@@ -1191,18 +1191,18 @@ const data = [
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 3.1,
 		"Active 2020-2021": 314,
-		"Active 2021": 33,
-		"Total 2020": 2725,
-		"Total 2021": 1347,
-		"Total Recoveries 2021": 1314
+		"Active 2021-2022": 33,
+		"Total 2020-2021": 2725,
+		"Total 2021-2022": 1347,
+		"Total Recoveries 2021-2022": 1314
 	},
 	{
 		"Date": "Nov 19",
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 3.1,
-		"Active 2021": 34,
-		"Total 2021": 1352,
-		"Total Recoveries 2021": 1318
+		"Active 2021-2022": 34,
+		"Total 2021-2022": 1352,
+		"Total Recoveries 2021-2022": 1318
 	},
 	{
 		"Date": "Nov 20"
@@ -1214,17 +1214,17 @@ const data = [
 		"Date": "Nov 22",
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 3.4,
-		"Active 2021": 35,
-		"Total 2021": 1354,
-		"Total Recoveries 2021": 1319
+		"Active 2021-2022": 35,
+		"Total 2021-2022": 1354,
+		"Total Recoveries 2021-2022": 1319
 	},
 	{
 		"Date": "Nov 23",
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 2.7,
-		"Active 2021": 24,
-		"Total 2021": 1357,
-		"Total Recoveries 2021": 1333
+		"Active 2021-2022": 24,
+		"Total 2021-2022": 1357,
+		"Total Recoveries 2021-2022": 1333
 	},
 	{
 		"Date": "Nov 24"
@@ -1245,25 +1245,25 @@ const data = [
 		"Date": "Nov 29",
 		"Daily 2021-2022": 11,
 		"Daily 2021-2022 avg": 2.0,
-		"Active 2021": 27,
-		"Total 2021": 1368,
-		"Total Recoveries 2021": 1341
+		"Active 2021-2022": 27,
+		"Total 2021-2022": 1368,
+		"Total Recoveries 2021-2022": 1341
 	},
 	{
 		"Date": "Nov 30",
 		"Daily 2021-2022": 6,
 		"Daily 2021-2022 avg": 2.4,
-		"Active 2021": 20,
-		"Total 2021": 1374,
-		"Total Recoveries 2021": 1354
+		"Active 2021-2022": 20,
+		"Total 2021-2022": 1374,
+		"Total Recoveries 2021-2022": 1354
 	},
 	{
 		"Date": "Dec 1",
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 2.9,
-		"Active 2021": 23,
-		"Total 2021": 1377,
-		"Total Recoveries 2021": 1354
+		"Active 2021-2022": 23,
+		"Total 2021-2022": 1377,
+		"Total Recoveries 2021-2022": 1354
 	},
 	{
 		"Date": "Dec 2",
@@ -1345,7 +1345,7 @@ const data = [
 	},
 	{
 		"Date": "Dec 28",
-		"Total 2020": 3197
+		"Total 2020-2021": 3197
 	},
 	{
 		"Date": "Dec 29",
@@ -1375,17 +1375,17 @@ const data = [
 		"Date": "Jan 6",
 		"Daily 2021-2022": 109,
 		"Daily 2021-2022 avg": 15.6,
-		"Active 2021": 109,
-		"Total 2021": 149,
-		"Total Recoveries 2021": 40
+		"Active 2021-2022": 109,
+		"Total 2021-2022": 149,
+		"Total Recoveries 2021-2022": 40
 	},
 	{
 		"Date": "Jan 7",
 		"Daily 2021-2022": 33,
 		"Daily 2021-2022 avg": 20.3,
-		"Active 2021": 115,
-		"Total 2021": 182,
-		"Total Recoveries 2021": 67
+		"Active 2021-2022": 115,
+		"Total 2021-2022": 182,
+		"Total Recoveries 2021-2022": 67
 	},
 	{
 		"Date": "Jan 8",
@@ -1397,41 +1397,41 @@ const data = [
 		"Date": "Jan 10",
 		"Daily 2021-2022": 108,
 		"Daily 2021-2022 avg": 35.7,
-		"Active 2021": 141,
-		"Total 2021": 290,
-		"Total Recoveries 2021": 149
+		"Active 2021-2022": 141,
+		"Total 2021-2022": 290,
+		"Total Recoveries 2021-2022": 149
 	},
 	{
 		"Date": "Jan 11",
 		"Daily 2021-2022": 61,
 		"Daily 2021-2022 avg": 44.4,
-		"Active 2021": 157,
-		"Total 2021": 351,
-		"Total Recoveries 2021": 194
+		"Active 2021-2022": 157,
+		"Total 2021-2022": 351,
+		"Total Recoveries 2021-2022": 194
 	},
 	{
 		"Date": "Jan 12",
 		"Daily 2021-2022": 113,
 		"Daily 2021-2022 avg": 60.6,
-		"Active 2021": 211,
-		"Total 2021": 464,
-		"Total Recoveries 2021": 253
+		"Active 2021-2022": 211,
+		"Total 2021-2022": 464,
+		"Total Recoveries 2021-2022": 253
 	},
 	{
 		"Date": "Jan 13",
 		"Daily 2021-2022": 111,
 		"Daily 2021-2022 avg": 60.9,
-		"Active 2021": 111,
-		"Total 2021": 575,
-		"Total Recoveries 2021": 332
+		"Active 2021-2022": 111,
+		"Total 2021-2022": 575,
+		"Total Recoveries 2021-2022": 332
 	},
 	{
 		"Date": "Jan 14",
 		"Daily 2021-2022": 67,
 		"Daily 2021-2022 avg": 65.7,
-		"Active 2021": 256,
-		"Total 2021": 642,
-		"Total Recoveries 2021": 386
+		"Active 2021-2022": 256,
+		"Total 2021-2022": 642,
+		"Total Recoveries 2021-2022": 386
 	},
 	{
 		"Date": "Jan 15",
@@ -1446,33 +1446,33 @@ const data = [
 		"Date": "Jan 18",
 		"Daily 2021-2022": 259,
 		"Daily 2021-2022 avg": 78.6,
-		"Active 2021": 198,
-		"Total 2021": 901,
-		"Total Recoveries 2021": 703
+		"Active 2021-2022": 198,
+		"Total 2021-2022": 901,
+		"Total Recoveries 2021-2022": 703
 	},
 	{
 		"Date": "Jan 19",
 		"Daily 2021-2022": 120,
 		"Daily 2021-2022 avg": 79.6,
-		"Active 2021": 253,
-		"Total 2021": 1021,
-		"Total Recoveries 2021": 768
+		"Active 2021-2022": 253,
+		"Total 2021-2022": 1021,
+		"Total Recoveries 2021-2022": 768
 	},
 	{
 		"Date": "Jan 20",
 		"Daily 2021-2022": 93,
 		"Daily 2021-2022 avg": 77.0,
-		"Active 2021": 285,
-		"Total 2021": 1114,
-		"Total Recoveries 2021": 829
+		"Active 2021-2022": 285,
+		"Total 2021-2022": 1114,
+		"Total Recoveries 2021-2022": 829
 	},
 	{
 		"Date": "Jan 21",
 		"Daily 2021-2022": 71,
 		"Daily 2021-2022 avg": 77.6,
-		"Active 2021": 294,
-		"Total 2021": 1185,
-		"Total Recoveries 2021": 891
+		"Active 2021-2022": 294,
+		"Total 2021-2022": 1185,
+		"Total Recoveries 2021-2022": 891
 	},
 	{
 		"Date": "Jan 22",
@@ -1484,41 +1484,41 @@ const data = [
 		"Date": "Jan 24",
 		"Daily 2021-2022": 184,
 		"Daily 2021-2022 avg": 103.9,
-		"Active 2021": 199,
-		"Total 2021": 1369,
-		"Total Recoveries 2021": 1170
+		"Active 2021-2022": 199,
+		"Total 2021-2022": 1369,
+		"Total Recoveries 2021-2022": 1170
 	},
 	{
 		"Date": "Jan 25",
 		"Daily 2021-2022": 51,
 		"Daily 2021-2022 avg": 74.1,
-		"Active 2021": 184,
-		"Total 2021": 1420,
-		"Total Recoveries 2021": 1236
+		"Active 2021-2022": 184,
+		"Total 2021-2022": 1420,
+		"Total Recoveries 2021-2022": 1236
 	},
 	{
 		"Date": "Jan 26",
 		"Daily 2021-2022": 65,
 		"Daily 2021-2022 avg": 66.3,
-		"Active 2021": 188,
-		"Total 2021": 1485,
-		"Total Recoveries 2021": 1297
+		"Active 2021-2022": 188,
+		"Total 2021-2022": 1485,
+		"Total Recoveries 2021-2022": 1297
 	},
 	{
 		"Date": "Jan 27",
 		"Daily 2021-2022": 69,
 		"Daily 2021-2022 avg": 62.9,
-		"Active 2021": 201,
-		"Total 2021": 1554,
-		"Total Recoveries 2021": 1353
+		"Active 2021-2022": 201,
+		"Total 2021-2022": 1554,
+		"Total Recoveries 2021-2022": 1353
 	},
 	{
 		"Date": "Jan 28",
 		"Daily 2021-2022": 27,
 		"Daily 2021-2022 avg": 56.6,
-		"Active 2021": 169,
-		"Total 2021": 1518,
-		"Total Recoveries 2021": 1412
+		"Active 2021-2022": 169,
+		"Total 2021-2022": 1518,
+		"Total Recoveries 2021-2022": 1412
 	},
 	{
 		"Date": "Jan 29",
@@ -1530,25 +1530,25 @@ const data = [
 		"Date": "Jan 31",
 		"Daily 2021-2022": 56,
 		"Daily 2021-2022 avg": 38.3,
-		"Active 2021": 72,
-		"Total 2021": 1637,
-		"Total Recoveries 2021": 1565
+		"Active 2021-2022": 72,
+		"Total 2021-2022": 1637,
+		"Total Recoveries 2021-2022": 1565
 	},
 	{
 		"Date": "Feb 1",
 		"Daily 2021-2022": 32,
 		"Daily 2021-2022 avg": 35.6,
-		"Active 2021": 66,
-		"Total 2021": 1669,
-		"Total Recoveries 2021": 1603
+		"Active 2021-2022": 66,
+		"Total 2021-2022": 1669,
+		"Total Recoveries 2021-2022": 1603
 	},
 	{
 		"Date": "Feb 2",
 		"Daily 2021-2022": 30,
 		"Daily 2021-2022 avg": 30.6,
-		"Active 2021": 71,
-		"Total 2021": 1699,
-		"Total Recoveries 2021": 1628
+		"Active 2021-2022": 71,
+		"Total 2021-2022": 1699,
+		"Total Recoveries 2021-2022": 1628
 	},
 	{
 		"Date": "Feb 3",
@@ -1557,9 +1557,9 @@ const data = [
 		"Date": "Feb 4",
 		"Daily 2021-2022": 18,
 		"Daily 2021-2022 avg": 19.4,
-		"Active 2021": 60,
-		"Total 2021": 1717,
-		"Total Recoveries 2021": 1659
+		"Active 2021-2022": 60,
+		"Total 2021-2022": 1717,
+		"Total Recoveries 2021-2022": 1659
 	},
 	{
 		"Date": "Feb 5",
@@ -1571,41 +1571,41 @@ const data = [
 		"Date": "Feb 7",
 		"Daily 2021-2022": 27,
 		"Daily 2021-2022 avg": 15.3,
-		"Active 2021": 35,
-		"Total 2021": 1744,
-		"Total Recoveries 2021": 1709
+		"Active 2021-2022": 35,
+		"Total 2021-2022": 1744,
+		"Total Recoveries 2021-2022": 1709
 	},
 	{
 		"Date": "Feb 8",
 		"Daily 2021-2022": 10,
 		"Daily 2021-2022 avg": 12.1,
-		"Active 2021": 36,
-		"Total 2021": 1754,
-		"Total Recoveries 2021": 1718
+		"Active 2021-2022": 36,
+		"Total 2021-2022": 1754,
+		"Total Recoveries 2021-2022": 1718
 	},
 	{
 		"Date": "Feb 9",
 		"Daily 2021-2022": 9,
 		"Daily 2021-2022 avg": 9.1,
-		"Active 2021": 39,
-		"Total 2021": 1763,
-		"Total Recoveries 2021": 1724
+		"Active 2021-2022": 39,
+		"Total 2021-2022": 1763,
+		"Total Recoveries 2021-2022": 1724
 	},
 	{
 		"Date": "Feb 10",
 		"Daily 2021-2022": 12,
 		"Daily 2021-2022 avg": 10.9,
-		"Active 2021": 40,
-		"Total 2021": 1775,
-		"Total Recoveries 2021": 1735
+		"Active 2021-2022": 40,
+		"Total 2021-2022": 1775,
+		"Total Recoveries 2021-2022": 1735
 	},
 	{
 		"Date": "Feb 11",
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 9.0,
-		"Active 2021": 34,
-		"Total 2021": 1780,
-		"Total Recoveries 2021": 1746
+		"Active 2021-2022": 34,
+		"Total 2021-2022": 1780,
+		"Total Recoveries 2021-2022": 1746
 	},
 	{
 		"Date": "Feb 12",
@@ -1617,41 +1617,41 @@ const data = [
 		"Date": "Feb 14",
 		"Daily 2021-2022": 9,
 		"Daily 2021-2022 avg": 6.4,
-		"Active 2021": 26,
-		"Total 2021": 1789,
-		"Total Recoveries 2021": 1763
+		"Active 2021-2022": 26,
+		"Total 2021-2022": 1789,
+		"Total Recoveries 2021-2022": 1763
 	},
 	{
 		"Date": "Feb 15",
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 5.6,
-		"Active 2021": 22,
-		"Total 2021": 1793,
-		"Total Recoveries 2021": 1771
+		"Active 2021-2022": 22,
+		"Total 2021-2022": 1793,
+		"Total Recoveries 2021-2022": 1771
 	},
 	{
 		"Date": "Feb 16",
 		"Daily 2021-2022": 7,
 		"Daily 2021-2022 avg": 5.3,
-		"Active 2021": 22,
-		"Total 2021": 1800,
-		"Total Recoveries 2021": 1778
+		"Active 2021-2022": 22,
+		"Total 2021-2022": 1800,
+		"Total Recoveries 2021-2022": 1778
 	},
 	{
 		"Date": "Feb 17",
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 4.3,
-		"Active 2021": 26,
-		"Total 2021": 1805,
-		"Total Recoveries 2021": 1779
+		"Active 2021-2022": 26,
+		"Total 2021-2022": 1805,
+		"Total Recoveries 2021-2022": 1779
 	},
 	{
 		"Date": "Feb 18",
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 4.0,
-		"Active 2021": 25,
-		"Total 2021": 1808,
-		"Total Recoveries 2021": 1783
+		"Active 2021-2022": 25,
+		"Total 2021-2022": 1808,
+		"Total Recoveries 2021-2022": 1783
 	},
 	{
 		"Date": "Feb 19",
@@ -1663,41 +1663,41 @@ const data = [
 		"Date": "Feb 21",
 		"Daily 2021-2022": 6,
 		"Daily 2021-2022 avg": 3.6,
-		"Active 2021": 21,
-		"Total 2021": 1814,
-		"Total Recoveries 2021": 1793
+		"Active 2021-2022": 21,
+		"Total 2021-2022": 1814,
+		"Total Recoveries 2021-2022": 1793
 	},
 	{
 		"Date": "Feb 22",
 		"Daily 2021-2022": 5,
 		"Daily 2021-2022 avg": 3.7,
-		"Active 2021": 19,
-		"Total 2021": 1819,
-		"Total Recoveries 2021": 1800
+		"Active 2021-2022": 19,
+		"Total 2021-2022": 1819,
+		"Total Recoveries 2021-2022": 1800
 	},
 	{
 		"Date": "Feb 23",
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 3.0,
-		"Active 2021": 17,
-		"Total 2021": 1821,
-		"Total Recoveries 2021": 1804
+		"Active 2021-2022": 17,
+		"Total 2021-2022": 1821,
+		"Total Recoveries 2021-2022": 1804
 	},
 	{
 		"Date": "Feb 24",
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 2.9,
-		"Active 2021": 19,
-		"Total 2021": 1825,
-		"Total Recoveries 2021": 1806
+		"Active 2021-2022": 19,
+		"Total 2021-2022": 1825,
+		"Total Recoveries 2021-2022": 1806
 	},
 	{
 		"Date": "Feb 25",
 		"Daily 2021-2022": 1,
 		"Daily 2021-2022 avg": 2.6,
-		"Active 2021": 20,
-		"Total 2021": 1826,
-		"Total Recoveries 2021": 1806
+		"Active 2021-2022": 20,
+		"Total 2021-2022": 1826,
+		"Total Recoveries 2021-2022": 1806
 	},
 	{
 		"Date": "Feb 26",
@@ -1709,33 +1709,33 @@ const data = [
 		"Date": "Feb 28",
 		"Daily 2021-2022": 8,
 		"Daily 2021-2022 avg": 2.9,
-		"Active 2021": 18,
-		"Total 2021": 1834,
-		"Total Recoveries 2021": 1816
+		"Active 2021-2022": 18,
+		"Total 2021-2022": 1834,
+		"Total Recoveries 2021-2022": 1816
 	},
 	{
 		"Date": "Mar 1",
 		"Daily 2021-2022": 4,
 		"Daily 2021-2022 avg": 2.7,
-		"Active 2021": 18,
-		"Total 2021": 1838,
-		"Total Recoveries 2021": 1820
+		"Active 2021-2022": 18,
+		"Total 2021-2022": 1838,
+		"Total Recoveries 2021-2022": 1820
 	},
 	{
 		"Date": "Mar 2",
 		"Daily 2021-2022": 2,
 		"Daily 2021-2022 avg": 2.7,
-		"Active 2021": 19,
-		"Total 2021": 1840,
-		"Total Recoveries 2021": 1821
+		"Active 2021-2022": 19,
+		"Total 2021-2022": 1840,
+		"Total Recoveries 2021-2022": 1821
 	},
 	{
 		"Date": "Mar 3",
 		"Daily 2021-2022": 3,
 		"Daily 2021-2022 avg": 2.6,
-		"Active 2021": 19,
-		"Total 2021": 1843,
-		"Total Recoveries 2021": 1824
+		"Active 2021-2022": 19,
+		"Total 2021-2022": 1843,
+		"Total Recoveries 2021-2022": 1824
 	}
 ];
 

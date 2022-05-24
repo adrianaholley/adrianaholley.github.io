@@ -83,10 +83,10 @@ class Totalgraph extends Component {
 
                             {/* 2021 */}
                             <Bar 
-                                dataKey={"Total 2021"} 
+                                dataKey={"Total 2021-2022"} 
                                 fill="#cc0000" >
                                     <LabelList 
-                                        dataKey={"Total 2021"} 
+                                        dataKey={"Total 2021-2022"} 
                                         position="top"
 										fontSize={isMobile ? ("8") : ("10")}
                                     />
@@ -95,10 +95,10 @@ class Totalgraph extends Component {
                             {/* 2020 */}
                             {this.state.PastDataIsOff ? ("") : 
                                 <Bar 
-                                    dataKey={"Total 2020"} 
+                                    dataKey={"Total 2020-2021"} 
                                     fill="#666666" >
                                         <LabelList 
-                                            dataKey="Total 2020"
+                                            dataKey="Total 2020-2021"
                                             position="top" 
                                             fontSize={isMobile ? ("8") : ("10")} 
                                         />
@@ -107,7 +107,7 @@ class Totalgraph extends Component {
 
                             {/* 2021 */}
                             <Area 
-                                dataKey="Total 2021"
+                                dataKey="Total 2021-2022"
                                 fill="#cc0000" 
                                 stroke="#333333"
                                 connectNulls={true} 
@@ -117,7 +117,7 @@ class Totalgraph extends Component {
                             {/* 2020 */}
                             {this.state.PastDataIsOff ? ("") : 
                                 <Area 
-                                    dataKey="Total 2020"
+                                    dataKey="Total 2020-2021"
                                     fill="#666666" 
                                     strokeDasharray="3 4"
                                     stroke="#666666"
@@ -126,7 +126,7 @@ class Totalgraph extends Component {
                                 />
                             }
 
-							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Total 2021" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
+							{this.state.PastDataIsOff ? ('') : (<Line dataKey="Total 2021-2022" stroke="#333333" connectNulls={true} dot={false} fill="#333333" strokeDasharray="1 1" />)}
 
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={460} stroke="#333" strokeDasharray="2"><Label value="1.0% of all students and employees (460)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>

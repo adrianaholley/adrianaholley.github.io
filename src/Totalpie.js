@@ -13,12 +13,12 @@ var threeweeksago = data[todayinarray - 21]
 var todaydate = today.Date
 var weekagodate = weekago.Date
 
-var totaltoday = today["Total 2021"]
+var totaltoday = today["Total 2021-2022"]
 var notinfected = (46000-totaltoday)
 var percentagetoday = (totaltoday/46000*100).toFixed(2)
-var percentageaweekago = (weekago["Total 2021"]/46000*100).toFixed(2) 
-var percentagetwoweeksago = (twoweeksago["Total 2021"]/46000*100).toFixed(2) 
-var percentagethreeweeksago = (threeweeksago["Total 2021"]/46000*100).toFixed(2)
+var percentageaweekago = (weekago["Total 2021-2022"]/46000*100).toFixed(2) 
+var percentagetwoweeksago = (twoweeksago["Total 2021-2022"]/46000*100).toFixed(2) 
+var percentagethreeweeksago = (threeweeksago["Total 2021-2022"]/46000*100).toFixed(2)
 
 var percentagetodaychange = "+" + (percentagetoday-percentageaweekago).toFixed(2)
 var aweekagochange = "+" + (percentageaweekago-percentagetwoweeksago).toFixed(2) 
@@ -40,7 +40,7 @@ class Totalpie extends Component {
                 </div>
                 <div>
                     <span className="chart-subtitle">
-                        {totaltoday.toLocaleString()} positive reports from 46,000 students and employees.
+                        {totaltoday} positive reports from 46,000 students and employees.{/* TODO .toLocaleString() */}
                     </span>
                 </div>
 
