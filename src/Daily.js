@@ -34,6 +34,14 @@ class Daily extends Component {
                             {globaldate}
                         </span>
                     </div>
+                    <div>
+                        <span className="page-heading-notice">
+                            <font color="blue">
+                                Unfortuantely, Texas Tech University ended its Covid data reporting on March 3, 2022. 
+                                Hopefully the university resumes its campus reporting in Fall 2022 so students and staff are better able to conduct risk assessment for their health and safety. 
+                            </font>
+                        </span>
+                    </div>
                 </div>
 
                 {/* show graphs */}

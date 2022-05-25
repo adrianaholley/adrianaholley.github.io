@@ -1,4 +1,4 @@
-//update daily
+// update daily
 var globaldate = "Last updated Monday, May 23, 2022 at 8:00pm CST."
 var todayinarray = 213
 
@@ -1266,28 +1266,28 @@ const data = [
 		"Total Recoveries 2021-2022": 1354
 	},
 	{
-		"Date": "Dec 2",
+		"Date": "Dec 2"
 	},
 	{
-		"Date": "Dec 3",
+		"Date": "Dec 3"
 	},
 	{
-		"Date": "Dec 4",
+		"Date": "Dec 4"
 	},
 	{
-		"Date": "Dec 5",
+		"Date": "Dec 5"
 	},
 	{
-		"Date": "Dec 6",
+		"Date": "Dec 6"
 	},
 	{
-		"Date": "Dec 7",
+		"Date": "Dec 7"
 	},
 	{
-		"Date": "Dec 8",
+		"Date": "Dec 8"
 	},
 	{
-		"Date": "Dec 9",
+		"Date": "Dec 9"
 	},
 	{
 		"Date": "Dec 10"
@@ -1348,28 +1348,28 @@ const data = [
 		"Total 2020-2021": 3197
 	},
 	{
-		"Date": "Dec 29",
+		"Date": "Dec 29"
 	},
 	{
-		"Date": "Dec 30",
+		"Date": "Dec 30"
 	},
 	{
-		"Date": "Dec 31",
+		"Date": "Dec 31"
 	},
 	{
-		"Date": "Jan 1",
+		"Date": "Jan 1"
 	},
 	{
-		"Date": "Jan 2",
+		"Date": "Jan 2"
 	},
 	{
-		"Date": "Jan 3",
+		"Date": "Jan 3"
 	},
 	{
-		"Date": "Jan 4",
+		"Date": "Jan 4"
 	},
 	{
-		"Date": "Jan 5",
+		"Date": "Jan 5"
 	},
 	{
 		"Date": "Jan 6",
@@ -1388,10 +1388,10 @@ const data = [
 		"Total Recoveries 2021-2022": 67
 	},
 	{
-		"Date": "Jan 8",
+		"Date": "Jan 8"
 	},
 	{
-		"Date": "Jan 9",
+		"Date": "Jan 9"
 	},
 	{
 		"Date": "Jan 10",
@@ -1434,13 +1434,13 @@ const data = [
 		"Total Recoveries 2021-2022": 386
 	},
 	{
-		"Date": "Jan 15",
+		"Date": "Jan 15"
 	},
 	{
-		"Date": "Jan 16",
+		"Date": "Jan 16"
 	},
 	{
-		"Date": "Jan 17",
+		"Date": "Jan 17"
 	},
 	{
 		"Date": "Jan 18",
@@ -1475,10 +1475,10 @@ const data = [
 		"Total Recoveries 2021-2022": 891
 	},
 	{
-		"Date": "Jan 22",
+		"Date": "Jan 22"
 	},
 	{
-		"Date": "Jan 23",
+		"Date": "Jan 23"
 	},
 	{
 		"Date": "Jan 24",
@@ -1521,10 +1521,10 @@ const data = [
 		"Total Recoveries 2021-2022": 1412
 	},
 	{
-		"Date": "Jan 29",
+		"Date": "Jan 29"
 	},
 	{
-		"Date": "Jan 30",
+		"Date": "Jan 30"
 	},
 	{
 		"Date": "Jan 31",
@@ -1551,7 +1551,7 @@ const data = [
 		"Total Recoveries 2021-2022": 1628
 	},
 	{
-		"Date": "Feb 3",
+		"Date": "Feb 3"
 	},
 	{
 		"Date": "Feb 4",
@@ -1562,10 +1562,10 @@ const data = [
 		"Total Recoveries 2021-2022": 1659
 	},
 	{
-		"Date": "Feb 5",
+		"Date": "Feb 5"
 	},
 	{
-		"Date": "Feb 6",
+		"Date": "Feb 6"
 	},
 	{
 		"Date": "Feb 7",
@@ -1608,10 +1608,10 @@ const data = [
 		"Total Recoveries 2021-2022": 1746
 	},
 	{
-		"Date": "Feb 12",
+		"Date": "Feb 12"
 	},
 	{
-		"Date": "Feb 13",
+		"Date": "Feb 13"
 	},
 	{
 		"Date": "Feb 14",
@@ -1654,10 +1654,10 @@ const data = [
 		"Total Recoveries 2021-2022": 1783
 	},
 	{
-		"Date": "Feb 19",
+		"Date": "Feb 19"
 	},
 	{
-		"Date": "Feb 20",
+		"Date": "Feb 20"
 	},
 	{
 		"Date": "Feb 21",
@@ -1700,10 +1700,10 @@ const data = [
 		"Total Recoveries 2021-2022": 1806
 	},
 	{
-		"Date": "Feb 26",
+		"Date": "Feb 26"
 	},
 	{
-		"Date": "Feb 27",
+		"Date": "Feb 27"
 	},
 	{
 		"Date": "Feb 28",
@@ -1738,224 +1738,224 @@ const data = [
 		"Total Recoveries 2021-2022": 1824
 	},
 	{
-		"Date": "Mar 4",
+		"Date": "Mar 4"
 	},
 	{
-		"Date": "Mar 5",
+		"Date": "Mar 5"
 	},
 	{
-		"Date": "Mar 6",
+		"Date": "Mar 6"
 	},
 	{
-		"Date": "Mar 7",
+		"Date": "Mar 7"
 	},
 	{
-		"Date": "Mar 8",
+		"Date": "Mar 8"
 	},
 	{
-		"Date": "Mar 9",
+		"Date": "Mar 9"
 	},
 	{
-		"Date": "Mar 10",
+		"Date": "Mar 10"
 	},
 	{
-		"Date": "Mar 11",
+		"Date": "Mar 11"
 	},
 	{
-		"Date": "Mar 12",
+		"Date": "Mar 12"
 	},
 	{
-		"Date": "Mar 13",
+		"Date": "Mar 13"
 	},
 	{
-		"Date": "Mar 14",
+		"Date": "Mar 14"
 	},
 	{
-		"Date": "Mar 15",
+		"Date": "Mar 15"
 	},
 	{
-		"Date": "Mar 16",
+		"Date": "Mar 16"
 	},
 	{
-		"Date": "Mar 17",
+		"Date": "Mar 17"
 	},
 	{
-		"Date": "Mar 18",
+		"Date": "Mar 18"
 	},
 	{
-		"Date": "Mar 19",
+		"Date": "Mar 19"
 	},
 	{
-		"Date": "Mar 20",
+		"Date": "Mar 20"
 	},
 	{
-		"Date": "Mar 21",
+		"Date": "Mar 21"
 	},
 	{
-		"Date": "Mar 22",
+		"Date": "Mar 22"
 	},
 	{
-		"Date": "Mar 23",
+		"Date": "Mar 23"
 	},
 	{
-		"Date": "Mar 24",
+		"Date": "Mar 24"
 	},
 	{
-		"Date": "Mar 25",
+		"Date": "Mar 25"
 	},
 	{
-		"Date": "Mar 26",
+		"Date": "Mar 26"
 	},
 	{
-		"Date": "Mar 27",
+		"Date": "Mar 27"
 	},
 	{
-		"Date": "Mar 28",
+		"Date": "Mar 28"
 	},
 	{
-		"Date": "Mar 29",
+		"Date": "Mar 29"
 	},
 	{
-		"Date": "Mar 30",
+		"Date": "Mar 30"
 	},
 	{
-		"Date": "Mar 31",
+		"Date": "Mar 31"
 	},
 	{
-		"Date": "Apr 1",
+		"Date": "Apr 1"
 	},
 	{
-		"Date": "Apr 2",
+		"Date": "Apr 2"
 	},
 	{
-		"Date": "Apr 3",
+		"Date": "Apr 3"
 	},
 	{
-		"Date": "Apr 4",
+		"Date": "Apr 4"
 	},
 	{
-		"Date": "Apr 5",
+		"Date": "Apr 5"
 	},
 	{
-		"Date": "Apr 6",
+		"Date": "Apr 6"
 	},
 	{
-		"Date": "Apr 7",
+		"Date": "Apr 7"
 	},
 	{
-		"Date": "Apr 8",
+		"Date": "Apr 8"
 	},
 	{
-		"Date": "Apr 9",
+		"Date": "Apr 9"
 	},
 	{
-		"Date": "Apr 10",
+		"Date": "Apr 10"
 	},
 	{
-		"Date": "Apr 11",
+		"Date": "Apr 11"
 	},
 	{
-		"Date": "Apr 12",
+		"Date": "Apr 12"
 	},
 	{
-		"Date": "Apr 13",
+		"Date": "Apr 13"
 	},
 	{
-		"Date": "Apr 14",
+		"Date": "Apr 14"
 	},
 	{
-		"Date": "Apr 15",
+		"Date": "Apr 15"
 	},
 	{
-		"Date": "Apr 16",
+		"Date": "Apr 16"
 	},
 	{
-		"Date": "Apr 17",
+		"Date": "Apr 17"
 	},
 	{
-		"Date": "Apr 18",
+		"Date": "Apr 18"
 	},
 	{
-		"Date": "Apr 19",
+		"Date": "Apr 19"
 	},
 	{
-		"Date": "Apr 20",
+		"Date": "Apr 20"
 	},
 	{
-		"Date": "Apr 21",
+		"Date": "Apr 21"
 	},
 	{
-		"Date": "Apr 22",
+		"Date": "Apr 22"
 	},
 	{
-		"Date": "Apr 23",
+		"Date": "Apr 23"
 	},
 	{
-		"Date": "Apr 24",
+		"Date": "Apr 24"
 	},
 	{
-		"Date": "Apr 25",
+		"Date": "Apr 25"
 	},
 	{
-		"Date": "Apr 26",
+		"Date": "Apr 26"
 	},
 	{
-		"Date": "Apr 27",
+		"Date": "Apr 27"
 	},
 	{
-		"Date": "Apr 28",
+		"Date": "Apr 28"
 	},
 	{
-		"Date": "Apr 29",
+		"Date": "Apr 29"
 	},
 	{
-		"Date": "Apr 30",
+		"Date": "Apr 30"
 	},
 	{
-		"Date": "May 1",
+		"Date": "May 1"
 	},
 	{
-		"Date": "May 2",
+		"Date": "May 2"
 	},
 	{
-		"Date": "May 3",
+		"Date": "May 3"
 	},
 	{
-		"Date": "May 4",
+		"Date": "May 4"
 	},
 	{
-		"Date": "May 5",
+		"Date": "May 5"
 	},
 	{
-		"Date": "May 6",
+		"Date": "May 6"
 	},
 	{
-		"Date": "May 7",
+		"Date": "May 7"
 	},
 	{
-		"Date": "May 8",
+		"Date": "May 8"
 	},
 	{
-		"Date": "May 9",
+		"Date": "May 9"
 	},
 	{
-		"Date": "May 10",
+		"Date": "May 10"
 	},
 	{
-		"Date": "May 11",
+		"Date": "May 11"
 	},
 	{
-		"Date": "May 12",
+		"Date": "May 12"
 	},
 	{
-		"Date": "May 13",
+		"Date": "May 13"
 	},
 	{
-		"Date": "May 14",
+		"Date": "May 14"
 	},
 	{
 		"Date": "May 15",
-		"Total 2020-2021": 3470,
+		"Total 2020-2021": 3470
 	}
 ];
 
