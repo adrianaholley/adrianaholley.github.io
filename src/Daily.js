@@ -1,6 +1,6 @@
-import { Box, Grid } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import { Card } from '@material-ui/core';
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import SemesterComparisons from './SemesterComparisons.js';
 import DailyPie from './DailyPie.js';

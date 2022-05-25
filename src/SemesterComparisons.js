@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -8,22 +7,23 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { Component } from 'react';
-import { data, todayinarray } from './data';
 
 function createData(name, calories, fat, week3, week4, week5, week6, week7, week8, week9, week10, week11) {
     return { name, calories, fat, week3, week4, week5, week6, week7, week8, week9, week10, week11};
   }
 
 const rows = [
-    createData('Fall 2021 (in progress)', data[todayinarray]["Total 2021-2022"], data[todayinarray]["Total Recoveries 2021-2022"]),
-    createData('Spring 2021', 274, 274),
     createData('Fall 2020', '3,196', '3,194'),
+    createData('Spring 2021', 274, 274),
+    createData('Fall 2021', '1,377', '1,377'),
+    createData('Spring 2022', '1,843', '1,843'),
+    
   ];
 
-const otherRows = [
-    createData('Fall 2021', '303 new cases', '347', '280', '161', '56', '43', '25', '19', '21', '31', '20'),
-    createData('Fall 2020', '176 new cases', '439', '374', '377', '111', '153', '83', '151', '139', '90', '172')
-]
+// const otherRows = [
+//     createData('Fall 2021', '303 new cases', '347', '280', '161', '56', '43', '25', '19', '21', '31', '20'),
+//     createData('Fall 2020', '176 new cases', '439', '374', '377', '111', '153', '83', '151', '139', '90', '172')
+// ]
 
 class SemesterComparisons extends Component {
     
@@ -34,7 +34,7 @@ class SemesterComparisons extends Component {
                 <br/>
                 <h5 style={{ marginBottom: 0, marginTop: 5 }}>Semester Comparisons</h5>
 
-                <TableContainer component={Paper}>
+                {/* <TableContainer component={Paper}>
                     <Table aria-label="simple table">
                         <TableHead>
                             <TableRow>
@@ -75,7 +75,7 @@ class SemesterComparisons extends Component {
                     </Table>
                 </TableContainer>
 
-                <br />
+                <br /> */}
 
                 <TableContainer component={Paper}>
                     <Table aria-label="simple table">
