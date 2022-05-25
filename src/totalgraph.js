@@ -75,8 +75,8 @@ class TotalGraph extends Component {
 								<YAxis 
 									fontSize="12"
 									domain={this.state.PastDataIsOff ? 
-										(['dataMin - 116', 'dataMax + 180']) 
-										: (['dataMin - 18', 'dataMax + 180'])} 
+										(['dataMin - 116', 'dataMax + 380']) 
+										: (['dataMin - 18', 'dataMax + 130'])} 
 								/>) : (
 								<YAxis interval={8} scale="log" domain={['0', 'dataMax + 350']} fontSize="12" />)
 							}
@@ -133,7 +133,7 @@ class TotalGraph extends Component {
                             <ReferenceLine y={1380} stroke="#333" strokeDasharray="2"><Label value="3.0% of all students and employees (1380)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={1840} stroke="#333" strokeDasharray="2"><Label value="4.0% of all students and employees (1840)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={2300} stroke="#333" strokeDasharray="2"><Label value="5.0% of all students and employees (2300)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
-                            <ReferenceLine y={2710} stroke="#333" strokeDasharray="2"><Label value="6.0% of all students and employees (2710)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
+                            <ReferenceLine y={2760} stroke="#333" strokeDasharray="2"><Label value="6.0% of all students and employees (2760)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
                             <ReferenceLine y={3220} stroke="#333" strokeDasharray="2"><Label value="7.0% of all students and employees (3220)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
 
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />

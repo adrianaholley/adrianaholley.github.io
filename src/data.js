@@ -1517,7 +1517,7 @@ const data = [
 		"Daily 2021-2022": 27,
 		"Daily 2021-2022 avg": 56.6,
 		"Active 2021-2022": 169,
-		"Total 2021-2022": 2895,
+		"Total 2021-2022": 2995,
 		"Total Recoveries 2021-2022": 1412
 	},
 	{
@@ -1736,6 +1736,226 @@ const data = [
 		"Active 2021-2022": 19,
 		"Total 2021-2022": 3220,
 		"Total Recoveries 2021-2022": 1824
+	},
+	{
+		"Date": "Mar 4",
+	},
+	{
+		"Date": "Mar 5",
+	},
+	{
+		"Date": "Mar 6",
+	},
+	{
+		"Date": "Mar 7",
+	},
+	{
+		"Date": "Mar 8",
+	},
+	{
+		"Date": "Mar 9",
+	},
+	{
+		"Date": "Mar 10",
+	},
+	{
+		"Date": "Mar 11",
+	},
+	{
+		"Date": "Mar 12",
+	},
+	{
+		"Date": "Mar 13",
+	},
+	{
+		"Date": "Mar 14",
+	},
+	{
+		"Date": "Mar 15",
+	},
+	{
+		"Date": "Mar 16",
+	},
+	{
+		"Date": "Mar 17",
+	},
+	{
+		"Date": "Mar 18",
+	},
+	{
+		"Date": "Mar 19",
+	},
+	{
+		"Date": "Mar 20",
+	},
+	{
+		"Date": "Mar 21",
+	},
+	{
+		"Date": "Mar 22",
+	},
+	{
+		"Date": "Mar 23",
+	},
+	{
+		"Date": "Mar 24",
+	},
+	{
+		"Date": "Mar 25",
+	},
+	{
+		"Date": "Mar 26",
+	},
+	{
+		"Date": "Mar 27",
+	},
+	{
+		"Date": "Mar 28",
+	},
+	{
+		"Date": "Mar 29",
+	},
+	{
+		"Date": "Mar 30",
+	},
+	{
+		"Date": "Mar 31",
+	},
+	{
+		"Date": "Apr 1",
+	},
+	{
+		"Date": "Apr 2",
+	},
+	{
+		"Date": "Apr 3",
+	},
+	{
+		"Date": "Apr 4",
+	},
+	{
+		"Date": "Apr 5",
+	},
+	{
+		"Date": "Apr 6",
+	},
+	{
+		"Date": "Apr 7",
+	},
+	{
+		"Date": "Apr 8",
+	},
+	{
+		"Date": "Apr 9",
+	},
+	{
+		"Date": "Apr 10",
+	},
+	{
+		"Date": "Apr 11",
+	},
+	{
+		"Date": "Apr 12",
+	},
+	{
+		"Date": "Apr 13",
+	},
+	{
+		"Date": "Apr 14",
+	},
+	{
+		"Date": "Apr 15",
+	},
+	{
+		"Date": "Apr 16",
+	},
+	{
+		"Date": "Apr 17",
+	},
+	{
+		"Date": "Apr 18",
+	},
+	{
+		"Date": "Apr 19",
+	},
+	{
+		"Date": "Apr 20",
+	},
+	{
+		"Date": "Apr 21",
+	},
+	{
+		"Date": "Apr 22",
+	},
+	{
+		"Date": "Apr 23",
+	},
+	{
+		"Date": "Apr 24",
+	},
+	{
+		"Date": "Apr 25",
+	},
+	{
+		"Date": "Apr 26",
+	},
+	{
+		"Date": "Apr 27",
+	},
+	{
+		"Date": "Apr 28",
+	},
+	{
+		"Date": "Apr 29",
+	},
+	{
+		"Date": "Apr 30",
+	},
+	{
+		"Date": "May 1",
+	},
+	{
+		"Date": "May 2",
+	},
+	{
+		"Date": "May 3",
+	},
+	{
+		"Date": "May 4",
+	},
+	{
+		"Date": "May 5",
+	},
+	{
+		"Date": "May 6",
+	},
+	{
+		"Date": "May 7",
+	},
+	{
+		"Date": "May 8",
+	},
+	{
+		"Date": "May 9",
+	},
+	{
+		"Date": "May 10",
+	},
+	{
+		"Date": "May 11",
+	},
+	{
+		"Date": "May 12",
+	},
+	{
+		"Date": "May 13",
+	},
+	{
+		"Date": "May 14",
+	},
+	{
+		"Date": "May 15",
+		"Total 2020-2021": 3470,
 	}
 ];
 
