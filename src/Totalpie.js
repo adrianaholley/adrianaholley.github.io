@@ -52,7 +52,7 @@ class TotalPie extends Component {
                             <Label value={percentagetoday + "%"} position="centerBottom" className='label' fontSize='38px' />
                             <Label value="of Red Raiders have" position="center" className='label-top' fontSize='12px' />
                             <Label value="reported positive results" position="center" className='label-middle' fontSize='12px' />
-                            <Label value={weekagodate + " - " + todaydate} position="centerTop" className='label-bottom' fontSize='12px' />
+                            <Label value="this school year" position="centerTop" className='label-bottom' fontSize='12px' />
                             {data01.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)}
                         </Pie>
                     </PieChart>
