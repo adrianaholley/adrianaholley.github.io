@@ -37,7 +37,7 @@ class DailyPie extends Component {
                 </div>
                 <div>
                     <span className="chart-subtitle">
-                    The average amount of new cases reported in the last 7 days.
+                        The average amount of new cases reported in the last 7 days.
                     </span>
                 </div>
 
