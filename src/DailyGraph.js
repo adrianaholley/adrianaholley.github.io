@@ -39,8 +39,6 @@ class DailyGraph extends Component {
     render() {
         return (
             <center>
-                {isMobile ? (<br />) : ('')}
-
                 {/* title, subtitle */}
                 <br/>
                 <Grid>
@@ -67,7 +65,7 @@ class DailyGraph extends Component {
                             <CartesianGrid />
 
 							<XAxis 
-								interval={isMobile ? (2) : (6)} 
+								interval={isMobile ? (6) : (6)} 
 								dataKey="Date" angle={-45} textAnchor="end" fontSize="12" height="60" 
 							/>
 
@@ -122,7 +120,7 @@ class DailyGraph extends Component {
                                     strokeDasharray="3 4"
                                     stroke="#666666"
                                     connectNulls={true} 
-                                    fillOpacity={.07} 
+                                    fillOpacity={.1} 
                                 />
                             }
 

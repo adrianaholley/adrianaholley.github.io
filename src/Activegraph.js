@@ -35,9 +35,6 @@ class ActiveGraph extends Component {
     render() {
         return (
             <center>
-
-                {isMobile ? (<br />) : ('')}
-
                 {/* title, subtitle12 */}
 				<br/>
                 <Grid>
@@ -63,7 +60,7 @@ class ActiveGraph extends Component {
                             <CartesianGrid />
 
 							<XAxis 
-								interval={isMobile ? (2) : (6)} 
+								interval={isMobile ? (6) : (6)} 
 								dataKey="Date" angle={-45} textAnchor="end" fontSize="12" height="60" 
 							/>
 

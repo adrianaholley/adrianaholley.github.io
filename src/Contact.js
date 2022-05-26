@@ -5,18 +5,17 @@ var siteupdatetime = "Last updated Wednesday, November 18, 2020 at 5:25pm CST."
 function Contact() {
     return (
       <div>
-        <div className='responsivecontainer'>
-          <svg width="100vw" height="139">
-            <g>
-              <rect width="100%" height="100%" fill="#B32317" />
-              <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
-            </g>
-          </svg>
-        </div>
+        {/* red bar */}
+        <svg width="100vw" height="139">
+          <g>
+            <rect width="100%" height="100%" fill="#B32317" />
+            <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
+          </g>
+        </svg>
   
         <div className="App">
           <header className="App-header">
-            <h3>Contact</h3>
+            <h3 style={{ marginBottom: 5}}>Contact</h3>
             <a><font size="2">{siteupdatetime}</font></a>
 
             <div>

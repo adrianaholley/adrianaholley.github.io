@@ -23,14 +23,13 @@ function Faq() {
 
   return (
     <div>
-      <div className='responsivecontainer'>
-        <svg width="100vw" height="139">
-          <g>
-            <rect width="100%" height="100%" fill="#B32317" />
-            <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
-          </g>
-        </svg>
-      </div>
+      {/* red bar */}
+      <svg width="100vw" height="139">
+        <g>
+          <rect width="100%" height="100%" fill="#B32317" />
+          <text x="50%" y="84%" font-size="16" fill="white" textAnchor="middle">Powered by a concerned Red Raider</text>
+        </g>
+      </svg>
 
       <div className="App">
         <header className="App-header">

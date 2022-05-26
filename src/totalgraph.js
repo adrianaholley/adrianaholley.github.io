@@ -39,8 +39,6 @@ class TotalGraph extends Component {
     render() {
         return (
             <center>
-                {isMobile ? (<br />) : ('')}
-
                 {/* title, subtitle */}
                 <br/>
                 <Grid>
@@ -63,11 +61,11 @@ class TotalGraph extends Component {
                 <Grid>
                     {/* bar chart */}
                     <ResponsiveContainer width={isMobile ? ('99%') : ('100%')} height={isMobile ? ('99%') : ('100%')} aspect={isMobile ? ('1') : ('3')}>
-					<ComposedChart data={data} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 40, bottom: 0, left: 0 })}>
+					    <ComposedChart data={data} margin={isMobile ? ({ top: 0, right: 20, bottom: 0, left: -10 }) : ({ top: 0, right: 40, bottom: 0, left: 0 })}>
                             <CartesianGrid />
 
 							<XAxis 
-								interval={isMobile ? (2) : (6)} 
+								interval={isMobile ? (6) : (6)} 
 								dataKey="Date" angle={-45} textAnchor="end" fontSize="12" height="60" 
 							/>
 
