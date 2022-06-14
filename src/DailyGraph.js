@@ -47,7 +47,7 @@ class DailyGraph extends Component {
                     </div>
                     
                     {/* switches */}
-                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
+                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Include 2020-2021 data" />
 
                     <a><i><font size="2">
                         <div className={isMobile ? ("adjustabletextmobile") : ("adjustabletext")} >

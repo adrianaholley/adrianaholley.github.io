@@ -41,7 +41,7 @@ class ActiveGraph extends Component {
                     <h5 style={{ marginBottom: 0, marginTop: 5 }}>Active Cases Known on Given Date</h5>
 
                     {/* switches */}
-                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Also show 2020 data" />
+                    <FormControlLabel control={<RedSwitch onChange={() => this.setState({ PastDataIsOff: !this.state.PastDataIsOff })} name="PastDataIsOff" />} label="Include 2020-2021 data" />
                     {/* <FormControlLabel control={<RedSwitch onChange={() => this.setState({ LogViewIsOff: !this.state.LogViewIsOff })} />} label="View on logarithmic scale" /> */}
 
                     <a><i><font size="2">
