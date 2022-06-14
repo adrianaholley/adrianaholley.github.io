@@ -17,13 +17,7 @@ const rows = [
     createData('Spring 2021', 274, 274),
     createData('Fall 2021', '1,377', '1,377'),
     createData('Spring 2022', '1,843', '1,843'),
-    
   ];
-
-// const otherRows = [
-//     createData('Fall 2021', '303 new cases', '347', '280', '161', '56', '43', '25', '19', '21', '31', '20'),
-//     createData('Fall 2020', '176 new cases', '439', '374', '377', '111', '153', '83', '151', '139', '90', '172')
-// ]
 
 class SemesterComparisons extends Component {
     
@@ -33,49 +27,6 @@ class SemesterComparisons extends Component {
                 {/* title, subtilte */}
                 <br/>
                 <h5 style={{ marginBottom: 0, marginTop: 5 }}>Semester Comparisons</h5>
-
-                {/* <TableContainer component={Paper}>
-                    <Table aria-label="simple table">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell><b>Semester</b></TableCell>
-                                <TableCell align="right"><b>Week 1</b></TableCell>
-                                <TableCell align="right"><b>Week 2</b></TableCell>
-                                <TableCell align="right"><b>Week 3</b></TableCell>
-                                <TableCell align="right"><b>Week 4</b></TableCell>
-                                <TableCell align="right"><b>Week 5</b></TableCell>
-                                <TableCell align="right"><b>Week 6</b></TableCell>
-                                <TableCell align="right"><b>Week 7</b></TableCell>
-                                <TableCell align="right"><b>Week 8</b></TableCell>
-                                <TableCell align="right"><b>Week 9</b></TableCell>
-                                <TableCell align="right"><b>Week 10</b></TableCell>
-                                <TableCell align="right"><b>Week 11</b></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {otherRows.map((otherRows) => (
-                                <TableRow key={otherRows.name}>
-                                    <TableCell component="th" scope="otherRows">
-                                        {otherRows.name}
-                                    </TableCell>
-                                    <TableCell align="right">{otherRows.calories}</TableCell>
-                                    <TableCell align="right">{otherRows.fat}</TableCell>
-                                    <TableCell align="right">{otherRows.week3}</TableCell>
-                                    <TableCell align="right">{otherRows.week4}</TableCell>
-                                    <TableCell align="right">{otherRows.week5}</TableCell>
-                                    <TableCell align="right">{otherRows.week6}</TableCell>
-                                    <TableCell align="right">{otherRows.week7}</TableCell>
-                                    <TableCell align="right">{otherRows.week8}</TableCell>
-                                    <TableCell align="right">{otherRows.week9}</TableCell>
-                                    <TableCell align="right">{otherRows.week10}</TableCell>
-                                    <TableCell align="right">{otherRows.week11}</TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-
-                <br /> */}
 
                 <TableContainer component={Paper}>
                     <Table aria-label="simple table">
@@ -99,11 +50,9 @@ class SemesterComparisons extends Component {
                         </TableBody>
                     </Table>
                 </TableContainer>
-
             </div>
         )
     }
-
 }
 
 export default SemesterComparisons;
