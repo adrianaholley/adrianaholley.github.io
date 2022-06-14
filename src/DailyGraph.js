@@ -131,7 +131,6 @@ class DailyGraph extends Component {
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
                             
                             <Legend verticalAlign="top"  height={36}/>
-
                         </ComposedChart>
                     </ResponsiveContainer>
                 </Grid>

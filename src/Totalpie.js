@@ -24,7 +24,7 @@ var percentagetodaychange = "+" + (percentagetoday-percentageaweekago).toFixed(2
 var aweekagochange = "+" + (percentageaweekago-percentagetwoweeksago).toFixed(2) 
 var twoweeksagochange = "+" + (percentagetwoweeksago-percentagethreeweeksago).toFixed(2) 
 
-const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }] //
+const data01 = [{ name: 'Group A', value: totaltoday }, { name: 'Group B', value: notinfected }]
 
 class TotalPie extends Component {
     

@@ -6,8 +6,6 @@ import SemesterComparisons from './SemesterComparisons.js';
 import ActiveGraph from './ActiveGraph';
 import { globaldate } from './data.js';
 
-// var notice = "Data for Oct 28 - Oct 30 is affected by a delay in reporting from labs."
-
 class Active extends Component {
     constructor(props) {
         super(props);
