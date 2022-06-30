@@ -129,8 +129,6 @@ class DailyGraph extends Component {
                             <ReferenceLine y={230} stroke="#333" strokeDasharray="2"><Label value="0.5% of all students and employees (230)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
 
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-                            
-                            <Legend verticalAlign="top"  height={36}/>
                         </ComposedChart>
                     </ResponsiveContainer>
                 </Grid>

@@ -135,8 +135,6 @@ class TotalGraph extends Component {
                             <ReferenceLine y={3220} stroke="#333" strokeDasharray="2"><Label value="7.0% of all students and employees (3220)" position="insideTopLeft" fontSize={isMobile ? ("8") : ("12")}></Label></ReferenceLine>
 
                             <Tooltip wrapperStyle={{ fontSize: "12px" }} />
-
-                            <Legend verticalAlign="top"  height={36}/>
                         </ComposedChart>
                     </ResponsiveContainer>
                 </Grid>
