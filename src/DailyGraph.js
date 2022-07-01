@@ -1,6 +1,7 @@
 import { FormControlLabel, Grid, Switch } from '@material-ui/core';
 import { grey, red } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
+// import { InfoIcon } from '@material-ui/icons/InfoIcon';
 import { isMobile } from "react-device-detect";
 import React, { Component } from 'react';
 import { data } from './data.js';
